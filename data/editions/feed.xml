@@ -4,7 +4,7 @@
         <title>The Daily Byte</title>
         <link>http://localhost:3000</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Wed, 25 Mar 2026 15:33:51 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Mar 2026 15:48:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -13,7 +13,7 @@
             <title><![CDATA[Wine Engineers Recast the Linux Gaming Engine and Report Extraordinary Gains in Speed]]></title>
             <link>http://localhost:3000/2026-03-25</link>
             <guid>http://localhost:3000/2026-03-25</guid>
-            <pubDate>Wed, 25 Mar 2026 15:33:51 GMT</pubDate>
+            <pubDate>Wed, 25 Mar 2026 15:48:03 GMT</pubDate>
             <description><![CDATA[<p><strong>Wine Engineers Recast the Linux Gaming Engine and Report Extraordinary Gains in Speed</strong> — A bold revision in Wine 11 is said to alter the kernel-level manner by which Linux conducts Windows games, yielding most remarkable acceleration. The report has electrified the computing public, for it joins technical daring with immediate practical benefit.</p>
 <p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
 <p><strong>Grave Alarm Raised as LiteLLM Packages on PyPI Are Reported Compromised</strong> — An urgent warning declares that LiteLLM versions 1.82.7 and 1.82.8 on the Python exchange were tampered with and ought not be trusted. In an era of sprawling software dependence, such contamination threatens confidence far beyond a single package.</p>]]></description>
