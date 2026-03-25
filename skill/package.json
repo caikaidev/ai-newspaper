@@ -1,0 +1,31 @@
+{
+  "name": "@newspaper/skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/skill.js",
+  "scripts": {
+    "fetch": "tsx skill.ts",
+    "fetch:force": "tsx skill.ts --force",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc --project tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "feed": "^4.2.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@types/node": "^22.0.0",
+    "msw": "^2.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.0.0"
+  },
+  "optionalDependencies": {
+    "@openclaw/sdk": "*"
+  }
+}
