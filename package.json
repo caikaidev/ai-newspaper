@@ -9,6 +9,7 @@
     "dev": "npm run dev --workspace=web",
     "build": "npm run build --workspace=web",
     "test": "npm run test --workspace=skill",
-    "fetch": "npm run fetch --workspace=skill"
+    "fetch": "npm run fetch --workspace=skill",
+    "fetch:force": "npm run fetch:force --workspace=skill"
   }
 }

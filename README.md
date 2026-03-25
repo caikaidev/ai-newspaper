@@ -5,17 +5,19 @@ A retro-style newspaper web app that aggregates daily content from Hacker News, 
 ## Architecture
 
 ```
-newspaper-fetch skill (OpenClaw)     Next.js Web App
-─────────────────────────────        ─────────────────────────
-fetch HN + Reddit + GitHub           reads NEWSPAPER_DATA_DIR
-         ↓                                     ↓
-   deduplicate by URL               app/page.tsx → redirect
-         ↓                          app/[date]/page.tsx → render
-    AI scoring & rewrite            app/api/og → Satori OG image
-         ↓
-  YYYY-MM-DD.json (atomic)
-  feed.xml (last 14 editions)
-  run.log.json (observability)
+GitHub Actions / local fetcher          Next.js Web App (Vercel)
+───────────────────────────────         ─────────────────────────
+fetch HN + Reddit + GitHub              reads repo data/editions
+          ↓                                          ↓
+    deduplicate by URL                  app/page.tsx → redirect
+          ↓                             app/[date]/page.tsx → render
+     AI scoring & rewrite               app/api/og → Satori OG image
+          ↓
+  data/editions/YYYY-MM-DD.json
+  data/editions/feed.xml
+  data/editions/run.log.json
+          ↓
+   commit generated data to git
 ```
 
 ## Quick Start
@@ -44,6 +46,8 @@ export ANTHROPIC_API_KEY=sk-...
 npm run fetch
 ```
 
+By default, editions are written to `./data/editions`, which is intended to be committed to the repo for Vercel-friendly deployments.
+
 If no explicit API key is configured, the skill will next try the local OpenClaw runtime/CLI so it can reuse your existing OpenClaw provider setup. Only after that does it fall back to deterministic local scoring.
 
 ### Run the web app
@@ -63,11 +67,44 @@ npm run typecheck --workspace=skill
 npm test
 ```
 
+## Vercel deployment (Scheme A)
+
+This repo is now structured for **Scheme A**:
+- `web/` deploys to Vercel
+- `data/editions/` is committed into git
+- GitHub Actions regenerates editions daily and pushes updated data back to the repo
+
+### Recommended Vercel settings
+
+- **Framework Preset:** Next.js
+- **Root Directory:** `web`
+- **Build Command:** `npm run build --workspace=web`
+- **Install Command:** `npm install`
+- **Output Directory:** leave default for Next.js
+
+### Required Vercel environment variables
+
+Usually none are required if you keep repo data in the default location.
+
+Optional:
+- `NEWSPAPER_BASE_URL=https://your-site.vercel.app`
+- `NEWSPAPER_DATA_DIR=../data/editions`
+
+### Required GitHub configuration
+
+For the scheduled fetch workflow:
+- GitHub Actions enabled
+- Repository secret: `ANTHROPIC_API_KEY` (optional if your workflow environment provides AI another way)
+- Repository variable: `NEWSPAPER_BASE_URL=https://your-site.vercel.app`
+
+Workflow file:
+- `.github/workflows/daily-fetch.yml`
+
 ## Configuration
 
 | Env var | Default | Description |
 |---------|---------|-------------|
-| `NEWSPAPER_DATA_DIR` | `~/.openclaw/newspaper/editions/` | Where edition JSON files are stored |
+| `NEWSPAPER_DATA_DIR` | `./data/editions` for fetch, `../data/editions` for web | Where edition JSON files are stored |
 | `NEWSPAPER_BASE_URL` | `http://localhost:3000` | Canonical URL for RSS links and OG image links |
 | `ANTHROPIC_API_KEY` | — | API key for standalone mode |
 | `OPENCLAW_BIN` | `openclaw` | Override the OpenClaw CLI path used for gateway-backed AI fallback |
@@ -76,12 +113,11 @@ npm test
 ## Notes on source reliability
 
 - Hacker News and GitHub Trending should work without credentials.
-- Reddit's anonymous `.json` endpoints may return `403 Blocked` from some hosts or IP ranges. The pipeline now automatically falls back to Reddit's public RSS feeds so editions can still include Reddit stories when JSON is blocked.
+- Reddit's anonymous `.json` endpoints may return `403 Blocked` from some hosts or IP ranges. The pipeline automatically falls back to Reddit's public RSS feeds so editions can still include Reddit stories when JSON is blocked.
 
 ## Schedule
 
-When running as an OpenClaw skill, the pipeline runs at **07:00 UTC** daily.
-- ~midnight PT / 3am ET / 8am CET / 3pm CST+8
+When running in GitHub Actions, the pipeline runs daily at **07:05 UTC** by default.
 
 ## Data Format
 
@@ -114,10 +150,10 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - 📱 Responsive — 3-col desktop, 2-col tablet, single-col mobile
 - 🔄 Run manifest for idempotent retries
 - 🔔 Staleness banner when pipeline hasn't run in >1 day
+- 🚀 Vercel-friendly repo data layout via `data/editions`
 
 ## Deferred (see TODOS.md)
 
-- GitHub Actions deployment mode (zero-infrastructure)
 - SQLite edition index for full-text search
 - Dark mode / Evening Edition
 - Customizable source list

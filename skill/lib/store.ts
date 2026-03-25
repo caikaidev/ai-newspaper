@@ -1,5 +1,4 @@
 import fs from 'fs'
-import os from 'os'
 import path from 'path'
 import type { Edition, RunLogEntry, ScoredItem } from './types.js'
 import { isComplete, loadManifest, updateManifest } from './manifest.js'
@@ -9,7 +8,7 @@ import { rebuildFeed } from './feed.js'
 function resolveEditionsDir(): string {
   return (
     process.env.NEWSPAPER_DATA_DIR ??
-    path.join(os.homedir(), '.openclaw', 'newspaper', 'editions')
+    path.resolve(process.cwd(), '..', 'data', 'editions')
   )
 }
 

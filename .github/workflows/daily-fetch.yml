@@ -1,0 +1,49 @@
+name: Daily Fetch
+
+on:
+  schedule:
+    - cron: '5 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download web fonts
+        run: bash web/scripts/download-fonts.sh
+
+      - name: Generate latest edition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWSPAPER_DATA_DIR: ./data/editions
+          NEWSPAPER_BASE_URL: ${{ vars.NEWSPAPER_BASE_URL || 'https://example.vercel.app' }}
+        run: npm run fetch:force
+
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/editions; then
+            echo "No edition changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/editions
+          git commit -m "chore: publish daily edition"
+          git push

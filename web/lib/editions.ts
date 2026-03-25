@@ -1,5 +1,4 @@
 import fs from 'fs'
-import os from 'os'
 import path from 'path'
 import type { Edition } from './types'
 
@@ -8,7 +7,7 @@ const DATE_RE = /^\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])$/
 export function resolveEditionsDir(): string {
   return (
     process.env.NEWSPAPER_DATA_DIR ??
-    path.join(os.homedir(), '.openclaw', 'newspaper', 'editions')
+    path.resolve(process.cwd(), '..', 'data', 'editions')
   )
 }
 
