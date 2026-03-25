@@ -5,19 +5,19 @@ A retro-style newspaper web app that aggregates daily content from Hacker News, 
 ## Architecture
 
 ```
-GitHub Actions / local fetcher          Next.js Web App (Vercel)
-───────────────────────────────         ─────────────────────────
-fetch HN + Reddit + GitHub              reads repo data/editions
+OpenClaw cron on VPS                     Next.js Web App (Vercel)
+────────────────────────────            ─────────────────────────
+run publish-edition.sh                  reads repo data/editions
           ↓                                          ↓
-    deduplicate by URL                  app/page.tsx → redirect
+fetch HN + Reddit + GitHub              app/page.tsx → redirect
           ↓                             app/[date]/page.tsx → render
-     AI scoring & rewrite               app/api/og → Satori OG image
+AI scoring via local OpenClaw           app/api/og → Satori OG image
           ↓
   data/editions/YYYY-MM-DD.json
   data/editions/feed.xml
   data/editions/run.log.json
           ↓
-   commit generated data to git
+   git commit + push to GitHub
 ```
 
 ## Quick Start
@@ -25,9 +25,10 @@ fetch HN + Reddit + GitHub              reads repo data/editions
 ### Prerequisites
 
 - Node.js 20+
-- Optional for full AI rewriting:
-  - project-local OpenClaw SDK/runtime, or
-  - a running OpenClaw gateway/CLI with configured auth profiles (including OAuth-backed OpenAI/OpenAI Codex providers), or
+- Recommended for production on a VPS:
+  - a running OpenClaw gateway/CLI with configured auth profiles (including OAuth-backed OpenAI/OpenAI Codex providers)
+- Optional alternatives:
+  - project-local OpenClaw SDK/runtime
   - `ANTHROPIC_API_KEY`
 - If none of the above are available, the fetch pipeline still runs using a deterministic local fallback scorer (useful for local development and CI smoke tests)
 
@@ -42,13 +43,12 @@ bash web/scripts/download-fonts.sh
 ### Fetch your first edition
 
 ```bash
-export ANTHROPIC_API_KEY=sk-...
 npm run fetch
 ```
 
 By default, editions are written to `./data/editions`, which is intended to be committed to the repo for Vercel-friendly deployments.
 
-If no explicit API key is configured, the skill will next try the local OpenClaw runtime/CLI so it can reuse your existing OpenClaw provider setup. Only after that does it fall back to deterministic local scoring.
+If no explicit API key is configured, the skill tries the local OpenClaw runtime/CLI so it can reuse your existing OpenClaw provider setup. Only after that does it fall back to deterministic local scoring.
 
 ### Run the web app
 
@@ -67,12 +67,12 @@ npm run typecheck --workspace=skill
 npm test
 ```
 
-## Vercel deployment (Scheme A)
+## Production deployment: VPS + OpenClaw cron + Vercel
 
-This repo is now structured for **Scheme A**:
+This repo is now structured primarily for:
 - `web/` deploys to Vercel
 - `data/editions/` is committed into git
-- GitHub Actions regenerates editions daily and pushes updated data back to the repo
+- a VPS runs OpenClaw cron, which generates fresh editions locally and pushes them back to GitHub
 
 ### Recommended Vercel settings
 
@@ -82,23 +82,36 @@ This repo is now structured for **Scheme A**:
 - **Install Command:** `npm install`
 - **Output Directory:** leave default for Next.js
 
-### Required Vercel environment variables
+### Recommended VPS flow
 
-Usually none are required if you keep repo data in the default location.
+Use the helper script:
 
-Optional:
-- `NEWSPAPER_BASE_URL=https://your-site.vercel.app`
-- `NEWSPAPER_DATA_DIR=../data/editions`
+```bash
+./scripts/publish-edition.sh
+```
 
-### Required GitHub configuration
+What it does:
+- runs `npm run fetch:force`
+- updates `data/editions`
+- commits changes if needed
+- pushes to the current branch on GitHub
 
-For the scheduled fetch workflow:
-- GitHub Actions enabled
-- Repository secret: `ANTHROPIC_API_KEY` (optional if your workflow environment provides AI another way)
-- Repository variable: `NEWSPAPER_BASE_URL=https://your-site.vercel.app`
+### OpenClaw cron
 
-Workflow file:
+Recommended cron job name:
+- `ai-newspaper:publish`
+
+Typical schedule:
+- daily around `07:05 UTC`
+
+The cron job should run an agent turn that executes the publish script from the repo.
+
+### Optional GitHub Actions
+
+A workflow file is still included at:
 - `.github/workflows/daily-fetch.yml`
+
+Use it only if you later add cloud-side AI credentials. If you rely on local OpenClaw AI/OAuth on the VPS, the VPS cron path should be your primary publisher.
 
 ## Configuration
 
@@ -117,7 +130,7 @@ Workflow file:
 
 ## Schedule
 
-When running in GitHub Actions, the pipeline runs daily at **07:05 UTC** by default.
+For VPS deployment, the recommended schedule is a daily OpenClaw cron run at **07:05 UTC**.
 
 ## Data Format
 
@@ -151,6 +164,7 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - 🔄 Run manifest for idempotent retries
 - 🔔 Staleness banner when pipeline hasn't run in >1 day
 - 🚀 Vercel-friendly repo data layout via `data/editions`
+- ⏰ VPS-friendly publishing via `scripts/publish-edition.sh` + OpenClaw cron
 
 ## Deferred (see TODOS.md)
 
