@@ -13,6 +13,8 @@ For each item, return a JSON object with:
 Return a JSON ARRAY in the same order as input. Raw JSON only, no markdown.
 Validate: array length must equal input length. If unsure on an item, score it 5.0.`
 
+const AI_BATCH_SIZE = 20
+
 function toFallbackItem(item: RawItem): ScoredItem {
   return {
     ...item,
@@ -20,6 +22,14 @@ function toFallbackItem(item: RawItem): ScoredItem {
     retro_headline: item.title,
     retro_summary: '',
   }
+}
+
+function chunkItems<T>(items: T[], size: number): T[][] {
+  const chunks: T[][] = []
+  for (let i = 0; i < items.length; i += size) {
+    chunks.push(items.slice(i, i + size))
+  }
+  return chunks
 }
 
 export function mergeWithScores(items: RawItem[], rawResponse: string): ScoredItem[] {
@@ -51,7 +61,7 @@ export function mergeWithScores(items: RawItem[], rawResponse: string): ScoredIt
   }))
 }
 
-export async function process(items: RawItem[], ai: AIProvider): Promise<ScoredItem[]> {
+async function processBatch(items: RawItem[], ai: AIProvider): Promise<ScoredItem[]> {
   const inputPayload = items.map(item => ({
     id: item.id,
     title: item.title,
@@ -67,4 +77,16 @@ export async function process(items: RawItem[], ai: AIProvider): Promise<ScoredI
   ])
 
   return mergeWithScores(items, rawResponse)
+}
+
+export async function process(items: RawItem[], ai: AIProvider): Promise<ScoredItem[]> {
+  const batches = chunkItems(items, AI_BATCH_SIZE)
+  const scored: ScoredItem[] = []
+
+  for (const batch of batches) {
+    const result = await processBatch(batch, ai)
+    scored.push(...result)
+  }
+
+  return scored
 }

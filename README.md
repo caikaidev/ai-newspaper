@@ -24,9 +24,10 @@ fetch HN + Reddit + GitHub           reads NEWSPAPER_DATA_DIR
 
 - Node.js 20+
 - Optional for full AI rewriting:
-  - openclaw SDK/runtime available, or
+  - project-local OpenClaw SDK/runtime, or
+  - a running OpenClaw gateway/CLI with configured auth profiles (including OAuth-backed OpenAI/OpenAI Codex providers), or
   - `ANTHROPIC_API_KEY`
-- Without either, the fetch pipeline still runs using a deterministic local fallback scorer (useful for local development and CI smoke tests)
+- If none of the above are available, the fetch pipeline still runs using a deterministic local fallback scorer (useful for local development and CI smoke tests)
 
 ### Install
 
@@ -43,7 +44,7 @@ export ANTHROPIC_API_KEY=sk-...
 npm run fetch
 ```
 
-If no AI provider is configured, `npm run fetch` still succeeds using fallback scoring so you can validate the end-to-end pipeline.
+If no explicit API key is configured, the skill will next try the local OpenClaw runtime/CLI so it can reuse your existing OpenClaw provider setup. Only after that does it fall back to deterministic local scoring.
 
 ### Run the web app
 
@@ -68,12 +69,14 @@ npm test
 |---------|---------|-------------|
 | `NEWSPAPER_DATA_DIR` | `~/.openclaw/newspaper/editions/` | Where edition JSON files are stored |
 | `NEWSPAPER_BASE_URL` | `http://localhost:3000` | Canonical URL for RSS links and OG image links |
-| `ANTHROPIC_API_KEY` | — | API key for standalone mode (no openclaw) |
+| `ANTHROPIC_API_KEY` | — | API key for standalone mode |
+| `OPENCLAW_BIN` | `openclaw` | Override the OpenClaw CLI path used for gateway-backed AI fallback |
+| `OPENCLAW_AI_AGENT_ID` | `general_agent` | Which OpenClaw agent to invoke for CLI-backed AI scoring |
 
 ## Notes on source reliability
 
 - Hacker News and GitHub Trending should work without credentials.
-- Reddit may intermittently return `403 Blocked` or rate-limit anonymous requests. The pipeline is designed to continue when one source fails, so an edition can still be generated from the remaining sources.
+- Reddit's anonymous `.json` endpoints may return `403 Blocked` from some hosts or IP ranges. The pipeline now automatically falls back to Reddit's public RSS feeds so editions can still include Reddit stories when JSON is blocked.
 
 ## Schedule
 
@@ -103,7 +106,8 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 
 - 🗞 Vintage 1920s broadsheet aesthetic (UnifrakturMaguntia + Playfair Display + IM Fell English)
 - 🤖 AI-scored and rewritten headlines in period journalistic style
-- 🧪 Deterministic fallback scoring when no live AI provider is configured
+- 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
+- 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
 - 📻 RSS feed (`/feed.xml`) with last 14 editions
 - 🖼 OG image generation (`/api/og?date=YYYY-MM-DD`) for social sharing
 - 🖨 Print stylesheet for real broadsheet printing
