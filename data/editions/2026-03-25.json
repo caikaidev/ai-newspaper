@@ -2,19 +2,8 @@
   "schema_version": 1,
   "date": "2026-03-25",
   "edition": 2,
-  "generated_at": "2026-03-25T15:48:03.617Z",
+  "generated_at": "2026-03-25T15:48:59.723Z",
   "front_page": [
-    {
-      "id": "hn-47507150",
-      "source": "hackernews",
-      "title": "Wine 11 rewrites how Linux runs Windows games at kernel with massive speed gains",
-      "url": "https://www.xda-developers.com/wine-11-rewrites-linux-runs-windows-games-speed-gains/",
-      "points": 1129,
-      "comments": 402,
-      "ai_score": 9.5,
-      "retro_headline": "Wine Engineers Recast the Linux Gaming Engine and Report Extraordinary Gains in Speed",
-      "retro_summary": "A bold revision in Wine 11 is said to alter the kernel-level manner by which Linux conducts Windows games, yielding most remarkable acceleration. The report has electrified the computing public, for it joins technical daring with immediate practical benefit."
-    },
     {
       "id": "reddit-t3_1s35ohw",
       "source": "reddit",
@@ -55,28 +44,27 @@
       "ai_score": 9,
       "retro_headline": "Malicious LiteLLM Release Accused of Credential Theft and a Lasting Secret Door",
       "retro_summary": "A further bulletin concerning LiteLLM 1.82.8 describes a release allegedly equipped for credential theft and persistent unauthorized access. Such accusations place the episode among the more serious software contaminations of the season."
+    },
+    {
+      "id": "reddit-t3_1s1ygvn",
+      "source": "reddit",
+      "title": "This Trivy Compromise is Insane.",
+      "url": "https://www.reddit.com/r/devops/comments/1s1ygvn/this_trivy_compromise_is_insane/",
+      "subreddit": "devops",
+      "ai_score": 8.8,
+      "retro_headline": "The Trivy Compromise Described as a Supply Catastrophe of Extraordinary Severity",
+      "retro_summary": "Readers are sounding the alarm over the compromise of Trivy, treating it as a supply-chain affair of uncommon gravity. Such breaches disturb the engineering public deeply, for they turn trusted instruments of security into possible instruments of harm."
     }
   ],
   "sections": {
     "hackernews": [
       {
-        "id": "hn-47507150",
-        "source": "hackernews",
-        "title": "Wine 11 rewrites how Linux runs Windows games at kernel with massive speed gains",
-        "url": "https://www.xda-developers.com/wine-11-rewrites-linux-runs-windows-games-speed-gains/",
-        "points": 1129,
-        "comments": 402,
-        "ai_score": 9.5,
-        "retro_headline": "Wine Engineers Recast the Linux Gaming Engine and Report Extraordinary Gains in Speed",
-        "retro_summary": "A bold revision in Wine 11 is said to alter the kernel-level manner by which Linux conducts Windows games, yielding most remarkable acceleration. The report has electrified the computing public, for it joins technical daring with immediate practical benefit."
-      },
-      {
         "id": "hn-47508246",
         "source": "hackernews",
         "title": "Goodbye to Sora",
         "url": "https://twitter.com/soraofficialapp/status/2036532795984715896",
-        "points": 920,
-        "comments": 670,
+        "points": 924,
+        "comments": 671,
         "ai_score": 7.8,
         "retro_headline": "A Solemn Farewell to Sora Sets the Technical Salons Murmuring With Speculation",
         "retro_summary": "A brief but much-discussed valediction to Sora has stirred wide conjecture throughout the machine-writing fraternity. Though the particulars are scant, departures of this kind often signify larger turns in the industrial weather."
@@ -108,7 +96,7 @@
         "source": "hackernews",
         "title": "Show HN: I took back Video.js after 16 years and we rewrote it to be 88% smaller",
         "url": "https://videojs.org/blog/videojs-v10-beta-hello-world-again",
-        "points": 511,
+        "points": 515,
         "comments": 100,
         "ai_score": 8.1,
         "retro_headline": "Video.js Reclaimed After Sixteen Years and Reduced to a Fraction of Its Former Bulk",
@@ -119,8 +107,8 @@
         "source": "hackernews",
         "title": "Flighty Airports",
         "url": "https://flighty.com/airports",
-        "points": 426,
-        "comments": 152,
+        "points": 427,
+        "comments": 153,
         "ai_score": 6.9,
         "retro_headline": "Flighty Issues an Aerodrome Register to the Interest of the Modern Flying Public",
         "retro_summary": "A project styled Flighty Airports appears to gather and present intelligence on airports for travelers and aviation-minded readers. Though narrower than grander inventions, it answers a practical need in a most bustling age of air movement."
@@ -141,7 +129,7 @@
         "source": "hackernews",
         "title": "I wanted to build vertical SaaS for pest control, so I took a technician job",
         "url": "https://www.onhand.pro/p/i-wanted-to-build-vertical-saas-for-pest-control-i-took-a-technician-job-instead",
-        "points": 369,
+        "points": 371,
         "comments": 150,
         "ai_score": 7.3,
         "retro_headline": "Software Aspirant Enters the Pest Trade to Learn His Future Market at First Hand",
@@ -152,8 +140,8 @@
         "source": "hackernews",
         "title": "Meta told to pay $375M for misleading users over child safety",
         "url": "https://www.bbc.com/news/articles/cql75dn07n2o",
-        "points": 368,
-        "comments": 193,
+        "points": 370,
+        "comments": 196,
         "ai_score": 8.4,
         "retro_headline": "Meta Ordered to Pay Vast Sum Over Child-Safety Assurances Deemed Misleading",
         "retro_summary": "Meta has reportedly been told to pay 375 million dollars over representations concerning child safety said to have misled the public. The judgment is of wide consequence, for it shows the great communication houses are being pressed to answer for more than growth alone."
@@ -163,7 +151,7 @@
         "source": "hackernews",
         "title": "Show HN: Email.md – Markdown to responsive, email-safe HTML",
         "url": "https://www.emailmd.dev/",
-        "points": 342,
+        "points": 343,
         "comments": 85,
         "ai_score": 7.2,
         "retro_headline": "Email.md Makes Markdown Fit for the Treacherous Demands of the Electric Post",
@@ -174,7 +162,7 @@
         "source": "hackernews",
         "title": "TurboQuant: Redefining AI efficiency with extreme compression",
         "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
-        "points": 335,
+        "points": 337,
         "comments": 92,
         "ai_score": 7.5,
         "retro_headline": "TurboQuant Announces a Severe Compression of Artificial Intelligence Apparatus",
@@ -185,8 +173,8 @@
         "source": "hackernews",
         "title": "Apple Just Lost Me",
         "url": "https://andregarzia.com/2026/03/apple-just-lost-me.html",
-        "points": 279,
-        "comments": 253,
+        "points": 285,
+        "comments": 262,
         "ai_score": 6.9,
         "retro_headline": "A Disenchanted Patron Declares That Apple Has at Last Lost Him",
         "retro_summary": "A personal broadside titled Apple Just Lost Me has attracted considerable attention among those weary of the company’s restrictions and habits. Such pieces are subjective in character, yet they often crystallize discontent already spreading through the public."
@@ -196,7 +184,7 @@
         "source": "hackernews",
         "title": "VitruvianOS – Desktop Linux Inspired by the BeOS",
         "url": "https://v-os.dev",
-        "points": 258,
+        "points": 259,
         "comments": 155,
         "ai_score": 7.4,
         "retro_headline": "VitruvianOS Revives the BeOS Spirit in a Fresh Linux Desktop Venture",
@@ -207,8 +195,8 @@
         "source": "hackernews",
         "title": "In Edison’s Revenge, Data Centers Are Transitioning From AC to DC",
         "url": "https://spectrum.ieee.org/data-center-dc",
-        "points": 214,
-        "comments": 256,
+        "points": 215,
+        "comments": 258,
         "ai_score": 8.1,
         "retro_headline": "The Old War of Currents Revives as Data Centres Turn From AC to DC",
         "retro_summary": "A notable report states that data centres are reconsidering direct current, thereby reopening a contest thought buried with Edison’s generation. Because these immense halls consume power on a prodigious scale, even incremental efficiency carries uncommon weight."
@@ -218,8 +206,8 @@
         "source": "hackernews",
         "title": "My Astrophotography in the Movie Project Hail Mary",
         "url": "https://rpastro.square.site/s/stories/phm",
-        "points": 200,
-        "comments": 74,
+        "points": 203,
+        "comments": 76,
         "ai_score": 6.8,
         "retro_headline": "Astronomical Photography Prepared for Project Hail Mary Wins Notice Beyond the Laboratory",
         "retro_summary": "An account of astrophotography created for the motion picture Project Hail Mary has charmed readers with its union of science and spectacle. It serves as a reminder that modern visual marvels still rest upon painstaking craft and disciplined observation."
@@ -229,8 +217,8 @@
         "source": "hackernews",
         "title": "Why I forked httpx",
         "url": "https://tildeweb.nl/~michiel/httpxyz.html",
-        "points": 186,
-        "comments": 137,
+        "points": 188,
+        "comments": 140,
         "ai_score": 7,
         "retro_headline": "A Fork in the HTTPX Road Is Publicly Taken and Its Causes Set Forth",
         "retro_summary": "The author of a new fork of HTTPX has published his reasons for departing from the parent project. Such separations are always of interest in software circles, where technical judgment and community politics are seldom far apart."
@@ -240,7 +228,7 @@
         "source": "hackernews",
         "title": "Algorithm Visualizer",
         "url": "https://algorithm-visualizer.org/",
-        "points": 161,
+        "points": 162,
         "comments": 8,
         "ai_score": 6.1,
         "retro_headline": "Algorithm Visualizer Opens a Clear Window Upon the Inner March of Calculation",
@@ -251,7 +239,7 @@
         "source": "hackernews",
         "title": "Local LLM App by Ente",
         "url": "https://ente.com/blog/ensu/",
-        "points": 158,
+        "points": 160,
         "comments": 60,
         "ai_score": 6.9,
         "retro_headline": "Ente Offers a Local Language Machine to Keep Its Counsel Upon One’s Own Desk",
@@ -262,8 +250,8 @@
         "source": "hackernews",
         "title": "Miscellanea: The War in Iran",
         "url": "https://acoup.blog/2026/03/25/miscellanea-the-war-in-iran/",
-        "points": 128,
-        "comments": 156,
+        "points": 129,
+        "comments": 158,
         "ai_score": 5.8,
         "retro_headline": "Dispatches on the War in Iran Appear Under a Miscellany Header and Stir Grave Interest",
         "retro_summary": "A miscellany concerning the war in Iran has drawn notable attention despite standing at some remove from the usual mechanical subjects of the forum. The public interest is plainly high, for questions of war quickly overmaster even the busiest technological agenda."
@@ -278,6 +266,17 @@
         "ai_score": 6.7,
         "retro_headline": "Citizens Are Reminded That the Humble DNS Server May Still Be Run by Private Hands",
         "retro_summary": "A practical article insists that one may yet operate a DNS server in the present year without surrendering the task to giant providers. The sentiment has found ready approval among independents who resist the centralization of the internet’s most basic offices."
+      },
+      {
+        "id": "hn-47479362",
+        "source": "hackernews",
+        "title": "VNDB founder Yorhel has died",
+        "url": "https://vndb.org/t24787",
+        "points": 114,
+        "comments": 21,
+        "ai_score": 7.2,
+        "retro_headline": "Death of VNDB Founder Yorhel Mourned by the Digital Reading and Gaming Public",
+        "retro_summary": "News has arrived that Yorhel, founder of VNDB, has died, prompting sorrow among those who valued the archive and the community around it. Though not a tale of invention, it bears the solemn weight reserved for figures who helped build the culture of the modern web."
       }
     ],
     "reddit": [
@@ -1089,7 +1088,7 @@
         "title": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
         "url": "https://github.com/mvanhorn/last30days-skill",
         "repo": "mvanhorn/last30days-skill",
-        "stars": 6721,
+        "stars": 6722,
         "ai_score": 7.8,
         "retro_headline": "New Agent Skill Scours the Public Wires and Delivers a Grounded Digest of Events",
         "retro_summary": "A novel artificial agent skill is said to conduct inquiries across forums, video channels, prediction markets, and the general web before composing a sober summary. Such a contrivance reflects the age's growing desire not merely for information, but for orderly synthesis amid the din."
@@ -1111,7 +1110,7 @@
         "title": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
         "url": "https://github.com/BerriAI/litellm",
         "repo": "BerriAI/litellm",
-        "stars": 40509,
+        "stars": 40510,
         "ai_score": 8.7,
         "retro_headline": "LiteLLM Offers a Grand Switching Exchange for More Than a Hundred Language Engines",
         "retro_summary": "LiteLLM is presented as a Python toolkit and proxy gateway by which more than one hundred language-model services may be addressed through a common form. Its appeal is considerable, for enterprises increasingly desire one switchboard for costs, guardrails, balancing, and records across many machine intelligences."
@@ -1122,7 +1121,7 @@
         "title": "Create and share 3D architectural projects.",
         "url": "https://github.com/pascalorg/editor",
         "repo": "pascalorg/editor",
-        "stars": 6601,
+        "stars": 6602,
         "ai_score": 6.1,
         "retro_headline": "Editor for Three-Dimensional Architectural Schemes Invites the Public to Build and Share",
         "retro_summary": "A project devoted to creating and sharing three-dimensional architectural designs has been put before the public. Though its description is spare, the combination of design, collaboration, and visual drafting gives it respectable interest."
@@ -1144,7 +1143,7 @@
         "title": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
         "url": "https://github.com/ruvnet/ruflo",
         "repo": "ruvnet/ruflo",
-        "stars": 25779,
+        "stars": 25780,
         "ai_score": 8.2,
         "retro_headline": "Ruflo Advances a Grand Orchestration Platform for Swarms of Artificial Clerks",
         "retro_summary": "Ruflo announces itself as a leading platform for orchestrating multiple intelligent agents in concert, with provisions for workflow, retrieval, and native coding integrations. The idea of distributed machine bureaux acting in disciplined formation is one of the more striking tendencies of the present computational age."
@@ -1155,7 +1154,7 @@
         "title": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
         "url": "https://github.com/Crosstalk-Solutions/project-nomad",
         "repo": "Crosstalk-Solutions/project-nomad",
-        "stars": 16181,
+        "stars": 16183,
         "ai_score": 7.3,
         "retro_headline": "Project N.O.M.A.D. Offers an Offline Survival Computer for Hard Times and Remote Places",
         "retro_summary": "Project N.O.M.A.D. proposes a self-contained computer furnished with practical tools, stored knowledge, and artificial intelligence for use without reliance on the network. The conception is dramatic and timely, answering modern anxieties over fragility, dependence, and preparedness."
@@ -1166,7 +1165,7 @@
         "title": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.",
         "url": "https://github.com/ruvnet/RuView",
         "repo": "ruvnet/RuView",
-        "stars": 41939,
+        "stars": 41940,
         "ai_score": 8.6,
         "retro_headline": "RuView Claims to Read Pose and Vital Signs From Common Wi-Fi Without Any Camera Lens",
         "retro_summary": "RuView asserts that ordinary Wi-Fi signals may be turned to the estimation of human pose, presence, and even vital signs, all without a single photographic image. If the claim stands firm, it will stir both admiration for the engineering and unease at the breadth of invisible observation."
