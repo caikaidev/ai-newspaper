@@ -4,6 +4,9 @@ import path from 'path'
 import fs from 'fs/promises'
 import { loadEdition } from '@/lib/editions'
 
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+
 // Load fonts once at module startup — reused across all OG requests
 const fontsDir = path.join(process.cwd(), 'public', 'fonts')
 const fontPromise = Promise.all([
@@ -12,23 +15,23 @@ const fontPromise = Promise.all([
 ]).catch(() => null)
 
 export async function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url)
-  const date = searchParams.get('date')
-
-  if (!date) {
-    return new Response('Missing date parameter', { status: 400 })
-  }
-
-  const edition = loadEdition(date)
-  if (!edition) {
-    return new Response('Edition not found', { status: 404 })
-  }
-
-  const top3 = edition.front_page.slice(0, 3)
-  const fonts = await fontPromise
-
   try {
-    const image = new ImageResponse(
+    const { searchParams } = new URL(request.url)
+    const date = searchParams.get('date')
+
+    if (!date) {
+      return new Response('Missing date parameter', { status: 400 })
+    }
+
+    const edition = loadEdition(date)
+    if (!edition) {
+      return new Response('Edition not found', { status: 404 })
+    }
+
+    const top3 = edition.front_page.slice(0, 3)
+    const fonts = await fontPromise
+
+    return new ImageResponse(
       (
         <div
           style={{
@@ -39,10 +42,8 @@ export async function GET(request: NextRequest) {
             flexDirection: 'column',
             padding: '40px 60px',
             fontFamily: fonts ? 'Playfair' : 'serif',
-            position: 'relative',
           }}
         >
-          {/* Masthead */}
           <div
             style={{
               borderTop: '4px solid #0d0a04',
@@ -74,11 +75,10 @@ export async function GET(request: NextRequest) {
             </div>
           </div>
 
-          {/* Top 3 headlines */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
             {top3.map((item, i) => (
               <div key={item.id} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                <span
+                <div
                   style={{
                     fontFamily: 'serif',
                     fontSize: '14px',
@@ -88,13 +88,13 @@ export async function GET(request: NextRequest) {
                   }}
                 >
                   {i + 1}.
-                </span>
-                <div>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
                   <div
                     style={{
                       fontFamily: fonts ? 'Playfair' : 'serif',
                       fontSize: i === 0 ? '26px' : '20px',
-                      fontWeight: 'bold',
+                      fontWeight: 700,
                       color: '#0d0a04',
                       lineHeight: 1.2,
                     }}
@@ -111,8 +111,8 @@ export async function GET(request: NextRequest) {
                         lineHeight: 1.4,
                       }}
                     >
-                      {item.retro_summary.slice(0, 120)}
-                      {item.retro_summary.length > 120 ? '…' : ''}
+                      {item.retro_summary.slice(0, 160)}
+                      {item.retro_summary.length > 160 ? '…' : ''}
                     </div>
                   )}
                 </div>
@@ -120,7 +120,6 @@ export async function GET(request: NextRequest) {
             ))}
           </div>
 
-          {/* Footer rule */}
           <div
             style={{
               borderTop: '2px solid #0d0a04',
@@ -132,7 +131,7 @@ export async function GET(request: NextRequest) {
               textAlign: 'center',
             }}
           >
-            thedailybyte.news · All headlines rewritten in the manner of 1920s correspondence
+            ai-newspaper-web.vercel.app · All headlines rewritten in the manner of 1920s correspondence
           </div>
         </div>
       ),
@@ -147,7 +146,6 @@ export async function GET(request: NextRequest) {
           : [],
       }
     )
-    return image
   } catch (err) {
     console.error('[og] Satori render failed — returning plain response:', err)
     return new Response('OG image generation failed', { status: 500 })

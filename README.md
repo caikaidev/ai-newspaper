@@ -12,7 +12,7 @@ run publish-edition.sh                  reads repo data/editions
 fetch HN + Reddit + GitHub              app/page.tsx → redirect
           ↓                             app/[date]/page.tsx → render
 AI scoring via local OpenClaw           app/api/og → Satori OG image
-          ↓
+          ↓                             app/feed.xml → RSS route
   data/editions/YYYY-MM-DD.json
   data/editions/feed.xml
   data/editions/run.log.json
@@ -74,6 +74,14 @@ This repo is now structured primarily for:
 - `data/editions/` is committed into git
 - a VPS runs OpenClaw cron, which generates fresh editions locally and pushes them back to GitHub
 
+### Production URL
+
+Current deployment URL:
+- `https://ai-newspaper-web.vercel.app`
+
+Recommended `NEWSPAPER_BASE_URL` value:
+- `https://ai-newspaper-web.vercel.app`
+
 ### Recommended Vercel settings
 
 - **Framework Preset:** Next.js
@@ -121,7 +129,7 @@ Use it only if you later add cloud-side AI credentials. If you rely on local Ope
 | Env var | Default | Description |
 |---------|---------|-------------|
 | `NEWSPAPER_DATA_DIR` | `./data/editions` for fetch, `../data/editions` for web | Where edition JSON files are stored |
-| `NEWSPAPER_BASE_URL` | `http://localhost:3000` | Canonical URL for RSS links and OG image links |
+| `NEWSPAPER_BASE_URL` | `http://localhost:3000` | Canonical URL for RSS links and OG image links; set this to `https://ai-newspaper-web.vercel.app` in production |
 | `ANTHROPIC_API_KEY` | — | API key for standalone mode |
 | `OPENCLAW_BIN` | `openclaw` | Override the OpenClaw CLI path used for gateway-backed AI fallback |
 | `OPENCLAW_AI_AGENT_ID` | `general_agent` | Which OpenClaw agent to invoke for CLI-backed AI scoring |

@@ -33,7 +33,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NEWSPAPER_DATA_DIR: ./data/editions
-          NEWSPAPER_BASE_URL: ${{ vars.NEWSPAPER_BASE_URL || 'https://example.vercel.app' }}
+          NEWSPAPER_BASE_URL: ${{ vars.NEWSPAPER_BASE_URL || 'https://ai-newspaper-web.vercel.app' }}
         run: npm run fetch:force
 
       - name: Commit generated data
