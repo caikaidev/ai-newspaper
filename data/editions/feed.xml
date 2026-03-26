@@ -4,7 +4,7 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Thu, 26 Mar 2026 02:41:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Mar 2026 07:09:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -13,9 +13,9 @@
             <title><![CDATA[Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-03-26</link>
             <guid>https://ai-newspaper-web.vercel.app/2026-03-26</guid>
-            <pubDate>Thu, 26 Mar 2026 02:41:17 GMT</pubDate>
+            <pubDate>Thu, 26 Mar 2026 07:09:17 GMT</pubDate>
             <description><![CDATA[<p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
-<p><strong>Antimatter Is Conveyed From Place to Place for the First Time in Scientific History</strong> — Scientists report that antimatter has at last been transported, an achievement that carries the romance of pure discovery and the gravity of first principles. The feat is certain to excite both the laboratory and the lay reader, for few substances possess a reputation so strange.</p>
+<p><strong>Europe Is Warned That the Campaign to Inspect Private Messages Still Advances</strong> — A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty.</p>
 <p><strong>Urgent Warning Issued Over Compromised LiteLLM Packages in the Python Exchange</strong> — Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention.</p>]]></description>
         </item>
         <item>

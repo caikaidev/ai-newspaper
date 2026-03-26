@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-03-26",
   "edition": 3,
-  "generated_at": "2026-03-26T02:41:17.983Z",
+  "generated_at": "2026-03-26T07:09:17.562Z",
   "front_page": [
     {
       "id": "reddit-t3_1s35ohw",
@@ -15,15 +15,15 @@
       "retro_summary": "A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit."
     },
     {
-      "id": "hn-47518171",
+      "id": "hn-47522709",
       "source": "hackernews",
-      "title": "Antimatter has been transported for the first time",
-      "url": "https://www.nature.com/articles/d41586-026-00950-w",
-      "points": 350,
-      "comments": 163,
+      "title": "The EU still wants to scan  your private messages and photos",
+      "url": "https://fightchatcontrol.eu/?foo=bar",
+      "points": 953,
+      "comments": 257,
       "ai_score": 9,
-      "retro_headline": "Antimatter Is Conveyed From Place to Place for the First Time in Scientific History",
-      "retro_summary": "Scientists report that antimatter has at last been transported, an achievement that carries the romance of pure discovery and the gravity of first principles. The feat is certain to excite both the laboratory and the lay reader, for few substances possess a reputation so strange."
+      "retro_headline": "Europe Is Warned That the Campaign to Inspect Private Messages Still Advances",
+      "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty."
     },
     {
       "id": "reddit-t3_1s2h8lt",
@@ -46,15 +46,15 @@
       "retro_summary": "A further bulletin concerning LiteLLM 1.82.8 describes a release allegedly equipped for credential theft and persistent unauthorized access. Such accusations place the episode among the more serious software contaminations of the season."
     },
     {
-      "id": "hn-47522709",
+      "id": "hn-47509984",
       "source": "hackernews",
-      "title": "The EU still wants to scan  your private messages and photos",
-      "url": "https://fightchatcontrol.eu/?foo=bar",
-      "points": 747,
-      "comments": 211,
-      "ai_score": 8.9,
-      "retro_headline": "Europe Is Warned That the Campaign to Inspect Private Messages Still Advances",
-      "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty."
+      "title": "Jury finds Meta liable in case over child sexual exploitation on its platforms",
+      "url": "https://www.cnn.com/2026/03/24/tech/meta-new-mexico-trial-jury-deliberation",
+      "points": 362,
+      "comments": 462,
+      "ai_score": 8.8,
+      "retro_headline": "Jury Finds Meta Liable in Cause Concerning Child Exploitation Upon Its Platforms",
+      "retro_summary": "A jury has found Meta liable in a case concerning child sexual exploitation conducted through its platforms. The verdict deepens the legal and moral scrutiny upon the social media colossus and has accordingly stirred intense public interest."
     }
   ],
   "sections": {
@@ -64,9 +64,9 @@
         "source": "hackernews",
         "title": "The EU still wants to scan  your private messages and photos",
         "url": "https://fightchatcontrol.eu/?foo=bar",
-        "points": 747,
-        "comments": 211,
-        "ai_score": 8.9,
+        "points": 953,
+        "comments": 257,
+        "ai_score": 9,
         "retro_headline": "Europe Is Warned That the Campaign to Inspect Private Messages Still Advances",
         "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty."
       },
@@ -75,9 +75,9 @@
         "source": "hackernews",
         "title": "My astrophotography in the movie Project Hail Mary",
         "url": "https://rpastro.square.site/s/stories/phm",
-        "points": 717,
-        "comments": 185,
-        "ai_score": 7.7,
+        "points": 818,
+        "comments": 194,
+        "ai_score": 7.8,
         "retro_headline": "Astronomical Plates Prepared for Project Hail Mary Win Wide Notice Among the Curious",
         "retro_summary": "An account of astrophotography furnished for the motion picture Project Hail Mary has greatly engaged readers of both the scientific and cinematic persuasions. It reminds the public that modern spectacle still rests upon patient observation and exacting craft."
       },
@@ -86,74 +86,30 @@
         "source": "hackernews",
         "title": "Thoughts on slowing the fuck down",
         "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
-        "points": 686,
-        "comments": 338,
-        "ai_score": 7,
+        "points": 786,
+        "comments": 371,
+        "ai_score": 7.2,
         "retro_headline": "A Meditation on Slowing the Modern Tempo Draws Earnest Notice From the Technical Public",
         "retro_summary": "A reflective piece urges the overdriven professional classes to slacken their furious pace and reconsider the worship of haste. Though not mechanical in subject, it has plainly struck a nerve in an age that mistakes velocity for wisdom."
-      },
-      {
-        "id": "hn-47513229",
-        "source": "hackernews",
-        "title": "Miscellanea: The War in Iran",
-        "url": "https://acoup.blog/2026/03/25/miscellanea-the-war-in-iran/",
-        "points": 432,
-        "comments": 620,
-        "ai_score": 7.5,
-        "retro_headline": "Dispatches on the War in Iran Draw Heavy Notice Far Beyond the Technical Beat",
-        "retro_summary": "A miscellany concerning the war in Iran has commanded exceptional attention despite standing outside the ordinary run of mechanical subjects. The volume of discussion shows how swiftly affairs of war can overmaster even the busiest technological forum."
       },
       {
         "id": "hn-47523330",
         "source": "hackernews",
         "title": "Running Tesla Model 3's computer on my desk using parts from crashed cars",
         "url": "https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/",
-        "points": 375,
-        "comments": 122,
-        "ai_score": 8.2,
+        "points": 538,
+        "comments": 159,
+        "ai_score": 8.3,
         "retro_headline": "Mechanic Runs a Tesla Model 3 Brain Upon His Desk With Parts Salvaged From Wrecks",
         "retro_summary": "An enterprising experimenter reports success in operating a Tesla Model 3 computer on the workbench by using components recovered from crashed vehicles. The exploit has delighted the technical crowd, which never tires of seeing sealed commercial marvels reopened to inquiry."
-      },
-      {
-        "id": "hn-47518171",
-        "source": "hackernews",
-        "title": "Antimatter has been transported for the first time",
-        "url": "https://www.nature.com/articles/d41586-026-00950-w",
-        "points": 350,
-        "comments": 163,
-        "ai_score": 9,
-        "retro_headline": "Antimatter Is Conveyed From Place to Place for the First Time in Scientific History",
-        "retro_summary": "Scientists report that antimatter has at last been transported, an achievement that carries the romance of pure discovery and the gravity of first principles. The feat is certain to excite both the laboratory and the lay reader, for few substances possess a reputation so strange."
-      },
-      {
-        "id": "hn-47512816",
-        "source": "hackernews",
-        "title": "VitruvianOS – Desktop Linux Inspired by the BeOS",
-        "url": "https://v-os.dev",
-        "points": 337,
-        "comments": 202,
-        "ai_score": 7.5,
-        "retro_headline": "VitruvianOS Revives the BeOS Spirit in a Fresh Linux Desktop Venture",
-        "retro_summary": "VitruvianOS presents itself as a Linux desktop inspired by the much-admired BeOS of an earlier computing age. The undertaking has pleased readers who still hunger for elegance, speed, and sobriety in personal computing machinery."
-      },
-      {
-        "id": "hn-47516650",
-        "source": "hackernews",
-        "title": "Ensu – Ente’s Local LLM app",
-        "url": "https://ente.com/blog/ensu/",
-        "points": 336,
-        "comments": 151,
-        "ai_score": 7.1,
-        "retro_headline": "Ensu Offers a Local Language Machine to Keep Its Counsel Upon One’s Own Desk",
-        "retro_summary": "Ensu, a local language-model application from Ente, proposes to bring artificial language work onto the user's own apparatus rather than leave it to distant servers. In a climate of privacy concern and subscription fatigue, such domesticated intelligence enjoys rising favour."
       },
       {
         "id": "hn-47509984",
         "source": "hackernews",
         "title": "Jury finds Meta liable in case over child sexual exploitation on its platforms",
         "url": "https://www.cnn.com/2026/03/24/tech/meta-new-mexico-trial-jury-deliberation",
-        "points": 308,
-        "comments": 439,
+        "points": 362,
+        "comments": 462,
         "ai_score": 8.8,
         "retro_headline": "Jury Finds Meta Liable in Cause Concerning Child Exploitation Upon Its Platforms",
         "retro_summary": "A jury has found Meta liable in a case concerning child sexual exploitation conducted through its platforms. The verdict deepens the legal and moral scrutiny upon the social media colossus and has accordingly stirred intense public interest."
@@ -163,121 +119,165 @@
         "source": "hackernews",
         "title": "Apple randomly closes bug reports unless you \"verify\" the bug remains unfixed",
         "url": "https://lapcatsoftware.com/articles/2026/3/11.html",
-        "points": 296,
-        "comments": 165,
+        "points": 360,
+        "comments": 200,
         "ai_score": 7.9,
         "retro_headline": "Apple Is Accused of Closing Bug Reports Unless Complainants Re-Prove the Defect",
         "retro_summary": "A complaint has arisen that Apple closes bug reports at random unless reporters verify that the fault remains unfixed. Such practices anger the engineering public, for the orderly redress of defects is one of the first duties of a great software house."
-      },
-      {
-        "id": "hn-47518281",
-        "source": "hackernews",
-        "title": "Supreme Court Sides with Cox in Copyright Fight over Pirated Music",
-        "url": "https://www.nytimes.com/2026/03/25/us/politics/supreme-court-cox-music-copyright.html",
-        "points": 281,
-        "comments": 239,
-        "ai_score": 7.8,
-        "retro_headline": "Supreme Court Hands Cox a Victory in the Long Copyright Battle Over Pirated Music",
-        "retro_summary": "The Supreme Court has sided with Cox in a copyright struggle concerning pirated music distributed over its service. The decision is of notable importance, for it bears upon the responsibilities of carriers in the ceaseless quarrel between distribution and ownership."
       },
       {
         "id": "hn-47521150",
         "source": "hackernews",
         "title": "ARC-AGI-3",
         "url": "https://arcprize.org/arc-agi/3",
-        "points": 268,
-        "comments": 186,
-        "ai_score": 8,
+        "points": 353,
+        "comments": 226,
+        "ai_score": 8.2,
         "retro_headline": "ARC-AGI the Third Appears and Renews the Contest Over Machine Intelligence",
         "retro_summary": "A new installment under the title ARC-AGI-3 has arrived, drawing immediate attention from those who watch the progress and pretensions of artificial intelligence. Such benchmarks and challenges are followed closely because they promise, or threaten, to reveal what the machines can truly do."
+      },
+      {
+        "id": "hn-47518281",
+        "source": "hackernews",
+        "title": "Supreme Court Sides with Cox in Copyright Fight over Pirated Music",
+        "url": "https://www.nytimes.com/2026/03/25/us/politics/supreme-court-cox-music-copyright.html",
+        "points": 329,
+        "comments": 257,
+        "ai_score": 7.9,
+        "retro_headline": "Supreme Court Hands Cox a Victory in the Long Copyright Battle Over Pirated Music",
+        "retro_summary": "The Supreme Court has sided with Cox in a copyright struggle concerning pirated music distributed over its service. The decision is of notable importance, for it bears upon the responsibilities of carriers in the ceaseless quarrel between distribution and ownership."
       },
       {
         "id": "hn-47521799",
         "source": "hackernews",
         "title": "Updates to GitHub Copilot interaction data usage policy",
         "url": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/",
-        "points": 236,
-        "comments": 113,
-        "ai_score": 7.5,
+        "points": 285,
+        "comments": 132,
+        "ai_score": 7.6,
         "retro_headline": "GitHub Revises Its Policy on the Use of Copilot Interaction Data",
         "retro_summary": "GitHub has issued updates to its policy governing the use of interaction data gathered through Copilot. Such notices draw serious attention because the convenience of machine assistance is now inseparable from questions of privacy, consent, and commercial leverage."
-      },
-      {
-        "id": "hn-47519802",
-        "source": "hackernews",
-        "title": "Tracy Kidder has died",
-        "url": "https://www.nytimes.com/2026/03/25/books/tracy-kidder-dead.html",
-        "points": 227,
-        "comments": 61,
-        "ai_score": 7.3,
-        "retro_headline": "Death of Tracy Kidder Mourned by Readers of Technology and Letters Alike",
-        "retro_summary": "News has arrived that Tracy Kidder has died, prompting tributes from readers who valued his accounts of machines, makers, and the people behind them. Though not itself a technical innovation, the loss bears significance for a generation that learned industry through his pen."
-      },
-      {
-        "id": "hn-47519295",
-        "source": "hackernews",
-        "title": "Quantization from the Ground Up",
-        "url": "https://ngrok.com/blog/quantization",
-        "points": 200,
-        "comments": 39,
-        "ai_score": 6.9,
-        "retro_headline": "A Ground-Up Treatise on Quantization Seeks to Instruct the New Machine Age",
-        "retro_summary": "A pedagogical work entitled Quantization from the Ground Up offers a careful introduction to one of the key economies in modern artificial intelligence. Though instructional rather than sensational, such clear expositions are prized in a field crowded with slogans and haste."
       },
       {
         "id": "hn-47521157",
         "source": "hackernews",
         "title": "90% of Claude-linked output going to GitHub repos w <2 stars",
         "url": "https://www.claudescode.dev/?window=since_launch",
-        "points": 198,
-        "comments": 112,
-        "ai_score": 7.1,
+        "points": 245,
+        "comments": 148,
+        "ai_score": 7.2,
         "retro_headline": "Most Claude-Linked Output Is Said to Flow Into Little-Noted Repositories of the Web",
         "retro_summary": "A curious report claims that ninety per cent of output linked to Claude is ending up in GitHub repositories with fewer than two stars. The finding has intrigued observers, for it suggests that much machine-made work accumulates in obscure corners rather than celebrated workshops."
+      },
+      {
+        "id": "hn-47525378",
+        "source": "hackernews",
+        "title": "False claims in a widely-cited paper",
+        "url": "https://statmodeling.stat.columbia.edu/2026/03/24/false-claims-in-a-published-no-corrections-no-consequences-welcome-to-the-business-school/",
+        "points": 240,
+        "comments": 88,
+        "ai_score": 7.4,
+        "retro_headline": "Questions Are Raised Over False Claims in a Widely Cited Scientific Paper",
+        "retro_summary": "A report alleging false claims in a widely cited paper has drawn immediate attention from readers concerned with the honour of scholarship. Such disputes matter greatly, for science rests not merely upon fame, but upon the trustworthiness of its record."
+      },
+      {
+        "id": "hn-47519295",
+        "source": "hackernews",
+        "title": "Quantization from the Ground Up",
+        "url": "https://ngrok.com/blog/quantization",
+        "points": 233,
+        "comments": 45,
+        "ai_score": 7,
+        "retro_headline": "A Ground-Up Treatise on Quantization Seeks to Instruct the New Machine Age",
+        "retro_summary": "A pedagogical work entitled Quantization from the Ground Up offers a careful introduction to one of the key economies in modern artificial intelligence. Though instructional rather than sensational, such clear expositions are prized in a field crowded with slogans and haste."
       },
       {
         "id": "hn-47521945",
         "source": "hackernews",
         "title": "FreeCAD  v1.1",
         "url": "https://blog.freecad.org/2026/03/25/freecad-version-1-1-released/",
-        "points": 180,
-        "comments": 54,
-        "ai_score": 7.2,
+        "points": 229,
+        "comments": 71,
+        "ai_score": 7.3,
         "retro_headline": "FreeCAD the Eleventh-Tenth Issues Forth and Strengthens a Stalwart Tool of Design",
         "retro_summary": "FreeCAD v1.1 has been released, marking another advance for the open instrument long relied upon by designers, tinkerers, and mechanical enthusiasts. Such releases may not shake the boulevard, yet they carry real weight in the workshops where practical drawing is done."
-      },
-      {
-        "id": "hn-47515502",
-        "source": "hackernews",
-        "title": "I tried to prove I'm not AI. My aunt wasn't convinced",
-        "url": "https://www.bbc.com/future/article/20260324-i-tried-to-prove-im-not-an-ai-deepfake",
-        "points": 134,
-        "comments": 153,
-        "ai_score": 7.1,
-        "retro_headline": "One Citizen Finds It Hard to Prove He Is Not a Machine, Even to His Own Aunt",
-        "retro_summary": "A humorous but telling account relates how a writer failed to convince his aunt that he was not artificial intelligence. Beneath the comedy lies a genuine social unease, as machine imitation grows so plausible that ordinary trust begins to fray."
       },
       {
         "id": "hn-47522608",
         "source": "hackernews",
         "title": "Sodium-ion EV battery breakthrough delivers 11-min charging and 450 km range",
         "url": "https://electrek.co/2026/03/25/sodium-ion-ev-battery-delivers-11-min-charging-450-km-range/",
-        "points": 121,
-        "comments": 73,
-        "ai_score": 8,
+        "points": 162,
+        "comments": 111,
+        "ai_score": 8.1,
         "retro_headline": "Sodium Motor Battery Reported to Promise Swift Charging and a Most Respectable Range",
         "retro_summary": "A report declares a breakthrough in sodium-ion electric-vehicle batteries, with charging in eleven minutes and a range of some 450 kilometres. Should the claim endure scrutiny, it may prove a notable advance in the economics and convenience of the motor age."
+      },
+      {
+        "id": "hn-47524719",
+        "source": "hackernews",
+        "title": "Woman who never stopped updating her lost dog's chip reunites with him after 11y",
+        "url": "https://www.cbc.ca/radio/asithappens/11-year-dog-reunion-9.7140780",
+        "points": 162,
+        "comments": 93,
+        "ai_score": 6.8,
+        "retro_headline": "After Eleven Years, a Faithful Dog Is Restored Through the Simple Persistence of a Chip",
+        "retro_summary": "A moving account tells of a woman who never ceased updating her lost dog's microchip and was at last reunited with the creature after eleven years. The tale is less a mechanical marvel than a human one, yet it pleasingly demonstrates how humble systems may serve devotion."
       },
       {
         "id": "hn-47517606",
         "source": "hackernews",
         "title": "Earthquake scientists reveal how overplowing weakens soil at experimental farm",
         "url": "https://www.washington.edu/news/2026/03/19/earthquake-scientists-reveal-how-overplowing-weakens-soil-at-experimental-farm/",
-        "points": 102,
-        "comments": 43,
-        "ai_score": 6.4,
+        "points": 146,
+        "comments": 60,
+        "ai_score": 6.5,
         "retro_headline": "Earthquake Men Show That Excessive Plowing Weakens the Soil at Experimental Farm",
         "retro_summary": "Scientists studying earthquakes report that overplowing weakens soil at an experimental farm, revealing unsuspected fragilities in the treated ground. Though modest beside grander machines, the finding bears practical value for agriculture and for the understanding of disturbed earth."
+      },
+      {
+        "id": "hn-47483286",
+        "source": "hackernews",
+        "title": "My DIY FPGA board can run Quake II",
+        "url": "https://blog.mikhe.ch/quake2-on-fpga/part4.html",
+        "points": 118,
+        "comments": 37,
+        "ai_score": 7.7,
+        "retro_headline": "Home-Built FPGA Board Is Made to Run Quake II in a Most Ingenious Display",
+        "retro_summary": "A private constructor reports that his own FPGA board can run Quake II, a feat certain to delight hardware enthusiasts and digital craftsmen. Such achievements combine nostalgia with engineering merit, and thus travel far in the technical salons."
+      },
+      {
+        "id": "hn-47524704",
+        "source": "hackernews",
+        "title": "Show HN: A plain-text cognitive architecture for Claude Code",
+        "url": "https://lab.puga.com.br/cog/",
+        "points": 77,
+        "comments": 21,
+        "ai_score": 7,
+        "retro_headline": "A Plain-Text Architecture for Claude Code Is Exhibited to the Curious Public",
+        "retro_summary": "A demonstrator presents a plain-text cognitive architecture designed for Claude Code, promising a more deliberate arrangement of machine thought. The undertaking is novel enough to interest builders seeking order and repeatability in the conduct of artificial assistants."
+      },
+      {
+        "id": "hn-47473673",
+        "source": "hackernews",
+        "title": "The truth that haunts the Ramones: 'They sold more T-shirts than records'",
+        "url": "https://english.elpais.com/culture/2026-03-17/the-uncomfortable-truth-that-will-always-haunt-the-ramones-they-sold-more-t-shirts-than-records.html",
+        "points": 71,
+        "comments": 29,
+        "ai_score": 5.9,
+        "retro_headline": "The Ramones Are Said to Have Sold More Shirts Than Records, to the Public’s Melancholy",
+        "retro_summary": "A reflective article revisits the enduring sadness that the Ramones may have sold more T-shirts than records. Though not a strictly technical matter, it speaks to the modern transformation of art into symbol, brand, and merchandise."
+      },
+      {
+        "id": "hn-47478599",
+        "source": "hackernews",
+        "title": "Two studies in compiler optimisations",
+        "url": "https://www.hmpcabral.com/2026/03/20/two-studies-in-compiler-optimisations/",
+        "points": 59,
+        "comments": 4,
+        "ai_score": 6,
+        "retro_headline": "Two Inquiries Into Compiler Optimisation Offer Fresh Lessons in the Economy of Code",
+        "retro_summary": "A pair of studies concerning compiler optimisations has been set before readers interested in the hidden economies of software. The subject is technical and somewhat narrow, yet it rewards those who delight in seeing performance won by intellect rather than machinery alone."
       }
     ],
     "reddit": [
@@ -332,6 +332,16 @@
         "retro_summary": "A spirited analysis insists that Mojo, for all its associations and borrowings, must not yet be mistaken for Python proper. The distinction matters to practitioners, who know that surface familiarity often conceals profound differences in behaviour and promise."
       },
       {
+        "id": "reddit-t3_1s3sbod",
+        "source": "reddit",
+        "title": "Your Website Is Running Code You’ve Never Seen - Scott Helme - NDC Security 2026 [video]",
+        "url": "https://www.reddit.com/r/programming/comments/1s3sbod/your_website_is_running_code_youve_never_seen/",
+        "subreddit": "programming",
+        "ai_score": 7.7,
+        "retro_headline": "Security Lecture Warns That Your Website Executes Foreign Code Beyond Your Knowledge",
+        "retro_summary": "A conference address by Scott Helme warns that many websites are already running code their proprietors have never personally examined. The point has resonated strongly, for the modern web is built increasingly from dependencies, scripts, and hidden obligations."
+      },
+      {
         "id": "reddit-t3_1s35ohw",
         "source": "reddit",
         "title": "How the TeamPCP attack exploited CI/CD pipelines and trusted releases to release infected Trivy and LiteLLM packages",
@@ -352,26 +362,6 @@
         "retro_summary": "Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention."
       },
       {
-        "id": "reddit-t3_1s3sbod",
-        "source": "reddit",
-        "title": "Your Website Is Running Code You’ve Never Seen - Scott Helme - NDC Security 2026 [video]",
-        "url": "https://www.reddit.com/r/programming/comments/1s3sbod/your_website_is_running_code_youve_never_seen/",
-        "subreddit": "programming",
-        "ai_score": 7.7,
-        "retro_headline": "Security Lecture Warns That Your Website Executes Foreign Code Beyond Your Knowledge",
-        "retro_summary": "A conference address by Scott Helme warns that many websites are already running code their proprietors have never personally examined. The point has resonated strongly, for the modern web is built increasingly from dependencies, scripts, and hidden obligations."
-      },
-      {
-        "id": "reddit-t3_1s3v6ts",
-        "source": "reddit",
-        "title": "I got tired of manually writing SQL INSERTs to help customers mass insert data",
-        "url": "https://www.reddit.com/r/programming/comments/1s3v6ts/i_got_tired_of_manually_writing_sql_inserts_to/",
-        "subreddit": "programming",
-        "ai_score": 6.8,
-        "retro_headline": "Clerk of the Database Tirelessly Seeks Relief From the Drudgery of Hand-Written Inserts",
-        "retro_summary": "A practical builder reports weariness with composing SQL INSERT statements by hand in order to help customers perform mass data entry. The resulting contrivance is modest in grandeur, yet such tools often win affection by abolishing a daily nuisance."
-      },
-      {
         "id": "reddit-t3_1s3jc75",
         "source": "reddit",
         "title": "Convert Once, Consume Many: SDF for Cacheable, Typed Semantic Extraction from Web Pages",
@@ -380,6 +370,16 @@
         "ai_score": 7.4,
         "retro_headline": "SDF Proposes One Conversion for Many Readings in the Semantic Parsing of Web Pages",
         "retro_summary": "A technical paper presents SDF as a means of cacheable and typed semantic extraction from web pages, promising one conversion followed by many consumptions. Such methods command interest because the web's disorderly abundance cries out for cleaner and more durable forms of interpretation."
+      },
+      {
+        "id": "reddit-t3_1s3op40",
+        "source": "reddit",
+        "title": "octopos: xv6 based operating system for risc-v in rust",
+        "url": "https://www.reddit.com/r/programming/comments/1s3op40/octopos_xv6_based_operating_system_for_riscv_in/",
+        "subreddit": "programming",
+        "ai_score": 7,
+        "retro_headline": "Octopos Raises an XV6-Derived Operating System in Rust for the Rising RISC-V Order",
+        "retro_summary": "A builder presents octopos, an operating system based upon xv6 and written in Rust for the RISC-V architecture. The undertaking is of evident interest to systems men, for it joins pedagogical lineage with two of the age's most fashionable technical currents."
       },
       {
         "id": "reddit-t3_1s2h4by",
@@ -432,16 +432,6 @@
         "retro_summary": "A technical exposition explains why the Raft protocol cannot safely commit old-term entries, treating the matter from the practical side of implementation and debugging. The subject is abstruse, but among builders of distributed systems it is reckoned of genuine importance."
       },
       {
-        "id": "reddit-t3_1s1e4il",
-        "source": "reddit",
-        "title": "Software dev job postings are up 15% since mid 2025",
-        "url": "https://www.reddit.com/r/programming/comments/1s1e4il/software_dev_job_postings_are_up_15_since_mid_2025/",
-        "subreddit": "programming",
-        "ai_score": 7.5,
-        "retro_headline": "Employment Notices for Software Men Rise Fifteen Per Cent Since Mid-2025",
-        "retro_summary": "A report states that job postings for software developers have advanced by 15 per cent since the middle of 2025. After a period of uncertainty in the profession, even such a measured improvement is greeted as encouraging news."
-      },
-      {
         "id": "reddit-t3_1s2blu7",
         "source": "reddit",
         "title": "Handheld NES on a ESP32",
@@ -450,6 +440,16 @@
         "ai_score": 6.8,
         "retro_headline": "Pocket Nintendo Apparatus Fashioned Upon the Humble ESP32 Delights the Hobby Trade",
         "retro_summary": "An ingenious mechanic has contrived a handheld NES using the inexpensive ESP32, to the pleasure of nostalgists and tinkerers alike. Such work may not transform industry, yet it splendidly exhibits the lively inventive spirit of the amateur bench."
+      },
+      {
+        "id": "reddit-t3_1s1e4il",
+        "source": "reddit",
+        "title": "Software dev job postings are up 15% since mid 2025",
+        "url": "https://www.reddit.com/r/programming/comments/1s1e4il/software_dev_job_postings_are_up_15_since_mid_2025/",
+        "subreddit": "programming",
+        "ai_score": 7.5,
+        "retro_headline": "Employment Notices for Software Men Rise Fifteen Per Cent Since Mid-2025",
+        "retro_summary": "A report states that job postings for software developers have advanced by 15 per cent since the middle of 2025. After a period of uncertainty in the profession, even such a measured improvement is greeted as encouraging news."
       },
       {
         "id": "reddit-t3_1s2xapb",
@@ -512,6 +512,16 @@
         "retro_summary": "A speculative discussion asks whether a billion-dollar seed round behind LeCun’s camp signals that autoregressive language models have struck a wall in formal reasoning. The question has animated the research salons, for money and theory together often betray the direction of the coming age."
       },
       {
+        "id": "reddit-t3_1s3yjyl",
+        "source": "reddit",
+        "title": "[N] TurboQuant: Redefining AI efficiency with extreme compression",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3yjyl/n_turboquant_redefining_ai_efficiency_with/",
+        "subreddit": "MachineLearning",
+        "ai_score": 7.9,
+        "retro_headline": "TurboQuant Is Heralded as a New Economy for Artificial Intelligence by Severe Compression",
+        "retro_summary": "A notice on TurboQuant proclaims a striking improvement in AI efficiency through methods of extreme compression. If the claims are sustained, the development may promise cheaper and swifter machine intelligence for a great many practical uses."
+      },
+      {
         "id": "reddit-t3_1s3adeo",
         "source": "reddit",
         "title": "[D] Any other PhD students feel underprepared and that the bar is too low?",
@@ -522,14 +532,14 @@
         "retro_summary": "A discussion among PhD students raises the disquieting question of whether they are underprepared, or whether the academic bar itself has fallen. The subject is more sociological than mechanical, yet it touches the conscience of the research world."
       },
       {
-        "id": "reddit-t3_1s3sneb",
+        "id": "reddit-t3_1s40a34",
         "source": "reddit",
-        "title": "[D] LLM API aggregators in 2026: OpenRouter vs alternatives",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3sneb/d_llm_api_aggregators_in_2026_openrouter_vs/",
+        "title": "[R] ARC Round 3 - released + technical report",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s40a34/r_arc_round_3_released_technical_report/",
         "subreddit": "MachineLearning",
-        "ai_score": 6.9,
-        "retro_headline": "The Trade Debates LLM Switchboards as OpenRouter Meets Its Rivals in 1926’s Market",
-        "retro_summary": "A practical discussion surveys the field of language-model API aggregators, setting OpenRouter against its competitors. Such comparisons draw interest because the new machine economy increasingly depends upon brokers who stand between builders and the models themselves."
+        "ai_score": 8.3,
+        "retro_headline": "ARC Round the Third Is Released With a Technical Report to Test the Machine Mind",
+        "retro_summary": "A new ARC round and its accompanying technical report have been released, renewing attention to one of the more closely watched examinations of machine reasoning. Such announcements draw earnest notice, for every fresh benchmark is treated as a glimpse into the true reach of artificial intelligence."
       },
       {
         "id": "reddit-t3_1s387tx",
@@ -542,6 +552,16 @@
         "retro_summary": "A lively discussion has arisen over how two competing ICML policies may influence review scores and, by extension, professional fortunes. Such procedural matters may appear dry, but in the republic of science they often determine who is heard and who is overlooked."
       },
       {
+        "id": "reddit-t3_1s3zyxj",
+        "source": "reddit",
+        "title": "[D] THE ARCHITECT’S STORY: FROM THE 1985 ROOT TO THE \"AI WASH\"",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3zyxj/d_the_architects_story_from_the_1985_root_to_the/",
+        "subreddit": "MachineLearning",
+        "ai_score": 6.2,
+        "retro_headline": "An Architect’s Long Tale From 1985 to the Present Age of ‘AI Wash’ Draws Notice",
+        "retro_summary": "A reflective piece styled as an architect’s story traces a line from a 1985 origin to the present fashion of what the author calls AI wash. The essay is polemical in spirit, yet it finds an audience among those weary of inflated technological claims."
+      },
+      {
         "id": "reddit-t3_1s366un",
         "source": "reddit",
         "title": "[R] Ternary neural networks as a path to more efficient AI - is (+1, 0, -1) weight quantization getting serious research attention?",
@@ -552,16 +572,6 @@
         "retro_summary": "A research-minded inquiry asks whether ternary neural networks, employing weights of plus one, zero, and minus one, are at last receiving serious attention. The notion holds appeal because simpler arithmetic may lighten the prodigious expense of present AI machinery."
       },
       {
-        "id": "reddit-t3_1s3okes",
-        "source": "reddit",
-        "title": "[N] LiteLLM supply chain attack risks to Al pipelines and API key exposure",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3okes/n_litellm_supply_chain_attack_risks_to_al/",
-        "subreddit": "MachineLearning",
-        "ai_score": 8.5,
-        "retro_headline": "LiteLLM Attack Said to Expose AI Pipelines and Their Precious Keys to Peril",
-        "retro_summary": "A warning note describes the LiteLLM supply-chain attack as a grave danger to AI pipelines and to the secrecy of valuable API credentials. The matter has drawn sharp concern, for one poisoned dependency may imperil a whole chain of automated work."
-      },
-      {
         "id": "reddit-t3_1s3p4hm",
         "source": "reddit",
         "title": "[R] How to apply for a reviewer role at NeurIPS ‘26?",
@@ -570,6 +580,16 @@
         "ai_score": 5.4,
         "retro_headline": "Young Scholar Asks the Proper Route by Which to Join the NeurIPS Reviewing Bench",
         "retro_summary": "A practical inquiry seeks advice on how one might obtain a reviewer’s role for NeurIPS in the coming year. The matter is chiefly of academic administration, yet such appointments remain coveted tokens of standing in the research republic."
+      },
+      {
+        "id": "reddit-t3_1s3okes",
+        "source": "reddit",
+        "title": "[N] LiteLLM supply chain attack risks to Al pipelines and API key exposure",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3okes/n_litellm_supply_chain_attack_risks_to_al/",
+        "subreddit": "MachineLearning",
+        "ai_score": 8.5,
+        "retro_headline": "LiteLLM Attack Said to Expose AI Pipelines and Their Precious Keys to Peril",
+        "retro_summary": "A warning note describes the LiteLLM supply-chain attack as a grave danger to AI pipelines and to the secrecy of valuable API credentials. The matter has drawn sharp concern, for one poisoned dependency may imperil a whole chain of automated work."
       },
       {
         "id": "reddit-t3_1s36bxr",
@@ -662,26 +682,6 @@
         "retro_summary": "A broad question has been raised as to what precisely separates a human being from a humanoid form. The matter lies nearer philosophy and language than engineering, but such distinctions grow more pressing as machines acquire a human semblance."
       },
       {
-        "id": "reddit-t3_1s20svb",
-        "source": "reddit",
-        "title": "[D] Decoding backchannel info: Is a PI being \"aggressive in research\" a massive red flag? (C1 vs Siemens AI Lab)",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s20svb/d_decoding_backchannel_info_is_a_pi_being/",
-        "subreddit": "MachineLearning",
-        "ai_score": 6,
-        "retro_headline": "Young Researchers Parse Academic Signals in Debate Over Severe Principal Investigators",
-        "retro_summary": "A discussion attempts to decode whether a principal investigator described as aggressive in research should be regarded as a grave warning sign. Though anecdotal in dress, the question bears real weight for students navigating the uncertain politics of laboratories and appointments."
-      },
-      {
-        "id": "reddit-t3_1s2clxr",
-        "source": "reddit",
-        "title": "[R] Evaluating MLLMs with Child-Inspired Cognitive Tasks",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s2clxr/r_evaluating_mllms_with_childinspired_cognitive/",
-        "subreddit": "MachineLearning",
-        "ai_score": 7.4,
-        "retro_headline": "Machine Vision and Language Are Tested by Cognitive Trials Borrowed From the Nursery",
-        "retro_summary": "A research item proposes evaluating multimodal large language models with child-inspired cognitive tasks rather than conventional benchmarks alone. The notion has charm and seriousness in equal measure, for juvenile tests may expose whether a machine merely parrots or truly reasons."
-      },
-      {
         "id": "reddit-t3_1qswnox",
         "source": "reddit",
         "title": "Monthly Getting Started / Web Dev Career Thread",
@@ -702,14 +702,14 @@
         "retro_summary": "Another monthly getting-started and career thread invites aspirants to put their questions before the web development community. These notices are not sensational, yet they perform steady civic service in guiding fresh entrants into the craft."
       },
       {
-        "id": "reddit-t3_1s3o47r",
+        "id": "reddit-t3_1s3x5w5",
         "source": "reddit",
-        "title": "First-ever American AI Jobs Risk Index released by Tufts University",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3o47r/firstever_american_ai_jobs_risk_index_released_by/",
+        "title": "I finally found the bug causing our service to spike to 100% CPU every 72 hours exactly. I wish the answer was more interesting.",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3x5w5/i_finally_found_the_bug_causing_our_service_to/",
         "subreddit": "webdev",
-        "ai_score": 7.7,
-        "retro_headline": "First American Index of AI Job Risk Is Issued, and the Labouring Public Takes Notice",
-        "retro_summary": "Tufts University has reportedly issued the first American index seeking to measure how artificial intelligence may endanger various occupations. Such a ledger is certain to attract grave attention, for the public increasingly wishes to know not merely what the machines can do, but whom they may displace."
+        "ai_score": 7.1,
+        "retro_headline": "A Persistent Seventy-Two-Hour CPU Malady Is Traced to a Most Humble Cause",
+        "retro_summary": "An engineer reports at last identifying the defect that drove a service to one hundred per cent CPU every seventy-two hours with clock-like regularity. The confessed banality of the answer has only sharpened the tale's appeal, for many great outages are born of very small oversights."
       },
       {
         "id": "reddit-t3_1s3og87",
@@ -722,6 +722,16 @@
         "retro_summary": "A report alleges that GitHub will use Copilot interaction data from users across all service tiers to train and improve its models, with consent presumed unless withdrawn. The matter has stirred immediate concern, for convenience in machine assistance now walks hand in hand with unease over surveillance and consent."
       },
       {
+        "id": "reddit-t3_1s3o47r",
+        "source": "reddit",
+        "title": "First-ever American AI Jobs Risk Index released by Tufts University",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3o47r/firstever_american_ai_jobs_risk_index_released_by/",
+        "subreddit": "webdev",
+        "ai_score": 7.7,
+        "retro_headline": "First American Index of AI Job Risk Is Issued, and the Labouring Public Takes Notice",
+        "retro_summary": "Tufts University has reportedly issued the first American index seeking to measure how artificial intelligence may endanger various occupations. Such a ledger is certain to attract grave attention, for the public increasingly wishes to know not merely what the machines can do, but whom they may displace."
+      },
+      {
         "id": "reddit-t3_1s3q272",
         "source": "reddit",
         "title": "Imposter syndrome in the age of AI is hitting different.",
@@ -730,6 +740,36 @@
         "ai_score": 6.4,
         "retro_headline": "Impostor Feelings Deepen as the Age of Artificial Intelligence Alters the Profession",
         "retro_summary": "A candid discussion reports that impostor syndrome has taken on a sharper and stranger quality in the era of AI-assisted work. The sentiment is personal, yet it resonates widely among those who fear that comparison with machines may corrode their sense of worth."
+      },
+      {
+        "id": "reddit-t3_1s3yt0y",
+        "source": "reddit",
+        "title": "About to give up on frontend career",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3yt0y/about_to_give_up_on_frontend_career/",
+        "subreddit": "webdev",
+        "ai_score": 5.8,
+        "retro_headline": "A Frontend Practitioner Nears Surrender and Questions the Future of the Calling",
+        "retro_summary": "A troubled contributor declares himself on the verge of abandoning a career in front-end development. The lament is personal in form, yet it reflects broader uncertainty in a branch of work much shaken by shifting tools and expectations."
+      },
+      {
+        "id": "reddit-t3_1s3z3ih",
+        "source": "reddit",
+        "title": "Considering a career change because of AI anxiety?",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3z3ih/considering_a_career_change_because_of_ai_anxiety/",
+        "subreddit": "webdev",
+        "ai_score": 6.3,
+        "retro_headline": "Workers Troubled by Artificial Intelligence Consider Whether to Abandon Their Trades",
+        "retro_summary": "A discussion asks whether anxiety over artificial intelligence is pushing professionals toward a change of career. The question is increasingly common, for the mechanical age now intrudes not only upon wages and tasks, but upon confidence itself."
+      },
+      {
+        "id": "reddit-t3_1s3os8i",
+        "source": "reddit",
+        "title": "M$ is using deceptive patterns to protect AI bubble from popping",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3os8i/m_is_using_deceptive_patterns_to_protect_ai/",
+        "subreddit": "webdev",
+        "ai_score": 6.6,
+        "retro_headline": "Microsoft Accused of Deceptive Contrivances to Preserve the Great AI Speculation",
+        "retro_summary": "A heated complaint alleges that Microsoft is employing deceptive patterns to keep the artificial intelligence boom from losing its hold upon the public. The charge is polemical in tone, yet it reflects the growing suspicion with which many now regard the commerce of machine intelligence."
       },
       {
         "id": "reddit-t3_1s37b5u",
@@ -752,16 +792,6 @@
         "retro_summary": "A searching discussion considers what brought about the supposed downfall of Medium and what a competitor might learn from its errors. The question carries real interest, for the web's publishers still seek a model that can unite readers, writers, and sound business without souring all three."
       },
       {
-        "id": "reddit-t3_1s3os8i",
-        "source": "reddit",
-        "title": "M$ is using deceptive patterns to protect AI bubble from popping",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3os8i/m_is_using_deceptive_patterns_to_protect_ai/",
-        "subreddit": "webdev",
-        "ai_score": 6.6,
-        "retro_headline": "Microsoft Accused of Deceptive Contrivances to Preserve the Great AI Speculation",
-        "retro_summary": "A heated complaint alleges that Microsoft is employing deceptive patterns to keep the artificial intelligence boom from losing its hold upon the public. The charge is polemical in tone, yet it reflects the growing suspicion with which many now regard the commerce of machine intelligence."
-      },
-      {
         "id": "reddit-t3_1s3atbp",
         "source": "reddit",
         "title": "2002 Internet Cafe Website.",
@@ -770,6 +800,16 @@
         "ai_score": 5.6,
         "retro_headline": "A 2002 Internet Cafe Site Returns Like a Relic From the Early Web Age",
         "retro_summary": "An old-style internet cafe website from 2002 has been exhibited, charming readers with its period manner and digital antiquity. The piece offers little in the way of new invention, but a great deal in atmosphere and affectionate remembrance."
+      },
+      {
+        "id": "reddit-t3_1s3zwdp",
+        "source": "reddit",
+        "title": "After 2.5 months of hardwork, the portfolio is complete 🥳",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3zwdp/after_25_months_of_hardwork_the_portfolio_is/",
+        "subreddit": "webdev",
+        "ai_score": 5.5,
+        "retro_headline": "After Months of Labour, a Young Builder Unveils a Completed Portfolio With Great Relief",
+        "retro_summary": "A contributor reports the completion of a personal portfolio after two and a half months of steady effort. The achievement is modest in public consequence, yet such milestones carry deep meaning in a trade where one's body of work is often one's calling card."
       },
       {
         "id": "reddit-t3_1s3b7th",
@@ -792,6 +832,16 @@
         "retro_summary": "A light but lively inquiry asks which static site generator commands the greatest affection among practitioners. Such conversations are seldom epoch-making, yet they reveal the loyalties and fashions of the web-building public."
       },
       {
+        "id": "reddit-t3_1s3xpfx",
+        "source": "reddit",
+        "title": "Did anyone else get into web dev for the design side and end up obsessed with performance?",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3xpfx/did_anyone_else_get_into_web_dev_for_the_design/",
+        "subreddit": "webdev",
+        "ai_score": 5.8,
+        "retro_headline": "Design Men Confess They Came for Beauty and Stayed for the Gospel of Performance",
+        "retro_summary": "A lively reflection asks whether others entered web development for its visual design, only to become captivated by speed and performance. The sentiment is revealing, for the modern web increasingly demands that artistry answer to engineering discipline."
+      },
+      {
         "id": "reddit-t3_1s2gjvc",
         "source": "reddit",
         "title": "I think I'm done with Software Development",
@@ -802,14 +852,24 @@
         "retro_summary": "One contributor has publicly confessed that he may be done with software development, a sentiment that drew ready attention from fellow workers. The note is personal rather than industrial, yet it speaks to the fatigue and uncertainty now felt across the profession."
       },
       {
-        "id": "reddit-t3_1s3e7no",
+        "id": "reddit-t3_1s3zpgo",
         "source": "reddit",
-        "title": "Lerd - A Herd-like local PHP dev environment for Linux (rootless Podman, .test domains, TLS, Horizon, MCP tools)",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3e7no/lerd_a_herdlike_local_php_dev_environment_for/",
+        "title": "looking back at git commits is soo satisfying",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3zpgo/looking_back_at_git_commits_is_soo_satisfying/",
         "subreddit": "webdev",
-        "ai_score": 7.1,
-        "retro_headline": "Lerd Brings a Rootless Local PHP Workshop to Linux in a Most Serviceable Form",
-        "retro_summary": "A new local PHP development environment for Linux, styled Lerd, promises rootless Podman, .test domains, TLS, Horizon, and sundry MCP tools. Such a package is of real interest to working web men, for convenience in local development remains a daily concern."
+        "ai_score": 5.2,
+        "retro_headline": "The Pleasures of Revisiting Old Git Commits Are Celebrated by the Coding Public",
+        "retro_summary": "A brief but heartfelt observation praises the curious satisfaction of looking back through one's old git commits. Such sentiments are slight in substance, yet they reveal how even dry records of labour may become a diary of craft and progress."
+      },
+      {
+        "id": "reddit-t3_1s3yyqj",
+        "source": "reddit",
+        "title": "Help me pick a second monitor for my setup.",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3yyqj/help_me_pick_a_second_monitor_for_my_setup/",
+        "subreddit": "webdev",
+        "ai_score": 5,
+        "retro_headline": "Reader Seeks Counsel in Choosing a Second Monitor for the Modern Workbench",
+        "retro_summary": "A practical inquiry asks for advice in selecting a second monitor to improve a computing setup. The matter is ordinary and somewhat personal, and is therefore judged of middling general interest."
       },
       {
         "id": "reddit-t3_1s3eput",
@@ -820,66 +880,6 @@
         "ai_score": 5.8,
         "retro_headline": "Speech Men Compare a New Instrument for Judging the Accuracy of Mechanical Dictation",
         "retro_summary": "A practical inquiry asks whether a newly offered tool for comparing speech-to-text accuracy is worth a trial. The subject is specialised, yet the appetite for trustworthy transcription has grown so strong that even modest evaluators win attention."
-      },
-      {
-        "id": "reddit-t3_1s3va9z",
-        "source": "reddit",
-        "title": "I am trying to find a code to mimic this very basic smooth scroll scrollbar",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3va9z/i_am_trying_to_find_a_code_to_mimic_this_very/",
-        "subreddit": "webdev",
-        "ai_score": 5.2,
-        "retro_headline": "Reader Seeks a Simple Means to Imitate a Smooth-Scrolling Bar of the Modern Web",
-        "retro_summary": "A practical appeal seeks code to reproduce a very plain and graceful smooth-scroll scrollbar. The matter is slight in public consequence, yet such small refinements occupy a surprising share of the web artisan's day."
-      },
-      {
-        "id": "reddit-t3_1s2nde3",
-        "source": "reddit",
-        "title": "As a junior dev wanting to become a software engineer this is such a weird and unsure time. The company I'm at has a no generative AI code rule and I feel like it is both a blessing and a curse.",
-        "url": "https://www.reddit.com/r/webdev/comments/1s2nde3/as_a_junior_dev_wanting_to_become_a_software/",
-        "subreddit": "webdev",
-        "ai_score": 6.7,
-        "retro_headline": "Junior Developer Confesses Unease as Firms Forbid Generative Coding Engines",
-        "retro_summary": "A young developer describes the current moment as uncertain, caught between ambition and a company rule forbidding generative AI in programming work. The testimony resonates because it captures a broader confusion now shaping the apprenticeship of the modern coder."
-      },
-      {
-        "id": "reddit-t3_1s3tmly",
-        "source": "reddit",
-        "title": "[HELP] Infinite site loading loop and ERR_QUIC_PROTOCOL_ERROR on all browsers with one/two sites.",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3tmly/help_infinite_site_loading_loop_and_err_quic/",
-        "subreddit": "webdev",
-        "ai_score": 5.6,
-        "retro_headline": "Mysterious Loading Loop and QUIC Error Throw Certain Sites Into Disorder",
-        "retro_summary": "A plea for help describes an endless loading cycle and ERR_QUIC_PROTOCOL_ERROR across several browsers affecting one or two websites. Though narrow in scope, such elusive faults are exactly the kind that drive practical web men to distraction."
-      },
-      {
-        "id": "reddit-t3_1s3ifpj",
-        "source": "reddit",
-        "title": "Building a dispensary map with zero API costs (Leaflet + OpenStreetMap, no Google Places)",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3ifpj/building_a_dispensary_map_with_zero_api_costs/",
-        "subreddit": "webdev",
-        "ai_score": 6.9,
-        "retro_headline": "Dispensary Map Is Built on Leaflet and OpenStreetMap Without Tribute to Costly APIs",
-        "retro_summary": "A practical builder reports success in constructing a dispensary map by employing Leaflet and OpenStreetMap while avoiding paid mapping services. The scheme has pleased the frugal and the independent, for it demonstrates that useful public guides may still be raised without rent to the great platforms."
-      },
-      {
-        "id": "reddit-t3_1s3r9rq",
-        "source": "reddit",
-        "title": "should i add rabbitmq + custom backend now or wait until i actually need it?",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3r9rq/should_i_add_rabbitmq_custom_backend_now_or_wait/",
-        "subreddit": "webdev",
-        "ai_score": 6.1,
-        "retro_headline": "Builder Hesitates Over RabbitMQ, Weighing Present Simplicity Against Future Need",
-        "retro_summary": "A practical question is posed as to whether RabbitMQ and a custom back-end ought to be introduced now or delayed until actual demand appears. Such dilemmas are the very bread of engineering judgment, where premature grandeur often contends with prudent foresight."
-      },
-      {
-        "id": "reddit-t3_1s32mph",
-        "source": "reddit",
-        "title": "Best domain registrar for small business",
-        "url": "https://www.reddit.com/r/webdev/comments/1s32mph/best_domain_registrar_for_small_business/",
-        "subreddit": "webdev",
-        "ai_score": 5.5,
-        "retro_headline": "Small Firms Seek Counsel on the Most Reliable Registrar for Their Domain Holdings",
-        "retro_summary": "A practical question has been put regarding the best domain registrar for a small business concern. The matter is commercial rather than glamorous, yet such decisions affect every enterprise wishing to keep orderly possession of its address on the web."
       },
       {
         "id": "reddit-t3_1reggwn",
@@ -932,6 +932,16 @@
         "retro_summary": "A practical discussion has arisen around the migration of F5 ingress, a matter of clear consequence to those maintaining modern traffic gateways. Such work rarely excites the lay public, yet it commands real respect among the stewards of reliable systems."
       },
       {
+        "id": "reddit-t3_1s377go",
+        "source": "reddit",
+        "title": "2nd year CS Student looking for a reality check: Critique/Help my roadmap for DevOps/Cloud (AWS SAA, Terraform, CI/CD, and a Home Lab)",
+        "url": "https://www.reddit.com/r/devops/comments/1s377go/2nd_year_cs_student_looking_for_a_reality_check/",
+        "subreddit": "devops",
+        "ai_score": 6.6,
+        "retro_headline": "Student of Computing Seeks a Stern Audit of His DevOps and Cloud Roadmap",
+        "retro_summary": "A second-year student has requested frank criticism of his proposed road to DevOps, complete with AWS certificates, Terraform, CI/CD, and a home laboratory. The appeal is personal, yet it reflects the anxious seriousness with which the young now approach technical advancement."
+      },
+      {
         "id": "reddit-t3_1s1ygvn",
         "source": "reddit",
         "title": "This Trivy Compromise is Insane.",
@@ -950,16 +960,6 @@
         "ai_score": 8.7,
         "retro_headline": "LiteLLM Reported Compromised Through the Trivy Affair in Grave Supply-Chain Warning",
         "retro_summary": "A fresh warning asserts that LiteLLM was compromised by way of the Trivy incident, extending the shadow of the breach still further. The report has commanded keen attention because contamination in one trusted dependency may swiftly infect many others."
-      },
-      {
-        "id": "reddit-t3_1s377go",
-        "source": "reddit",
-        "title": "2nd year CS Student looking for a reality check: Critique/Help my roadmap for DevOps/Cloud (AWS SAA, Terraform, CI/CD, and a Home Lab)",
-        "url": "https://www.reddit.com/r/devops/comments/1s377go/2nd_year_cs_student_looking_for_a_reality_check/",
-        "subreddit": "devops",
-        "ai_score": 6.6,
-        "retro_headline": "Student of Computing Seeks a Stern Audit of His DevOps and Cloud Roadmap",
-        "retro_summary": "A second-year student has requested frank criticism of his proposed road to DevOps, complete with AWS certificates, Terraform, CI/CD, and a home laboratory. The appeal is personal, yet it reflects the anxious seriousness with which the young now approach technical advancement."
       },
       {
         "id": "reddit-t3_1s28xen",
@@ -1002,16 +1002,6 @@
         "retro_summary": "A notice reports the approaching end of life of Opsgenie, with the service to enter a read-only state on 17 April 2026. Such sunsets carry real consequence for operations teams, who must migrate their alarms and habits before the lamps go out."
       },
       {
-        "id": "reddit-t3_1s2cubx",
-        "source": "reddit",
-        "title": "SBOM generation for make/cmake projects / embedded",
-        "url": "https://www.reddit.com/r/devops/comments/1s2cubx/sbom_generation_for_makecmake_projects_embedded/",
-        "subreddit": "devops",
-        "ai_score": 7,
-        "retro_headline": "Embedded Builders Seek a Proper Method for Issuing Software Bills of Materials",
-        "retro_summary": "Attention has turned to the generation of SBOMs for make and CMake projects, particularly in the embedded domain where tooling is often less accommodating. The matter is technical but timely, as supply-chain scrutiny now reaches even the smallest compiled apparatus."
-      },
-      {
         "id": "reddit-t3_1s29gug",
         "source": "reddit",
         "title": "How to securePAT Tokens in Shared VM for GitHub Runners",
@@ -1020,6 +1010,16 @@
         "ai_score": 7.4,
         "retro_headline": "How Best to Secure Personal Access Tokens in Shared GitHub Runner Machines",
         "retro_summary": "Engineers are debating the proper safekeeping of personal access tokens on shared virtual machines used for GitHub runners. In an age of automated delivery, the safeguarding of such credentials is no minor housekeeping matter, but a central pillar of security."
+      },
+      {
+        "id": "reddit-t3_1s2cubx",
+        "source": "reddit",
+        "title": "SBOM generation for make/cmake projects / embedded",
+        "url": "https://www.reddit.com/r/devops/comments/1s2cubx/sbom_generation_for_makecmake_projects_embedded/",
+        "subreddit": "devops",
+        "ai_score": 7,
+        "retro_headline": "Embedded Builders Seek a Proper Method for Issuing Software Bills of Materials",
+        "retro_summary": "Attention has turned to the generation of SBOMs for make and CMake projects, particularly in the embedded domain where tooling is often less accommodating. The matter is technical but timely, as supply-chain scrutiny now reaches even the smallest compiled apparatus."
       },
       {
         "id": "reddit-t3_1s1jsp8",
@@ -1089,7 +1089,7 @@
         "title": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
         "url": "https://github.com/mvanhorn/last30days-skill",
         "repo": "mvanhorn/last30days-skill",
-        "stars": 7867,
+        "stars": 8371,
         "ai_score": 7.8,
         "retro_headline": "New Agent Skill Scours the Public Wires and Delivers a Grounded Digest of Events",
         "retro_summary": "A novel artificial agent skill is said to conduct inquiries across forums, video channels, prediction markets, and the general web before composing a sober summary. Such a contrivance reflects the age's growing desire not merely for information, but for orderly synthesis amid the din."
@@ -1100,7 +1100,7 @@
         "title": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
         "url": "https://github.com/bytedance/deer-flow",
         "repo": "bytedance/deer-flow",
-        "stars": 46479,
+        "stars": 47033,
         "ai_score": 8.5,
         "retro_headline": "Deer-Flow Presents an Open Harness for Long-Horizon Research, Coding, and Machine Labour",
         "retro_summary": "An open-source SuperAgent framework named Deer-Flow promises to research, write code, and execute extended tasks by means of sandboxes, memory, tools, and subordinate agents. The scheme has attracted attention because it treats artificial labour not as a single reply, but as an organised industrial process conducted over minutes or hours."
@@ -1111,7 +1111,7 @@
         "title": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
         "url": "https://github.com/BerriAI/litellm",
         "repo": "BerriAI/litellm",
-        "stars": 40704,
+        "stars": 40800,
         "ai_score": 8.7,
         "retro_headline": "LiteLLM Offers a Grand Switching Exchange for More Than a Hundred Language Engines",
         "retro_summary": "LiteLLM is presented as a Python toolkit and proxy gateway by which more than one hundred language-model services may be addressed through a common form. Its appeal is considerable, for enterprises increasingly desire one switchboard for costs, guardrails, balancing, and records across many machine intelligences."
@@ -1122,7 +1122,7 @@
         "title": "Create and share 3D architectural projects.",
         "url": "https://github.com/pascalorg/editor",
         "repo": "pascalorg/editor",
-        "stars": 6902,
+        "stars": 7026,
         "ai_score": 6.1,
         "retro_headline": "Editor for Three-Dimensional Architectural Schemes Invites the Public to Build and Share",
         "retro_summary": "A project devoted to creating and sharing three-dimensional architectural designs has been put before the public. Though its description is spare, the combination of design, collaboration, and visual drafting gives it respectable interest."
@@ -1133,7 +1133,7 @@
         "title": "Give Claude Code a subconscious",
         "url": "https://github.com/letta-ai/claude-subconscious",
         "repo": "letta-ai/claude-subconscious",
-        "stars": 1501,
+        "stars": 1612,
         "ai_score": 7.6,
         "retro_headline": "A Subconscious Is Proposed for Claude Code in a Curious Advance in Machine Memory",
         "retro_summary": "A singular project proposes to furnish Claude Code with what its authors call a subconscious, suggesting a deeper layer of machine recollection or persistence. The idea is dramatic enough to command notice, for the public is ever intrigued when automata are given faculties once reserved for the mind."
@@ -1144,7 +1144,7 @@
         "title": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
         "url": "https://github.com/ruvnet/ruflo",
         "repo": "ruvnet/ruflo",
-        "stars": 26283,
+        "stars": 26447,
         "ai_score": 8.2,
         "retro_headline": "Ruflo Advances a Grand Orchestration Platform for Swarms of Artificial Clerks",
         "retro_summary": "Ruflo announces itself as a leading platform for orchestrating multiple intelligent agents in concert, with provisions for workflow, retrieval, and native coding integrations. The idea of distributed machine bureaux acting in disciplined formation is one of the more striking tendencies of the present computational age."
@@ -1155,7 +1155,7 @@
         "title": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
         "url": "https://github.com/Crosstalk-Solutions/project-nomad",
         "repo": "Crosstalk-Solutions/project-nomad",
-        "stars": 16708,
+        "stars": 16881,
         "ai_score": 7.3,
         "retro_headline": "Project N.O.M.A.D. Offers an Offline Survival Computer for Hard Times and Remote Places",
         "retro_summary": "Project N.O.M.A.D. proposes a self-contained computer furnished with practical tools, stored knowledge, and artificial intelligence for use without reliance on the network. The conception is dramatic and timely, answering modern anxieties over fragility, dependence, and preparedness."
@@ -1166,7 +1166,7 @@
         "title": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.",
         "url": "https://github.com/ruvnet/RuView",
         "repo": "ruvnet/RuView",
-        "stars": 42368,
+        "stars": 42559,
         "ai_score": 8.6,
         "retro_headline": "RuView Claims to Read Pose and Vital Signs From Common Wi-Fi Without Any Camera Lens",
         "retro_summary": "RuView asserts that ordinary Wi-Fi signals may be turned to the estimation of human pose, presence, and even vital signs, all without a single photographic image. If the claim stands firm, it will stir both admiration for the engineering and unease at the breadth of invisible observation."
@@ -1177,7 +1177,7 @@
         "title": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
         "url": "https://github.com/supermemoryai/supermemory",
         "repo": "supermemoryai/supermemory",
-        "stars": 19265,
+        "stars": 19369,
         "ai_score": 7.5,
         "retro_headline": "Supermemory Seeks to Become the Swift Mnemonic Engine of the Artificial Age",
         "retro_summary": "A service called Supermemory offers itself as a fast and scalable memory engine, with an application and an interface for the new AI era. As artificial agents grow more elaborate, the market for dependable mechanical remembrance grows with them."
@@ -1188,7 +1188,7 @@
         "title": "Automate the process of making money online.",
         "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
         "repo": "FujiwaraChoki/MoneyPrinterV2",
-        "stars": 25640,
+        "stars": 25780,
         "ai_score": 5.4,
         "retro_headline": "MoneyPrinterV2 Promises to Automate the Quest for Online Revenue",
         "retro_summary": "A boldly named project purports to automate the process of making money on the internet, a claim certain to attract both curiosity and skepticism. Such schemes are rarely modest in ambition, and the prudent reader will reserve judgment until substance matches slogan."
@@ -1199,7 +1199,7 @@
         "title": "Open-source AI hackers to find and fix your app’s vulnerabilities.",
         "url": "https://github.com/usestrix/strix",
         "repo": "usestrix/strix",
-        "stars": 21786,
+        "stars": 21887,
         "ai_score": 7.9,
         "retro_headline": "Strix Unveils Open-Source Artificial Hackers to Hunt and Mend Software Weaknesses",
         "retro_summary": "Strix is described as an open-source body of AI agents charged with finding and repairing vulnerabilities in applications. The undertaking commands interest because it places offensive and defensive technique in the hands of automated systems, a development of both promise and peril."
@@ -1210,7 +1210,7 @@
         "title": "基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版",
         "url": "https://github.com/hsliuping/TradingAgents-CN",
         "repo": "hsliuping/TradingAgents-CN",
-        "stars": 21363,
+        "stars": 21469,
         "ai_score": 7.2,
         "retro_headline": "Chinese TradingAgents Edition Applies Multi-Agent Language Engines to the Financial Markets",
         "retro_summary": "A Chinese-enhanced edition of TradingAgents presents a financial trading framework built upon multiple language-model agents acting together. The marriage of speculative finance and machine collaboration remains a matter of enduring fascination, however often it invites caution."
