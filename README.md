@@ -69,6 +69,31 @@ npm run typecheck --workspace=skill
 npm test
 ```
 
+## Localization
+
+The app now supports **English** and **Simplified Chinese**.
+
+### Language behavior
+
+- On first visit, the UI checks the browser's `Accept-Language`
+- If the browser prefers Chinese, the default UI language is **Simplified Chinese**
+- All other browsers default to **English**
+- Manual language switching is supported and persisted via cookie
+
+### What is localized
+
+- Site UI chrome (masthead, navigation, onboarding, section labels, footer, etc.)
+- AI-generated headlines and summaries
+
+### Data model
+
+New editions now store bilingual content fields:
+
+- `retro_headline` / `retro_summary` → English
+- `retro_headline_zh` / `retro_summary_zh` → Simplified Chinese
+
+Older editions without Chinese fields automatically fall back to English.
+
 ## Production deployment: VPS + OpenClaw cron + Vercel
 
 This repo is now structured primarily for:
@@ -209,6 +234,15 @@ First verify edition data exists for that date, then check the API route:
 - `/api/edition?date=YYYY-MM-DD`
 - `/api/og?date=YYYY-MM-DD`
 
+### Language does not switch
+
+The site stores language preference in a cookie. If switching appears stuck:
+- click the language switcher again
+- refresh the page
+- clear site cookies and retry
+
+For first-visit behavior, Chinese browsers should default to Simplified Chinese; all others default to English.
+
 ## Data Format
 
 Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
@@ -232,6 +266,8 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 
 - 🗞 Vintage 1920s broadsheet aesthetic
 - 🤖 AI-scored and rewritten headlines in period journalistic style
+- 🌐 English / Simplified Chinese UI localization
+- 🈶 Bilingual generated headlines and summaries for new editions
 - 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
 - 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
 - 📻 RSS feed (`/feed.xml`) with last 14 editions
