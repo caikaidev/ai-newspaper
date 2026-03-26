@@ -69,6 +69,40 @@ npm run typecheck --workspace=skill
 npm test
 ```
 
+## Source Configuration
+
+The project now supports a configurable source list through:
+
+- `newspaper.config.json`
+
+You can currently configure:
+- whether Hacker News is enabled
+- whether Reddit is enabled
+- whether GitHub Trending is enabled
+- which subreddits are fetched
+- how Reddit stories are grouped on the edition page
+
+Example:
+
+```ts
+export default {
+  sources: {
+    hackernews: { enabled: true, label: { en: 'Hacker News', zh: 'Hacker News' } },
+    reddit: {
+      enabled: true,
+      label: { en: 'Reddit', zh: 'Reddit' },
+      subreddits: ['programming', 'MachineLearning', 'webdev', 'devops'],
+      groups: [
+        { key: 'programming', label: { en: 'Programming', zh: '编程' }, match: ['programming'] },
+        { key: 'ml', label: { en: 'Machine Learning', zh: '机器学习' }, match: ['MachineLearning'] },
+        { key: 'web-devops', label: { en: 'Web & DevOps', zh: 'Web 与 DevOps' }, match: ['webdev', 'devops'] },
+      ],
+    },
+    github: { enabled: true, label: { en: 'GitHub Trending', zh: 'GitHub 热门趋势' } },
+  },
+}
+```
+
 ## Localization
 
 The app now supports **English** and **Simplified Chinese**.
@@ -84,6 +118,7 @@ The app now supports **English** and **Simplified Chinese**.
 
 - Site UI chrome (masthead, navigation, onboarding, section labels, footer, etc.)
 - AI-generated headlines and summaries
+- Config-driven source labels and Reddit group labels
 
 ### Data model
 
@@ -268,6 +303,7 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - 🤖 AI-scored and rewritten headlines in period journalistic style
 - 🌐 English / Simplified Chinese UI localization
 - 🈶 Bilingual generated headlines and summaries for new editions
+- ⚙ Configurable source list via `newspaper.config.json`
 - 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
 - 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
 - 📻 RSS feed (`/feed.xml`) with last 14 editions
@@ -283,5 +319,5 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 
 - SQLite edition index for full-text search
 - Dark mode / Evening Edition
-- Customizable source list
+- Customizable source list for additional source modes and richer overrides
 - "This day in tech history" sidebar (after 365+ editions)
