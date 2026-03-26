@@ -190,7 +190,7 @@ openclaw cron list
 Run the job manually:
 
 ```bash
-openclaw cron run 45f86636-3a30-4697-9e27-fdde2f0f5902
+openclaw cron run <job-id>
 ```
 
 ### Publish script failed
