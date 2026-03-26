@@ -10,6 +10,7 @@
     "build": "npm run build --workspace=web",
     "test": "npm run test --workspace=skill",
     "fetch": "npm run fetch --workspace=skill",
-    "fetch:force": "npm run fetch:force --workspace=skill"
+    "fetch:force": "npm run fetch:force --workspace=skill",
+    "docs:sync-config": "node ./scripts/update-readme-config-snippet.mjs"
   }
 }

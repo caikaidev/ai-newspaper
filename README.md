@@ -82,25 +82,83 @@ You can currently configure:
 - which subreddits are fetched
 - how Reddit stories are grouped on the edition page
 
-Example:
+Default config example (synced from `newspaper.config.json`):
 
-```ts
-export default {
-  sources: {
-    hackernews: { enabled: true, label: { en: 'Hacker News', zh: 'Hacker News' } },
-    reddit: {
-      enabled: true,
-      label: { en: 'Reddit', zh: 'Reddit' },
-      subreddits: ['programming', 'MachineLearning', 'webdev', 'devops'],
-      groups: [
-        { key: 'programming', label: { en: 'Programming', zh: '编程' }, match: ['programming'] },
-        { key: 'ml', label: { en: 'Machine Learning', zh: '机器学习' }, match: ['MachineLearning'] },
-        { key: 'web-devops', label: { en: 'Web & DevOps', zh: 'Web 与 DevOps' }, match: ['webdev', 'devops'] },
-      ],
+<!-- CONFIG_SNIPPET:START -->
+
+```json
+{
+  "sources": {
+    "hackernews": {
+      "enabled": true,
+      "label": {
+        "en": "Hacker News",
+        "zh": "Hacker News"
+      }
     },
-    github: { enabled: true, label: { en: 'GitHub Trending', zh: 'GitHub 热门趋势' } },
-  },
+    "reddit": {
+      "enabled": true,
+      "label": {
+        "en": "Reddit",
+        "zh": "Reddit"
+      },
+      "subreddits": [
+        "programming",
+        "MachineLearning",
+        "webdev",
+        "devops"
+      ],
+      "groups": [
+        {
+          "key": "programming",
+          "label": {
+            "en": "Programming",
+            "zh": "编程"
+          },
+          "match": [
+            "programming"
+          ]
+        },
+        {
+          "key": "ml",
+          "label": {
+            "en": "Machine Learning",
+            "zh": "机器学习"
+          },
+          "match": [
+            "MachineLearning"
+          ]
+        },
+        {
+          "key": "web-devops",
+          "label": {
+            "en": "Web & DevOps",
+            "zh": "Web 与 DevOps"
+          },
+          "match": [
+            "webdev",
+            "devops"
+          ]
+        }
+      ]
+    },
+    "github": {
+      "enabled": true,
+      "label": {
+        "en": "GitHub Trending",
+        "zh": "GitHub 热门趋势"
+      }
+    }
+  }
 }
+```
+
+<!-- CONFIG_SNIPPET:END -->
+
+To resync this README snippet after editing the config:
+
+```bash
+npm run docs:sync-config
 ```
 
 ## Localization
