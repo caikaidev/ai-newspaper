@@ -1,7 +1,7 @@
 import * as cheerio from 'cheerio'
 import type { RawItem } from '../types.js'
 
-const USER_AGENT = 'TheDailyByte/1.0 (github.com/daily-byte/newspaper)'
+const USER_AGENT = 'TheDailyByte/1.0 (github.com/caikaidev/ai-newspaper)'
 const DELAY_BETWEEN_SUBS_MS = 500
 const MAX_RETRIES = 3
 

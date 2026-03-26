@@ -125,17 +125,10 @@ export default function EditionPage({ params }: PageProps) {
           <p>
             The Daily Byte · Published daily at 07:00 UTC ·{' '}
             <a href="/feed.xml" aria-label="RSS Feed">RSS Feed</a> ·{' '}
-            <a
-              href="https://github.com/daily-byte/newspaper"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Source
-            </a>
+            <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">Open Source</a>
           </p>
           <p style={{ marginTop: '0.25rem' }}>
-            All headlines composed by artificial intelligence in the manner of 1920s inter-war
-            correspondence. No editors were harmed.
+            All headlines composed by artificial intelligence in the manner of 1920s inter-war correspondence. No editors were harmed.
           </p>
         </footer>
       </main>

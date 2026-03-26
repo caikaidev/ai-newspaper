@@ -17,7 +17,7 @@ interface AlgoliaResponse {
 
 export async function fetchHN(): Promise<RawItem[]> {
   const res = await fetch(ALGOLIA_URL, {
-    headers: { 'User-Agent': 'TheDailyByte/1.0 (github.com/daily-byte/newspaper)' },
+    headers: { 'User-Agent': 'TheDailyByte/1.0 (github.com/caikaidev/ai-newspaper)' },
   })
 
   if (!res.ok) {

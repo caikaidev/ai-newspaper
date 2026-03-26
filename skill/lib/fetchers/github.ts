@@ -7,7 +7,7 @@ const SELECTOR = 'article.Box-row'
 export async function fetchGitHub(): Promise<RawItem[]> {
   const res = await fetch(GITHUB_TRENDING_URL, {
     headers: {
-      'User-Agent': 'TheDailyByte/1.0 (github.com/daily-byte/newspaper)',
+      'User-Agent': 'TheDailyByte/1.0 (github.com/caikaidev/ai-newspaper)',
       Accept: 'text/html',
     },
   })
