@@ -1,14 +1,18 @@
 import type { ScoredItem } from '@/lib/types'
+import type { AppLang } from '@/lib/i18n'
+import { t } from '@/lib/i18n'
 
 interface ColStoryProps {
   item: ScoredItem
   rank?: number
+  lang: AppLang
 }
 
-export default function ColStory({ item, rank }: ColStoryProps) {
+export default function ColStory({ item, rank, lang }: ColStoryProps) {
+  const m = t(lang)
   const meta = [
-    item.points ? `${item.points.toLocaleString()} pts` : null,
-    item.comments ? `${item.comments.toLocaleString()} comments` : null,
+    item.points ? `${item.points.toLocaleString()} ${m.points}` : null,
+    item.comments ? `${item.comments.toLocaleString()} ${m.comments}` : null,
     item.stars ? `★ ${item.stars.toLocaleString()}` : null,
     item.subreddit ? `r/${item.subreddit}` : null,
   ]

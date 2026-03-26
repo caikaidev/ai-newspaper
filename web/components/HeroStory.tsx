@@ -1,21 +1,25 @@
 import type { ScoredItem } from '@/lib/types'
+import type { AppLang } from '@/lib/i18n'
+import { t } from '@/lib/i18n'
 
 interface HeroStoryProps {
   item: ScoredItem
+  lang: AppLang
 }
 
-const SOURCE_LABELS: Record<string, string> = {
-  hackernews: 'Hacker News',
-  reddit: 'Reddit',
-  github: 'GitHub',
+const SOURCE_LABELS: Record<string, { en: string; 'zh-CN': string }> = {
+  hackernews: { en: 'Hacker News', 'zh-CN': 'Hacker News' },
+  reddit: { en: 'Reddit', 'zh-CN': 'Reddit' },
+  github: { en: 'GitHub', 'zh-CN': 'GitHub' },
 }
 
-export default function HeroStory({ item }: HeroStoryProps) {
+export default function HeroStory({ item, lang }: HeroStoryProps) {
+  const m = t(lang)
   const sourceMeta = [
-    SOURCE_LABELS[item.source] ?? item.source,
+    SOURCE_LABELS[item.source]?.[lang] ?? item.source,
     item.subreddit ? `r/${item.subreddit}` : null,
-    item.points ? `${item.points.toLocaleString()} pts` : null,
-    item.comments ? `${item.comments.toLocaleString()} comments` : null,
+    item.points ? `${item.points.toLocaleString()} ${m.points}` : null,
+    item.comments ? `${item.comments.toLocaleString()} ${m.comments}` : null,
     item.stars ? `★ ${item.stars.toLocaleString()}` : null,
   ]
     .filter(Boolean)
