@@ -91,10 +91,13 @@ Use the helper script:
 ```
 
 What it does:
+- fetches/rebases from `origin/<current-branch>` before generating
 - runs `npm run fetch:force`
 - updates `data/editions`
 - commits changes if needed
 - pushes to the current branch on GitHub
+- writes a timestamped log file under `logs/`
+- uses a lock file under `.locks/` to avoid overlapping runs
 
 ### OpenClaw cron
 
