@@ -1,6 +1,6 @@
 import type { ScoredItem } from '@/lib/types'
 import type { AppLang } from '@/lib/i18n'
-import { t } from '@/lib/i18n'
+import { localizedHeadline, localizedSummary, t } from '@/lib/i18n'
 
 interface HeroStoryProps {
   item: ScoredItem
@@ -25,16 +25,17 @@ export default function HeroStory({ item, lang }: HeroStoryProps) {
     .filter(Boolean)
     .join(' · ')
 
+  const headline = localizedHeadline(item, lang)
+  const summary = localizedSummary(item, lang)
+
   return (
     <article className="hero">
       <h2 className="hero__headline">
         <a href={item.url} target="_blank" rel="noopener noreferrer">
-          {item.retro_headline || item.title}
+          {headline}
         </a>
       </h2>
-      {item.retro_summary && (
-        <p className="hero__summary">{item.retro_summary}</p>
-      )}
+      {summary && <p className="hero__summary">{summary}</p>}
       <div className="hero__meta">
         <span className="score-badge">{item.ai_score.toFixed(1)}</span>
         <span>{sourceMeta}</span>

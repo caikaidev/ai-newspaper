@@ -7,11 +7,13 @@ Score and rewrite each item below.
 
 For each item, return a JSON object with:
 - "score": float 1.0-10.0 (novelty + impact + community interest)
-- "retro_headline": headline as 1920s correspondent, max 120 chars, dramatically formal
-- "retro_summary": exactly 2 sentences in period journalistic style
+- "retro_headline": headline in English as a 1920s correspondent, max 120 chars, dramatically formal
+- "retro_summary": exactly 2 sentences in English in period journalistic style
+- "retro_headline_zh": Simplified Chinese translation of retro_headline, natural and concise, max 120 chars
+- "retro_summary_zh": Simplified Chinese translation of retro_summary, exactly 2 sentences when natural in Chinese
 
 Return a JSON ARRAY in the same order as input. Raw JSON only, no markdown.
-Validate: array length must equal input length. If unsure on an item, score it 5.0.`
+Validate: array length must equal input length. If unsure on an item, score it 5.0 and provide your best bilingual wording.`
 
 const AI_BATCH_SIZE = 20
 
@@ -21,6 +23,8 @@ function toFallbackItem(item: RawItem): ScoredItem {
     ai_score: 5.0,
     retro_headline: item.title,
     retro_summary: '',
+    retro_headline_zh: item.title,
+    retro_summary_zh: '',
   }
 }
 
@@ -51,13 +55,15 @@ export function mergeWithScores(items: RawItem[], rawResponse: string): ScoredIt
     return items.map(toFallbackItem)
   }
 
-  const scores = result.data.slice(0, items.length) // discard extras
+  const scores = result.data.slice(0, items.length)
 
   return items.map((item, i) => ({
     ...item,
     ai_score: scores[i]?.score ?? 5.0,
     retro_headline: scores[i]?.retro_headline ?? item.title,
     retro_summary: scores[i]?.retro_summary ?? '',
+    retro_headline_zh: scores[i]?.retro_headline_zh ?? scores[i]?.retro_headline ?? item.title,
+    retro_summary_zh: scores[i]?.retro_summary_zh ?? scores[i]?.retro_summary ?? '',
   }))
 }
 

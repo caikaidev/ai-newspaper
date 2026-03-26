@@ -2,8 +2,21 @@
   "schema_version": 1,
   "date": "2026-03-26",
   "edition": 3,
-  "generated_at": "2026-03-26T07:09:17.562Z",
+  "generated_at": "2026-03-26T11:39:57.813Z",
   "front_page": [
+    {
+      "id": "hn-47522709",
+      "source": "hackernews",
+      "title": "The EU still wants to scan  your private messages and photos",
+      "url": "https://fightchatcontrol.eu/?foo=bar",
+      "points": 1228,
+      "comments": 330,
+      "ai_score": 9.3,
+      "retro_headline": "Europe Is Warned That the Campaign to Inspect Private Messages Still Advances",
+      "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty.",
+      "retro_headline_zh": "欧洲仍欲审视私人讯息与照片之举再起警报",
+      "retro_summary_zh": "一则令人不安的报道称，欧洲方面的当局仍在推动扫描私人讯息与个人照片。此事引发严肃争论，因为它触及公共安全与个人自由之间那场古老的较量。"
+    },
     {
       "id": "reddit-t3_1s35ohw",
       "source": "reddit",
@@ -12,18 +25,9 @@
       "subreddit": "programming",
       "ai_score": 9.3,
       "retro_headline": "Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain",
-      "retro_summary": "A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit."
-    },
-    {
-      "id": "hn-47522709",
-      "source": "hackernews",
-      "title": "The EU still wants to scan  your private messages and photos",
-      "url": "https://fightchatcontrol.eu/?foo=bar",
-      "points": 953,
-      "comments": 257,
-      "ai_score": 9,
-      "retro_headline": "Europe Is Warned That the Campaign to Inspect Private Messages Still Advances",
-      "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty."
+      "retro_summary": "A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.",
+      "retro_headline_zh": "TeamPCP袭击背叛可信发布机制，重创软件供应链",
+      "retro_summary_zh": "一份详尽说明称，TeamPCP攻击利用CI/CD流水线与受信发布流程，散播了受感染的Trivy与LiteLLM软件包。此事使工程界深感震惊，因为它表明连信任本身的通道都可能反被用作欺诈之器。"
     },
     {
       "id": "reddit-t3_1s2h8lt",
@@ -33,7 +37,9 @@
       "subreddit": "programming",
       "ai_score": 9,
       "retro_headline": "Urgent Warning Issued Over Compromised LiteLLM Packages in the Python Exchange",
-      "retro_summary": "Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention."
+      "retro_summary": "Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention.",
+      "retro_headline_zh": "Python软件集市惊现受污染LiteLLM版本，急电示警",
+      "retro_summary_zh": "读者被郑重告诫：PyPI上的LiteLLM 1.82.7与1.82.8版本据称已经遭到污染，不宜更新。此类消息直击现代软件分发赖以维系的信任，因此必须立即引起注意。"
     },
     {
       "id": "reddit-t3_1s2h4by",
@@ -43,18 +49,21 @@
       "subreddit": "programming",
       "ai_score": 9,
       "retro_headline": "Malicious LiteLLM Release Accused of Credential Theft and a Lasting Secret Door",
-      "retro_summary": "A further bulletin concerning LiteLLM 1.82.8 describes a release allegedly equipped for credential theft and persistent unauthorized access. Such accusations place the episode among the more serious software contaminations of the season."
+      "retro_summary": "A further bulletin concerning LiteLLM 1.82.8 describes a release allegedly equipped for credential theft and persistent unauthorized access. Such accusations place the episode among the more serious software contaminations of the season.",
+      "retro_headline_zh": "恶意LiteLLM版本被指窃取凭证并暗留后门",
+      "retro_summary_zh": "又一则关于LiteLLM 1.82.8的通报称，该版本据称具备窃取凭证与持续未授权访问的能力。此类指控足以使该事件跻身本季最严重的软件污染事故之列。"
     },
     {
-      "id": "hn-47509984",
-      "source": "hackernews",
-      "title": "Jury finds Meta liable in case over child sexual exploitation on its platforms",
-      "url": "https://www.cnn.com/2026/03/24/tech/meta-new-mexico-trial-jury-deliberation",
-      "points": 362,
-      "comments": 462,
+      "id": "reddit-t3_1s1ygvn",
+      "source": "reddit",
+      "title": "This Trivy Compromise is Insane.",
+      "url": "https://www.reddit.com/r/devops/comments/1s1ygvn/this_trivy_compromise_is_insane/",
+      "subreddit": "devops",
       "ai_score": 8.8,
-      "retro_headline": "Jury Finds Meta Liable in Cause Concerning Child Exploitation Upon Its Platforms",
-      "retro_summary": "A jury has found Meta liable in a case concerning child sexual exploitation conducted through its platforms. The verdict deepens the legal and moral scrutiny upon the social media colossus and has accordingly stirred intense public interest."
+      "retro_headline": "The Trivy Compromise Described as a Supply Catastrophe of Extraordinary Severity",
+      "retro_summary": "Readers are sounding the alarm over the compromise of Trivy, treating it as a supply-chain affair of uncommon gravity. Such breaches disturb the engineering public deeply, for they turn trusted instruments of security into possible instruments of harm.",
+      "retro_headline_zh": "Trivy遭攻陷被称为罕见严重的供应链灾祸",
+      "retro_summary_zh": "读者正为Trivy受侵一事大声示警，并将其视作一场分外严重的供应链事故。此类漏洞之所以深扰工程界，正因它把原本受信赖的安全工具变作可能施害之器。"
     }
   ],
   "sections": {
@@ -64,220 +73,260 @@
         "source": "hackernews",
         "title": "The EU still wants to scan  your private messages and photos",
         "url": "https://fightchatcontrol.eu/?foo=bar",
-        "points": 953,
-        "comments": 257,
-        "ai_score": 9,
+        "points": 1228,
+        "comments": 330,
+        "ai_score": 9.3,
         "retro_headline": "Europe Is Warned That the Campaign to Inspect Private Messages Still Advances",
-        "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty."
-      },
-      {
-        "id": "hn-47477873",
-        "source": "hackernews",
-        "title": "My astrophotography in the movie Project Hail Mary",
-        "url": "https://rpastro.square.site/s/stories/phm",
-        "points": 818,
-        "comments": 194,
-        "ai_score": 7.8,
-        "retro_headline": "Astronomical Plates Prepared for Project Hail Mary Win Wide Notice Among the Curious",
-        "retro_summary": "An account of astrophotography furnished for the motion picture Project Hail Mary has greatly engaged readers of both the scientific and cinematic persuasions. It reminds the public that modern spectacle still rests upon patient observation and exacting craft."
+        "retro_summary": "A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty.",
+        "retro_headline_zh": "欧洲仍欲审视私人讯息与照片之举再起警报",
+        "retro_summary_zh": "一则令人不安的报道称，欧洲方面的当局仍在推动扫描私人讯息与个人照片。此事引发严肃争论，因为它触及公共安全与个人自由之间那场古老的较量。"
       },
       {
         "id": "hn-47517539",
         "source": "hackernews",
         "title": "Thoughts on slowing the fuck down",
         "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
-        "points": 786,
-        "comments": 371,
-        "ai_score": 7.2,
+        "points": 886,
+        "comments": 395,
+        "ai_score": 7.4,
         "retro_headline": "A Meditation on Slowing the Modern Tempo Draws Earnest Notice From the Technical Public",
-        "retro_summary": "A reflective piece urges the overdriven professional classes to slacken their furious pace and reconsider the worship of haste. Though not mechanical in subject, it has plainly struck a nerve in an age that mistakes velocity for wisdom."
+        "retro_summary": "A reflective piece urges the overdriven professional classes to slacken their furious pace and reconsider the worship of haste. Though not mechanical in subject, it has plainly struck a nerve in an age that mistakes velocity for wisdom.",
+        "retro_headline_zh": "一篇劝人放慢时代步调的随想引起技术界强烈共鸣",
+        "retro_summary_zh": "一篇沉思之作劝告被过度驱赶的职业人群放缓狂奔的步伐，并重新审视对速度的崇拜。此文虽非机械题材，却显然击中了一个把迅疾误当智慧的时代痛处。"
       },
       {
         "id": "hn-47523330",
         "source": "hackernews",
         "title": "Running Tesla Model 3's computer on my desk using parts from crashed cars",
         "url": "https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/",
-        "points": 538,
-        "comments": 159,
-        "ai_score": 8.3,
+        "points": 653,
+        "comments": 209,
+        "ai_score": 8.4,
         "retro_headline": "Mechanic Runs a Tesla Model 3 Brain Upon His Desk With Parts Salvaged From Wrecks",
-        "retro_summary": "An enterprising experimenter reports success in operating a Tesla Model 3 computer on the workbench by using components recovered from crashed vehicles. The exploit has delighted the technical crowd, which never tires of seeing sealed commercial marvels reopened to inquiry."
-      },
-      {
-        "id": "hn-47509984",
-        "source": "hackernews",
-        "title": "Jury finds Meta liable in case over child sexual exploitation on its platforms",
-        "url": "https://www.cnn.com/2026/03/24/tech/meta-new-mexico-trial-jury-deliberation",
-        "points": 362,
-        "comments": 462,
-        "ai_score": 8.8,
-        "retro_headline": "Jury Finds Meta Liable in Cause Concerning Child Exploitation Upon Its Platforms",
-        "retro_summary": "A jury has found Meta liable in a case concerning child sexual exploitation conducted through its platforms. The verdict deepens the legal and moral scrutiny upon the social media colossus and has accordingly stirred intense public interest."
-      },
-      {
-        "id": "hn-47521876",
-        "source": "hackernews",
-        "title": "Apple randomly closes bug reports unless you \"verify\" the bug remains unfixed",
-        "url": "https://lapcatsoftware.com/articles/2026/3/11.html",
-        "points": 360,
-        "comments": 200,
-        "ai_score": 7.9,
-        "retro_headline": "Apple Is Accused of Closing Bug Reports Unless Complainants Re-Prove the Defect",
-        "retro_summary": "A complaint has arisen that Apple closes bug reports at random unless reporters verify that the fault remains unfixed. Such practices anger the engineering public, for the orderly redress of defects is one of the first duties of a great software house."
+        "retro_summary": "An enterprising experimenter reports success in operating a Tesla Model 3 computer on the workbench by using components recovered from crashed vehicles. The exploit has delighted the technical crowd, which never tires of seeing sealed commercial marvels reopened to inquiry.",
+        "retro_headline_zh": "技师以事故车零件在案头驱动特斯拉Model 3之脑",
+        "retro_summary_zh": "一位富于巧思的实验者称，已借助报废事故车回收的部件，在工作台上成功运行特斯拉Model 3的计算机。此举令技术界大为欣喜，因为他们从不厌倦看到封闭的商用奇物再次被拆开研究。"
       },
       {
         "id": "hn-47521150",
         "source": "hackernews",
         "title": "ARC-AGI-3",
         "url": "https://arcprize.org/arc-agi/3",
-        "points": 353,
-        "comments": 226,
-        "ai_score": 8.2,
+        "points": 415,
+        "comments": 264,
+        "ai_score": 8.3,
         "retro_headline": "ARC-AGI the Third Appears and Renews the Contest Over Machine Intelligence",
-        "retro_summary": "A new installment under the title ARC-AGI-3 has arrived, drawing immediate attention from those who watch the progress and pretensions of artificial intelligence. Such benchmarks and challenges are followed closely because they promise, or threaten, to reveal what the machines can truly do."
+        "retro_summary": "A new installment under the title ARC-AGI-3 has arrived, drawing immediate attention from those who watch the progress and pretensions of artificial intelligence. Such benchmarks and challenges are followed closely because they promise, or threaten, to reveal what the machines can truly do.",
+        "retro_headline_zh": "ARC-AGI第三回登场，再掀机器智能之争",
+        "retro_summary_zh": "名为ARC-AGI-3的新一轮项目已经到来，立刻吸引了所有关注人工智能进展与雄心的人士。此类基准与挑战之所以备受追逐，正因它们或许会揭示，也可能会惊示，机器究竟真正能做到什么。"
+      },
+      {
+        "id": "hn-47521876",
+        "source": "hackernews",
+        "title": "Apple randomly closes bug reports unless you \"verify\" the bug remains unfixed",
+        "url": "https://lapcatsoftware.com/articles/2026/3/11.html",
+        "points": 413,
+        "comments": 242,
+        "ai_score": 8,
+        "retro_headline": "Apple Is Accused of Closing Bug Reports Unless Complainants Re-Prove the Defect",
+        "retro_summary": "A complaint has arisen that Apple closes bug reports at random unless reporters verify that the fault remains unfixed. Such practices anger the engineering public, for the orderly redress of defects is one of the first duties of a great software house.",
+        "retro_headline_zh": "苹果被指若举报者不再度举证便随意结案缺陷报告",
+        "retro_summary_zh": "有人控诉称，苹果会随意关闭缺陷报告，除非提交者再次证明该问题仍未修复。此类做法令工程界愤懑，因为有序处理缺陷本是大型软件公司最首要的职责之一。"
       },
       {
         "id": "hn-47518281",
         "source": "hackernews",
         "title": "Supreme Court Sides with Cox in Copyright Fight over Pirated Music",
         "url": "https://www.nytimes.com/2026/03/25/us/politics/supreme-court-cox-music-copyright.html",
-        "points": 329,
-        "comments": 257,
+        "points": 354,
+        "comments": 279,
         "ai_score": 7.9,
         "retro_headline": "Supreme Court Hands Cox a Victory in the Long Copyright Battle Over Pirated Music",
-        "retro_summary": "The Supreme Court has sided with Cox in a copyright struggle concerning pirated music distributed over its service. The decision is of notable importance, for it bears upon the responsibilities of carriers in the ceaseless quarrel between distribution and ownership."
-      },
-      {
-        "id": "hn-47521799",
-        "source": "hackernews",
-        "title": "Updates to GitHub Copilot interaction data usage policy",
-        "url": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/",
-        "points": 285,
-        "comments": 132,
-        "ai_score": 7.6,
-        "retro_headline": "GitHub Revises Its Policy on the Use of Copilot Interaction Data",
-        "retro_summary": "GitHub has issued updates to its policy governing the use of interaction data gathered through Copilot. Such notices draw serious attention because the convenience of machine assistance is now inseparable from questions of privacy, consent, and commercial leverage."
+        "retro_summary": "The Supreme Court has sided with Cox in a copyright struggle concerning pirated music distributed over its service. The decision is of notable importance, for it bears upon the responsibilities of carriers in the ceaseless quarrel between distribution and ownership.",
+        "retro_headline_zh": "最高法院判考克斯胜诉，盗版音乐版权大战现转机",
+        "retro_summary_zh": "最高法院在一场涉及其网络服务上传播盗版音乐的版权争斗中站在了考克斯一边。此项裁决意义不小，因为它关系到传输平台在传播与所有权无尽争执中的责任边界。"
       },
       {
         "id": "hn-47521157",
         "source": "hackernews",
         "title": "90% of Claude-linked output going to GitHub repos w <2 stars",
         "url": "https://www.claudescode.dev/?window=since_launch",
-        "points": 245,
-        "comments": 148,
-        "ai_score": 7.2,
+        "points": 300,
+        "comments": 185,
+        "ai_score": 7.4,
         "retro_headline": "Most Claude-Linked Output Is Said to Flow Into Little-Noted Repositories of the Web",
-        "retro_summary": "A curious report claims that ninety per cent of output linked to Claude is ending up in GitHub repositories with fewer than two stars. The finding has intrigued observers, for it suggests that much machine-made work accumulates in obscure corners rather than celebrated workshops."
+        "retro_summary": "A curious report claims that ninety per cent of output linked to Claude is ending up in GitHub repositories with fewer than two stars. The finding has intrigued observers, for it suggests that much machine-made work accumulates in obscure corners rather than celebrated workshops.",
+        "retro_headline_zh": "据称与Claude相关之产出多流入鲜为人知的代码库",
+        "retro_summary_zh": "一则颇为奇特的报告称，与Claude相关的产出有九成流入了GitHub上不足两星的仓库。此一发现引人好奇，因为它暗示大量机器生成之作并未进入知名工坊，而是积存在网络的隐秘角落。"
       },
       {
         "id": "hn-47525378",
         "source": "hackernews",
         "title": "False claims in a widely-cited paper",
         "url": "https://statmodeling.stat.columbia.edu/2026/03/24/false-claims-in-a-published-no-corrections-no-consequences-welcome-to-the-business-school/",
-        "points": 240,
-        "comments": 88,
-        "ai_score": 7.4,
+        "points": 297,
+        "comments": 121,
+        "ai_score": 7.5,
         "retro_headline": "Questions Are Raised Over False Claims in a Widely Cited Scientific Paper",
-        "retro_summary": "A report alleging false claims in a widely cited paper has drawn immediate attention from readers concerned with the honour of scholarship. Such disputes matter greatly, for science rests not merely upon fame, but upon the trustworthiness of its record."
+        "retro_summary": "A report alleging false claims in a widely cited paper has drawn immediate attention from readers concerned with the honour of scholarship. Such disputes matter greatly, for science rests not merely upon fame, but upon the trustworthiness of its record.",
+        "retro_headline_zh": "一篇被广泛引用之论文涉有不实主张，学界起疑",
+        "retro_summary_zh": "一则指称某篇广泛引用论文含有不实主张的报道，立刻吸引了重视学术名誉者的注意。此类争端意义重大，因为科学所依凭的，不仅是名声，更是其记录的可信度。"
       },
       {
         "id": "hn-47519295",
         "source": "hackernews",
         "title": "Quantization from the Ground Up",
         "url": "https://ngrok.com/blog/quantization",
-        "points": 233,
-        "comments": 45,
+        "points": 267,
+        "comments": 50,
         "ai_score": 7,
         "retro_headline": "A Ground-Up Treatise on Quantization Seeks to Instruct the New Machine Age",
-        "retro_summary": "A pedagogical work entitled Quantization from the Ground Up offers a careful introduction to one of the key economies in modern artificial intelligence. Though instructional rather than sensational, such clear expositions are prized in a field crowded with slogans and haste."
+        "retro_summary": "A pedagogical work entitled Quantization from the Ground Up offers a careful introduction to one of the key economies in modern artificial intelligence. Though instructional rather than sensational, such clear expositions are prized in a field crowded with slogans and haste.",
+        "retro_headline_zh": "一部自根基讲起的量化论著欲教化新机器时代",
+        "retro_summary_zh": "一部名为《从基础讲起的量化》的教学性作品，细致介绍了现代人工智能中最关键的节约技艺之一。它虽属教益之作而非轰动新闻，却因在口号与浮躁充斥的领域里提供清晰说明而尤为可贵。"
       },
       {
-        "id": "hn-47521945",
+        "id": "hn-47522173",
         "source": "hackernews",
-        "title": "FreeCAD  v1.1",
-        "url": "https://blog.freecad.org/2026/03/25/freecad-version-1-1-released/",
-        "points": 229,
-        "comments": 71,
-        "ai_score": 7.3,
-        "retro_headline": "FreeCAD the Eleventh-Tenth Issues Forth and Strengthens a Stalwart Tool of Design",
-        "retro_summary": "FreeCAD v1.1 has been released, marking another advance for the open instrument long relied upon by designers, tinkerers, and mechanical enthusiasts. Such releases may not shake the boulevard, yet they carry real weight in the workshops where practical drawing is done."
-      },
-      {
-        "id": "hn-47522608",
-        "source": "hackernews",
-        "title": "Sodium-ion EV battery breakthrough delivers 11-min charging and 450 km range",
-        "url": "https://electrek.co/2026/03/25/sodium-ion-ev-battery-delivers-11-min-charging-450-km-range/",
-        "points": 162,
-        "comments": 111,
-        "ai_score": 8.1,
-        "retro_headline": "Sodium Motor Battery Reported to Promise Swift Charging and a Most Respectable Range",
-        "retro_summary": "A report declares a breakthrough in sodium-ion electric-vehicle batteries, with charging in eleven minutes and a range of some 450 kilometres. Should the claim endure scrutiny, it may prove a notable advance in the economics and convenience of the motor age."
-      },
-      {
-        "id": "hn-47524719",
-        "source": "hackernews",
-        "title": "Woman who never stopped updating her lost dog's chip reunites with him after 11y",
-        "url": "https://www.cbc.ca/radio/asithappens/11-year-dog-reunion-9.7140780",
-        "points": 162,
-        "comments": 93,
+        "title": "Personal Encyclopedias",
+        "url": "https://whoami.wiki/blog/personal-encyclopedias",
+        "points": 253,
+        "comments": 59,
         "ai_score": 6.8,
-        "retro_headline": "After Eleven Years, a Faithful Dog Is Restored Through the Simple Persistence of a Chip",
-        "retro_summary": "A moving account tells of a woman who never ceased updating her lost dog's microchip and was at last reunited with the creature after eleven years. The tale is less a mechanical marvel than a human one, yet it pleasingly demonstrates how humble systems may serve devotion."
+        "retro_headline": "Private Encyclopedias Are Advanced as a Personal Order for the Crowded Age of Knowledge",
+        "retro_summary": "A discussion of personal encyclopedias has attracted readers who seek to put their own learning into durable and orderly form. The notion holds interest because the modern mind is increasingly besieged by abundance and longs for a more private republic of knowledge.",
+        "retro_headline_zh": "私人百科全书被倡为知识拥挤时代的个人秩序",
+        "retro_summary_zh": "关于私人百科全书的讨论吸引了那些希望把自身所学整理成持久而有序形式的读者。此一构想引人注目，因为现代心智日益受信息洪流围困，因而渴望建立一个更私人的知识共和国。"
       },
       {
         "id": "hn-47517606",
         "source": "hackernews",
         "title": "Earthquake scientists reveal how overplowing weakens soil at experimental farm",
         "url": "https://www.washington.edu/news/2026/03/19/earthquake-scientists-reveal-how-overplowing-weakens-soil-at-experimental-farm/",
-        "points": 146,
-        "comments": 60,
-        "ai_score": 6.5,
+        "points": 168,
+        "comments": 79,
+        "ai_score": 6.6,
         "retro_headline": "Earthquake Men Show That Excessive Plowing Weakens the Soil at Experimental Farm",
-        "retro_summary": "Scientists studying earthquakes report that overplowing weakens soil at an experimental farm, revealing unsuspected fragilities in the treated ground. Though modest beside grander machines, the finding bears practical value for agriculture and for the understanding of disturbed earth."
+        "retro_summary": "Scientists studying earthquakes report that overplowing weakens soil at an experimental farm, revealing unsuspected fragilities in the treated ground. Though modest beside grander machines, the finding bears practical value for agriculture and for the understanding of disturbed earth.",
+        "retro_headline_zh": "地震学者指出过度耕作会削弱试验农场土壤",
+        "retro_summary_zh": "研究地震的科学家报告称，过度耕作会削弱一处试验农场的土壤，暴露出处理后地层中未曾料到的脆弱性。此发现虽不如宏大机械那般夺目，却对农业实践与受扰土体的认识都颇具实用价值。"
       },
       {
         "id": "hn-47483286",
         "source": "hackernews",
         "title": "My DIY FPGA board can run Quake II",
         "url": "https://blog.mikhe.ch/quake2-on-fpga/part4.html",
-        "points": 118,
-        "comments": 37,
-        "ai_score": 7.7,
+        "points": 164,
+        "comments": 51,
+        "ai_score": 7.8,
         "retro_headline": "Home-Built FPGA Board Is Made to Run Quake II in a Most Ingenious Display",
-        "retro_summary": "A private constructor reports that his own FPGA board can run Quake II, a feat certain to delight hardware enthusiasts and digital craftsmen. Such achievements combine nostalgia with engineering merit, and thus travel far in the technical salons."
-      },
-      {
-        "id": "hn-47524704",
-        "source": "hackernews",
-        "title": "Show HN: A plain-text cognitive architecture for Claude Code",
-        "url": "https://lab.puga.com.br/cog/",
-        "points": 77,
-        "comments": 21,
-        "ai_score": 7,
-        "retro_headline": "A Plain-Text Architecture for Claude Code Is Exhibited to the Curious Public",
-        "retro_summary": "A demonstrator presents a plain-text cognitive architecture designed for Claude Code, promising a more deliberate arrangement of machine thought. The undertaking is novel enough to interest builders seeking order and repeatability in the conduct of artificial assistants."
+        "retro_summary": "A private constructor reports that his own FPGA board can run Quake II, a feat certain to delight hardware enthusiasts and digital craftsmen. Such achievements combine nostalgia with engineering merit, and thus travel far in the technical salons.",
+        "retro_headline_zh": "自制FPGA电路板竟可运行《雷神之锤II》",
+        "retro_summary_zh": "一位业余构造者称，自己亲手制作的FPGA板卡已经能够运行《雷神之锤II》，此举必将令硬件爱好者与数字工匠大为欣喜。此类成就兼具怀旧情怀与工程价值，因此在技术沙龙中格外传播得远。"
       },
       {
         "id": "hn-47473673",
         "source": "hackernews",
         "title": "The truth that haunts the Ramones: 'They sold more T-shirts than records'",
         "url": "https://english.elpais.com/culture/2026-03-17/the-uncomfortable-truth-that-will-always-haunt-the-ramones-they-sold-more-t-shirts-than-records.html",
-        "points": 71,
-        "comments": 29,
-        "ai_score": 5.9,
+        "points": 142,
+        "comments": 84,
+        "ai_score": 6.1,
         "retro_headline": "The Ramones Are Said to Have Sold More Shirts Than Records, to the Public’s Melancholy",
-        "retro_summary": "A reflective article revisits the enduring sadness that the Ramones may have sold more T-shirts than records. Though not a strictly technical matter, it speaks to the modern transformation of art into symbol, brand, and merchandise."
+        "retro_summary": "A reflective article revisits the enduring sadness that the Ramones may have sold more T-shirts than records. Though not a strictly technical matter, it speaks to the modern transformation of art into symbol, brand, and merchandise.",
+        "retro_headline_zh": "据称雷蒙斯卖出的T恤竟多于唱片，徒增世人感伤",
+        "retro_summary_zh": "一篇回顾文章重提那桩令人唏嘘的事实：雷蒙斯乐队卖出的T恤或许比唱片还多。此事虽非严格意义上的技术新闻，却道出了现代社会将艺术化作符号、品牌与商品的转变。"
+      },
+      {
+        "id": "hn-47525243",
+        "source": "hackernews",
+        "title": "Shell Tricks That Make Life Easier (and Save Your Sanity)",
+        "url": "https://blog.hofstede.it/shell-tricks-that-actually-make-life-easier-and-save-your-sanity/",
+        "points": 130,
+        "comments": 60,
+        "ai_score": 6.7,
+        "retro_headline": "Shell Stratagems Are Collected for the Relief of Daily Toil and Troubled Nerves",
+        "retro_summary": "A practical compilation offers command-line tricks said to make everyday work easier and preserve a measure of sanity. Such pieces are rarely grand, yet they are cherished in workshops where small efficiencies accumulate into real relief.",
+        "retro_headline_zh": "壳层妙术汇编，为日常劳作与烦乱心神解忧",
+        "retro_summary_zh": "一份实用汇编收集了若干命令行技巧，据称足以让日常工作更为轻松，并保全几分清醒心神。此类文章虽少有宏大声势，却在工坊之中备受珍视，因为点滴效率终会累积成真正的宽慰。"
+      },
+      {
+        "id": "hn-47527590",
+        "source": "hackernews",
+        "title": "Swift 6.3",
+        "url": "https://www.swift.org/blog/swift-6.3-released/",
+        "points": 95,
+        "comments": 34,
+        "ai_score": 7,
+        "retro_headline": "Swift the Sixth and Third Is Unveiled for the Continued March of Apple’s Tongue",
+        "retro_summary": "Swift 6.3 has been announced, marking another station in the progress of Apple's increasingly important programming language. Such releases are watched with care, for language revisions quietly reshape the daily habits of vast numbers of developers.",
+        "retro_headline_zh": "Swift 6.3发布，苹果编程语言续展新程",
+        "retro_summary_zh": "Swift 6.3已经发布，标志着苹果这门日益重要的编程语言又向前迈出一步。此类版本更迭总被谨慎关注，因为语言的修订会悄然重塑无数开发者的日常习惯。"
+      },
+      {
+        "id": "hn-47524519",
+        "source": "hackernews",
+        "title": "\"Disregard That\" Attacks",
+        "url": "https://calpaterson.com/disregard.html",
+        "points": 89,
+        "comments": 62,
+        "ai_score": 7.3,
+        "retro_headline": "So-Called 'Disregard That' Attacks Expose a Fresh Trick in the War on Machine Reason",
+        "retro_summary": "A discussion has arisen around attacks that apparently attempt to mislead or override an intelligent system by instructing it to ignore what came before. The tactic is novel enough to engage the security-minded public, for it strikes at the obedience and memory of the machine itself.",
+        "retro_headline_zh": "所谓“别理那个”攻击揭出机器推理战争中新诡计",
+        "retro_summary_zh": "一场讨论围绕一种攻击展开，此类手法显然意在通过命令智能系统忽视先前内容，从而误导或压倒其判断。此招数新奇到足以引起安全界关注，因为它直接袭击机器本身的服从性与记忆。"
       },
       {
         "id": "hn-47478599",
         "source": "hackernews",
         "title": "Two studies in compiler optimisations",
         "url": "https://www.hmpcabral.com/2026/03/20/two-studies-in-compiler-optimisations/",
-        "points": 59,
-        "comments": 4,
-        "ai_score": 6,
+        "points": 86,
+        "comments": 8,
+        "ai_score": 6.1,
         "retro_headline": "Two Inquiries Into Compiler Optimisation Offer Fresh Lessons in the Economy of Code",
-        "retro_summary": "A pair of studies concerning compiler optimisations has been set before readers interested in the hidden economies of software. The subject is technical and somewhat narrow, yet it rewards those who delight in seeing performance won by intellect rather than machinery alone."
+        "retro_summary": "A pair of studies concerning compiler optimisations has been set before readers interested in the hidden economies of software. The subject is technical and somewhat narrow, yet it rewards those who delight in seeing performance won by intellect rather than machinery alone.",
+        "retro_headline_zh": "两项编译器优化研究为代码经济学再添新知",
+        "retro_summary_zh": "两篇关于编译器优化的研究摆在了关心软件隐秘经济学的读者面前。此题虽技术性强且范围稍窄，却足以回报那些乐见性能由智识而非单靠机器赢得的人。"
+      },
+      {
+        "id": "hn-47527130",
+        "source": "hackernews",
+        "title": "Government agencies buy commercial data about Americans in bulk",
+        "url": "https://www.npr.org/2026/03/25/nx-s1-5752369/ice-surveillance-data-brokers-congress-anthropic",
+        "points": 74,
+        "comments": 32,
+        "ai_score": 7.8,
+        "retro_headline": "Agencies Are Said to Purchase Americans’ Commercial Data in Bulk by Official Hand",
+        "retro_summary": "A report declares that government agencies are buying commercial data about Americans in large quantity. The disclosure is of evident consequence, for it suggests that what commerce collects in fragments the state may acquire in bulk.",
+        "retro_headline_zh": "据称政府机关正大宗购入美国民众商业数据",
+        "retro_summary_zh": "一则报道宣称，政府机构正大批购买有关美国人的商业数据。此项披露意义显著，因为它表明商业世界零散收集之物，国家机器可以整批取得。"
+      },
+      {
+        "id": "hn-47520220",
+        "source": "hackernews",
+        "title": "Show HN: Optio – Orchestrate AI coding agents in K8s to go from ticket to PR",
+        "url": "https://github.com/jonwiggins/optio",
+        "points": 55,
+        "comments": 33,
+        "ai_score": 7.4,
+        "retro_headline": "Optio Proposes to Marshal Coding Agents in K8s and Carry a Ticket Through to PR",
+        "retro_summary": "A demonstrator named Optio promises to orchestrate artificial coding agents in Kubernetes so that work may proceed from ticket to pull request. The undertaking speaks to a rising ambition in software shops, namely to turn supervised automation into a disciplined production line.",
+        "retro_headline_zh": "Optio欲在K8s中统御编码代理，自工单直抵PR",
+        "retro_summary_zh": "名为Optio的演示项目声称，可在Kubernetes之中调度人工智能编码代理，使工作从工单一路推进到拉取请求。此举道出了软件工坊中日益高涨的雄心，即将受监督的自动化化作一条纪律严明的生产线。"
+      },
+      {
+        "id": "hn-47491848",
+        "source": "hackernews",
+        "title": "More precise elevation data for GraphHopper routing engine",
+        "url": "https://www.graphhopper.com/blog/2026/03/23/more-precise-elevation-data-for-graphhopper/",
+        "points": 54,
+        "comments": 2,
+        "ai_score": 5.8,
+        "retro_headline": "GraphHopper Gains Finer Elevation Figures for the Better Guidance of Travellers",
+        "retro_summary": "A technical improvement promises more precise elevation data for the GraphHopper routing engine. Though modest in outward drama, such refinements may quietly improve the reliability and intelligence of route-making systems.",
+        "retro_headline_zh": "GraphHopper获更精细高程数据，以善导行旅",
+        "retro_summary_zh": "一项技术改进承诺将为GraphHopper路径引擎提供更精确的高程数据。此类精修虽不甚张扬，却可能悄然提升路线规划系统的可靠性与聪明程度。"
       }
     ],
     "reddit": [
@@ -289,7 +338,9 @@
         "subreddit": "programming",
         "ai_score": 4.9,
         "retro_headline": "Forum Governors Issue New Rules and Invite Applications for the Moderating Bench",
-        "retro_summary": "The custodians of a prominent discussion forum have published their state paper, revising rules and calling for fresh hands to police the debates. Though administrative in character, such notices shape the order, tone, and civility of the digital commons."
+        "retro_summary": "The custodians of a prominent discussion forum have published their state paper, revising rules and calling for fresh hands to police the debates. Though administrative in character, such notices shape the order, tone, and civility of the digital commons.",
+        "retro_headline_zh": "论坛管理者发布新规并招募新版主",
+        "retro_summary_zh": "一处知名讨论论坛的管理者发布了年度公报，修订规则并征募新的主持人手。此类消息虽属行政事务，却足以左右数字公共广场的秩序、风气与礼法。"
       },
       {
         "id": "reddit-t3_1s3o7rk",
@@ -299,7 +350,21 @@
         "subreddit": "programming",
         "ai_score": 8.2,
         "retro_headline": "GitHub Is Accused of Enlisting Copilot Data From All Tiers by Automatic Consent",
-        "retro_summary": "A report alleges that GitHub will use Copilot interaction data from users across all service tiers to train and improve its models, with consent presumed unless withdrawn. The matter has stirred immediate concern, for convenience in machine assistance now walks hand in hand with unease over surveillance and consent."
+        "retro_summary": "A report alleges that GitHub will use Copilot interaction data from users across all service tiers to train and improve its models, with consent presumed unless withdrawn. The matter has stirred immediate concern, for convenience in machine assistance now walks hand in hand with unease over surveillance and consent.",
+        "retro_headline_zh": "GitHub被指以默认同意收取各层用户Copilot数据",
+        "retro_summary_zh": "一则报道称，GitHub拟使用各档用户的Copilot交互数据来训练并改进其模型，除非用户主动退出，否则即视为同意。此事立刻引发忧虑，因为机器助手的便利如今总与监视和同意问题并行不悖。"
+      },
+      {
+        "id": "reddit-t3_1s4261u",
+        "source": "reddit",
+        "title": "How C++ Finally Beats Rust at JSON Serialization - Daniel Lemire & Francisco Geiman Thiesen",
+        "url": "https://www.reddit.com/r/programming/comments/1s4261u/how_c_finally_beats_rust_at_json_serialization/",
+        "subreddit": "programming",
+        "ai_score": 7.7,
+        "retro_headline": "C++ Is Declared at Last to Outrun Rust in the Delicate Business of JSON Serialization",
+        "retro_summary": "A technical presentation contends that C++ has finally surpassed Rust in the exacting contest of JSON serialization. Such a claim commands attention in programming circles, where speed, craftsmanship, and language rivalry are ever lively companions.",
+        "retro_headline_zh": "C++终被称在JSON序列化上胜过Rust",
+        "retro_summary_zh": "一场技术演讲主张，C++终于在严苛的JSON序列化竞赛中超过了Rust。此等说法在编程圈自会引人注目，因为速度、技艺与语言之争向来相伴而行。"
       },
       {
         "id": "reddit-t3_1s3fj4b",
@@ -309,7 +374,33 @@
         "subreddit": "programming",
         "ai_score": 7.8,
         "retro_headline": "RollerCoaster Tycoon Is Hailed as a Gold Standard of Optimization Under Close Examination",
-        "retro_summary": "A retrospective inquiry lifts the casing from RollerCoaster Tycoon to show why it remains a marvel of economical programming. The piece delights the technical public, who never tire of seeing old masterpieces prove thrift to be a form of genius."
+        "retro_summary": "A retrospective inquiry lifts the casing from RollerCoaster Tycoon to show why it remains a marvel of economical programming. The piece delights the technical public, who never tire of seeing old masterpieces prove thrift to be a form of genius.",
+        "retro_headline_zh": "《过山车大亨》被誉为优化技艺的黄金标准",
+        "retro_summary_zh": "一篇回顾性文章揭开了《过山车大亨》的内部机关，说明它何以至今仍是节制编程的奇迹。技术界对此津津乐道，因为他们从不厌倦看见旧日杰作证明节省本身亦是一种天才。"
+      },
+      {
+        "id": "reddit-t3_1s40jgg",
+        "source": "reddit",
+        "title": "Redash's Python sandbox escape gives attackers full server access. Vendor says \"use at your own risk\"",
+        "url": "https://www.reddit.com/r/programming/comments/1s40jgg/redashs_python_sandbox_escape_gives_attackers/",
+        "subreddit": "programming",
+        "ai_score": 8.6,
+        "retro_headline": "Redash Sandbox Escape Is Said to Yield Full Server Access to the Bold Intruder",
+        "retro_summary": "A grave report states that a Python sandbox escape in Redash may grant attackers complete access to the host server. The vendor's warning to use the system at one's own risk has only sharpened public concern over the matter.",
+        "retro_headline_zh": "Redash沙箱逃逸据称可使入侵者尽得服务器大权",
+        "retro_summary_zh": "一则严峻报告称，Redash中的Python沙箱逃逸漏洞可能令攻击者获得整台服务器的完全控制权。而厂商那句“风险自负”的表态，更使公众对此事的不安陡然加深。"
+      },
+      {
+        "id": "reddit-t3_1s426l8",
+        "source": "reddit",
+        "title": "Upgrading Sea of Thieves From C++14 to C++20 Wasn't Easy Here's Why - Keith Stockdale - CppCon 2026",
+        "url": "https://www.reddit.com/r/programming/comments/1s426l8/upgrading_sea_of_thieves_from_c14_to_c20_wasnt/",
+        "subreddit": "programming",
+        "ai_score": 7.2,
+        "retro_headline": "Sea of Thieves Makes Its Difficult Passage From C++14 to C++20",
+        "retro_summary": "An account of upgrading Sea of Thieves from C++14 to C++20 describes a migration far less simple than fashion might suggest. Such reports are valued by working engineers, for the real cost of progress is often paid in stubborn details.",
+        "retro_headline_zh": "《盗贼之海》艰难完成自C++14至C++20之升级",
+        "retro_summary_zh": "一篇关于《盗贼之海》从C++14升级到C++20的讲述表明，此番迁移远不如流行口号所说那般轻易。此类报告深受实务工程师看重，因为进步的真实代价往往藏在顽固细节之中。"
       },
       {
         "id": "reddit-t3_1s3mt82",
@@ -319,7 +410,9 @@
         "subreddit": "programming",
         "ai_score": 7.7,
         "retro_headline": "IntelliJ IDEA 2026.1 Makes Its Debut and Commands the Attention of the Coding Trade",
-        "retro_summary": "IntelliJ IDEA 2026.1 has been released, marking another advance in one of the most relied-upon instruments of professional programming. Such revisions are followed closely, for the workshop tools of developers shape daily labour as surely as any language or framework."
+        "retro_summary": "IntelliJ IDEA 2026.1 has been released, marking another advance in one of the most relied-upon instruments of professional programming. Such revisions are followed closely, for the workshop tools of developers shape daily labour as surely as any language or framework.",
+        "retro_headline_zh": "IntelliJ IDEA 2026.1问世，引起编程界关注",
+        "retro_summary_zh": "IntelliJ IDEA 2026.1已经发布，这标志着这一职业程序员最倚重的工具之一再进一步。此类修订总被紧密追踪，因为开发者工坊中的器具与任何语言或框架一样，都塑造着日常劳动。"
       },
       {
         "id": "reddit-t3_1s3gbuz",
@@ -329,17 +422,21 @@
         "subreddit": "programming",
         "ai_score": 6.9,
         "retro_headline": "Mojo Is Declared Not Yet to Be Python, Despite the Family Resemblance",
-        "retro_summary": "A spirited analysis insists that Mojo, for all its associations and borrowings, must not yet be mistaken for Python proper. The distinction matters to practitioners, who know that surface familiarity often conceals profound differences in behaviour and promise."
+        "retro_summary": "A spirited analysis insists that Mojo, for all its associations and borrowings, must not yet be mistaken for Python proper. The distinction matters to practitioners, who know that surface familiarity often conceals profound differences in behaviour and promise.",
+        "retro_headline_zh": "尽管貌似同宗，Mojo仍未可称作Python",
+        "retro_summary_zh": "一篇有力的分析坚持认为，Mojo纵有诸多渊源与借鉴，也仍不可被视作真正的Python。此一区分对从业者意义重大，因为表面的相似往往掩盖着行为与前景上的深刻差异。"
       },
       {
-        "id": "reddit-t3_1s3sbod",
+        "id": "reddit-t3_1s42690",
         "source": "reddit",
-        "title": "Your Website Is Running Code You’ve Never Seen - Scott Helme - NDC Security 2026 [video]",
-        "url": "https://www.reddit.com/r/programming/comments/1s3sbod/your_website_is_running_code_youve_never_seen/",
+        "title": "Back to Basics: Move Semantics - Ben Saks - CppCon 2025",
+        "url": "https://www.reddit.com/r/programming/comments/1s42690/back_to_basics_move_semantics_ben_saks_cppcon_2025/",
         "subreddit": "programming",
-        "ai_score": 7.7,
-        "retro_headline": "Security Lecture Warns That Your Website Executes Foreign Code Beyond Your Knowledge",
-        "retro_summary": "A conference address by Scott Helme warns that many websites are already running code their proprietors have never personally examined. The point has resonated strongly, for the modern web is built increasingly from dependencies, scripts, and hidden obligations."
+        "ai_score": 6.8,
+        "retro_headline": "Move Semantics Are Brought Back to First Principles for the Studious C++ Public",
+        "retro_summary": "A return to fundamentals in move semantics seeks to clarify one of modern C++'s most easily abused powers. Such lessons are welcomed by serious programmers, for mastery often begins with the patient re-learning of what was thought already known.",
+        "retro_headline_zh": "移动语义回归本义，再授勤学的C++读者",
+        "retro_summary_zh": "一场回归基础的移动语义讲解，试图澄清现代C++中最易被误用的力量之一。此类课程深受严肃程序员欢迎，因为真正的精通往往始于对自以为早已明白之事的耐心重学。"
       },
       {
         "id": "reddit-t3_1s35ohw",
@@ -349,7 +446,9 @@
         "subreddit": "programming",
         "ai_score": 9.3,
         "retro_headline": "Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain",
-        "retro_summary": "A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit."
+        "retro_summary": "A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.",
+        "retro_headline_zh": "TeamPCP袭击背叛可信发布机制，重创软件供应链",
+        "retro_summary_zh": "一份详尽说明称，TeamPCP攻击利用CI/CD流水线与受信发布流程，散播了受感染的Trivy与LiteLLM软件包。此事使工程界深感震惊，因为它表明连信任本身的通道都可能反被用作欺诈之器。"
       },
       {
         "id": "reddit-t3_1s2h8lt",
@@ -359,7 +458,9 @@
         "subreddit": "programming",
         "ai_score": 9,
         "retro_headline": "Urgent Warning Issued Over Compromised LiteLLM Packages in the Python Exchange",
-        "retro_summary": "Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention."
+        "retro_summary": "Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention.",
+        "retro_headline_zh": "Python软件集市惊现受污染LiteLLM版本，急电示警",
+        "retro_summary_zh": "读者被郑重告诫：PyPI上的LiteLLM 1.82.7与1.82.8版本据称已经遭到污染，不宜更新。此类消息直击现代软件分发赖以维系的信任，因此必须立即引起注意。"
       },
       {
         "id": "reddit-t3_1s3jc75",
@@ -369,7 +470,33 @@
         "subreddit": "programming",
         "ai_score": 7.4,
         "retro_headline": "SDF Proposes One Conversion for Many Readings in the Semantic Parsing of Web Pages",
-        "retro_summary": "A technical paper presents SDF as a means of cacheable and typed semantic extraction from web pages, promising one conversion followed by many consumptions. Such methods command interest because the web's disorderly abundance cries out for cleaner and more durable forms of interpretation."
+        "retro_summary": "A technical paper presents SDF as a means of cacheable and typed semantic extraction from web pages, promising one conversion followed by many consumptions. Such methods command interest because the web's disorderly abundance cries out for cleaner and more durable forms of interpretation.",
+        "retro_headline_zh": "SDF倡一转多用，以整饬网页语义解析之术",
+        "retro_summary_zh": "一篇技术论文提出SDF方法，用于可缓存且具类型约束的网页语义抽取，主张一次转换即可多方复用。此类方法所以引人注目，正因纷乱浩繁的网络世界迫切呼唤更清洁、更持久的解释形式。"
+      },
+      {
+        "id": "reddit-t3_1s3sbod",
+        "source": "reddit",
+        "title": "Your Website Is Running Code You’ve Never Seen - Scott Helme - NDC Security 2026 [video]",
+        "url": "https://www.reddit.com/r/programming/comments/1s3sbod/your_website_is_running_code_youve_never_seen/",
+        "subreddit": "programming",
+        "ai_score": 7.7,
+        "retro_headline": "Security Lecture Warns That Your Website Executes Foreign Code Beyond Your Knowledge",
+        "retro_summary": "A conference address by Scott Helme warns that many websites are already running code their proprietors have never personally examined. The point has resonated strongly, for the modern web is built increasingly from dependencies, scripts, and hidden obligations.",
+        "retro_headline_zh": "安全演讲警告：你的网站正运行你未曾见过的代码",
+        "retro_summary_zh": "Scott Helme在一场会议演讲中警告称，许多网站早已在运行其所有者本人从未亲自审视过的代码。此言引发强烈回响，因为现代网络愈发建立在依赖、脚本与隐秘牵连之上。"
+      },
+      {
+        "id": "reddit-t3_1s43uze",
+        "source": "reddit",
+        "title": "Introducing SCCS: A New Standard for Cannabis Classification 🧬",
+        "url": "https://www.reddit.com/r/programming/comments/1s43uze/introducing_sccs_a_new_standard_for_cannabis/",
+        "subreddit": "programming",
+        "ai_score": 6.3,
+        "retro_headline": "A New Cannabis Classification Standard Is Introduced With Scientific Aspirations",
+        "retro_summary": "A proposal styled SCCS announces itself as a new standard for the classification of cannabis. Though outside the main current of computing, it attracts notice by attempting to bring system and taxonomy to a trade long clouded by loose description.",
+        "retro_headline_zh": "新大麻分类标准SCCS问世，自许以科学立法",
+        "retro_summary_zh": "一项名为SCCS的方案宣布自身为一种新的大麻分类标准。它虽不在计算技术的主流之内，却因试图为长期描述混乱的行业带来体系与分类而引人注目。"
       },
       {
         "id": "reddit-t3_1s3op40",
@@ -379,7 +506,9 @@
         "subreddit": "programming",
         "ai_score": 7,
         "retro_headline": "Octopos Raises an XV6-Derived Operating System in Rust for the Rising RISC-V Order",
-        "retro_summary": "A builder presents octopos, an operating system based upon xv6 and written in Rust for the RISC-V architecture. The undertaking is of evident interest to systems men, for it joins pedagogical lineage with two of the age's most fashionable technical currents."
+        "retro_summary": "A builder presents octopos, an operating system based upon xv6 and written in Rust for the RISC-V architecture. The undertaking is of evident interest to systems men, for it joins pedagogical lineage with two of the age's most fashionable technical currents.",
+        "retro_headline_zh": "Octopos以Rust为RISC-V打造源自xv6之操作系统",
+        "retro_summary_zh": "一位开发者展示了octopos，这是一套基于xv6、以Rust编写并面向RISC-V架构的操作系统。此举对系统领域人士显然颇具吸引力，因为它把教学传统与当代两股最时髦的技术潮流结合在了一起。"
       },
       {
         "id": "reddit-t3_1s2h4by",
@@ -389,17 +518,9 @@
         "subreddit": "programming",
         "ai_score": 9,
         "retro_headline": "Malicious LiteLLM Release Accused of Credential Theft and a Lasting Secret Door",
-        "retro_summary": "A further bulletin concerning LiteLLM 1.82.8 describes a release allegedly equipped for credential theft and persistent unauthorized access. Such accusations place the episode among the more serious software contaminations of the season."
-      },
-      {
-        "id": "reddit-t3_1s2bw68",
-        "source": "reddit",
-        "title": "Designing a Python Language Server: Lessons from Pyre that Shaped Pyrefly",
-        "url": "https://www.reddit.com/r/programming/comments/1s2bw68/designing_a_python_language_server_lessons_from/",
-        "subreddit": "programming",
-        "ai_score": 7.2,
-        "retro_headline": "Lessons From Pyre Inform the Building of a New Python Language Apparatus",
-        "retro_summary": "An engineer's account of designing a Python language server sets forth the lessons drawn from Pyre and the manner in which they shaped Pyrefly. Though specialised in subject, the piece is of solid interest to programmers whose daily labour depends upon such tooling."
+        "retro_summary": "A further bulletin concerning LiteLLM 1.82.8 describes a release allegedly equipped for credential theft and persistent unauthorized access. Such accusations place the episode among the more serious software contaminations of the season.",
+        "retro_headline_zh": "恶意LiteLLM版本被指窃取凭证并暗留后门",
+        "retro_summary_zh": "又一则关于LiteLLM 1.82.8的通报称，该版本据称具备窃取凭证与持续未授权访问的能力。此类指控足以使该事件跻身本季最严重的软件污染事故之列。"
       },
       {
         "id": "reddit-t3_1s3fnlu",
@@ -409,7 +530,21 @@
         "subreddit": "programming",
         "ai_score": 7.6,
         "retro_headline": "Paper Asks Whether Independent Functions Might Share Memory Rather Than Ship Data",
-        "retro_summary": "A research paper considers whether separately deployable functions might profit from shared memory instead of serialising data between them. The proposal has intrigued system builders, for it hints at a rearrangement of one of the cloud age's most entrenched habits."
+        "retro_summary": "A research paper considers whether separately deployable functions might profit from shared memory instead of serialising data between them. The proposal has intrigued system builders, for it hints at a rearrangement of one of the cloud age's most entrenched habits.",
+        "retro_headline_zh": "论文发问：独立函数何不共享内存，而免数据搬运",
+        "retro_summary_zh": "一篇研究论文探讨，彼此独立部署的函数之间，是否可以通过共享内存获益，而不必来回序列化传送数据。此项设想令系统构建者颇感兴趣，因为它暗示着云时代某种最根深蒂固习惯或将被重新安排。"
+      },
+      {
+        "id": "reddit-t3_1s2bw68",
+        "source": "reddit",
+        "title": "Designing a Python Language Server: Lessons from Pyre that Shaped Pyrefly",
+        "url": "https://www.reddit.com/r/programming/comments/1s2bw68/designing_a_python_language_server_lessons_from/",
+        "subreddit": "programming",
+        "ai_score": 7.2,
+        "retro_headline": "Lessons From Pyre Inform the Building of a New Python Language Apparatus",
+        "retro_summary": "An engineer's account of designing a Python language server sets forth the lessons drawn from Pyre and the manner in which they shaped Pyrefly. Though specialised in subject, the piece is of solid interest to programmers whose daily labour depends upon such tooling.",
+        "retro_headline_zh": "新式Python语言工具之建造，得益于Pyre旧训",
+        "retro_summary_zh": "一位工程师讲述设计Python语言服务器的经过，陈述了从Pyre得来的种种教训，以及这些经验如何塑造了Pyrefly。此文虽题材专门，却对那些日常工作倚赖此类工具的程序员颇有价值。"
       },
       {
         "id": "reddit-t3_1s2oisv",
@@ -419,7 +554,9 @@
         "subreddit": "programming",
         "ai_score": 6.9,
         "retro_headline": "Developer Experience Declared the New Competitive Moat in Software Commerce",
-        "retro_summary": "A modern trade essay argues that developer experience has become a true moat by which firms defend their advantage. The proposition is managerial rather than mechanical, yet it has drawn notice because engineering comfort now bears directly upon profit and speed."
+        "retro_summary": "A modern trade essay argues that developer experience has become a true moat by which firms defend their advantage. The proposition is managerial rather than mechanical, yet it has drawn notice because engineering comfort now bears directly upon profit and speed.",
+        "retro_headline_zh": "开发者体验被称作软件商战中的新护城河",
+        "retro_summary_zh": "一篇当代商业文章主张，开发者体验已成为企业保卫优势的真正护城河。此论点偏于管理而非机械，却仍引人注目，因为工程工作的舒适与否如今直接关系利润与速度。"
       },
       {
         "id": "reddit-t3_1s32qin",
@@ -429,57 +566,9 @@
         "subreddit": "programming",
         "ai_score": 7,
         "retro_headline": "On Raft's Old-Term Entries: A Delicate Fault Examined From the Engineer's Bench",
-        "retro_summary": "A technical exposition explains why the Raft protocol cannot safely commit old-term entries, treating the matter from the practical side of implementation and debugging. The subject is abstruse, but among builders of distributed systems it is reckoned of genuine importance."
-      },
-      {
-        "id": "reddit-t3_1s2blu7",
-        "source": "reddit",
-        "title": "Handheld NES on a ESP32",
-        "url": "https://www.reddit.com/r/programming/comments/1s2blu7/handheld_nes_on_a_esp32/",
-        "subreddit": "programming",
-        "ai_score": 6.8,
-        "retro_headline": "Pocket Nintendo Apparatus Fashioned Upon the Humble ESP32 Delights the Hobby Trade",
-        "retro_summary": "An ingenious mechanic has contrived a handheld NES using the inexpensive ESP32, to the pleasure of nostalgists and tinkerers alike. Such work may not transform industry, yet it splendidly exhibits the lively inventive spirit of the amateur bench."
-      },
-      {
-        "id": "reddit-t3_1s1e4il",
-        "source": "reddit",
-        "title": "Software dev job postings are up 15% since mid 2025",
-        "url": "https://www.reddit.com/r/programming/comments/1s1e4il/software_dev_job_postings_are_up_15_since_mid_2025/",
-        "subreddit": "programming",
-        "ai_score": 7.5,
-        "retro_headline": "Employment Notices for Software Men Rise Fifteen Per Cent Since Mid-2025",
-        "retro_summary": "A report states that job postings for software developers have advanced by 15 per cent since the middle of 2025. After a period of uncertainty in the profession, even such a measured improvement is greeted as encouraging news."
-      },
-      {
-        "id": "reddit-t3_1s2xapb",
-        "source": "reddit",
-        "title": "Debug, visualize and test embedded C/C++ through instrumentation",
-        "url": "https://www.reddit.com/r/programming/comments/1s2xapb/debug_visualize_and_test_embedded_cc_through/",
-        "subreddit": "programming",
-        "ai_score": 7.1,
-        "retro_headline": "Instrumentation Proposed as a New Lantern for Embedded C and C++ Debugging",
-        "retro_summary": "A proposal to debug, visualize, and test embedded C and C++ through instrumentation has drawn earnest notice from practitioners of the lower machine arts. Tools that reveal hidden behaviour in constrained devices are prized because they save both expense and vexation."
-      },
-      {
-        "id": "reddit-t3_1s1rynd",
-        "source": "reddit",
-        "title": "A table was all that was needed to fix Python autocomplete",
-        "url": "https://www.reddit.com/r/programming/comments/1s1rynd/a_table_was_all_that_was_needed_to_fix_python/",
-        "subreddit": "programming",
-        "ai_score": 7.5,
-        "retro_headline": "Python Autocomplete Repaired, It Is Said, by So Simple a Thing as a Table",
-        "retro_summary": "A curious report holds that Python autocomplete was mended by the introduction of a single table, thereby resolving an annoyance with uncommon economy. Programmers delight in such episodes, wherein a vexing defect yields not to grandeur but to plain good sense."
-      },
-      {
-        "id": "reddit-t3_1s3ams9",
-        "source": "reddit",
-        "title": "Open source isn't a tip jar – it's time to charge for access",
-        "url": "https://www.reddit.com/r/programming/comments/1s3ams9/open_source_isnt_a_tip_jar_its_time_to_charge_for/",
-        "subreddit": "programming",
-        "ai_score": 7.8,
-        "retro_headline": "A New Cry in the Commons: Open Source Must Charge and Cease Passing the Hat",
-        "retro_summary": "One forceful opinion declares that open source is no mere tip jar and that maintainers ought to charge directly for access. The argument touches nerves long exposed in the software republic, where ideals of freedom and the facts of livelihood perpetually collide."
+        "retro_summary": "A technical exposition explains why the Raft protocol cannot safely commit old-term entries, treating the matter from the practical side of implementation and debugging. The subject is abstruse, but among builders of distributed systems it is reckoned of genuine importance.",
+        "retro_headline_zh": "论Raft旧任期条目：工程台前细究其隐患",
+        "retro_summary_zh": "一篇技术文章解释了Raft协议何以无法安全提交旧任期条目，并从实现与调试的实务角度展开论述。此题虽属艰深，却在分布式系统的构建者之间被视为真正重要之事。"
       },
       {
         "id": "reddit-t3_1rihows",
@@ -489,7 +578,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 4.2,
         "retro_headline": "Publicity Bazaar Opened as Members Are Invited to Display Their Own Works",
-        "retro_summary": "A self-promotion thread has been opened, affording contributors a sanctioned corner in which to exhibit their wares and inventions. Such notices are commonplace rather than revolutionary, yet they serve as a useful marketplace for the community’s industrious spirits."
+        "retro_summary": "A self-promotion thread has been opened, affording contributors a sanctioned corner in which to exhibit their wares and inventions. Such notices are commonplace rather than revolutionary, yet they serve as a useful marketplace for the community’s industrious spirits.",
+        "retro_headline_zh": "自荐集市开启，众人获邀陈列各自作品",
+        "retro_summary_zh": "一条自我推广帖子已然开张，为投稿者辟出一处经许可的角落，用以展示其作品与发明。此类告示虽非惊天动地，却常为勤勉社群提供一处颇有用处的集市。"
       },
       {
         "id": "reddit-t3_1qrrayn",
@@ -499,7 +590,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.5,
         "retro_headline": "Monthly Employment Exchange Opens for Those Seeking Posts and Those Offering Them",
-        "retro_summary": "A monthly hiring thread has again been convened, bringing employers and job-seekers into one practical forum. In uncertain professional times, even a routine employment ledger commands keen and grateful attention."
+        "retro_summary": "A monthly hiring thread has again been convened, bringing employers and job-seekers into one practical forum. In uncertain professional times, even a routine employment ledger commands keen and grateful attention.",
+        "retro_headline_zh": "月度求职招贤专栏再开，雇主与求职者共赴其会",
+        "retro_summary_zh": "月度招聘讨论串再度开张，把雇主与求职者带入同一处务实论坛。在职业前景未明的时局之下，即便是例行的职位簿录，也足以赢得热切而感激的关注。"
       },
       {
         "id": "reddit-t3_1s3j3ef",
@@ -509,7 +602,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 7.3,
         "retro_headline": "LeCun’s Vast Seed Purse Raises Fresh Doubts About the Reasoning Power of LLMs",
-        "retro_summary": "A speculative discussion asks whether a billion-dollar seed round behind LeCun’s camp signals that autoregressive language models have struck a wall in formal reasoning. The question has animated the research salons, for money and theory together often betray the direction of the coming age."
+        "retro_summary": "A speculative discussion asks whether a billion-dollar seed round behind LeCun’s camp signals that autoregressive language models have struck a wall in formal reasoning. The question has animated the research salons, for money and theory together often betray the direction of the coming age.",
+        "retro_headline_zh": "勒昆巨额种子融资再引大模型推理见顶之疑",
+        "retro_summary_zh": "一场带有推测意味的讨论发问，勒昆阵营背后高达十亿美元的种子融资，是否意味着自回归语言模型在形式推理上已撞上高墙。此问令研究圈诸沙龙议论纷纷，因为资本与理论常常一道泄露时代将往何处去。"
       },
       {
         "id": "reddit-t3_1s3yjyl",
@@ -519,7 +614,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 7.9,
         "retro_headline": "TurboQuant Is Heralded as a New Economy for Artificial Intelligence by Severe Compression",
-        "retro_summary": "A notice on TurboQuant proclaims a striking improvement in AI efficiency through methods of extreme compression. If the claims are sustained, the development may promise cheaper and swifter machine intelligence for a great many practical uses."
+        "retro_summary": "A notice on TurboQuant proclaims a striking improvement in AI efficiency through methods of extreme compression. If the claims are sustained, the development may promise cheaper and swifter machine intelligence for a great many practical uses.",
+        "retro_headline_zh": "TurboQuant以极限压缩被誉为人工智能新经济术",
+        "retro_summary_zh": "一则关于TurboQuant的消息宣称，借助极端压缩之法，人工智能效率可获显著跃升。若其说法经得起检验，这项进展或将为众多实用场景带来更廉价而更迅捷的机器智能。"
       },
       {
         "id": "reddit-t3_1s3adeo",
@@ -529,17 +626,21 @@
         "subreddit": "MachineLearning",
         "ai_score": 5.9,
         "retro_headline": "Doctoral Scholars Confess Unease, Wondering if They Are Ill-Prepared and Standards Too Low",
-        "retro_summary": "A discussion among PhD students raises the disquieting question of whether they are underprepared, or whether the academic bar itself has fallen. The subject is more sociological than mechanical, yet it touches the conscience of the research world."
+        "retro_summary": "A discussion among PhD students raises the disquieting question of whether they are underprepared, or whether the academic bar itself has fallen. The subject is more sociological than mechanical, yet it touches the conscience of the research world.",
+        "retro_headline_zh": "博士学子吐露不安，疑自身未备亦疑门槛过低",
+        "retro_summary_zh": "一场博士生之间的讨论提出了令人不安的问题：究竟是他们准备不足，还是学术门槛本身已经下滑。此题与其说属机械技术，不如说偏向学术社会学，却直触研究世界的良知。"
       },
       {
-        "id": "reddit-t3_1s40a34",
+        "id": "reddit-t3_1s43b2e",
         "source": "reddit",
-        "title": "[R] ARC Round 3 - released + technical report",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s40a34/r_arc_round_3_released_technical_report/",
+        "title": "[D] Probabilistic Neuron Activation in Predictive Coding Algorithm using 1 Bit LLM Architecture",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s43b2e/d_probabilistic_neuron_activation_in_predictive/",
         "subreddit": "MachineLearning",
-        "ai_score": 8.3,
-        "retro_headline": "ARC Round the Third Is Released With a Technical Report to Test the Machine Mind",
-        "retro_summary": "A new ARC round and its accompanying technical report have been released, renewing attention to one of the more closely watched examinations of machine reasoning. Such announcements draw earnest notice, for every fresh benchmark is treated as a glimpse into the true reach of artificial intelligence."
+        "ai_score": 6.8,
+        "retro_headline": "One-Bit Predictive Coding and Probabilistic Neurons Stir Fresh Theoretical Debate",
+        "retro_summary": "A technical discussion joins predictive coding, probabilistic neuron activation, and one-bit language architecture in a bold theoretical mixture. Though abstruse in expression, the proposal attracts notice by promising severe efficiency without surrendering intelligence.",
+        "retro_headline_zh": "一比特预测编码与概率神经元再掀理论争鸣",
+        "retro_summary_zh": "一场技术讨论把预测编码、概率神经元激活与一比特语言模型架构合于一炉，构成颇为大胆的理论拼接。其辞虽显艰深，却因声称可在不失智能的前提下大幅提升效率而引人注目。"
       },
       {
         "id": "reddit-t3_1s387tx",
@@ -549,17 +650,33 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.8,
         "retro_headline": "ICML Scoring Debate Rekindled as Policies A and B Are Weighed Before the Public",
-        "retro_summary": "A lively discussion has arisen over how two competing ICML policies may influence review scores and, by extension, professional fortunes. Such procedural matters may appear dry, but in the republic of science they often determine who is heard and who is overlooked."
+        "retro_summary": "一场热烈讨论围绕ICML两项相争政策将如何影响评审分数，进而左右学术前途而展开。此类程序问题表面枯燥，然在科学共和国之中，谁得被听见、谁遭忽视，往往正由此辈细则所定。",
+        "retro_headline_zh": "ICML评分之争复燃，甲乙两策公然权衡",
+        "retro_summary_zh": "一场热烈讨论围绕ICML两项相争政策将如何影响评审分数，进而左右学术前途而展开。此类程序问题表面枯燥，然在科学共和国之中，谁得被听见、谁遭忽视，往往正由此辈细则所定。"
       },
       {
-        "id": "reddit-t3_1s3zyxj",
+        "id": "reddit-t3_1s40gtd",
         "source": "reddit",
-        "title": "[D] THE ARCHITECT’S STORY: FROM THE 1985 ROOT TO THE \"AI WASH\"",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3zyxj/d_the_architects_story_from_the_1985_root_to_the/",
+        "title": "I built a real-time pipeline that reads game subtitles and converts them into dynamic voice acting (OCR → TTS → RVC) [P]",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s40gtd/i_built_a_realtime_pipeline_that_reads_game/",
         "subreddit": "MachineLearning",
-        "ai_score": 6.2,
-        "retro_headline": "An Architect’s Long Tale From 1985 to the Present Age of ‘AI Wash’ Draws Notice",
-        "retro_summary": "A reflective piece styled as an architect’s story traces a line from a 1985 origin to the present fashion of what the author calls AI wash. The essay is polemical in spirit, yet it finds an audience among those weary of inflated technological claims."
+        "ai_score": 7.7,
+        "retro_headline": "A Real-Time Apparatus Gives Game Subtitles the Living Voice of the Dramatic Stage",
+        "retro_summary": "An enterprising builder presents a pipeline that reads game subtitles and converts them on the instant into spoken performance by way of OCR, speech synthesis, and voice conversion. The contrivance has obvious theatrical charm and suggests fresh uses for machine mediation in entertainment.",
+        "retro_headline_zh": "实时装置可将游戏字幕化作舞台般鲜活配音",
+        "retro_summary_zh": "一位富于巧思的制作者展示了一条实时流水线，借助文字识别、语音合成与声线转换，即刻把游戏字幕变为可听的表演之声。此装置自具戏剧魅力，也暗示了机器中介在娱乐领域的崭新用途。"
+      },
+      {
+        "id": "reddit-t3_1s40a34",
+        "source": "reddit",
+        "title": "[R] ARC Round 3 - released + technical report",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s40a34/r_arc_round_3_released_technical_report/",
+        "subreddit": "MachineLearning",
+        "ai_score": 8.3,
+        "retro_headline": "ARC Round the Third Is Released With a Technical Report to Test the Machine Mind",
+        "retro_summary": "A new ARC round and its accompanying technical report have been released, renewing attention to one of the more closely watched examinations of machine reasoning. Such announcements draw earnest notice, for every fresh benchmark is treated as a glimpse into the true reach of artificial intelligence.",
+        "retro_headline_zh": "ARC第三轮携技术报告问世，再试机器心智",
+        "retro_summary_zh": "新一轮ARC及其配套技术报告已经发布，再度把人们的目光引向这一最受注视的机器推理考验之一。此类消息总会引来郑重关注，因为每一个新基准都被看作窥见人工智能真实能力的一扇小窗。"
       },
       {
         "id": "reddit-t3_1s366un",
@@ -569,7 +686,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 7.8,
         "retro_headline": "Ternary Neural Schemes Are Advanced as a Leaner Engine for Artificial Intelligence",
-        "retro_summary": "A research-minded inquiry asks whether ternary neural networks, employing weights of plus one, zero, and minus one, are at last receiving serious attention. The notion holds appeal because simpler arithmetic may lighten the prodigious expense of present AI machinery."
+        "retro_summary": "A research-minded inquiry asks whether ternary neural networks, employing weights of plus one, zero, and minus one, are at last receiving serious attention. The notion holds appeal because simpler arithmetic may lighten the prodigious expense of present AI machinery.",
+        "retro_headline_zh": "三值神经方案被倡为更轻省的人工智能引擎",
+        "retro_summary_zh": "一项富于研究意味的探问提出，采用正一、零、负一权重的三值神经网络，是否终于开始获得严肃重视。此构想之所以动人，在于更简化的算术或可减轻当下人工智能机器那惊人的耗费。"
       },
       {
         "id": "reddit-t3_1s3p4hm",
@@ -579,17 +698,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 5.4,
         "retro_headline": "Young Scholar Asks the Proper Route by Which to Join the NeurIPS Reviewing Bench",
-        "retro_summary": "A practical inquiry seeks advice on how one might obtain a reviewer’s role for NeurIPS in the coming year. The matter is chiefly of academic administration, yet such appointments remain coveted tokens of standing in the research republic."
-      },
-      {
-        "id": "reddit-t3_1s3okes",
-        "source": "reddit",
-        "title": "[N] LiteLLM supply chain attack risks to Al pipelines and API key exposure",
-        "url": "https://www.reddit.com/r/MachineLearning/comments/1s3okes/n_litellm_supply_chain_attack_risks_to_al/",
-        "subreddit": "MachineLearning",
-        "ai_score": 8.5,
-        "retro_headline": "LiteLLM Attack Said to Expose AI Pipelines and Their Precious Keys to Peril",
-        "retro_summary": "A warning note describes the LiteLLM supply-chain attack as a grave danger to AI pipelines and to the secrecy of valuable API credentials. The matter has drawn sharp concern, for one poisoned dependency may imperil a whole chain of automated work."
+        "retro_summary": "A practical inquiry seeks advice on how one might obtain a reviewer’s role for NeurIPS in the coming year. The matter is chiefly of academic administration, yet such appointments remain coveted tokens of standing in the research republic.",
+        "retro_headline_zh": "青年学人探问加入NeurIPS评审席之正途",
+        "retro_summary_zh": "一则务实提问寻求建议，询问来年如何才能取得NeurIPS评审之职。此事主要属于学术行政范围，然此类任命在研究共和国中仍被视作颇受追逐的身份凭证。"
       },
       {
         "id": "reddit-t3_1s36bxr",
@@ -599,7 +710,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 7.2,
         "retro_headline": "Adversarial Machine Learning Again Occupies the Defences of the Modern Laboratory",
-        "retro_summary": "A discussion of adversarial machine learning revisits the contest between intelligent systems and those who would deceive them by cunning inputs. The matter remains pressing, for every advance in machine perception invites a corresponding advance in sabotage."
+        "retro_summary": "A discussion of adversarial machine learning revisits the contest between intelligent systems and those who would deceive them by cunning inputs. The matter remains pressing, for every advance in machine perception invites a corresponding advance in sabotage.",
+        "retro_headline_zh": "对抗式机器学习再居现代实验室防线中央",
+        "retro_summary_zh": "一场关于对抗式机器学习的讨论，再度审视智能系统与那些试图以狡黠输入欺骗它们之人之间的较量。此题至今仍极为迫切，因为机器感知每向前一步，破坏手段便也随之精进一步。"
       },
       {
         "id": "reddit-t3_1s38qxm",
@@ -609,7 +722,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.6,
         "retro_headline": "Interactive Web Apparatus Demonstrates Heat Equation Solved by Physics-Informed Nets",
-        "retro_summary": "An interactive web presentation has been built to show a PINN addressing the two-dimensional heat equation. Such educational contrivances rarely shake industry, yet they do admirable service in rendering abstruse mathematics visible to the common reader."
+        "retro_summary": "An interactive web presentation has been built to show a PINN addressing the two-dimensional heat equation. Such educational contrivances rarely shake industry, yet they do admirable service in rendering abstruse mathematics visible to the common reader.",
+        "retro_headline_zh": "交互式网页装置演示物理引导网络求解热方程",
+        "retro_summary_zh": "一套交互式网页展示已被构建出来，用以呈现PINN如何处理二维热方程。此类教学装置虽少能撼动产业，却极善于把艰深数学化为普通读者可见之物。"
       },
       {
         "id": "reddit-t3_1s2qham",
@@ -619,7 +734,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.8,
         "retro_headline": "Engineers Confer on the Management of Long-Running Preprocessing at Industrial Scale",
-        "retro_summary": "A practical inquiry has been put to the field concerning what methods genuinely succeed in managing lengthy preprocessing jobs at scale. The question is humble in phrasing, but it touches the daily economics of every large data concern."
+        "retro_summary": "A practical inquiry has been put to the field concerning what methods genuinely succeed in managing lengthy preprocessing jobs at scale. The question is humble in phrasing, but it touches the daily economics of every large data concern.",
+        "retro_headline_zh": "工程师共议大规模长时预处理之治理之道",
+        "retro_summary_zh": "有人向业内提出一项务实问题：究竟哪些方法真正能在大规模条件下管理耗时甚久的预处理任务。此问措辞虽朴素，却关乎每一家大型数据机构的日常经济账本。"
       },
       {
         "id": "reddit-t3_1s397tl",
@@ -629,7 +746,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 4.8,
         "retro_headline": "Compiler of a New Dataset Seeks Counsel as to Its Proper Scientific Employment",
-        "retro_summary": "An earnest contributor reports having made a dataset, but not yet knowing what profitable use ought to be made of it. The appeal is modest in scope, though it reflects the common modern condition of abundant data and uncertain purpose."
+        "retro_summary": "An earnest contributor reports having made a dataset, but not yet knowing what profitable use ought to be made of it. The appeal is modest in scope, though it reflects the common modern condition of abundant data and uncertain purpose.",
+        "retro_headline_zh": "新数据集编者求教其合宜之科学用途",
+        "retro_summary_zh": "一位诚恳的投稿者称自己已制成一份数据集，却尚不知该如何使之发挥切实效用。此求助范围虽不算大，却映照出现代常见处境：数据丰沛，而目的未明。"
       },
       {
         "id": "reddit-t3_1s27pnk",
@@ -639,7 +758,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.9,
         "retro_headline": "Matryoshka Representations Draw Notice as Layered Learning Again Advances",
-        "retro_summary": "A discussion of Matryoshka Representation Learning has attracted attention among those occupied with the internal ordering of machine knowledge. The idea of nested and efficient representations bears enough novelty to keep the research salons engaged."
+        "retro_summary": "A discussion of Matryoshka Representation Learning has attracted attention among those occupied with the internal ordering of machine knowledge. The idea of nested and efficient representations bears enough novelty to keep the research salons engaged.",
+        "retro_headline_zh": "套娃式表征学习再进一层，引来研究界注目",
+        "retro_summary_zh": "一场关于Matryoshka表征学习的讨论，吸引了那些专注于机器知识内部组织之人的注意。其嵌套而高效的表征观念颇具新意，足以使研究沙龙持续谈论不休。"
       },
       {
         "id": "reddit-t3_1s32g40",
@@ -649,7 +770,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.7,
         "retro_headline": "Problem of Crowd Density From Noisy Film Posed Without the Aid of Training Data",
-        "retro_summary": "A project inquiry seeks the best means of predicting crowd density online from noisy video counts when no training data are available. It is the sort of practical puzzle that often provokes the most inventive answers from the working fraternity."
+        "retro_summary": "A project inquiry seeks the best means of predicting crowd density online from noisy video counts when no training data are available. It is the sort of practical puzzle that often provokes the most inventive answers from the working fraternity.",
+        "retro_headline_zh": "无训练数据之下，噪声视频人群密度难题再被提出",
+        "retro_summary_zh": "一项项目求问寻求最佳办法，在毫无训练数据可用的情形下，仅凭含噪视频计数在线预测人群密度。此类务实难题往往最能激发行业同仁提出巧思横生的解答。"
       },
       {
         "id": "reddit-t3_1s1yz2t",
@@ -659,7 +782,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 6.3,
         "retro_headline": "ICML Review Parlours Open as Scholars Compare Notes on the Year’s Judgments",
-        "retro_summary": "A general discussion of ICML 2026 reviews has been opened for those wishing to compare scores, surprises, and grievances. Such forums seldom produce new science, yet they reveal much about the machinery by which science is presently governed."
+        "retro_summary": "A general discussion of ICML 2026 reviews has been opened for those wishing to compare scores, surprises, and grievances. Such forums seldom produce new science, yet they reveal much about the machinery by which science is presently governed.",
+        "retro_headline_zh": "ICML评审议事厅开启，学人互校今年裁断",
+        "retro_summary_zh": "一场关于ICML 2026评审结果的公开讨论已经开启，供人比较分数、惊讶与不平之处。此类论坛虽少能产出新科学，却足以揭示当下科学是如何被其制度机器所治理的。"
       },
       {
         "id": "reddit-t3_1s248e0",
@@ -669,7 +794,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 7.5,
         "retro_headline": "Causal Self-Attention Is Cast as a Probabilistic Model Over Embeddings",
-        "retro_summary": "A research thread advances the proposition that causal self-attention may be understood as a probabilistic model over embeddings. For the mathematically inclined, such reinterpretations are valuable, as they may turn opaque mechanism into reasoned theory."
+        "retro_summary": "A research thread advances the proposition that causal self-attention may be understood as a probabilistic model over embeddings. For the mathematically inclined, such reinterpretations are valuable, as they may turn opaque mechanism into reasoned theory.",
+        "retro_headline_zh": "因果自注意力被重释为嵌入上的概率模型",
+        "retro_summary_zh": "一则研究讨论推进了这样一种主张：因果自注意力也许可被理解为作用于嵌入表示之上的概率模型。对于偏好数学解释者而言，此种重释尤为宝贵，因为它可能把晦暗机制转化为可论证的理论。"
       },
       {
         "id": "reddit-t3_1s346dl",
@@ -679,7 +806,9 @@
         "subreddit": "MachineLearning",
         "ai_score": 4.5,
         "retro_headline": "Public Inquiry Seeks a Clear Distinction Between the Human and the Humanoid",
-        "retro_summary": "A broad question has been raised as to what precisely separates a human being from a humanoid form. The matter lies nearer philosophy and language than engineering, but such distinctions grow more pressing as machines acquire a human semblance."
+        "retro_summary": "A broad question has been raised as to what precisely separates a human being from a humanoid form. The matter lies nearer philosophy and language than engineering, but such distinctions grow more pressing as machines acquire a human semblance.",
+        "retro_headline_zh": "公众探问：人类与类人究竟何以区分",
+        "retro_summary_zh": "有人提出一个广泛问题：究竟是什么把真正的人类与类人的形态明确区分开来。此题较其说属于工程学，毋宁说更近哲学与语言学，然而随着机器愈发具有人形，此等区分也就愈发迫切。"
       },
       {
         "id": "reddit-t3_1qswnox",
@@ -689,7 +818,9 @@
         "subreddit": "webdev",
         "ai_score": 4.8,
         "retro_headline": "Monthly Career Exchange Opens Its Doors to Novices in the Web Trade",
-        "retro_summary": "A recurring thread has been convened for beginners seeking their start in the web development profession. Though routine in form, such public exchanges are valued as a first port of call for the uncertain and the ambitious alike."
+        "retro_summary": "A recurring thread has been convened for beginners seeking their start in the web development profession. Though routine in form, such public exchanges are valued as a first port of call for the uncertain and the ambitious alike.",
+        "retro_headline_zh": "月度入行与网页职业交流帖再度开张",
+        "retro_summary_zh": "一则定期开设的讨论帖已为初学者与求职者再度张罗，专供那些想踏入网页开发行业的人发问求教。其形式虽属例行公事，却常被迷惘而又有志者视作第一处可投问讯的港口。"
       },
       {
         "id": "reddit-t3_1rhvl5m",
@@ -699,17 +830,9 @@
         "subreddit": "webdev",
         "ai_score": 4.8,
         "retro_headline": "Monthly Career Exchange Opens Again for Newcomers to the Web Profession",
-        "retro_summary": "Another monthly getting-started and career thread invites aspirants to put their questions before the web development community. These notices are not sensational, yet they perform steady civic service in guiding fresh entrants into the craft."
-      },
-      {
-        "id": "reddit-t3_1s3x5w5",
-        "source": "reddit",
-        "title": "I finally found the bug causing our service to spike to 100% CPU every 72 hours exactly. I wish the answer was more interesting.",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3x5w5/i_finally_found_the_bug_causing_our_service_to/",
-        "subreddit": "webdev",
-        "ai_score": 7.1,
-        "retro_headline": "A Persistent Seventy-Two-Hour CPU Malady Is Traced to a Most Humble Cause",
-        "retro_summary": "An engineer reports at last identifying the defect that drove a service to one hundred per cent CPU every seventy-two hours with clock-like regularity. The confessed banality of the answer has only sharpened the tale's appeal, for many great outages are born of very small oversights."
+        "retro_summary": "Another monthly getting-started and career thread invites aspirants to put their questions before the web development community. These notices are not sensational, yet they perform steady civic service in guiding fresh entrants into the craft.",
+        "retro_headline_zh": "网页职业月度新手帖再开，迎接后来者",
+        "retro_summary_zh": "又一则月度入门与职业讨论帖已然开启，邀请志在网页开发者将疑问呈于社群之前。此类告示虽不惊天动地，却持续为新入行者指点门径，颇有公益之效。"
       },
       {
         "id": "reddit-t3_1s3og87",
@@ -719,7 +842,9 @@
         "subreddit": "webdev",
         "ai_score": 8.2,
         "retro_headline": "GitHub Is Accused of Enlisting Copilot Data From All Tiers by Automatic Consent",
-        "retro_summary": "A report alleges that GitHub will use Copilot interaction data from users across all service tiers to train and improve its models, with consent presumed unless withdrawn. The matter has stirred immediate concern, for convenience in machine assistance now walks hand in hand with unease over surveillance and consent."
+        "retro_summary": "A report alleges that GitHub will use Copilot interaction data from users across all service tiers to train and improve its models, with consent presumed unless withdrawn. The matter has stirred immediate concern, for convenience in machine assistance now walks hand in hand with unease over surveillance and consent.",
+        "retro_headline_zh": "GitHub被指以默认同意收取各层用户Copilot数据",
+        "retro_summary_zh": "一则报道称，GitHub拟使用各档用户的Copilot交互数据来训练并改进其模型，除非用户主动退出，否则即视为同意。此事立刻引发忧虑，因为机器助手的便利如今总与监视和同意问题并行不悖。"
       },
       {
         "id": "reddit-t3_1s3o47r",
@@ -729,17 +854,21 @@
         "subreddit": "webdev",
         "ai_score": 7.7,
         "retro_headline": "First American Index of AI Job Risk Is Issued, and the Labouring Public Takes Notice",
-        "retro_summary": "Tufts University has reportedly issued the first American index seeking to measure how artificial intelligence may endanger various occupations. Such a ledger is certain to attract grave attention, for the public increasingly wishes to know not merely what the machines can do, but whom they may displace."
+        "retro_summary": "Tufts University has reportedly issued the first American index seeking to measure how artificial intelligence may endanger various occupations. Such a ledger is certain to attract grave attention, for the public increasingly wishes to know not merely what the machines can do, but whom they may displace.",
+        "retro_headline_zh": "美国首份AI职业风险指数发布，引劳动界注目",
+        "retro_summary_zh": "据称塔夫茨大学已发布美国首份试图衡量人工智能如何威胁各类职业的风险指数。此类表册势必引来严肃关注，因为公众如今不仅想知道机器能做什么，更想知道它们将取代谁。"
       },
       {
-        "id": "reddit-t3_1s3q272",
+        "id": "reddit-t3_1s42w9t",
         "source": "reddit",
-        "title": "Imposter syndrome in the age of AI is hitting different.",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3q272/imposter_syndrome_in_the_age_of_ai_is_hitting/",
+        "title": "Can't we just ignore AI?",
+        "url": "https://www.reddit.com/r/webdev/comments/1s42w9t/cant_we_just_ignore_ai/",
         "subreddit": "webdev",
-        "ai_score": 6.4,
-        "retro_headline": "Impostor Feelings Deepen as the Age of Artificial Intelligence Alters the Profession",
-        "retro_summary": "A candid discussion reports that impostor syndrome has taken on a sharper and stranger quality in the era of AI-assisted work. The sentiment is personal, yet it resonates widely among those who fear that comparison with machines may corrode their sense of worth."
+        "ai_score": 6.1,
+        "retro_headline": "The Public Asks Whether the Age of Artificial Intelligence May Simply Be Ignored",
+        "retro_summary": "A candid discussion raises the appealing but difficult notion that one might simply ignore artificial intelligence and continue with ordinary work. The question has found an audience because many weary professionals suspect that indifference may be harder than adoption.",
+        "retro_headline_zh": "公众发问：人工智能时代可否索性置之不理",
+        "retro_summary_zh": "一场坦率讨论提出一个诱人却棘手的念头：人们是否可以干脆不理会人工智能，照旧从事日常工作。此问之所以引人共鸣，正在于许多疲惫的从业者已觉察，冷眼旁观或许比随波而行更难。"
       },
       {
         "id": "reddit-t3_1s3yt0y",
@@ -749,7 +878,21 @@
         "subreddit": "webdev",
         "ai_score": 5.8,
         "retro_headline": "A Frontend Practitioner Nears Surrender and Questions the Future of the Calling",
-        "retro_summary": "A troubled contributor declares himself on the verge of abandoning a career in front-end development. The lament is personal in form, yet it reflects broader uncertainty in a branch of work much shaken by shifting tools and expectations."
+        "retro_summary": "A troubled contributor declares himself on the verge of abandoning a career in front-end development. The lament is personal in form, yet it reflects broader uncertainty in a branch of work much shaken by shifting tools and expectations.",
+        "retro_headline_zh": "前端从业者近乎弃业，前途之问再起",
+        "retro_summary_zh": "一位苦恼的投稿者表示，自己已走到放弃前端开发职业的边缘。此番叹息虽属个人心声，却映照出一个受工具变迁与期望震荡甚深的行业普遍不安。"
+      },
+      {
+        "id": "reddit-t3_1s3q272",
+        "source": "reddit",
+        "title": "Imposter syndrome in the age of AI is hitting different.",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3q272/imposter_syndrome_in_the_age_of_ai_is_hitting/",
+        "subreddit": "webdev",
+        "ai_score": 6.4,
+        "retro_headline": "Impostor Feelings Deepen as the Age of Artificial Intelligence Alters the Profession",
+        "retro_summary": "A candid discussion reports that impostor syndrome has taken on a sharper and stranger quality in the era of AI-assisted work. The sentiment is personal, yet it resonates widely among those who fear that comparison with machines may corrode their sense of worth.",
+        "retro_headline_zh": "人工智能时代加深“冒名者心态”，职业人倍感不安",
+        "retro_summary_zh": "一场坦率讨论指出，在人工智能辅助工作的时代，所谓“冒名顶替综合征”已显得更尖锐也更古怪。此情绪虽然私人，却在广泛人群中引起回响，因为许多人都担心，与机器相较会侵蚀其自我价值感。"
       },
       {
         "id": "reddit-t3_1s3z3ih",
@@ -759,7 +902,9 @@
         "subreddit": "webdev",
         "ai_score": 6.3,
         "retro_headline": "Workers Troubled by Artificial Intelligence Consider Whether to Abandon Their Trades",
-        "retro_summary": "A discussion asks whether anxiety over artificial intelligence is pushing professionals toward a change of career. The question is increasingly common, for the mechanical age now intrudes not only upon wages and tasks, but upon confidence itself."
+        "retro_summary": "A discussion asks whether anxiety over artificial intelligence is pushing professionals toward a change of career. The question is increasingly common, for the mechanical age now intrudes not only upon wages and tasks, but upon confidence itself.",
+        "retro_headline_zh": "受人工智能焦虑所扰者，正思量是否改换行当",
+        "retro_summary_zh": "一场讨论发问，围绕人工智能的不安是否正迫使专业人士萌生转行之念。此问如今愈发常见，因为机器时代所侵扰的，不只是薪资与工种，连人的信心本身也难幸免。"
       },
       {
         "id": "reddit-t3_1s3os8i",
@@ -769,7 +914,9 @@
         "subreddit": "webdev",
         "ai_score": 6.6,
         "retro_headline": "Microsoft Accused of Deceptive Contrivances to Preserve the Great AI Speculation",
-        "retro_summary": "A heated complaint alleges that Microsoft is employing deceptive patterns to keep the artificial intelligence boom from losing its hold upon the public. The charge is polemical in tone, yet it reflects the growing suspicion with which many now regard the commerce of machine intelligence."
+        "retro_summary": "A heated complaint alleges that Microsoft is employing deceptive patterns to keep the artificial intelligence boom from losing its hold upon the public. The charge is polemical in tone, yet it reflects the growing suspicion with which many now regard the commerce of machine intelligence.",
+        "retro_headline_zh": "微软被指施以误导手法，以护人工智能泡沫不破",
+        "retro_summary_zh": "一则措辞激烈的控诉称，微软正在使用带有欺瞒意味的设计手法，以维持人工智能热潮不致失势。此说虽富争辩色彩，却反映出越来越多人对机器智能商业化所怀的疑惧。"
       },
       {
         "id": "reddit-t3_1s37b5u",
@@ -779,7 +926,21 @@
         "subreddit": "webdev",
         "ai_score": 7.9,
         "retro_headline": "Video.js Is Rebuilt and Reduced by Eighty-Eight Per Cent in Striking Economy Drive",
-        "retro_summary": "Report reaches us that Video.js has been rewritten until its size stands 88 per cent below its former measure. Such a sharp reduction in software bulk is warmly received by engineers, who know that elegance often reveals itself first as restraint."
+        "retro_summary": "Report reaches us that Video.js has been rewritten until its size stands 88 per cent below its former measure. Such a sharp reduction in software bulk is warmly received by engineers, who know that elegance often reveals itself first as restraint.",
+        "retro_headline_zh": "Video.js重写成功，体量骤减八成有余",
+        "retro_summary_zh": "消息传来，Video.js已被重写，其体量较旧日竟削减了百分之八十八。软件之身大幅瘦削，最得工程师欢心，因为他们深知，优雅往往首先显于克制。"
+      },
+      {
+        "id": "reddit-t3_1s43h6u",
+        "source": "reddit",
+        "title": "How do you guys reach out agencies/clients? - Research",
+        "url": "https://www.reddit.com/r/webdev/comments/1s43h6u/how_do_you_guys_reach_out_agenciesclients_research/",
+        "subreddit": "webdev",
+        "ai_score": 5.6,
+        "retro_headline": "Young Web Men Ask How Best to Approach Agencies and Clients in Search of Trade",
+        "retro_summary": "A practical inquiry seeks the proper means of reaching agencies and clients for business in the web profession. The subject is commercial rather than inventive, yet it bears real importance for independents trying to make their own way.",
+        "retro_headline_zh": "网页从业者探问如何接触代理与客户以谋业务",
+        "retro_summary_zh": "一则务实提问寻求在网页行业中接洽代理机构与客户的妥善办法。此事较偏商业而非发明创造，然对试图自立门户的独立从业者而言，确属切身大事。"
       },
       {
         "id": "reddit-t3_1s3f14v",
@@ -789,67 +950,9 @@
         "subreddit": "webdev",
         "ai_score": 6.8,
         "retro_headline": "The Decline of Medium Is Debated as Builders Seek Lessons for a Worthier Rival",
-        "retro_summary": "A searching discussion considers what brought about the supposed downfall of Medium and what a competitor might learn from its errors. The question carries real interest, for the web's publishers still seek a model that can unite readers, writers, and sound business without souring all three."
-      },
-      {
-        "id": "reddit-t3_1s3atbp",
-        "source": "reddit",
-        "title": "2002 Internet Cafe Website.",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3atbp/2002_internet_cafe_website/",
-        "subreddit": "webdev",
-        "ai_score": 5.6,
-        "retro_headline": "A 2002 Internet Cafe Site Returns Like a Relic From the Early Web Age",
-        "retro_summary": "An old-style internet cafe website from 2002 has been exhibited, charming readers with its period manner and digital antiquity. The piece offers little in the way of new invention, but a great deal in atmosphere and affectionate remembrance."
-      },
-      {
-        "id": "reddit-t3_1s3zwdp",
-        "source": "reddit",
-        "title": "After 2.5 months of hardwork, the portfolio is complete 🥳",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3zwdp/after_25_months_of_hardwork_the_portfolio_is/",
-        "subreddit": "webdev",
-        "ai_score": 5.5,
-        "retro_headline": "After Months of Labour, a Young Builder Unveils a Completed Portfolio With Great Relief",
-        "retro_summary": "A contributor reports the completion of a personal portfolio after two and a half months of steady effort. The achievement is modest in public consequence, yet such milestones carry deep meaning in a trade where one's body of work is often one's calling card."
-      },
-      {
-        "id": "reddit-t3_1s3b7th",
-        "source": "reddit",
-        "title": "Ever needed help figuring out a tough bug or complex feature? Talk to a duck",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3b7th/ever_needed_help_figuring_out_a_tough_bug_or/",
-        "subreddit": "webdev",
-        "ai_score": 5.9,
-        "retro_headline": "Rubber Duck Method Is Refitted for the Mechanical Age in a Plea to Talk Out One’s Bugs",
-        "retro_summary": "A playful exhortation advises the perplexed programmer to speak to a duck when wrestling with difficult defects or intricate features. Beneath the whimsy lies an old and respectable truth, namely that clear explanation often exposes hidden error."
-      },
-      {
-        "id": "reddit-t3_1s3aho0",
-        "source": "reddit",
-        "title": "Whats your favourite static site generator?",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3aho0/whats_your_favourite_static_site_generator/",
-        "subreddit": "webdev",
-        "ai_score": 5.3,
-        "retro_headline": "Readers Debate Their Favourite Static Site Engines in a Cheerful Survey of Taste",
-        "retro_summary": "A light but lively inquiry asks which static site generator commands the greatest affection among practitioners. Such conversations are seldom epoch-making, yet they reveal the loyalties and fashions of the web-building public."
-      },
-      {
-        "id": "reddit-t3_1s3xpfx",
-        "source": "reddit",
-        "title": "Did anyone else get into web dev for the design side and end up obsessed with performance?",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3xpfx/did_anyone_else_get_into_web_dev_for_the_design/",
-        "subreddit": "webdev",
-        "ai_score": 5.8,
-        "retro_headline": "Design Men Confess They Came for Beauty and Stayed for the Gospel of Performance",
-        "retro_summary": "A lively reflection asks whether others entered web development for its visual design, only to become captivated by speed and performance. The sentiment is revealing, for the modern web increasingly demands that artistry answer to engineering discipline."
-      },
-      {
-        "id": "reddit-t3_1s2gjvc",
-        "source": "reddit",
-        "title": "I think I'm done with Software Development",
-        "url": "https://www.reddit.com/r/webdev/comments/1s2gjvc/i_think_im_done_with_software_development/",
-        "subreddit": "webdev",
-        "ai_score": 5.7,
-        "retro_headline": "A Weary Programmer Declares His Possible Departure From the Software Calling",
-        "retro_summary": "One contributor has publicly confessed that he may be done with software development, a sentiment that drew ready attention from fellow workers. The note is personal rather than industrial, yet it speaks to the fatigue and uncertainty now felt across the profession."
+        "retro_summary": "A searching discussion considers what brought about the supposed downfall of Medium and what a competitor might learn from its errors. The question carries real interest, for the web's publishers still seek a model that can unite readers, writers, and sound business without souring all three.",
+        "retro_headline_zh": "Medium衰落之因受议，后来者欲从其失策中取经",
+        "retro_summary_zh": "一场深入讨论审视所谓Medium衰落的缘由，并探问竞争者可从其失误中学得何种教训。此问颇有现实意味，因为网络出版者至今仍在寻觅一种既能团结读者、作者与商业逻辑，又不令三者俱疲的模式。"
       },
       {
         "id": "reddit-t3_1s3zpgo",
@@ -859,27 +962,93 @@
         "subreddit": "webdev",
         "ai_score": 5.2,
         "retro_headline": "The Pleasures of Revisiting Old Git Commits Are Celebrated by the Coding Public",
-        "retro_summary": "A brief but heartfelt observation praises the curious satisfaction of looking back through one's old git commits. Such sentiments are slight in substance, yet they reveal how even dry records of labour may become a diary of craft and progress."
+        "retro_summary": "A brief but heartfelt observation praises the curious satisfaction of looking back through one's old git commits. Such sentiments are slight in substance, yet they reveal how even dry records of labour may become a diary of craft and progress.",
+        "retro_headline_zh": "回看旧日Git提交之乐，渐成程序界共感",
+        "retro_summary_zh": "一则简短却真挚的感叹赞美了回看旧日git提交记录时那种奇特的满足感。此类情绪虽不算宏大，却揭示出连枯燥的劳动痕迹也能化作技艺与进步的日记。"
       },
       {
-        "id": "reddit-t3_1s3yyqj",
+        "id": "reddit-t3_1s3atbp",
         "source": "reddit",
-        "title": "Help me pick a second monitor for my setup.",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3yyqj/help_me_pick_a_second_monitor_for_my_setup/",
+        "title": "2002 Internet Cafe Website.",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3atbp/2002_internet_cafe_website/",
         "subreddit": "webdev",
-        "ai_score": 5,
-        "retro_headline": "Reader Seeks Counsel in Choosing a Second Monitor for the Modern Workbench",
-        "retro_summary": "A practical inquiry asks for advice in selecting a second monitor to improve a computing setup. The matter is ordinary and somewhat personal, and is therefore judged of middling general interest."
+        "ai_score": 5.6,
+        "retro_headline": "A 2002 Internet Cafe Site Returns Like a Relic From the Early Web Age",
+        "retro_summary": "An old-style internet cafe website from 2002 has been exhibited, charming readers with its period manner and digital antiquity. The piece offers little in the way of new invention, but a great deal in atmosphere and affectionate remembrance.",
+        "retro_headline_zh": "一座2002年网吧网站重现，如早期网络遗物",
+        "retro_summary_zh": "一座风格古旧的2002年网吧网站被重新展示，其时代气息与数字古意颇使读者着迷。此物虽无多少新发明可言，却洋溢着浓厚氛围与亲切怀旧之情。"
       },
       {
-        "id": "reddit-t3_1s3eput",
+        "id": "reddit-t3_1s3zwdp",
         "source": "reddit",
-        "title": "Anyone tried this STT accuracy comparison tool?",
-        "url": "https://www.reddit.com/r/webdev/comments/1s3eput/anyone_tried_this_stt_accuracy_comparison_tool/",
+        "title": "After 2.5 months of hardwork, the portfolio is complete 🥳",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3zwdp/after_25_months_of_hardwork_the_portfolio_is/",
+        "subreddit": "webdev",
+        "ai_score": 5.5,
+        "retro_headline": "After Months of Labour, a Young Builder Unveils a Completed Portfolio With Great Relief",
+        "retro_summary": "A contributor reports the completion of a personal portfolio after two and a half months of steady effort. The achievement is modest in public consequence, yet such milestones carry deep meaning in a trade where one's body of work is often one's calling card.",
+        "retro_headline_zh": "苦作两月有半，青年制作者终成个人作品集",
+        "retro_summary_zh": "一位投稿者称，自己经过两个月又半月的持续努力，终于完成了个人作品集。此成就于公众而言或许不算惊天动地，然而在一个往往以作品立名的行业里，这样的里程碑自有深意。"
+      },
+      {
+        "id": "reddit-t3_1s44ty8",
+        "source": "reddit",
+        "title": "Built a semantic search-powered AI assistant with Drupal at its core",
+        "url": "https://www.reddit.com/r/webdev/comments/1s44ty8/built_a_semantic_searchpowered_ai_assistant_with/",
+        "subreddit": "webdev",
+        "ai_score": 6.9,
+        "retro_headline": "A Semantic Search Assistant Is Raised Upon Drupal as Its Quiet but Sturdy Core",
+        "retro_summary": "A builder announces an artificial assistant powered by semantic search, with Drupal serving as the central machinery beneath the surface. The project invites notice because it weds an established content system to the newer ambitions of machine-guided retrieval.",
+        "retro_headline_zh": "一套语义搜索助手建于Drupal之上，旧骨新魂相合",
+        "retro_summary_zh": "一位开发者宣布打造出一套由语义搜索驱动的人工助手，而其底层中枢则由Drupal担纲。此项目之所以引人注目，正在于它把成熟的内容系统与机器检索的新志向结合在了一处。"
+      },
+      {
+        "id": "reddit-t3_1s3b7th",
+        "source": "reddit",
+        "title": "Ever needed help figuring out a tough bug or complex feature? Talk to a duck",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3b7th/ever_needed_help_figuring_out_a_tough_bug_or/",
+        "subreddit": "webdev",
+        "ai_score": 5.9,
+        "retro_headline": "Rubber Duck Method Is Refitted for the Mechanical Age in a Plea to Talk Out One’s Bugs",
+        "retro_summary": "A playful exhortation advises the perplexed programmer to speak to a duck when wrestling with difficult defects or intricate features. Beneath the whimsy lies an old and respectable truth, namely that clear explanation often exposes hidden error.",
+        "retro_headline_zh": "橡皮鸭法再度适用于机械时代，劝人以言破错",
+        "retro_summary_zh": "一则带着俏皮意味的劝告建议困惑的程序员，在与顽固缺陷或复杂功能搏斗时，不妨对着一只鸭子开口讲解。其轻松外表之下，实藏着一条古老而体面的真理：清楚说明，往往最能暴露隐匿之错。"
+      },
+      {
+        "id": "reddit-t3_1s3aho0",
+        "source": "reddit",
+        "title": "Whats your favourite static site generator?",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3aho0/whats_your_favourite_static_site_generator/",
+        "subreddit": "webdev",
+        "ai_score": 5.3,
+        "retro_headline": "Readers Debate Their Favourite Static Site Engines in a Cheerful Survey of Taste",
+        "retro_summary": "A light but lively inquiry asks which static site generator commands the greatest affection among practitioners. Such conversations are seldom epoch-making, yet they reveal the loyalties and fashions of the web-building public.",
+        "retro_headline_zh": "读者兴味盎然，共论静态站点引擎之所好",
+        "retro_summary_zh": "一则轻松却热闹的提问，询问从业者最钟爱的静态站点生成器为何。此类谈话虽少有划时代之意，却足以显露网页建造者群体的偏好与风尚。"
+      },
+      {
+        "id": "reddit-t3_1s3xpfx",
+        "source": "reddit",
+        "title": "Did anyone else get into web dev for the design side and end up obsessed with performance?",
+        "url": "https://www.reddit.com/r/webdev/comments/1s3xpfx/did_anyone_else_get_into_web_dev_for_the_design/",
         "subreddit": "webdev",
         "ai_score": 5.8,
-        "retro_headline": "Speech Men Compare a New Instrument for Judging the Accuracy of Mechanical Dictation",
-        "retro_summary": "A practical inquiry asks whether a newly offered tool for comparing speech-to-text accuracy is worth a trial. The subject is specialised, yet the appetite for trustworthy transcription has grown so strong that even modest evaluators win attention."
+        "retro_headline": "Design Men Confess They Came for Beauty and Stayed for the Gospel of Performance",
+        "retro_summary": "A lively reflection asks whether others entered web development for its visual design, only to become captivated by speed and performance. The sentiment is revealing, for the modern web increasingly demands that artistry answer to engineering discipline.",
+        "retro_headline_zh": "设计之人坦言为美而来，却终拜性能之道",
+        "retro_summary_zh": "一场生动的回顾发问，是否也有人起初因网页设计之美而入行，后来却被速度与性能深深折服。此种心路颇可玩味，因为现代网络愈发要求艺术服膺于工程纪律。"
+      },
+      {
+        "id": "reddit-t3_1s2gjvc",
+        "source": "reddit",
+        "title": "I think I'm done with Software Development",
+        "url": "https://www.reddit.com/r/webdev/comments/1s2gjvc/i_think_im_done_with_software_development/",
+        "subreddit": "webdev",
+        "ai_score": 5.7,
+        "retro_headline": "A Weary Programmer Declares His Possible Departure From the Software Calling",
+        "retro_summary": "One contributor has publicly confessed that he may be done with software development, a sentiment that drew ready attention from fellow workers. The note is personal rather than industrial, yet it speaks to the fatigue and uncertainty now felt across the profession.",
+        "retro_headline_zh": "一位疲惫程序员自陈或将告别软件生涯",
+        "retro_summary_zh": "一位投稿者公开坦言，自己或许已准备结束软件开发之路，此番心声立刻引来同业关注。此文虽属私人之叹，却也道出了当下整个行业普遍感受到的疲惫与不安。"
       },
       {
         "id": "reddit-t3_1reggwn",
@@ -889,7 +1058,9 @@
         "subreddit": "devops",
         "ai_score": 4.7,
         "retro_headline": "New Accounts Face Automatic Excision of Their Notices Under Forum Rule",
-        "retro_summary": "A discussion has arisen over the automatic removal of posts made by newly created accounts. Though administrative in character, such machinery shapes who may speak in the modern public square and under what suspicion."
+        "retro_summary": "A discussion has arisen over the automatic removal of posts made by newly created accounts. Though administrative in character, such machinery shapes who may speak in the modern public square and under what suspicion.",
+        "retro_headline_zh": "新账户帖子遭自动移除，论坛规章再引议论",
+        "retro_summary_zh": "一场讨论围绕新注册账户帖子被自动移除之事而起。此举虽属管理事务，却足以决定谁能在现代公共论坛发言，又将以何种怀疑目光被看待。"
       },
       {
         "id": "reddit-t3_1s3s6jc",
@@ -899,7 +1070,9 @@
         "subreddit": "devops",
         "ai_score": 8.4,
         "retro_headline": "GitHub Copilot Is Said to Begin Training on Users’ Code by Default in April",
-        "retro_summary": "A report declares that GitHub Copilot will begin training upon users' code by default starting on the twenty-fourth of April. The matter has stirred sharp concern, for the convenience of machine assistance now stands in uneasy relation to consent and ownership."
+        "retro_summary": "A report declares that GitHub Copilot will begin training upon users' code by default starting on the twenty-fourth of April. The matter has stirred sharp concern, for the convenience of machine assistance now stands in uneasy relation to consent and ownership.",
+        "retro_headline_zh": "GitHub Copilot据称将于四月默认以用户代码训练",
+        "retro_summary_zh": "一则报道声称，GitHub Copilot将自四月二十四日起默认以用户代码进行训练。此事引发强烈忧虑，因为机器助手的便利，如今正与同意权与所有权问题形成不安的纠葛。"
       },
       {
         "id": "reddit-t3_1s3izp4",
@@ -909,7 +1082,9 @@
         "subreddit": "devops",
         "ai_score": 6.8,
         "retro_headline": "Owners of a Legacy .NET Concern Seek Urgent Counsel on Grave Security Defects",
-        "retro_summary": "An anxious appeal has been made for immediate advice regarding security troubles in an old .NET application. The case is practical rather than novel, yet the haste of it reminds readers how dearly yesterday's neglected machinery may cost today."
+        "retro_summary": "An anxious appeal has been made for immediate advice regarding security troubles in an old .NET application. The case is practical rather than novel, yet the haste of it reminds readers how dearly yesterday's neglected machinery may cost today.",
+        "retro_headline_zh": "老旧.NET应用现严重安全隐患，业主急求良策",
+        "retro_summary_zh": "有人焦急发出求助，请人即刻指点一套老旧.NET应用所遭遇的安全麻烦。此事虽偏重实际而非新奇，却提醒读者，昨日被忽视的旧机器到了今日往往代价高昂。"
       },
       {
         "id": "reddit-t3_1s3vbsg",
@@ -919,7 +1094,9 @@
         "subreddit": "devops",
         "ai_score": 5.5,
         "retro_headline": "Applicants Trade Intelligence on the eBay Engineering Interview and Its CodeSignal Trial",
-        "retro_summary": "A candidate seeks firsthand knowledge of the interview process for an eBay cloud platform software post, especially the CodeSignal examination. The matter is of narrow but genuine interest to those navigating the competitive rituals of hiring."
+        "retro_summary": "A candidate seeks firsthand knowledge of the interview process for an eBay cloud platform software post, especially the CodeSignal examination. The matter is of narrow but genuine interest to those navigating the competitive rituals of hiring.",
+        "retro_headline_zh": "求职者互通eBay工程面试与CodeSignal考情",
+        "retro_summary_zh": "一位候选人探问eBay云平台软件工程职位的面试流程，尤关切其中的CodeSignal考核。此事虽属范围有限的小事，却对正穿越招聘礼法与竞争关隘者别具真实意义。"
       },
       {
         "id": "reddit-t3_1s3gian",
@@ -929,7 +1106,9 @@
         "subreddit": "devops",
         "ai_score": 6.3,
         "retro_headline": "Engineers Prepare a Migration of F5 Ingress and Weigh the Hazards of the Passage",
-        "retro_summary": "A practical discussion has arisen around the migration of F5 ingress, a matter of clear consequence to those maintaining modern traffic gateways. Such work rarely excites the lay public, yet it commands real respect among the stewards of reliable systems."
+        "retro_summary": "A practical discussion has arisen around the migration of F5 ingress, a matter of clear consequence to those maintaining modern traffic gateways. Such work rarely excites the lay public, yet it commands real respect among the stewards of reliable systems.",
+        "retro_headline_zh": "工程师筹划F5入口迁移，细量其间险阻",
+        "retro_summary_zh": "围绕F5入口迁移之事，一场务实讨论已然展开，此事对维护现代流量网关者影响甚明。此类工作虽少能激起外行兴趣，却在守护系统稳固之人中赢得真实敬意。"
       },
       {
         "id": "reddit-t3_1s377go",
@@ -939,7 +1118,9 @@
         "subreddit": "devops",
         "ai_score": 6.6,
         "retro_headline": "Student of Computing Seeks a Stern Audit of His DevOps and Cloud Roadmap",
-        "retro_summary": "A second-year student has requested frank criticism of his proposed road to DevOps, complete with AWS certificates, Terraform, CI/CD, and a home laboratory. The appeal is personal, yet it reflects the anxious seriousness with which the young now approach technical advancement."
+        "retro_summary": "A second-year student has requested frank criticism of his proposed road to DevOps, complete with AWS certificates, Terraform, CI/CD, and a home laboratory. The appeal is personal, yet it reflects the anxious seriousness with which the young now approach technical advancement.",
+        "retro_headline_zh": "计算机学生求严审其DevOps与云端修习路线",
+        "retro_summary_zh": "一位二年级学生请求旁人直言批评其通往DevOps之规划，其中包括AWS证书、Terraform、CI/CD以及家中实验室。此求助虽属个人事务，却映出青年人如今对技术进身之途所抱的焦灼与郑重。"
       },
       {
         "id": "reddit-t3_1s1ygvn",
@@ -949,7 +1130,9 @@
         "subreddit": "devops",
         "ai_score": 8.8,
         "retro_headline": "The Trivy Compromise Described as a Supply Catastrophe of Extraordinary Severity",
-        "retro_summary": "Readers are sounding the alarm over the compromise of Trivy, treating it as a supply-chain affair of uncommon gravity. Such breaches disturb the engineering public deeply, for they turn trusted instruments of security into possible instruments of harm."
+        "retro_summary": "Readers are sounding the alarm over the compromise of Trivy, treating it as a supply-chain affair of uncommon gravity. Such breaches disturb the engineering public deeply, for they turn trusted instruments of security into possible instruments of harm.",
+        "retro_headline_zh": "Trivy遭攻陷被称为罕见严重的供应链灾祸",
+        "retro_summary_zh": "读者正为Trivy受侵一事大声示警，并将其视作一场分外严重的供应链事故。此类漏洞之所以深扰工程界，正因它把原本受信赖的安全工具变作可能施害之器。"
       },
       {
         "id": "reddit-t3_1s2hf2z",
@@ -959,7 +1142,9 @@
         "subreddit": "devops",
         "ai_score": 8.7,
         "retro_headline": "LiteLLM Reported Compromised Through the Trivy Affair in Grave Supply-Chain Warning",
-        "retro_summary": "A fresh warning asserts that LiteLLM was compromised by way of the Trivy incident, extending the shadow of the breach still further. The report has commanded keen attention because contamination in one trusted dependency may swiftly infect many others."
+        "retro_summary": "A fresh warning asserts that LiteLLM was compromised by way of the Trivy incident, extending the shadow of the breach still further. The report has commanded keen attention because contamination in one trusted dependency may swiftly infect many others.",
+        "retro_headline_zh": "LiteLLM据称因Trivy事件受污染，供应链警报再升级",
+        "retro_summary_zh": "一则新的警告称，LiteLLM乃经由Trivy事件而遭到污染，使这场漏洞之影又向外延伸。此事备受关注，因为一个受信赖依赖项的沾染，往往会迅速波及其余诸家。"
       },
       {
         "id": "reddit-t3_1s28xen",
@@ -969,7 +1154,9 @@
         "subreddit": "devops",
         "ai_score": 6.9,
         "retro_headline": "DevOps Men Ask Whither Artificial Intelligence May Carry the Operations Trade",
-        "retro_summary": "A broad inquiry seeks honest testimony on the direction in which DevOps and artificial intelligence are jointly proceeding. The question is speculative, but it touches the future employment, tooling, and habits of a large technical class."
+        "retro_summary": "A broad inquiry seeks honest testimony on the direction in which DevOps and artificial intelligence are jointly proceeding. The question is speculative, but it touches the future employment, tooling, and habits of a large technical class.",
+        "retro_headline_zh": "DevOps从业者探问人工智能将把运维行业带向何方",
+        "retro_summary_zh": "一场广泛提问寻求社群坦率陈述：DevOps与人工智能结合之后，究竟正朝何方前进。此问虽带推测意味，却牵动一大技术群体未来的就业、工具与行事习惯。"
       },
       {
         "id": "reddit-t3_1s2jszw",
@@ -979,7 +1166,9 @@
         "subreddit": "devops",
         "ai_score": 5.2,
         "retro_headline": "Reader Requests an Open-Ended Project to Occupy His Powers and Prove His Skill",
-        "retro_summary": "A member of the public has asked for recommendations for an open-ended project suitable for sustained effort. The subject is modest in scale, though such undertakings often serve as the proving ground of future engineers."
+        "retro_summary": "A member of the public has asked for recommendations for an open-ended project suitable for sustained effort. The subject is modest in scale, though such undertakings often serve as the proving ground of future engineers.",
+        "retro_headline_zh": "读者求荐开放式项目，以展其才并试其功",
+        "retro_summary_zh": "一位读者请求旁人推荐适合长期投入的开放式项目。此事规模虽不算宏大，却常常成为未来工程师磨炼本领的试验场。"
       },
       {
         "id": "reddit-t3_1s28v4z",
@@ -989,7 +1178,9 @@
         "subreddit": "devops",
         "ai_score": 6.4,
         "retro_headline": "Economists of the Web Compare the Costs of Private Servers and Managed Platforms",
-        "retro_summary": "A practical comparison has been proposed between the expense of a virtual private server and that of platform-as-a-service arrangements. Such reckonings are never glamorous, yet they often decide the fortunes of small ventures and independent builders."
+        "retro_summary": "A practical comparison has been proposed between the expense of a virtual private server and that of platform-as-a-service arrangements. Such reckonings are never glamorous, yet they often decide the fortunes of small ventures and independent builders.",
+        "retro_headline_zh": "网络经营者细算私有服务器与托管平台之费",
+        "retro_summary_zh": "一场务实比较提出，要衡量虚拟专用服务器与平台即服务方案之间的成本差异。此类算计虽从不华丽，却常常决定小型创业者与独立建设者的命运。"
       },
       {
         "id": "reddit-t3_1s20yof",
@@ -999,7 +1190,9 @@
         "subreddit": "devops",
         "ai_score": 7.3,
         "retro_headline": "Opsgenie Nears Its End, With Read-Only Silence Set for April the Seventeenth",
-        "retro_summary": "A notice reports the approaching end of life of Opsgenie, with the service to enter a read-only state on 17 April 2026. Such sunsets carry real consequence for operations teams, who must migrate their alarms and habits before the lamps go out."
+        "retro_summary": "A notice reports the approaching end of life of Opsgenie, with the service to enter a read-only state on 17 April 2026. Such sunsets carry real consequence for operations teams, who must migrate their alarms and habits before the lamps go out.",
+        "retro_headline_zh": "Opsgenie将近寿终，四月十七日起只读无声",
+        "retro_summary_zh": "一则通告称，Opsgenie已近终期，并将于2026年4月17日进入只读状态。此类谢幕对运维团队影响甚大，因为他们必须在灯火熄灭之前迁走警报与既有习惯。"
       },
       {
         "id": "reddit-t3_1s29gug",
@@ -1009,7 +1202,9 @@
         "subreddit": "devops",
         "ai_score": 7.4,
         "retro_headline": "How Best to Secure Personal Access Tokens in Shared GitHub Runner Machines",
-        "retro_summary": "Engineers are debating the proper safekeeping of personal access tokens on shared virtual machines used for GitHub runners. In an age of automated delivery, the safeguarding of such credentials is no minor housekeeping matter, but a central pillar of security."
+        "retro_summary": "Engineers are debating the proper safekeeping of personal access tokens on shared virtual machines used for GitHub runners. In an age of automated delivery, the safeguarding of such credentials is no minor housekeeping matter, but a central pillar of security.",
+        "retro_headline_zh": "共享GitHub Runner主机中个人令牌如何妥善保全",
+        "retro_summary_zh": "工程师们正争论，在供GitHub Runner使用的共享虚拟机上，应如何妥善保管个人访问令牌。在自动化交付之世，此类凭证之防护绝非琐碎家务，而是安全体系的中枢支柱。"
       },
       {
         "id": "reddit-t3_1s2cubx",
@@ -1019,7 +1214,9 @@
         "subreddit": "devops",
         "ai_score": 7,
         "retro_headline": "Embedded Builders Seek a Proper Method for Issuing Software Bills of Materials",
-        "retro_summary": "Attention has turned to the generation of SBOMs for make and CMake projects, particularly in the embedded domain where tooling is often less accommodating. The matter is technical but timely, as supply-chain scrutiny now reaches even the smallest compiled apparatus."
+        "retro_summary": "Attention has turned to the generation of SBOMs for make and CMake projects, particularly in the embedded domain where tooling is often less accommodating. The matter is technical but timely, as supply-chain scrutiny now reaches even the smallest compiled apparatus.",
+        "retro_headline_zh": "嵌入式构建者求索软件物料清单之正法",
+        "retro_summary_zh": "人们的注意力正转向为make与CMake项目生成SBOM，尤以工具向来不甚周到的嵌入式领域为然。此事虽属技术细务，却颇合时宜，因为供应链审视如今已延伸至最微小的编译装置。"
       },
       {
         "id": "reddit-t3_1s1jsp8",
@@ -1029,7 +1226,9 @@
         "subreddit": "devops",
         "ai_score": 6.8,
         "retro_headline": "A New Operator Is Presented for the Management of RustFS Buckets and Users by CRD",
-        "retro_summary": "A contributor announces an operator for managing RustFS buckets and users through Kubernetes-style custom resources. The utility is somewhat specialised, yet such tools are watched with interest wherever storage and orchestration now meet."
+        "retro_summary": "A contributor announces an operator for managing RustFS buckets and users through Kubernetes-style custom resources. The utility is somewhat specialised, yet such tools are watched with interest wherever storage and orchestration now meet.",
+        "retro_headline_zh": "新型Operator问世，以CRD统管RustFS桶与用户",
+        "retro_summary_zh": "一位投稿者宣布写成一款Operator，用Kubernetes式自定义资源来管理RustFS的存储桶与用户。此器用虽稍显专门，却在存储与编排相交之处引来颇多兴趣。"
       },
       {
         "id": "reddit-t3_1s20w4p",
@@ -1039,7 +1238,9 @@
         "subreddit": "devops",
         "ai_score": 6.7,
         "retro_headline": "The Question of Caching in Ephemeral CI Runners Occupies the Practical Engineer",
-        "retro_summary": "A discussion has been opened on caching strategies for ephemeral CI/CD runners and agents, where speed and disposability stand in tension. The topic is workmanlike rather than theatrical, but it strikes at the efficiency of countless software factories."
+        "retro_summary": "A discussion has been opened on caching strategies for ephemeral CI/CD runners and agents, where speed and disposability stand in tension. The topic is workmanlike rather than theatrical, but it strikes at the efficiency of countless software factories.",
+        "retro_headline_zh": "短命CI执行器之缓存之道，正困扰务实工程师",
+        "retro_summary_zh": "围绕临时性CI/CD执行器与代理的缓存策略，一场讨论已然展开，其间速度与可弃置性彼此牵扯。此题虽属工务而非戏剧，却直指无数软件工厂的效率命脉。"
       },
       {
         "id": "reddit-t3_1s1eve7",
@@ -1049,7 +1250,9 @@
         "subreddit": "devops",
         "ai_score": 6.1,
         "retro_headline": "Quality Assurance Veteran Seeks Passage Into the DevOps Profession",
-        "retro_summary": "A worker from the quality-assurance ranks asks how best to cross into the DevOps calling. The request is commonplace, yet such transitions remain of broad interest in a profession whose boundaries are forever shifting."
+        "retro_summary": "A worker from the quality-assurance ranks asks how best to cross into the DevOps calling. The request is commonplace, yet such transitions remain of broad interest in a profession whose boundaries are forever shifting.",
+        "retro_headline_zh": "质保老兵求渡入DevOps之门",
+        "retro_summary_zh": "一位出身质量保证岗位的从业者发问，究竟该如何最好地转入DevOps行当。此类请求虽颇常见，却在一个边界不断流动的职业世界里始终广受关注。"
       },
       {
         "id": "reddit-t3_1s11kz4",
@@ -1059,7 +1262,9 @@
         "subreddit": "devops",
         "ai_score": 6.6,
         "retro_headline": "Backend Man Weighs Which DevOps Skills Shall Endure for the Long Term",
-        "retro_summary": "A backend developer asks which skills merit the greatest attention when moving toward DevOps with an eye on long-term relevance. The question is widely felt, for modern engineers must choose carefully which branches of an ever-thickening tree to climb."
+        "retro_summary": "A backend developer asks which skills merit the greatest attention when moving toward DevOps with an eye on long-term relevance. The question is widely felt, for modern engineers must choose carefully which branches of an ever-thickening tree to climb.",
+        "retro_headline_zh": "后端开发者权衡哪些DevOps技能可久远立身",
+        "retro_summary_zh": "一位后端开发者发问，若转向DevOps并着眼长久价值，究竟该优先修习哪些技能。此问引发广泛共鸣，因为现代工程师必须在愈发繁茂的技术树上谨慎择枝而登。"
       },
       {
         "id": "reddit-t3_1s0rt5j",
@@ -1069,7 +1274,9 @@
         "subreddit": "devops",
         "ai_score": 5.9,
         "retro_headline": "Inquiry Made Into the Merits of Amazon’s Web Application Firewall for Defence",
-        "retro_summary": "A straightforward request for guidance on AWS WAF has invited discussion on its practical value for security. Though not novel in itself, defensive apparatus of this sort remains essential to the ordinary conduct of web affairs."
+        "retro_summary": "A straightforward request for guidance on AWS WAF has invited discussion on its practical value for security. Though not novel in itself, defensive apparatus of this sort remains essential to the ordinary conduct of web affairs.",
+        "retro_headline_zh": "众人探问亚马逊Web应用防火墙之防务价值",
+        "retro_summary_zh": "一则直截了当的求教，询问AWS WAF在安全防御上的实际价值，并由此引出讨论。此物虽非新奇之器，却仍是网页事务日常运转中不可或缺的防卫设施。"
       },
       {
         "id": "reddit-t3_1rzv98l",
@@ -1079,7 +1286,9 @@
         "subreddit": "devops",
         "ai_score": 7.1,
         "retro_headline": "Jsongrep Reported Faster Than Several Established Rivals in the Data-Parsing Race",
-        "retro_summary": "A claim has been advanced that jsongrep outruns jq, jmespath, jsonpath-rust, and jql in handling structured data. Speed contests among command-line tools seldom shake the world, yet they command keen affection among serious practitioners."
+        "retro_summary": "A claim has been advanced that jsongrep outruns jq, jmespath, jsonpath-rust, and jql in handling structured data. Speed contests among command-line tools seldom shake the world, yet they command keen affection among serious practitioners.",
+        "retro_headline_zh": "jsongrep据称在数据解析竞速中胜过诸名家",
+        "retro_summary_zh": "有人提出主张称，jsongrep在处理结构化数据时跑赢了jq、jmespath、jsonpath-rust与jql。命令行工具之间的速度竞赛虽少能震动世界，却总能博得严肃实践者的热爱。"
       }
     ],
     "github": [
@@ -1089,76 +1298,38 @@
         "title": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
         "url": "https://github.com/mvanhorn/last30days-skill",
         "repo": "mvanhorn/last30days-skill",
-        "stars": 8371,
+        "stars": 8862,
         "ai_score": 7.8,
         "retro_headline": "New Agent Skill Scours the Public Wires and Delivers a Grounded Digest of Events",
-        "retro_summary": "A novel artificial agent skill is said to conduct inquiries across forums, video channels, prediction markets, and the general web before composing a sober summary. Such a contrivance reflects the age's growing desire not merely for information, but for orderly synthesis amid the din."
+        "retro_summary": "A novel artificial agent skill is said to conduct inquiries across forums, video channels, prediction markets, and the general web before composing a sober summary. Such a contrivance reflects the age's growing desire not merely for information, but for orderly synthesis amid the din.",
+        "retro_headline_zh": "新型智能代理技能纵览公共网络并汇成稳健摘要",
+        "retro_summary_zh": "据称一种新式智能代理技能能够横跨论坛、视频渠道、预测市场与整个网络展开调查，继而写成审慎摘要。此类装置映照出这个时代日益强烈的愿望，即人们所求已不止于资讯本身，更在于喧嚣之中的有序综合。"
       },
       {
-        "id": "github-bytedance-deer-flow",
+        "id": "github-Yeachan-Heo-oh-my-claudecode",
         "source": "github",
-        "title": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-        "url": "https://github.com/bytedance/deer-flow",
-        "repo": "bytedance/deer-flow",
-        "stars": 47033,
-        "ai_score": 8.5,
-        "retro_headline": "Deer-Flow Presents an Open Harness for Long-Horizon Research, Coding, and Machine Labour",
-        "retro_summary": "An open-source SuperAgent framework named Deer-Flow promises to research, write code, and execute extended tasks by means of sandboxes, memory, tools, and subordinate agents. The scheme has attracted attention because it treats artificial labour not as a single reply, but as an organised industrial process conducted over minutes or hours."
+        "title": "Teams-first Multi-agent orchestration for Claude Code",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+        "repo": "Yeachan-Heo/oh-my-claudecode",
+        "stars": 11936,
+        "ai_score": 8.1,
+        "retro_headline": "Teams-First Orchestration for Claude Code Advances the Multi-Agent Office of Tomorrow",
+        "retro_summary": "A project called Oh My ClaudeCode proposes a team-minded system for orchestrating multiple agents around Claude Code. The idea has stirred interest because the future workshop of software may resemble not one clerk, but an entire mechanical bureau.",
+        "retro_headline_zh": "面向团队的Claude Code多代理编排推进明日机械办公署",
+        "retro_summary_zh": "一项名为Oh My ClaudeCode的工程提出了一套围绕Claude Code展开的团队化多代理编排系统。此构想之所以引发兴趣，正在于未来的软件工坊或许不再像一名办事员，而更像整座机械化公署。"
       },
       {
-        "id": "github-BerriAI-litellm",
+        "id": "github-virattt-dexter",
         "source": "github",
-        "title": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
-        "url": "https://github.com/BerriAI/litellm",
-        "repo": "BerriAI/litellm",
-        "stars": 40800,
-        "ai_score": 8.7,
-        "retro_headline": "LiteLLM Offers a Grand Switching Exchange for More Than a Hundred Language Engines",
-        "retro_summary": "LiteLLM is presented as a Python toolkit and proxy gateway by which more than one hundred language-model services may be addressed through a common form. Its appeal is considerable, for enterprises increasingly desire one switchboard for costs, guardrails, balancing, and records across many machine intelligences."
-      },
-      {
-        "id": "github-pascalorg-editor",
-        "source": "github",
-        "title": "Create and share 3D architectural projects.",
-        "url": "https://github.com/pascalorg/editor",
-        "repo": "pascalorg/editor",
-        "stars": 7026,
-        "ai_score": 6.1,
-        "retro_headline": "Editor for Three-Dimensional Architectural Schemes Invites the Public to Build and Share",
-        "retro_summary": "A project devoted to creating and sharing three-dimensional architectural designs has been put before the public. Though its description is spare, the combination of design, collaboration, and visual drafting gives it respectable interest."
-      },
-      {
-        "id": "github-letta-ai-claude-subconscious",
-        "source": "github",
-        "title": "Give Claude Code a subconscious",
-        "url": "https://github.com/letta-ai/claude-subconscious",
-        "repo": "letta-ai/claude-subconscious",
-        "stars": 1612,
+        "title": "An autonomous agent for deep financial research",
+        "url": "https://github.com/virattt/dexter",
+        "repo": "virattt/dexter",
+        "stars": 18666,
         "ai_score": 7.6,
-        "retro_headline": "A Subconscious Is Proposed for Claude Code in a Curious Advance in Machine Memory",
-        "retro_summary": "A singular project proposes to furnish Claude Code with what its authors call a subconscious, suggesting a deeper layer of machine recollection or persistence. The idea is dramatic enough to command notice, for the public is ever intrigued when automata are given faculties once reserved for the mind."
-      },
-      {
-        "id": "github-ruvnet-ruflo",
-        "source": "github",
-        "title": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
-        "url": "https://github.com/ruvnet/ruflo",
-        "repo": "ruvnet/ruflo",
-        "stars": 26447,
-        "ai_score": 8.2,
-        "retro_headline": "Ruflo Advances a Grand Orchestration Platform for Swarms of Artificial Clerks",
-        "retro_summary": "Ruflo announces itself as a leading platform for orchestrating multiple intelligent agents in concert, with provisions for workflow, retrieval, and native coding integrations. The idea of distributed machine bureaux acting in disciplined formation is one of the more striking tendencies of the present computational age."
-      },
-      {
-        "id": "github-Crosstalk-Solutions-project-nomad",
-        "source": "github",
-        "title": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-        "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-        "repo": "Crosstalk-Solutions/project-nomad",
-        "stars": 16881,
-        "ai_score": 7.3,
-        "retro_headline": "Project N.O.M.A.D. Offers an Offline Survival Computer for Hard Times and Remote Places",
-        "retro_summary": "Project N.O.M.A.D. proposes a self-contained computer furnished with practical tools, stored knowledge, and artificial intelligence for use without reliance on the network. The conception is dramatic and timely, answering modern anxieties over fragility, dependence, and preparedness."
+        "retro_headline": "Dexter Sets Out as an Autonomous Researcher in the High and Hazardous Finance Trade",
+        "retro_summary": "A system named Dexter presents itself as an autonomous agent for deep financial research, venturing into one of the most data-laden provinces of modern commerce. Such machinery draws notice because finance rewards speed and synthesis, yet punishes error with uncommon severity.",
+        "retro_headline_zh": "Dexter自许为金融深研自治代理，涉足高险财界",
+        "retro_summary_zh": "名为Dexter的系统自称是一位可独立从事深度金融研究的自治代理，意欲进入现代商业中最被数据淹没的领域之一。此类机器之所以引人注目，在于金融业既奖赏速度与综合能力，又以异常严厉的方式惩罚错误。"
       },
       {
         "id": "github-ruvnet-RuView",
@@ -1166,54 +1337,77 @@
         "title": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.",
         "url": "https://github.com/ruvnet/RuView",
         "repo": "ruvnet/RuView",
-        "stars": 42559,
+        "stars": 42741,
         "ai_score": 8.6,
         "retro_headline": "RuView Claims to Read Pose and Vital Signs From Common Wi-Fi Without Any Camera Lens",
-        "retro_summary": "RuView asserts that ordinary Wi-Fi signals may be turned to the estimation of human pose, presence, and even vital signs, all without a single photographic image. If the claim stands firm, it will stir both admiration for the engineering and unease at the breadth of invisible observation."
+        "retro_summary": "RuView asserts that ordinary Wi-Fi signals may be turned to the estimation of human pose, presence, and even vital signs, all without a single photographic image. If the claim stands firm, it will stir both admiration for the engineering and unease at the breadth of invisible observation.",
+        "retro_headline_zh": "RuView称无须镜头即可借普通Wi‑Fi识别姿态与体征",
+        "retro_summary_zh": "RuView宣称，普通Wi‑Fi信号即可被用来估测人体姿态、存在与甚至生命体征，全程不需一帧影像。若此说成立，它既会因工程巧思而令人赞叹，也会因无形观察之广泛而使人不安。"
       },
       {
-        "id": "github-supermemoryai-supermemory",
+        "id": "github-bytedance-deer-flow",
         "source": "github",
-        "title": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
-        "url": "https://github.com/supermemoryai/supermemory",
-        "repo": "supermemoryai/supermemory",
-        "stars": 19369,
-        "ai_score": 7.5,
-        "retro_headline": "Supermemory Seeks to Become the Swift Mnemonic Engine of the Artificial Age",
-        "retro_summary": "A service called Supermemory offers itself as a fast and scalable memory engine, with an application and an interface for the new AI era. As artificial agents grow more elaborate, the market for dependable mechanical remembrance grows with them."
+        "title": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+        "url": "https://github.com/bytedance/deer-flow",
+        "repo": "bytedance/deer-flow",
+        "stars": 47526,
+        "ai_score": 8.5,
+        "retro_headline": "Deer-Flow Presents an Open Harness for Long-Horizon Research, Coding, and Machine Labour",
+        "retro_summary": "An open-source SuperAgent framework named Deer-Flow promises to research, write code, and execute extended tasks by means of sandboxes, memory, tools, and subordinate agents. The scheme has attracted attention because it treats artificial labour not as a single reply, but as an organised industrial process conducted over minutes or hours.",
+        "retro_headline_zh": "Deer-Flow推出长程研究与编码的开放式机器劳作框架",
+        "retro_summary_zh": "名为Deer-Flow的开源SuperAgent框架宣称，可借助沙箱、记忆、工具与下级代理来开展研究、编写代码并执行长时任务。此方案之所以吸引目光，正在于它不把人工劳作视作一次回应，而视作可持续数分钟乃至数小时的有组织工业流程。"
       },
       {
-        "id": "github-FujiwaraChoki-MoneyPrinterV2",
+        "id": "github-Vaibhavs10-insanely-fast-whisper",
         "source": "github",
-        "title": "Automate the process of making money online.",
-        "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
-        "repo": "FujiwaraChoki/MoneyPrinterV2",
-        "stars": 25780,
-        "ai_score": 5.4,
-        "retro_headline": "MoneyPrinterV2 Promises to Automate the Quest for Online Revenue",
-        "retro_summary": "A boldly named project purports to automate the process of making money on the internet, a claim certain to attract both curiosity and skepticism. Such schemes are rarely modest in ambition, and the prudent reader will reserve judgment until substance matches slogan."
+        "title": "Vaibhavs10 / insanely-fast-whisper",
+        "url": "https://github.com/Vaibhavs10/insanely-fast-whisper",
+        "repo": "Vaibhavs10/insanely-fast-whisper",
+        "stars": 10567,
+        "ai_score": 7.4,
+        "retro_headline": "Whisper Is Driven to Astonishing Speed in a New Dictation Engine for the Age",
+        "retro_summary": "A repository styled Insanely Fast Whisper promises to hasten machine transcription to a most remarkable degree. Such speed is warmly welcomed wherever speech is to be rendered into text before patience or commerce runs out.",
+        "retro_headline_zh": "Whisper转录引擎提速惊人，适应当代速录之需",
+        "retro_summary_zh": "名为Insanely Fast Whisper的代码库承诺，将机器转录速度推进到令人惊异的地步。凡语音需在耐心耗尽或商机溜走之前化作文字之处，此等速度总会受到热烈欢迎。"
       },
       {
-        "id": "github-usestrix-strix",
+        "id": "github-agentscope-ai-agentscope",
         "source": "github",
-        "title": "Open-source AI hackers to find and fix your app’s vulnerabilities.",
-        "url": "https://github.com/usestrix/strix",
-        "repo": "usestrix/strix",
-        "stars": 21887,
+        "title": "Build and run agents you can see, understand and trust.",
+        "url": "https://github.com/agentscope-ai/agentscope",
+        "repo": "agentscope-ai/agentscope",
+        "stars": 20053,
         "ai_score": 7.9,
-        "retro_headline": "Strix Unveils Open-Source Artificial Hackers to Hunt and Mend Software Weaknesses",
-        "retro_summary": "Strix is described as an open-source body of AI agents charged with finding and repairing vulnerabilities in applications. The undertaking commands interest because it places offensive and defensive technique in the hands of automated systems, a development of both promise and peril."
+        "retro_headline": "AgentScope Offers a Visible and Trustworthy Stage Upon Which Artificial Agents May Perform",
+        "retro_summary": "A platform called AgentScope invites builders to construct and run agents that may be seen, understood, and, so it hopes, trusted. The emphasis upon intelligibility is noteworthy, for the public grows weary of powerful mechanisms that behave like sealed cabinets.",
+        "retro_headline_zh": "AgentScope欲为智能代理搭起可见、可解、可信之舞台",
+        "retro_summary_zh": "名为AgentScope的平台邀请建造者去构建并运行那些可被看见、可被理解且但愿可被信赖的智能代理。它如此强调可理解性，格外值得注意，因为公众已渐厌倦那些威力强大却宛如封柜的机械装置。"
       },
       {
-        "id": "github-hsliuping-TradingAgents-CN",
+        "id": "github-twentyhq-twenty",
         "source": "github",
-        "title": "基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版",
-        "url": "https://github.com/hsliuping/TradingAgents-CN",
-        "repo": "hsliuping/TradingAgents-CN",
-        "stars": 21469,
-        "ai_score": 7.2,
-        "retro_headline": "Chinese TradingAgents Edition Applies Multi-Agent Language Engines to the Financial Markets",
-        "retro_summary": "A Chinese-enhanced edition of TradingAgents presents a financial trading framework built upon multiple language-model agents acting together. The marriage of speculative finance and machine collaboration remains a matter of enduring fascination, however often it invites caution."
+        "title": "Building a modern alternative to Salesforce, powered by the community.",
+        "url": "https://github.com/twentyhq/twenty",
+        "repo": "twentyhq/twenty",
+        "stars": 40972,
+        "ai_score": 7.7,
+        "retro_headline": "Twenty Advances a Community Standard Against the Great Salesforce Empire",
+        "retro_summary": "A project named Twenty seeks to build a modern, community-powered alternative to Salesforce, thereby challenging one of the grand commercial fortresses of enterprise software. The effort commands interest because open and communal enterprise tools remain a tantalising but difficult ambition.",
+        "retro_headline_zh": "Twenty以社区之力挑战Salesforce企业帝国",
+        "retro_summary_zh": "名为Twenty的项目欲打造一套由社区驱动、足以替代Salesforce的现代系统，从而向企业软件的一座商业堡垒发起挑战。此举之所以引人注目，在于开放而共治的企业工具始终是一个诱人却艰难的抱负。"
+      },
+      {
+        "id": "github-datalab-to-chandra",
+        "source": "github",
+        "title": "OCR model that handles complex tables, forms, handwriting with full layout.",
+        "url": "https://github.com/datalab-to/chandra",
+        "repo": "datalab-to/chandra",
+        "stars": 5684,
+        "ai_score": 8,
+        "retro_headline": "A New OCR Engine Undertakes Tables, Forms, and Handwriting With Full Regard to Layout",
+        "retro_summary": "An OCR model from Datalab to Chandra claims facility with complex tables, printed forms, handwriting, and the full geometry of the page. Such competence is of real consequence, for documents are rarely simple, and commerce still hides its meaning in crooked paper kingdoms.",
+        "retro_headline_zh": "新OCR引擎兼治表格、表单与手写，并通晓版面全局",
+        "retro_summary_zh": "Datalab to Chandra推出的一款OCR模型声称，能够处理复杂表格、印制表单、手写内容以及整页版面结构。此等本领意义匪浅，因为文书向来并不简单，而商业世界至今仍把意义藏在曲折的纸面王国之中。"
       }
     ]
   }

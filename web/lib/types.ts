@@ -14,6 +14,8 @@ export interface ScoredItem extends RawItem {
   ai_score: number
   retro_headline: string
   retro_summary: string
+  retro_headline_zh?: string
+  retro_summary_zh?: string
 }
 
 export interface Edition {

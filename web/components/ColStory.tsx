@@ -1,6 +1,6 @@
 import type { ScoredItem } from '@/lib/types'
 import type { AppLang } from '@/lib/i18n'
-import { t } from '@/lib/i18n'
+import { localizedHeadline, localizedSummary, t } from '@/lib/i18n'
 
 interface ColStoryProps {
   item: ScoredItem
@@ -19,17 +19,18 @@ export default function ColStory({ item, rank, lang }: ColStoryProps) {
     .filter(Boolean)
     .join(' · ')
 
+  const headline = localizedHeadline(item, lang)
+  const summary = localizedSummary(item, lang)
+
   return (
     <article className="col-story">
       <h3 className="col-story__headline">
         {rank && <span style={{ color: 'var(--aged-caption)', marginRight: '0.3em' }}>{rank}.</span>}
         <a href={item.url} target="_blank" rel="noopener noreferrer">
-          {item.retro_headline || item.title}
+          {headline}
         </a>
       </h3>
-      {item.retro_summary && (
-        <p className="col-story__summary">{item.retro_summary}</p>
-      )}
+      {summary && <p className="col-story__summary">{summary}</p>}
       <div className="col-story__meta">
         <span className="score-badge">{item.ai_score.toFixed(1)}</span>
         {meta && <span>{meta}</span>}

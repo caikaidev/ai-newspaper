@@ -1,4 +1,5 @@
 import { cookies, headers } from 'next/headers'
+import type { ScoredItem } from '@/lib/types'
 
 export type AppLang = 'en' | 'zh-CN'
 
@@ -29,8 +30,14 @@ export function localeForLang(lang: AppLang): string {
   return lang === 'zh-CN' ? 'zh-CN' : 'en-US'
 }
 
-export function isZh(lang: AppLang): boolean {
-  return lang === 'zh-CN'
+export function localizedHeadline(item: ScoredItem, lang: AppLang): string {
+  if (lang === 'zh-CN') return item.retro_headline_zh ?? item.retro_headline ?? item.title
+  return item.retro_headline ?? item.title
+}
+
+export function localizedSummary(item: ScoredItem, lang: AppLang): string {
+  if (lang === 'zh-CN') return item.retro_summary_zh ?? item.retro_summary ?? ''
+  return item.retro_summary ?? ''
 }
 
 export const messages = {

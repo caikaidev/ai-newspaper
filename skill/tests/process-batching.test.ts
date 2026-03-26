@@ -26,6 +26,8 @@ describe('process batching', () => {
           score: 7.5,
           retro_headline: `Headline for ${item.id}`,
           retro_summary: `Summary for ${item.id}. Second sentence.`,
+          retro_headline_zh: `${item.id} 的中文标题`,
+          retro_summary_zh: `${item.id} 的中文摘要。第二句。`,
         }))
       )
     })
@@ -36,6 +38,7 @@ describe('process batching', () => {
     expect(complete).toHaveBeenCalledTimes(3)
     expect(result).toHaveLength(45)
     expect(result[0].retro_headline).toBe('Headline for item-0')
+    expect(result[0].retro_headline_zh).toBe('item-0 的中文标题')
     expect(result[44].retro_headline).toBe('Headline for item-44')
   })
 })

@@ -140,6 +140,8 @@ export function buildFallbackResponse(messages: Array<{ role: 'user' | 'assistan
       retro_summary:
         `Editors marked this ${source} report as noteworthy based on current community activity.` +
         ` This fallback edition uses local scoring when no live AI provider is configured.`,
+      retro_headline_zh: `快讯：${title}`.slice(0, 120),
+      retro_summary_zh: `编辑部依据当前社群热度，将这则来自 ${source} 的报道列为值得关注的条目。此回退版本在未配置在线 AI 能力时使用本地确定性评分与双语占位文案。`,
     }
   })
 
@@ -154,7 +156,6 @@ async function tryResolveOpenClawSdk(): Promise<AIProvider | null> {
       return new OpenClawSdkAdapter(openclaw)
     }
   } catch {
-    // local package not installed or not available in this runtime
   }
 
   return null
@@ -173,21 +174,17 @@ async function tryResolveOpenClawCli(): Promise<AIProvider | null> {
 }
 
 export async function resolveAI(): Promise<AIProvider> {
-  // Priority 1: project-local OpenClaw SDK with active session/runtime
   const sdk = await tryResolveOpenClawSdk()
   if (sdk) return sdk
 
-  // Priority 2: gateway-backed OpenClaw CLI using configured auth/OAuth profiles
   const openclawCli = await tryResolveOpenClawCli()
   if (openclawCli) return openclawCli
 
-  // Priority 3: standalone mode with explicit API key
   if (process.env.ANTHROPIC_API_KEY) {
     const { Anthropic } = await import('@anthropic-ai/sdk')
     const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
     return new AnthropicAdapter(client.messages as unknown as AnthropicAdapter['client'])
   }
 
-  // Priority 4: local deterministic fallback so the pipeline can still build/test end-to-end
   return new FallbackAdapter()
 }

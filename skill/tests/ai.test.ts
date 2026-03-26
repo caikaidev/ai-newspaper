@@ -29,10 +29,12 @@ describe('buildFallbackResponse', () => {
       },
     ])
 
-    const parsed = JSON.parse(raw) as Array<{ score: number; retro_headline: string; retro_summary: string }>
+    const parsed = JSON.parse(raw) as Array<{ score: number; retro_headline: string; retro_summary: string; retro_headline_zh: string; retro_summary_zh: string }>
     expect(parsed).toHaveLength(2)
     expect(parsed[0].retro_headline).toContain('Story A')
+    expect(parsed[0].retro_headline_zh).toContain('Story A')
     expect(parsed[0].score).toBeGreaterThan(0)
     expect(parsed[1].retro_summary).toContain('fallback edition')
+    expect(parsed[1].retro_summary_zh).toContain('回退版本')
   })
 })
