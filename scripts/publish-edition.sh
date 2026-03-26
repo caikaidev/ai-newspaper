@@ -23,6 +23,7 @@ fi
 cd "$REPO_DIR"
 
 export NEWSPAPER_DATA_DIR="${NEWSPAPER_DATA_DIR:-$REPO_DIR/data/editions}"
+export NEWSPAPER_BASE_URL="${NEWSPAPER_BASE_URL:-https://ai-newspaper-web.vercel.app}"
 CURRENT_BRANCH="$(git branch --show-current)"
 
 cleanup() {
@@ -38,6 +39,7 @@ trap cleanup EXIT
 printf '[publish] repo=%s\n' "$REPO_DIR"
 printf '[publish] branch=%s\n' "$CURRENT_BRANCH"
 printf '[publish] data=%s\n' "$NEWSPAPER_DATA_DIR"
+printf '[publish] base_url=%s\n' "$NEWSPAPER_BASE_URL"
 printf '[publish] log=%s\n' "$LOG_FILE"
 
 if ! git diff --quiet || ! git diff --cached --quiet; then

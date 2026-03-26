@@ -1,18 +1,9 @@
 import { ImageResponse } from '@vercel/og'
 import { NextRequest } from 'next/server'
-import path from 'path'
-import fs from 'fs/promises'
 import { loadEdition } from '@/lib/editions'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
-
-// Load fonts once at module startup — reused across all OG requests
-const fontsDir = path.join(process.cwd(), 'public', 'fonts')
-const fontPromise = Promise.all([
-  fs.readFile(path.join(fontsDir, 'playfair-display-black.woff2')),
-  fs.readFile(path.join(fontsDir, 'unifraktur-maguntia.woff2')),
-]).catch(() => null)
 
 export async function GET(request: NextRequest) {
   try {
@@ -29,7 +20,6 @@ export async function GET(request: NextRequest) {
     }
 
     const top3 = edition.front_page.slice(0, 3)
-    const fonts = await fontPromise
 
     return new ImageResponse(
       (
@@ -41,7 +31,7 @@ export async function GET(request: NextRequest) {
             display: 'flex',
             flexDirection: 'column',
             padding: '40px 60px',
-            fontFamily: fonts ? 'Playfair' : 'serif',
+            fontFamily: 'Georgia, serif',
           }}
         >
           <div
@@ -55,17 +45,16 @@ export async function GET(request: NextRequest) {
           >
             <div
               style={{
-                fontFamily: fonts ? 'UnifrakturMaguntia' : 'serif',
-                fontSize: '72px',
+                fontSize: '64px',
                 color: '#0d0a04',
                 lineHeight: 1,
+                fontWeight: 700,
               }}
             >
               The Daily Byte
             </div>
             <div
               style={{
-                fontFamily: fonts ? 'Playfair' : 'serif',
                 fontSize: '14px',
                 color: '#7a5a30',
                 marginTop: '6px',
@@ -80,7 +69,6 @@ export async function GET(request: NextRequest) {
               <div key={item.id} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div
                   style={{
-                    fontFamily: 'serif',
                     fontSize: '14px',
                     color: '#7a5a30',
                     minWidth: '20px',
@@ -92,7 +80,6 @@ export async function GET(request: NextRequest) {
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                   <div
                     style={{
-                      fontFamily: fonts ? 'Playfair' : 'serif',
                       fontSize: i === 0 ? '26px' : '20px',
                       fontWeight: 700,
                       color: '#0d0a04',
@@ -104,7 +91,6 @@ export async function GET(request: NextRequest) {
                   {i === 0 && item.retro_summary && (
                     <div
                       style={{
-                        fontFamily: 'serif',
                         fontSize: '14px',
                         color: '#5a3a10',
                         marginTop: '6px',
@@ -125,7 +111,6 @@ export async function GET(request: NextRequest) {
               borderTop: '2px solid #0d0a04',
               paddingTop: '10px',
               marginTop: '16px',
-              fontFamily: 'serif',
               fontSize: '12px',
               color: '#7a5a30',
               textAlign: 'center',
@@ -138,12 +123,6 @@ export async function GET(request: NextRequest) {
       {
         width: 1200,
         height: 630,
-        fonts: fonts
-          ? [
-              { name: 'Playfair', data: fonts[0], weight: 900 as const, style: 'normal' as const },
-              { name: 'UnifrakturMaguntia', data: fonts[1], weight: 400 as const, style: 'normal' as const },
-            ]
-          : [],
       }
     )
   } catch (err) {
