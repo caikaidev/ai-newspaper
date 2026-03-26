@@ -77,7 +77,7 @@ export default function EditionPage({ params }: PageProps) {
                 <ColStory key={item.id} item={item} rank={i + 4} />
               ))}
             </div>
-            <div className="column">
+            <div className="column column--highlight">
               <div className="column__header">This Edition</div>
               <p className="font-body" style={{ fontSize: '0.8rem', lineHeight: 1.6, color: 'var(--ink-black)' }}>
                 {edition.sections.hackernews.length} dispatches from Hacker News<br />
