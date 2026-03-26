@@ -151,6 +151,64 @@ Use it only if you later add cloud-side AI credentials. If you rely on local Ope
 
 For VPS deployment, the recommended schedule is a daily OpenClaw cron run at **07:05 UTC**.
 
+## Troubleshooting
+
+### Cron job did not run
+
+Check scheduler status and jobs:
+
+```bash
+openclaw cron status
+openclaw cron list
+```
+
+Run the job manually:
+
+```bash
+openclaw cron run 45f86636-3a30-4697-9e27-fdde2f0f5902
+```
+
+### Publish script failed
+
+Check the latest local logs:
+
+```bash
+ls -1 logs/
+tail -n 200 logs/<latest-log-file>
+```
+
+Common causes:
+- repo has uncommitted local changes
+- `git push` credentials are broken
+- OpenClaw gateway/provider is unavailable
+
+### Vercel did not update
+
+Check whether GitHub received a new commit:
+
+```bash
+git log --oneline -n 5
+```
+
+Then verify the deployed routes:
+- `https://ai-newspaper-web.vercel.app/`
+- `https://ai-newspaper-web.vercel.app/feed.xml`
+- `https://ai-newspaper-web.vercel.app/api/og?date=YYYY-MM-DD`
+
+### RSS links show localhost
+
+Re-run the publish flow with the correct base URL:
+
+```bash
+NEWSPAPER_BASE_URL=https://ai-newspaper-web.vercel.app ./scripts/publish-edition.sh
+```
+
+### OG route fails
+
+First verify edition data exists for that date, then check the API route:
+- `/api/edition?date=YYYY-MM-DD`
+- `/api/og?date=YYYY-MM-DD`
+
 ## Data Format
 
 Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
