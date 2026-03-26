@@ -1,24 +1,38 @@
 import { ImageResponse } from '@vercel/og'
 import { NextRequest } from 'next/server'
-import { loadEdition } from '@/lib/editions'
 
 export const runtime = 'edge'
 export const dynamic = 'force-dynamic'
 
+interface OgItem {
+  id: string
+  retro_headline?: string
+  retro_summary?: string
+}
+
+interface OgEdition {
+  front_page: OgItem[]
+}
+
 export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url)
-    const date = searchParams.get('date')
+    const url = new URL(request.url)
+    const date = url.searchParams.get('date')
 
     if (!date) {
       return new Response('Missing date parameter', { status: 400 })
     }
 
-    const edition = loadEdition(date)
-    if (!edition) {
-      return new Response('Edition not found', { status: 404 })
+    const editionRes = await fetch(`${url.origin}/api/edition?date=${encodeURIComponent(date)}`, {
+      headers: { accept: 'application/json' },
+      cache: 'no-store',
+    })
+
+    if (!editionRes.ok) {
+      return new Response('Edition not found', { status: editionRes.status })
     }
 
+    const edition = (await editionRes.json()) as OgEdition
     const top3 = edition.front_page.slice(0, 3)
 
     return new ImageResponse(
@@ -86,7 +100,7 @@ export async function GET(request: NextRequest) {
                       lineHeight: 1.2,
                     }}
                   >
-                    {item.retro_headline}
+                    {item.retro_headline ?? 'The Daily Byte'}
                   </div>
                   {i === 0 && item.retro_summary && (
                     <div
