@@ -11,7 +11,7 @@ run publish-edition.sh                  reads repo data/editions
           ↓                                          ↓
 fetch HN + Reddit + GitHub              app/page.tsx → redirect
           ↓                             app/[date]/page.tsx → render
-AI scoring via local OpenClaw           app/api/og → Satori OG image
+AI scoring via local OpenClaw           app/api/og → OG image route
           ↓                             app/feed.xml → RSS route
   data/editions/YYYY-MM-DD.json
   data/editions/feed.xml
@@ -35,10 +35,12 @@ AI scoring via local OpenClaw           app/api/og → Satori OG image
 ### Install
 
 ```bash
-git clone <this-repo> && cd newspaper
+git clone https://github.com/caikaidev/ai-newspaper.git
+cd ai-newspaper
 npm install
-bash web/scripts/download-fonts.sh
 ```
+
+> `web/scripts/download-fonts.sh` is now optional. The production OG route no longer depends on local custom font files to function.
 
 ### Fetch your first edition
 
@@ -74,10 +76,15 @@ This repo is now structured primarily for:
 - `data/editions/` is committed into git
 - a VPS runs OpenClaw cron, which generates fresh editions locally and pushes them back to GitHub
 
-### Production URL
+### Live deployment
 
-Current deployment URL:
+Current production URL:
 - `https://ai-newspaper-web.vercel.app`
+
+Verified routes:
+- `/`
+- `/feed.xml`
+- `/api/og?date=YYYY-MM-DD`
 
 Recommended `NEWSPAPER_BASE_URL` value:
 - `https://ai-newspaper-web.vercel.app`
@@ -99,6 +106,7 @@ Use the helper script:
 ```
 
 What it does:
+- verifies the repo is clean before publishing
 - fetches/rebases from `origin/<current-branch>` before generating
 - runs `npm run fetch:force`
 - updates `data/editions`
@@ -164,7 +172,7 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 
 ## Features
 
-- 🗞 Vintage 1920s broadsheet aesthetic (UnifrakturMaguntia + Playfair Display + IM Fell English)
+- 🗞 Vintage 1920s broadsheet aesthetic
 - 🤖 AI-scored and rewritten headlines in period journalistic style
 - 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
 - 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
