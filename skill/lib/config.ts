@@ -11,6 +11,12 @@ export type RedditGroup = {
   match: string[]
 }
 
+export type SkillsGroup = {
+  key: string
+  label: LocalizedLabel
+  slice: [number, number]
+}
+
 export type NewspaperConfig = {
   sources: {
     hackernews: {
@@ -26,6 +32,14 @@ export type NewspaperConfig = {
     github: {
       enabled: boolean
       label: LocalizedLabel
+    }
+    skills: {
+      enabled: boolean
+      label: LocalizedLabel
+      topN: number
+      detailFetchLimit: number
+      claudeSkillsTopN: number
+      groups: SkillsGroup[]
     }
   }
 }

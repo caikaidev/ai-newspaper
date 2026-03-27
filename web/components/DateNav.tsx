@@ -4,21 +4,25 @@ import { t } from '@/lib/i18n'
 
 interface DateNavProps {
   date: string
-  editions: string[] // sorted newest-first
+  editions: string[]
   lang: AppLang
+  basePath?: string
+  latestHref?: string
 }
 
-export default function DateNav({ date, editions, lang }: DateNavProps) {
+export default function DateNav({ date, editions, lang, basePath = '', latestHref }: DateNavProps) {
   const m = t(lang)
   const currentIndex = editions.indexOf(date)
-  const prevDate = editions[currentIndex + 1] ?? null // older
-  const nextDate = editions[currentIndex - 1] ?? null // newer
+  const prevDate = editions[currentIndex + 1] ?? null
+  const nextDate = editions[currentIndex - 1] ?? null
   const isLatest = currentIndex === 0
+  const buildHref = (targetDate: string) => `${basePath}/${targetDate}`.replace(/\/+/g, '/')
+  const latestLink = latestHref ?? (basePath ? basePath : '/')
 
   return (
     <nav className="date-nav" aria-label={m.editionNavigation}>
       {prevDate ? (
-        <Link href={`/${prevDate}`} aria-label={`${m.previousEdition}: ${prevDate}`}>
+        <Link href={buildHref(prevDate)} aria-label={`${m.previousEdition}: ${prevDate}`}>
           ← {prevDate}
         </Link>
       ) : (
@@ -28,7 +32,7 @@ export default function DateNav({ date, editions, lang }: DateNavProps) {
       <span>{date}</span>
 
       {nextDate ? (
-        <Link href={`/${nextDate}`} aria-label={`${m.nextEdition}: ${nextDate}`}>
+        <Link href={buildHref(nextDate)} aria-label={`${m.nextEdition}: ${nextDate}`}>
           {nextDate} →
         </Link>
       ) : (
@@ -36,7 +40,7 @@ export default function DateNav({ date, editions, lang }: DateNavProps) {
       )}
 
       {!isLatest && (
-        <Link href="/" aria-label={m.latestEdition}>
+        <Link href={latestLink} aria-label={m.latestEdition}>
           {m.today} ↑
         </Link>
       )}

@@ -54,7 +54,6 @@ export default function EditionPage({ params }: PageProps) {
       <a className="sr-only" href="#main-content">{m.skipToMain}</a>
       <main className="newspaper" id="main-content" aria-label={m.newspaperAria}>
         <Masthead date={edition.date} edition={edition.edition} lang={lang} redirectTo={`/${params.date}`} />
-
         <DateNav date={params.date} editions={editions} lang={lang} />
 
         {showStaleBanner && (
@@ -68,14 +67,10 @@ export default function EditionPage({ params }: PageProps) {
         {(col1.length > 0 || col2.length > 0) && (
           <div className="columns" aria-label="Front page stories">
             <div className="column">
-              {col1.map((item, i) => (
-                <ColStory key={item.id} item={item} rank={i + 2} lang={lang} />
-              ))}
+              {col1.map((item, i) => <ColStory key={item.id} item={item} rank={i + 2} lang={lang} />)}
             </div>
             <div className="column">
-              {col2.map((item, i) => (
-                <ColStory key={item.id} item={item} rank={i + 4} lang={lang} />
-              ))}
+              {col2.map((item, i) => <ColStory key={item.id} item={item} rank={i + 4} lang={lang} />)}
             </div>
             <div className="column column--highlight">
               <div className="column__header">{m.thisEdition}</div>
@@ -83,11 +78,31 @@ export default function EditionPage({ params }: PageProps) {
                 {enabled.hackernews.enabled && <>{edition.sections.hackernews.length} {m.dispatchesFromHN}<br /></>}
                 {enabled.reddit.enabled && <>{edition.sections.reddit.length} {m.reportsFromReddit}<br /></>}
                 {enabled.github.enabled && <>{edition.sections.github.length} {m.projectsFromGitHub}<br /></>}
+                {enabled.skills.enabled && <>{edition.sections.skills.length} {m.skillsTracked}<br /></>}
                 <br />
                 <span style={{ color: 'var(--aged-caption)', fontStyle: 'italic' }}>{m.aiScoredNote}</span>
               </p>
             </div>
           </div>
+        )}
+
+        {enabled.skills.enabled && edition.sections.skills.length > 0 && (
+          <section aria-label={labelForLang(enabled.skills.label, lang)}>
+            <h2 className="section-header">§ {labelForLang(enabled.skills.label, lang)}</h2>
+            <div className="section-columns">
+              {enabled.skills.groups.map(group => (
+                <SectionColumn
+                  key={group.key}
+                  title={labelForLang(group.label, lang)}
+                  items={edition.sections.skills.slice(group.slice[0], group.slice[1])}
+                  lang={lang}
+                />
+              ))}
+            </div>
+            <div className="skills-page-links font-body">
+              <a href="/skills">{labelForLang(enabled.skills.label, lang)}</a>
+            </div>
+          </section>
         )}
 
         {enabled.hackernews.enabled && (
@@ -130,9 +145,7 @@ export default function EditionPage({ params }: PageProps) {
 
         <footer className="footer">
           <p>
-            {m.siteName} · {m.publishedDailyAt} ·{' '}
-            <a href="/feed.xml" aria-label={m.rssFeed}>{m.rssFeed}</a> ·{' '}
-            <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">{m.openSource}</a>
+            {m.siteName} · {m.publishedDailyAt} · <a href="/feed.xml" aria-label={m.rssFeed}>{m.rssFeed}</a> · <a href="/skills">{m.skillsPage}</a> · <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">{m.openSource}</a>
           </p>
           <p style={{ marginTop: '0.25rem' }}>{m.footerDisclaimer}</p>
         </footer>

@@ -1,6 +1,6 @@
 export interface RawItem {
   id: string
-  source: 'hackernews' | 'reddit' | 'github'
+  source: 'hackernews' | 'reddit' | 'github' | 'skills'
   title: string
   url: string
   points?: number
@@ -8,6 +8,11 @@ export interface RawItem {
   repo?: string
   stars?: number
   subreddit?: string
+  owner?: string
+  installs?: number
+  skill_rank?: number
+  source_label?: string
+  summary?: string
 }
 
 export interface ScoredItem extends RawItem {
@@ -28,6 +33,7 @@ export interface Edition {
     hackernews: ScoredItem[]
     reddit: ScoredItem[]
     github: ScoredItem[]
+    skills: ScoredItem[]
   }
 }
 
@@ -46,6 +52,7 @@ export interface RunLogEntry {
   hn_count: number
   reddit_count: number
   github_count: number
+  skills_count?: number
   total_before_dedup: number
   total_after_dedup: number
   status: 'ok' | 'partial' | 'error'

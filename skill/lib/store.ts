@@ -4,31 +4,71 @@ import type { Edition, RunLogEntry, ScoredItem } from './types.js'
 import { isComplete, loadManifest, updateManifest } from './manifest.js'
 import { appendRunLog } from './runlog.js'
 import { rebuildFeed } from './feed.js'
+import { loadConfig } from './config.js'
 
 function resolveEditionsDir(): string {
-  return (
-    process.env.NEWSPAPER_DATA_DIR ??
-    path.resolve(process.cwd(), '..', 'data', 'editions')
-  )
+  return process.env.NEWSPAPER_DATA_DIR ?? path.resolve(process.cwd(), '..', 'data', 'editions')
 }
 
-function buildEdition(
-  scored: ScoredItem[],
-  date: string,
-  editionsDir: string
-): Edition {
-  // Calculate edition number by counting existing JSON editions
-  const existing = fs
-    .readdirSync(editionsDir)
-    .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
-  const editionNumber = existing.length + 1
+function normalizeSkillKey(item: ScoredItem): string {
+  return `${item.owner ?? ''}::${item.title}`.toLowerCase().replace(/[^a-z0-9:]+/g, '-')
+}
 
-  const sorted = [...scored].sort((a, b) => b.ai_score - a.ai_score)
+function selectSkillsRadarItems(items: ScoredItem[], topN: number): ScoredItem[] {
+  const sorted = [...items].sort(
+    (a, b) => b.ai_score - a.ai_score || (b.installs ?? 0) - (a.installs ?? 0) || (a.skill_rank ?? 9999) - (b.skill_rank ?? 9999)
+  )
+
+  const dedupedBySkill = new Map<string, ScoredItem>()
+  for (const item of sorted) {
+    const key = normalizeSkillKey(item)
+    if (!dedupedBySkill.has(key)) dedupedBySkill.set(key, item)
+  }
+
+  const buckets = new Map<string, ScoredItem[]>()
+  for (const item of dedupedBySkill.values()) {
+    const key = item.source_label ?? 'unknown'
+    const bucket = buckets.get(key) ?? []
+    bucket.push(item)
+    buckets.set(key, bucket)
+  }
+
+  const selected: ScoredItem[] = []
+  const sourceKeys = Array.from(buckets.keys())
+
+  for (const key of sourceKeys) {
+    const bucket = buckets.get(key)
+    if (bucket && bucket.length > 0 && selected.length < topN) selected.push(bucket.shift()!)
+  }
+
+  while (selected.length < topN) {
+    let added = false
+    for (const key of sourceKeys) {
+      const bucket = buckets.get(key)
+      if (bucket && bucket.length > 0 && selected.length < topN) {
+        selected.push(bucket.shift()!)
+        added = true
+      }
+    }
+    if (!added) break
+  }
+
+  return selected
+}
+
+function buildEdition(scored: ScoredItem[], date: string, editionsDir: string): Edition {
+  const existing = fs.readdirSync(editionsDir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+  const editionNumber = existing.length + 1
+  const config = loadConfig()
+
+  const nonSkills = scored.filter(i => i.source !== 'skills')
+  const sorted = [...nonSkills].sort((a, b) => b.ai_score - a.ai_score)
   const frontPage = sorted.slice(0, 5)
 
   const hn = scored.filter(i => i.source === 'hackernews')
   const reddit = scored.filter(i => i.source === 'reddit')
   const github = scored.filter(i => i.source === 'github')
+  const skills = selectSkillsRadarItems(scored.filter(i => i.source === 'skills'), config.sources.skills.topN)
 
   return {
     schema_version: 1,
@@ -36,7 +76,7 @@ function buildEdition(
     edition: editionNumber,
     generated_at: new Date().toISOString(),
     front_page: frontPage,
-    sections: { hackernews: hn, reddit, github },
+    sections: { hackernews: hn, reddit, github, skills },
   }
 }
 
@@ -49,9 +89,7 @@ async function sendChannelDelivery(top3: ScoredItem[], date: string): Promise<vo
       console.warn('[store] openclaw.channels.default.send not available — skipping delivery')
       return
     }
-    const message =
-      `📰 *THE DAILY BYTE — ${date}*\n\n` +
-      top3.map((item, i) => `${i + 1}. ${item.retro_headline}`).join('\n')
+    const message = `📰 *THE DAILY BYTE — ${date}*\n\n` + top3.map((item, i) => `${i + 1}. ${item.retro_headline}`).join('\n')
     await openclaw.channels.default.send(message)
   } catch {
     console.warn('[store] Channel delivery unavailable (standalone mode) — skipping')
@@ -59,8 +97,7 @@ async function sendChannelDelivery(top3: ScoredItem[], date: string): Promise<vo
 }
 
 function loadAllEditions(editionsDir: string): Edition[] {
-  return fs
-    .readdirSync(editionsDir)
+  return fs.readdirSync(editionsDir)
     .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
     .sort()
     .reverse()
@@ -74,18 +111,12 @@ function loadAllEditions(editionsDir: string): Edition[] {
     .filter((e): e is Edition => e !== null)
 }
 
-export async function store(
-  scored: ScoredItem[],
-  date: string,
-  opts: { force?: boolean } = {}
-): Promise<void> {
+export async function store(scored: ScoredItem[], date: string, opts: { force?: boolean } = {}): Promise<void> {
   const editionsDir = resolveEditionsDir()
   fs.mkdirSync(editionsDir, { recursive: true })
 
   const startedAt = new Date().toISOString()
   const startMs = Date.now()
-
-  // Check manifest for completion
   const manifest = loadManifest(editionsDir, date)
   if (isComplete(manifest) && !opts.force) {
     console.log(`[store] Edition ${date} already complete — skipping (use --force to override)`)
@@ -95,11 +126,11 @@ export async function store(
   const hnCount = scored.filter(i => i.source === 'hackernews').length
   const redditCount = scored.filter(i => i.source === 'reddit').length
   const githubCount = scored.filter(i => i.source === 'github').length
+  const skillsCount = scored.filter(i => i.source === 'skills').length
 
   let status: RunLogEntry['status'] = 'ok'
   let errorMsg: string | undefined
 
-  // Step 1: Write edition JSON
   if (!manifest?.json_written || opts.force) {
     const edition = buildEdition(scored, date, editionsDir)
     const jsonPath = path.join(editionsDir, `${date}.json`)
@@ -110,7 +141,6 @@ export async function store(
     updateManifest(editionsDir, date, { json_written: true })
   }
 
-  // Step 2: Rebuild feed.xml
   if (!manifest?.feed_updated || opts.force) {
     try {
       const allEditions = loadAllEditions(editionsDir)
@@ -124,14 +154,12 @@ export async function store(
     }
   }
 
-  // Step 3: Channel delivery
   if (!manifest?.channel_sent || opts.force) {
-    const top3 = [...scored].sort((a, b) => b.ai_score - a.ai_score).slice(0, 3)
+    const top3 = [...scored].filter(i => i.source !== 'skills').sort((a, b) => b.ai_score - a.ai_score).slice(0, 3)
     await sendChannelDelivery(top3, date)
     updateManifest(editionsDir, date, { channel_sent: true })
   }
 
-  // Log the run
   const durationMs = Date.now() - startMs
   appendRunLog(editionsDir, {
     date,
@@ -140,6 +168,7 @@ export async function store(
     hn_count: hnCount,
     reddit_count: redditCount,
     github_count: githubCount,
+    skills_count: skillsCount,
     total_before_dedup: scored.length,
     total_after_dedup: scored.length,
     status,
