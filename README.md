@@ -1,6 +1,6 @@
 # The Daily Byte
 
-A retro-style newspaper web app that aggregates daily content from Hacker News, Reddit, and GitHub Trending, scores it with AI, and renders everything in a vintage 1920s broadsheet aesthetic.
+A retro-style newspaper web app that aggregates daily content from Hacker News, Reddit, GitHub Trending, and curated AI skills sources, then renders everything in a vintage 1920s broadsheet aesthetic.
 
 ## Architecture
 
@@ -9,12 +9,12 @@ OpenClaw cron on VPS                     Next.js Web App (Vercel)
 ────────────────────────────            ─────────────────────────
 run publish-edition.sh                  reads repo data/editions
           ↓                                          ↓
-fetch HN + Reddit + GitHub              app/page.tsx → redirect
-          ↓                             app/[date]/page.tsx → render
-AI scoring via local OpenClaw           app/api/og → OG image route
-          ↓                             app/feed.xml → RSS route
-  data/editions/YYYY-MM-DD.json
-  data/editions/feed.xml
+fetch HN + Reddit + GitHub + Skills     app/page.tsx → redirect
+          ↓                             app/[date]/page.tsx → main edition
+AI scoring via local OpenClaw           app/skills/page.tsx → latest skills radar
+          ↓                             app/skills/[date]/page.tsx → dated skills radar
+  data/editions/YYYY-MM-DD.json         app/api/og → OG image route
+  data/editions/feed.xml                app/feed.xml → RSS route
   data/editions/run.log.json
           ↓
    git commit + push to GitHub
@@ -83,6 +83,9 @@ You can currently configure:
 - which subreddits are fetched
 - how Reddit stories are grouped on the edition page
 - how AI Skills Radar cards are grouped on the edition page
+- how many top skills are shown in the radar
+- how many detail pages are fetched from `skills.sh`
+- how many leaderboard entries are pulled from `claudeskills.club`
 
 Default config example (synced from `newspaper.config.json`):
 
@@ -159,6 +162,7 @@ Default config example (synced from `newspaper.config.json`):
       },
       "topN": 9,
       "detailFetchLimit": 6,
+      "claudeSkillsTopN": 6,
       "groups": [
         {
           "key": "leaders",
@@ -207,6 +211,32 @@ To resync this README snippet after editing the config:
 npm run docs:sync-config
 ```
 
+## AI Skills Radar
+
+The app now includes a dedicated **AI Skills Radar** built from multiple skills discovery sources.
+
+### Current skills sources
+
+- `skills.sh`
+- `claudeskills.club`
+
+### Radar behavior
+
+- The homepage edition shows a compact **AI Skills Radar** section
+- The full radar is also available on dedicated routes:
+  - `/skills` → latest skills radar
+  - `/skills/YYYY-MM-DD` → dated skills radar
+- Radar display count is intentionally capped to avoid visual overload
+- Skills are deduplicated across sources
+- A light diversity rule prevents one source from fully dominating the radar
+- Skills are currently **not mixed into the main front page ranking**; they remain a special section
+
+### Navigation
+
+- Main edition pages link to `/skills`
+- Skills pages link back to the matching main edition date page
+- Skills pages use the same date navigation pattern as the main edition
+
 ## Localization
 
 The app now supports **English** and **Simplified Chinese**.
@@ -249,6 +279,8 @@ Verified routes:
 - `/`
 - `/feed.xml`
 - `/api/og?date=YYYY-MM-DD`
+- `/skills`
+- `/skills/YYYY-MM-DD`
 
 Recommended `NEWSPAPER_BASE_URL` value:
 - `https://ai-newspaper-web.vercel.app`
@@ -310,6 +342,7 @@ Use it only if you later add cloud-side AI credentials. If you rely on local Ope
 
 - Hacker News and GitHub Trending should work without credentials.
 - Reddit's anonymous `.json` endpoints may return `403 Blocked` from some hosts or IP ranges. The pipeline automatically falls back to Reddit's public RSS feeds so editions can still include Reddit stories when JSON is blocked.
+- Skills directories may change HTML structure over time; the radar fetchers should be treated as best-effort integrations and periodically revalidated.
 
 ## Schedule
 
@@ -358,6 +391,7 @@ Then verify the deployed routes:
 - `https://ai-newspaper-web.vercel.app/`
 - `https://ai-newspaper-web.vercel.app/feed.xml`
 - `https://ai-newspaper-web.vercel.app/api/og?date=YYYY-MM-DD`
+- `https://ai-newspaper-web.vercel.app/skills`
 
 ### RSS links show localhost
 
@@ -382,6 +416,13 @@ The site stores language preference in a cookie. If switching appears stuck:
 
 For first-visit behavior, Chinese browsers should default to Simplified Chinese; all others default to English.
 
+### Skills Radar looks sparse or outdated
+
+Check whether skills sources are enabled and whether fetchers still match current source markup:
+- `newspaper.config.json`
+- `skill/lib/fetchers/skills.ts`
+- `skill/lib/fetchers/claude-skills.ts`
+
 ## Data Format
 
 Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
@@ -396,7 +437,8 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
   "sections": {
     "hackernews": [...],
     "reddit": [...],
-    "github": [...]
+    "github": [...],
+    "skills": [...]
   }
 }
 ```
@@ -408,7 +450,8 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - 🌐 English / Simplified Chinese UI localization
 - 🈶 Bilingual generated headlines and summaries for new editions
 - ⚙ Configurable source list via `newspaper.config.json`
-- 🧭 AI Skills Radar section powered by skills.sh leaderboard data
+- 🧭 AI Skills Radar section powered by `skills.sh` + `claudeskills.club`
+- 📄 Dedicated `/skills` and `/skills/[date]` radar pages
 - 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
 - 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
 - 📻 RSS feed (`/feed.xml`) with last 14 editions
@@ -425,4 +468,5 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - SQLite edition index for full-text search
 - Dark mode / Evening Edition
 - Customizable source list for additional source modes and richer overrides
+- Dedicated `/skills` historical analytics / trends view
 - "This day in tech history" sidebar (after 365+ editions)
