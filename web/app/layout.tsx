@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { getRequestLang, t } from '@/lib/i18n'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: 'The Daily Byte',
@@ -13,7 +14,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang={lang}>
-      <body aria-label={m.newspaperAria}>{children}</body>
+      <body aria-label={m.newspaperAria}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
