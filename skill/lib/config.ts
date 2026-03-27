@@ -38,6 +38,7 @@ export type NewspaperConfig = {
       label: LocalizedLabel
       topN: number
       detailFetchLimit: number
+      claudeSkillsTopN: number
       groups: SkillsGroup[]
     }
   }

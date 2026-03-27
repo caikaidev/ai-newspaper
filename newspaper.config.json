@@ -47,6 +47,7 @@
       },
       "topN": 9,
       "detailFetchLimit": 6,
+      "claudeSkillsTopN": 6,
       "groups": [
         {
           "key": "leaders",

@@ -1,6 +1,66 @@
 [
   {
     "date": "2026-03-27",
+    "started_at": "2026-03-27T01:03:37.483Z",
+    "duration_ms": 15,
+    "hn_count": 20,
+    "reddit_count": 80,
+    "github_count": 9,
+    "skills_count": 15,
+    "total_before_dedup": 124,
+    "total_after_dedup": 124,
+    "status": "ok"
+  },
+  {
+    "date": "2026-03-27",
+    "started_at": "2026-03-27T01:02:40.335Z",
+    "duration_ms": 41,
+    "hn_count": 20,
+    "reddit_count": 80,
+    "github_count": 9,
+    "skills_count": 15,
+    "total_before_dedup": 124,
+    "total_after_dedup": 124,
+    "status": "ok"
+  },
+  {
+    "date": "2026-03-27",
+    "started_at": "2026-03-27T01:01:43.473Z",
+    "duration_ms": 40,
+    "hn_count": 20,
+    "reddit_count": 80,
+    "github_count": 9,
+    "skills_count": 15,
+    "total_before_dedup": 124,
+    "total_after_dedup": 124,
+    "status": "ok"
+  },
+  {
+    "date": "2026-03-27",
+    "started_at": "2026-03-27T01:00:25.335Z",
+    "duration_ms": 12,
+    "hn_count": 20,
+    "reddit_count": 80,
+    "github_count": 9,
+    "skills_count": 9,
+    "total_before_dedup": 118,
+    "total_after_dedup": 118,
+    "status": "ok"
+  },
+  {
+    "date": "2026-03-27",
+    "started_at": "2026-03-27T00:39:24.723Z",
+    "duration_ms": 24,
+    "hn_count": 20,
+    "reddit_count": 80,
+    "github_count": 9,
+    "skills_count": 9,
+    "total_before_dedup": 118,
+    "total_after_dedup": 118,
+    "status": "ok"
+  },
+  {
+    "date": "2026-03-27",
     "started_at": "2026-03-27T00:38:07.926Z",
     "duration_ms": 13,
     "hn_count": 20,
@@ -97,50 +157,6 @@
     "github_count": 12,
     "total_before_dedup": 112,
     "total_after_dedup": 112,
-    "status": "ok"
-  },
-  {
-    "date": "2026-03-25",
-    "started_at": "2026-03-25T14:51:31.349Z",
-    "duration_ms": 17,
-    "hn_count": 20,
-    "reddit_count": 80,
-    "github_count": 11,
-    "total_before_dedup": 111,
-    "total_after_dedup": 111,
-    "status": "ok"
-  },
-  {
-    "date": "2026-03-25",
-    "started_at": "2026-03-25T14:45:43.501Z",
-    "duration_ms": 11,
-    "hn_count": 20,
-    "reddit_count": 80,
-    "github_count": 11,
-    "total_before_dedup": 111,
-    "total_after_dedup": 111,
-    "status": "ok"
-  },
-  {
-    "date": "2026-03-25",
-    "started_at": "2026-03-25T14:42:07.294Z",
-    "duration_ms": 9,
-    "hn_count": 20,
-    "reddit_count": 80,
-    "github_count": 11,
-    "total_before_dedup": 111,
-    "total_after_dedup": 111,
-    "status": "ok"
-  },
-  {
-    "date": "2026-03-25",
-    "started_at": "2026-03-25T14:11:01.270Z",
-    "duration_ms": 7,
-    "hn_count": 20,
-    "reddit_count": 0,
-    "github_count": 11,
-    "total_before_dedup": 31,
-    "total_after_dedup": 31,
     "status": "ok"
   }
 ]

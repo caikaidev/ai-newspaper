@@ -4,17 +4,62 @@ import type { Edition, RunLogEntry, ScoredItem } from './types.js'
 import { isComplete, loadManifest, updateManifest } from './manifest.js'
 import { appendRunLog } from './runlog.js'
 import { rebuildFeed } from './feed.js'
+import { loadConfig } from './config.js'
 
 function resolveEditionsDir(): string {
-  return (
-    process.env.NEWSPAPER_DATA_DIR ??
-    path.resolve(process.cwd(), '..', 'data', 'editions')
+  return process.env.NEWSPAPER_DATA_DIR ?? path.resolve(process.cwd(), '..', 'data', 'editions')
+}
+
+function normalizeSkillKey(item: ScoredItem): string {
+  return `${item.owner ?? ''}::${item.title}`.toLowerCase().replace(/[^a-z0-9:]+/g, '-')
+}
+
+function selectSkillsRadarItems(items: ScoredItem[], topN: number): ScoredItem[] {
+  const sorted = [...items].sort(
+    (a, b) => b.ai_score - a.ai_score || (b.installs ?? 0) - (a.installs ?? 0) || (a.skill_rank ?? 9999) - (b.skill_rank ?? 9999)
   )
+
+  const dedupedBySkill = new Map<string, ScoredItem>()
+  for (const item of sorted) {
+    const key = normalizeSkillKey(item)
+    if (!dedupedBySkill.has(key)) dedupedBySkill.set(key, item)
+  }
+
+  const buckets = new Map<string, ScoredItem[]>()
+  for (const item of dedupedBySkill.values()) {
+    const key = item.source_label ?? 'unknown'
+    const bucket = buckets.get(key) ?? []
+    bucket.push(item)
+    buckets.set(key, bucket)
+  }
+
+  const selected: ScoredItem[] = []
+  const sourceKeys = Array.from(buckets.keys())
+
+  for (const key of sourceKeys) {
+    const bucket = buckets.get(key)
+    if (bucket && bucket.length > 0 && selected.length < topN) selected.push(bucket.shift()!)
+  }
+
+  while (selected.length < topN) {
+    let added = false
+    for (const key of sourceKeys) {
+      const bucket = buckets.get(key)
+      if (bucket && bucket.length > 0 && selected.length < topN) {
+        selected.push(bucket.shift()!)
+        added = true
+      }
+    }
+    if (!added) break
+  }
+
+  return selected
 }
 
 function buildEdition(scored: ScoredItem[], date: string, editionsDir: string): Edition {
   const existing = fs.readdirSync(editionsDir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
   const editionNumber = existing.length + 1
+  const config = loadConfig()
 
   const nonSkills = scored.filter(i => i.source !== 'skills')
   const sorted = [...nonSkills].sort((a, b) => b.ai_score - a.ai_score)
@@ -23,9 +68,7 @@ function buildEdition(scored: ScoredItem[], date: string, editionsDir: string): 
   const hn = scored.filter(i => i.source === 'hackernews')
   const reddit = scored.filter(i => i.source === 'reddit')
   const github = scored.filter(i => i.source === 'github')
-  const skills = scored
-    .filter(i => i.source === 'skills')
-    .sort((a, b) => (a.skill_rank ?? 9999) - (b.skill_rank ?? 9999) || b.ai_score - a.ai_score)
+  const skills = selectSkillsRadarItems(scored.filter(i => i.source === 'skills'), config.sources.skills.topN)
 
   return {
     schema_version: 1,
@@ -46,9 +89,7 @@ async function sendChannelDelivery(top3: ScoredItem[], date: string): Promise<vo
       console.warn('[store] openclaw.channels.default.send not available — skipping delivery')
       return
     }
-    const message =
-      `📰 *THE DAILY BYTE — ${date}*\n\n` +
-      top3.map((item, i) => `${i + 1}. ${item.retro_headline}`).join('\n')
+    const message = `📰 *THE DAILY BYTE — ${date}*\n\n` + top3.map((item, i) => `${i + 1}. ${item.retro_headline}`).join('\n')
     await openclaw.channels.default.send(message)
   } catch {
     console.warn('[store] Channel delivery unavailable (standalone mode) — skipping')
@@ -56,8 +97,7 @@ async function sendChannelDelivery(top3: ScoredItem[], date: string): Promise<vo
 }
 
 function loadAllEditions(editionsDir: string): Edition[] {
-  return fs
-    .readdirSync(editionsDir)
+  return fs.readdirSync(editionsDir)
     .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
     .sort()
     .reverse()

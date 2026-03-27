@@ -6,6 +6,7 @@ import { resolveAI } from './lib/ai.js'
 import { loadConfig } from './lib/config.js'
 import { todayEditionDate } from './lib/date.js'
 import { deduplicateItems } from './lib/dedup.js'
+import { fetchClaudeSkills } from './lib/fetchers/claude-skills.js'
 import { fetchGitHub } from './lib/fetchers/github.js'
 import { fetchHN } from './lib/fetchers/hn.js'
 import { fetchReddit } from './lib/fetchers/reddit.js'
@@ -29,7 +30,12 @@ async function run(opts: { force?: boolean } = {}): Promise<void> {
     enabledSources.hn ? fetchHN() : Promise.resolve([]),
     enabledSources.reddit ? fetchReddit(config.sources.reddit.subreddits) : Promise.resolve([]),
     enabledSources.github ? fetchGitHub() : Promise.resolve([]),
-    enabledSources.skills ? fetchSkills(config.sources.skills.topN, config.sources.skills.detailFetchLimit) : Promise.resolve([]),
+    enabledSources.skills
+      ? Promise.all([
+          fetchSkills(config.sources.skills.topN, config.sources.skills.detailFetchLimit),
+          fetchClaudeSkills(config.sources.skills.claudeSkillsTopN),
+        ]).then(([primary, secondary]) => [...primary, ...secondary])
+      : Promise.resolve([]),
   ]
 
   const [hnResult, redditResult, githubResult, skillsResult] = await Promise.allSettled(fetchTasks)
