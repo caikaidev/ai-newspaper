@@ -90,7 +90,8 @@ export const messages = {
     comments: 'comments',
     installs: 'installs',
     rank: 'rank',
-    notFound: 'Not Found',
+    skillsPage: 'Skills',
+    notFound: 'Not Found'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -142,8 +143,9 @@ export const messages = {
     comments: '评论',
     installs: '安装量',
     rank: '排名',
-    notFound: '未找到',
-  },
+    skillsPage: '技能页',
+    notFound: '未找到'
+  }
 } as const
 
 export function t(lang: AppLang) {
