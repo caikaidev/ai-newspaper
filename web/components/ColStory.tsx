@@ -14,10 +14,12 @@ export default function ColStory({ item, rank, lang }: ColStoryProps) {
     item.points ? `${item.points.toLocaleString()} ${m.points}` : null,
     item.comments ? `${item.comments.toLocaleString()} ${m.comments}` : null,
     item.stars ? `★ ${item.stars.toLocaleString()}` : null,
+    item.installs ? `${item.installs.toLocaleString()} ${m.installs}` : null,
+    item.skill_rank ? `${m.rank} #${item.skill_rank}` : null,
+    item.owner ? item.owner : null,
+    item.source_label ? item.source_label : null,
     item.subreddit ? `r/${item.subreddit}` : null,
-  ]
-    .filter(Boolean)
-    .join(' · ')
+  ].filter(Boolean).join(' · ')
 
   const headline = localizedHeadline(item, lang)
   const summary = localizedSummary(item, lang)

@@ -38,6 +38,32 @@
         "en": "GitHub Trending",
         "zh": "GitHub 热门趋势"
       }
+    },
+    "skills": {
+      "enabled": true,
+      "label": {
+        "en": "AI Skills Radar",
+        "zh": "AI Skills 雷达"
+      },
+      "topN": 9,
+      "detailFetchLimit": 6,
+      "groups": [
+        {
+          "key": "leaders",
+          "label": { "en": "Most Installed", "zh": "安装量领先" },
+          "slice": [0, 3]
+        },
+        {
+          "key": "watchlist",
+          "label": { "en": "Radar Watchlist", "zh": "雷达观察" },
+          "slice": [3, 6]
+        },
+        {
+          "key": "editors-pick",
+          "label": { "en": "Editors' Picks", "zh": "编辑精选" },
+          "slice": [6, 9]
+        }
+      ]
     }
   }
 }

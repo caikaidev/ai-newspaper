@@ -21,7 +21,6 @@ export function detectLangFromAcceptLanguage(input?: string | null): AppLang {
 export function getRequestLang(): AppLang {
   const cookieLang = normalizeLang(cookies().get(LANG_COOKIE)?.value)
   if (cookieLang) return cookieLang
-
   const headerLang = headers().get('accept-language')
   return detectLangFromAcceptLanguage(headerLang)
 }
@@ -36,8 +35,8 @@ export function localizedHeadline(item: ScoredItem, lang: AppLang): string {
 }
 
 export function localizedSummary(item: ScoredItem, lang: AppLang): string {
-  if (lang === 'zh-CN') return item.retro_summary_zh ?? item.retro_summary ?? ''
-  return item.retro_summary ?? ''
+  if (lang === 'zh-CN') return item.retro_summary_zh ?? item.retro_summary ?? item.summary ?? ''
+  return item.retro_summary ?? item.summary ?? ''
 }
 
 export const messages = {
@@ -58,6 +57,7 @@ export const messages = {
     dispatchesFromHN: 'dispatches from Hacker News',
     reportsFromReddit: 'reports from Reddit',
     projectsFromGitHub: 'projects from GitHub',
+    skillsTracked: 'skills tracked in today\'s radar',
     aiScoredNote: 'Scored and rewritten by artificial intelligence in the manner of 1920s inter-war correspondence.',
     hackerNews: 'Hacker News',
     reddit: 'Reddit',
@@ -88,6 +88,8 @@ export const messages = {
     simplifiedChinese: '简体中文',
     points: 'pts',
     comments: 'comments',
+    installs: 'installs',
+    rank: 'rank',
     notFound: 'Not Found',
   },
   'zh-CN': {
@@ -107,6 +109,7 @@ export const messages = {
     dispatchesFromHN: '条 Hacker News 快讯',
     reportsFromReddit: '条 Reddit 话题',
     projectsFromGitHub: '个 GitHub 项目',
+    skillsTracked: '个今日技能雷达条目',
     aiScoredNote: '由人工智能以 1920 年代战间期通讯文风评分并改写。',
     hackerNews: 'Hacker News',
     reddit: 'Reddit',
@@ -137,6 +140,8 @@ export const messages = {
     simplifiedChinese: '简体中文',
     points: '分',
     comments: '评论',
+    installs: '安装量',
+    rank: '排名',
     notFound: '未找到',
   },
 } as const

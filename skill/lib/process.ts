@@ -12,6 +12,7 @@ For each item, return a JSON object with:
 - "retro_headline_zh": Simplified Chinese translation of retro_headline, natural and concise, max 120 chars
 - "retro_summary_zh": Simplified Chinese translation of retro_summary, exactly 2 sentences when natural in Chinese
 
+Prefer grounding in the provided fields. If summary/source metadata is available, use it to avoid generic phrasing.
 Return a JSON ARRAY in the same order as input. Raw JSON only, no markdown.
 Validate: array length must equal input length. If unsure on an item, score it 5.0 and provide your best bilingual wording.`
 
@@ -22,9 +23,9 @@ function toFallbackItem(item: RawItem): ScoredItem {
     ...item,
     ai_score: 5.0,
     retro_headline: item.title,
-    retro_summary: '',
+    retro_summary: item.summary ?? '',
     retro_headline_zh: item.title,
-    retro_summary_zh: '',
+    retro_summary_zh: item.summary ?? '',
   }
 }
 
@@ -61,9 +62,9 @@ export function mergeWithScores(items: RawItem[], rawResponse: string): ScoredIt
     ...item,
     ai_score: scores[i]?.score ?? 5.0,
     retro_headline: scores[i]?.retro_headline ?? item.title,
-    retro_summary: scores[i]?.retro_summary ?? '',
+    retro_summary: scores[i]?.retro_summary ?? item.summary ?? '',
     retro_headline_zh: scores[i]?.retro_headline_zh ?? scores[i]?.retro_headline ?? item.title,
-    retro_summary_zh: scores[i]?.retro_summary_zh ?? scores[i]?.retro_summary ?? '',
+    retro_summary_zh: scores[i]?.retro_summary_zh ?? scores[i]?.retro_summary ?? item.summary ?? '',
   }))
 }
 
@@ -74,6 +75,11 @@ async function processBatch(items: RawItem[], ai: AIProvider): Promise<ScoredIte
     source: item.source,
     points: item.points,
     comments: item.comments,
+    installs: item.installs,
+    skill_rank: item.skill_rank,
+    owner: item.owner,
+    source_label: item.source_label,
+    summary: item.summary,
   }))
 
   const userMessage = `Items:\n${JSON.stringify(inputPayload, null, 2)}`

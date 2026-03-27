@@ -79,8 +79,10 @@ You can currently configure:
 - whether Hacker News is enabled
 - whether Reddit is enabled
 - whether GitHub Trending is enabled
+- whether AI Skills Radar is enabled
 - which subreddits are fetched
 - how Reddit stories are grouped on the edition page
+- how AI Skills Radar cards are grouped on the edition page
 
 Default config example (synced from `newspaper.config.json`):
 
@@ -148,6 +150,50 @@ Default config example (synced from `newspaper.config.json`):
         "en": "GitHub Trending",
         "zh": "GitHub 热门趋势"
       }
+    },
+    "skills": {
+      "enabled": true,
+      "label": {
+        "en": "AI Skills Radar",
+        "zh": "AI Skills 雷达"
+      },
+      "topN": 9,
+      "detailFetchLimit": 6,
+      "groups": [
+        {
+          "key": "leaders",
+          "label": {
+            "en": "Most Installed",
+            "zh": "安装量领先"
+          },
+          "slice": [
+            0,
+            3
+          ]
+        },
+        {
+          "key": "watchlist",
+          "label": {
+            "en": "Radar Watchlist",
+            "zh": "雷达观察"
+          },
+          "slice": [
+            3,
+            6
+          ]
+        },
+        {
+          "key": "editors-pick",
+          "label": {
+            "en": "Editors' Picks",
+            "zh": "编辑精选"
+          },
+          "slice": [
+            6,
+            9
+          ]
+        }
+      ]
     }
   }
 }
@@ -176,7 +222,7 @@ The app now supports **English** and **Simplified Chinese**.
 
 - Site UI chrome (masthead, navigation, onboarding, section labels, footer, etc.)
 - AI-generated headlines and summaries
-- Config-driven source labels and Reddit group labels
+- Config-driven source labels, Reddit groups, and AI Skills Radar labels
 
 ### Data model
 
@@ -362,6 +408,7 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - 🌐 English / Simplified Chinese UI localization
 - 🈶 Bilingual generated headlines and summaries for new editions
 - ⚙ Configurable source list via `newspaper.config.json`
+- 🧭 AI Skills Radar section powered by skills.sh leaderboard data
 - 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
 - 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
 - 📻 RSS feed (`/feed.xml`) with last 14 editions

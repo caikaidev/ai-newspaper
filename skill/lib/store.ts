@@ -12,23 +12,20 @@ function resolveEditionsDir(): string {
   )
 }
 
-function buildEdition(
-  scored: ScoredItem[],
-  date: string,
-  editionsDir: string
-): Edition {
-  // Calculate edition number by counting existing JSON editions
-  const existing = fs
-    .readdirSync(editionsDir)
-    .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+function buildEdition(scored: ScoredItem[], date: string, editionsDir: string): Edition {
+  const existing = fs.readdirSync(editionsDir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
   const editionNumber = existing.length + 1
 
-  const sorted = [...scored].sort((a, b) => b.ai_score - a.ai_score)
+  const nonSkills = scored.filter(i => i.source !== 'skills')
+  const sorted = [...nonSkills].sort((a, b) => b.ai_score - a.ai_score)
   const frontPage = sorted.slice(0, 5)
 
   const hn = scored.filter(i => i.source === 'hackernews')
   const reddit = scored.filter(i => i.source === 'reddit')
   const github = scored.filter(i => i.source === 'github')
+  const skills = scored
+    .filter(i => i.source === 'skills')
+    .sort((a, b) => (a.skill_rank ?? 9999) - (b.skill_rank ?? 9999) || b.ai_score - a.ai_score)
 
   return {
     schema_version: 1,
@@ -36,7 +33,7 @@ function buildEdition(
     edition: editionNumber,
     generated_at: new Date().toISOString(),
     front_page: frontPage,
-    sections: { hackernews: hn, reddit, github },
+    sections: { hackernews: hn, reddit, github, skills },
   }
 }
 
@@ -74,18 +71,12 @@ function loadAllEditions(editionsDir: string): Edition[] {
     .filter((e): e is Edition => e !== null)
 }
 
-export async function store(
-  scored: ScoredItem[],
-  date: string,
-  opts: { force?: boolean } = {}
-): Promise<void> {
+export async function store(scored: ScoredItem[], date: string, opts: { force?: boolean } = {}): Promise<void> {
   const editionsDir = resolveEditionsDir()
   fs.mkdirSync(editionsDir, { recursive: true })
 
   const startedAt = new Date().toISOString()
   const startMs = Date.now()
-
-  // Check manifest for completion
   const manifest = loadManifest(editionsDir, date)
   if (isComplete(manifest) && !opts.force) {
     console.log(`[store] Edition ${date} already complete — skipping (use --force to override)`)
@@ -95,11 +86,11 @@ export async function store(
   const hnCount = scored.filter(i => i.source === 'hackernews').length
   const redditCount = scored.filter(i => i.source === 'reddit').length
   const githubCount = scored.filter(i => i.source === 'github').length
+  const skillsCount = scored.filter(i => i.source === 'skills').length
 
   let status: RunLogEntry['status'] = 'ok'
   let errorMsg: string | undefined
 
-  // Step 1: Write edition JSON
   if (!manifest?.json_written || opts.force) {
     const edition = buildEdition(scored, date, editionsDir)
     const jsonPath = path.join(editionsDir, `${date}.json`)
@@ -110,7 +101,6 @@ export async function store(
     updateManifest(editionsDir, date, { json_written: true })
   }
 
-  // Step 2: Rebuild feed.xml
   if (!manifest?.feed_updated || opts.force) {
     try {
       const allEditions = loadAllEditions(editionsDir)
@@ -124,14 +114,12 @@ export async function store(
     }
   }
 
-  // Step 3: Channel delivery
   if (!manifest?.channel_sent || opts.force) {
-    const top3 = [...scored].sort((a, b) => b.ai_score - a.ai_score).slice(0, 3)
+    const top3 = [...scored].filter(i => i.source !== 'skills').sort((a, b) => b.ai_score - a.ai_score).slice(0, 3)
     await sendChannelDelivery(top3, date)
     updateManifest(editionsDir, date, { channel_sent: true })
   }
 
-  // Log the run
   const durationMs = Date.now() - startMs
   appendRunLog(editionsDir, {
     date,
@@ -140,6 +128,7 @@ export async function store(
     hn_count: hnCount,
     reddit_count: redditCount,
     github_count: githubCount,
+    skills_count: skillsCount,
     total_before_dedup: scored.length,
     total_after_dedup: scored.length,
     status,

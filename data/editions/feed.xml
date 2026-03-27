@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>http://localhost:3000</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Thu, 26 Mar 2026 12:38:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Mar 2026 00:38:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars]]></title>
+            <link>http://localhost:3000/2026-03-27</link>
+            <guid>http://localhost:3000/2026-03-27</guid>
+            <pubDate>Fri, 27 Mar 2026 00:38:07 GMT</pubDate>
+            <description><![CDATA[<p><strong>Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
+<p><strong>Dispatch: We haven't seen the worst of what gambling and prediction markets will do</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
+<p><strong>Dispatch: Moving from GitHub to Codeberg, for lazy people</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Europe Is Warned That the Campaign to Inspect Private Messages Still Advances]]></title>
             <link>http://localhost:3000/2026-03-26</link>
