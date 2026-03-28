@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>The Daily Byte</title>
-        <link>http://localhost:3000</link>
+        <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Fri, 27 Mar 2026 01:03:37 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Mar 2026 07:13:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[TeamPCP Strikes Again as Malicious Telnyx Packages Are Reported on the Python Exchange]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-03-28</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-03-28</guid>
+            <pubDate>Sat, 28 Mar 2026 07:13:22 GMT</pubDate>
+            <description><![CDATA[<p><strong>TeamPCP Strikes Again as Malicious Telnyx Packages Are Reported on the Python Exchange</strong> — A grave warning asserts that Telnyx versions 4.87.1 and 4.87.2 on PyPI are malicious, and links the affair to the now-notorious TeamPCP campaign. The report has naturally commanded sharp attention, for repeated contamination of trusted channels turns routine updating into a public hazard.</p>
+<p><strong>A Revolt Within Microsoft Is Said to Rise Against the Mandatory Account Regime</strong> — Reports from within Microsoft suggest that employees are actively contending against the compulsory use of Microsoft accounts. The dispute has stirred intense interest on Hacker News, for it touches the broader struggle between user convenience, corporate control, and digital autonomy.</p>
+<p><strong>The AI Scientist Returns in a Second Form and Seeks Discovery by Agentic Tree Search</strong> — SakanaAI’s AI Scientist-v2 presents itself as a machine for workshop-level scientific discovery, guided by agentic tree search rather than a single line of blind trial. The claim has drawn notable interest, for nothing captures the age's imagination quite like the thought of automating the republic of science itself.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars]]></title>
-            <link>http://localhost:3000/2026-03-27</link>
-            <guid>http://localhost:3000/2026-03-27</guid>
+            <link>https://ai-newspaper-web.vercel.app/2026-03-27</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-03-27</guid>
             <pubDate>Fri, 27 Mar 2026 01:03:37 GMT</pubDate>
             <description><![CDATA[<p><strong>Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
 <p><strong>Dispatch: We haven't seen the worst of what gambling and prediction markets will do</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
@@ -20,8 +29,8 @@
         </item>
         <item>
             <title><![CDATA[Europe Is Warned That the Campaign to Inspect Private Messages Still Advances]]></title>
-            <link>http://localhost:3000/2026-03-26</link>
-            <guid>http://localhost:3000/2026-03-26</guid>
+            <link>https://ai-newspaper-web.vercel.app/2026-03-26</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-03-26</guid>
             <pubDate>Thu, 26 Mar 2026 12:38:30 GMT</pubDate>
             <description><![CDATA[<p><strong>Europe Is Warned That the Campaign to Inspect Private Messages Still Advances</strong> — A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty.</p>
 <p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
@@ -29,8 +38,8 @@
         </item>
         <item>
             <title><![CDATA[Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain]]></title>
-            <link>http://localhost:3000/2026-03-25</link>
-            <guid>http://localhost:3000/2026-03-25</guid>
+            <link>https://ai-newspaper-web.vercel.app/2026-03-25</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-03-25</guid>
             <pubDate>Wed, 25 Mar 2026 15:48:59 GMT</pubDate>
             <description><![CDATA[<p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
 <p><strong>Grave Alarm Raised as LiteLLM Packages on PyPI Are Reported Compromised</strong> — An urgent warning declares that LiteLLM versions 1.82.7 and 1.82.8 on the Python exchange were tampered with and ought not be trusted. In an era of sprawling software dependence, such contamination threatens confidence far beyond a single package.</p>
