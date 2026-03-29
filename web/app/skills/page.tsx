@@ -68,6 +68,8 @@ export default function SkillsRootPage() {
                 <span>·</span>
                 <Link href={`/${latestDate}`}>{m.viewFullEdition}</Link>
                 <span>·</span>
+                <Link href="/skills/archive">{m.skillsArchivePage}</Link>
+                <span>·</span>
                 <Link href="/archive">{m.archivePage}</Link>
                 <span>·</span>
                 <Link href="/topics/skills">{m.skillsTopicPage}</Link>

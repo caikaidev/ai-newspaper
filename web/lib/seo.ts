@@ -65,6 +65,15 @@ export function skillsEditionMetadata(date: string, lang: AppLang) {
   }
 }
 
+export function skillsArchiveMetadata(lang: AppLang) {
+  const m = t(lang)
+  return {
+    title: `${m.skillsArchivePage} — ${m.siteName}`,
+    description: `${m.skillsArchivePage}: browse historical AI Skills Radar editions in one dedicated index.`,
+    alternates: buildAlternates('/skills/archive'),
+  }
+}
+
 export function archiveMetadata(lang: AppLang) {
   const m = t(lang)
   return {

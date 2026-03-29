@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/skills/archive`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.86,
+    },
+    {
       url: `${BASE_URL}/archive`,
       lastModified: now,
       changeFrequency: 'daily',
@@ -37,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const weeklyRoutes: MetadataRoute.Sitemap = weeks.map(week => ({
-    url: `${BASE_URL}/weekly/${week}` ,
+    url: `${BASE_URL}/weekly/${week}`,
     lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.78,

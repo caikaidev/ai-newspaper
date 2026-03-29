@@ -68,6 +68,8 @@ export default function SkillsEditionPage({ params }: PageProps) {
                 <span>·</span>
                 <a href="/skills">{m.latestSkillsHub}</a>
                 <span>·</span>
+                <a href="/skills/archive">{m.skillsArchivePage}</a>
+                <span>·</span>
                 <a href="/topics/skills">{m.skillsTopicPage}</a>
                 <span>·</span>
                 <a href="/archive">{m.archivePage}</a>

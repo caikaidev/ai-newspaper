@@ -58,9 +58,10 @@
   - Applied `CollectionPage` + `BreadcrumbList` to daily, weekly, archive, and topic pages
   - Included representative `Article` / `ItemList` style entities without overcomplicating route logic
 
-- [ ] Add skills archive / index page
-  - Separate from latest `/skills` landing page
-  - Browse historical radar entries
+- [x] Add skills archive / index page
+  - Added dedicated `/skills/archive`
+  - Separate from latest `/skills` landing page and general `/archive`
+  - Provides a historical index of dated skills radar editions
 
 - [ ] Introduce SEO-aware secondary headings
   - Keep editorial headlines
