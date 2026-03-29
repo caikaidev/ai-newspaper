@@ -91,12 +91,17 @@ export const messages = {
     installs: 'installs',
     rank: 'rank',
     skillsPage: 'Skills',
+    archivePage: 'Archive',
     notFound: 'Not Found',
     skillsHubIntro: 'A standing desk for the paper\'s AI Skills Radar: each day\'s most notable skills, installation leaders, and editorial watchlist gathered in one place.',
     latestRadar: 'Latest Radar',
     recentSkillEditions: 'Recent Skill Editions',
     viewFullEdition: 'View full edition',
-    latestSkillsArchiveNote: 'Browse recent radar editions or return to the matching full newspaper for the wider day in AI and tech.'
+    latestSkillsArchiveNote: 'Browse recent radar editions or return to the matching full newspaper for the wider day in AI and tech.',
+    archiveIntro: 'The archive gathers past editions of The Daily Byte, pairing each day\'s main newspaper with its matching AI Skills Radar for easier browsing and discovery.',
+    mainEdition: 'Main Edition',
+    skillRadarEdition: 'Skills Radar',
+    browseLatestEdition: 'Browse latest edition'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -149,12 +154,17 @@ export const messages = {
     installs: '安装量',
     rank: '排名',
     skillsPage: '技能页',
+    archivePage: '归档',
     notFound: '未找到',
     skillsHubIntro: '这里汇集本报 AI Skills Radar 的每日重点：安装量领先者、编辑观察名单，以及值得持续追踪的新技能。',
     latestRadar: '最新雷达',
     recentSkillEditions: '近期技能版',
     viewFullEdition: '查看完整日报',
-    latestSkillsArchiveNote: '你可以浏览近期技能雷达，也可以回到对应日期的完整日报，查看当天更广泛的 AI 与科技动态。'
+    latestSkillsArchiveNote: '你可以浏览近期技能雷达，也可以回到对应日期的完整日报，查看当天更广泛的 AI 与科技动态。',
+    archiveIntro: '这里收录《每日字节报》的往期内容，将每日主版与对应的 AI Skills Radar 并列，便于浏览与检索。',
+    mainEdition: '主版日报',
+    skillRadarEdition: '技能雷达',
+    browseLatestEdition: '查看最新一期'
   }
 } as const
 

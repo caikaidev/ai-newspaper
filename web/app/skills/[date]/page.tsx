@@ -61,6 +61,8 @@ export default function SkillsEditionPage({ params }: PageProps) {
           <a href={`/${params.date}`}>{m.siteName}</a>
           <span>·</span>
           <a href="/skills">{labelForLang(skillsConfig.label, lang)}</a>
+          <span>·</span>
+          <a href="/archive">{m.archivePage}</a>
         </div>
       </main>
     </>

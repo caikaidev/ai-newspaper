@@ -24,9 +24,10 @@
 
 ## P1 — Information Architecture
 
-- [ ] Add `/archive` page
-  - Central archive of dated editions
-  - Link from main edition and footer
+- [x] Add `/archive` page
+  - Added indexable `web/app/archive/page.tsx`
+  - Linked archive from edition pages, skills pages, footer, and sitemap
+  - Archive lists both main editions and matching skills radar editions by date
 
 - [ ] Add topic pages
   - Start with `/topics/skills`

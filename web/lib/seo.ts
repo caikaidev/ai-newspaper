@@ -57,3 +57,14 @@ export function skillsEditionMetadata(date: string, lang: AppLang) {
     },
   }
 }
+
+export function archiveMetadata(lang: AppLang) {
+  const m = t(lang)
+  return {
+    title: `${m.archivePage} — ${m.siteName}`,
+    description: `${m.archivePage}: browse past daily editions and their matching AI Skills Radar pages in one place.`,
+    alternates: {
+      canonical: `${BASE_URL}/archive`,
+    },
+  }
+}

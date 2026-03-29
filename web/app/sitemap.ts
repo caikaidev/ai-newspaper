@@ -20,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.9,
     },
+    {
+      url: `${BASE_URL}/archive`,
+      lastModified: now,
+      changeFrequency: 'daily',
+      priority: 0.85,
+    },
   ]
 
   const editionRoutes: MetadataRoute.Sitemap = editions.flatMap(date => [
