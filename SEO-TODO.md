@@ -48,9 +48,10 @@
 
 ## P2 — Search-Friendly Aggregation
 
-- [ ] Add weekly roundup pages
-  - Example: `/weekly/2026-W13`
-  - Include top stories and skills highlights
+- [x] Add weekly roundup pages
+  - Added `/weekly/[week]`
+  - Aggregates daily front-page winners into a deduplicated weekly view
+  - Preserves repeat-signal by showing how many times an item appeared that week and on which dates
 
 - [ ] Add skills archive / index page
   - Separate from latest `/skills` landing page

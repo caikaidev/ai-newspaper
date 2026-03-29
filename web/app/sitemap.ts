@@ -1,10 +1,12 @@
 import type { MetadataRoute } from 'next'
 import { listEditions } from '@/lib/editions'
+import { listWeeks } from '@/lib/weekly'
 
 const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'http://localhost:3000'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const editions = listEditions()
+  const weeks = listWeeks()
   const now = new Date()
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -34,6 +36,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  const weeklyRoutes: MetadataRoute.Sitemap = weeks.map(week => ({
+    url: `${BASE_URL}/weekly/${week}` ,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.78,
+  }))
+
   const editionRoutes: MetadataRoute.Sitemap = editions.flatMap(date => [
     {
       url: `${BASE_URL}/${date}`,
@@ -49,5 +58,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ])
 
-  return [...staticRoutes, ...editionRoutes]
+  return [...staticRoutes, ...weeklyRoutes, ...editionRoutes]
 }

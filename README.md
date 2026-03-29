@@ -15,6 +15,7 @@ AI scoring via local OpenClaw           app/skills/page.tsx → latest skills ra
           ↓                             app/skills/[date]/page.tsx → dated skills radar
           ↓                             app/archive/page.tsx → archive index
           ↓                             app/topics/skills/page.tsx → skills topic hub
+          ↓                             app/weekly/[week]/page.tsx → weekly roundup
   data/editions/YYYY-MM-DD.json         app/api/og → OG image route
   data/editions/feed.xml                app/feed.xml → RSS route
   data/editions/run.log.json            app/robots.ts → robots.txt
@@ -84,11 +85,22 @@ Current sitemap coverage includes:
 - `/skills`
 - `/archive`
 - `/topics/skills`
+- `/weekly/[week]`
 - `/{date}`
 - `/skills/{date}`
 
 Additional SEO follow-up work is tracked in:
 - `SEO-TODO.md`
+
+### Weekly roundups
+
+The app now also includes weekly roundup routes:
+- `/weekly/[week]`
+
+Weekly pages:
+- deduplicate repeated stories within the same week
+- preserve repeat-signal by showing how many times an item surfaced that week
+- link back to the daily editions where that item appeared
 
 ### Canonical and alternates
 

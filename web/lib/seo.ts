@@ -82,3 +82,12 @@ export function topicSkillsMetadata(lang: AppLang) {
     alternates: buildAlternates('/topics/skills'),
   }
 }
+
+export function weeklyMetadata(week: string, lang: AppLang) {
+  const m = t(lang)
+  return {
+    title: `${week} Weekly Roundup — ${m.siteName}`,
+    description: `${m.siteName} weekly roundup for ${week}: deduplicated top stories with repeat appearances across the week highlighted.`,
+    alternates: buildAlternates(`/weekly/${week}`),
+  }
+}

@@ -54,7 +54,7 @@ body {
 .col-story__headline a { color: inherit; text-decoration: none; }
 .col-story__headline a:hover { text-decoration: underline; }
 .col-story__summary { font-family: 'IM Fell English', serif; font-size: 0.8rem; line-height: 1.5; color: var(--ink-black); margin-bottom: 0.25rem; text-align: justify; hyphens: auto; }
-.col-story__meta { font-family: 'IM Fell English', serif; font-style: italic; font-size: 0.75rem; color: var(--sepia-brown); display: flex; gap: 0.75rem; }
+.col-story__meta { font-family: 'IM Fell English', serif; font-style: italic; font-size: 0.75rem; color: var(--sepia-brown); display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .section-header { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.08em; text-align: center; text-transform: uppercase; color: var(--ink-black); border-top: 3px solid var(--ink-black); border-bottom: 1px solid var(--ink-black); padding: 0.4rem 0; margin: 1.5rem 0 1rem; }
 .section-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--sepia-light); }
 .section-col { padding: 1rem 1.25rem; border-right: 1px solid var(--sepia-light); }
@@ -83,7 +83,7 @@ body {
 .archive-table__date { font-weight: 700; color: var(--ink-black); }
 .archive-table a { color: var(--sepia-brown); text-decoration: none; }
 .archive-table a:hover { text-decoration: underline; }
-.skills-page-links { text-align: center; margin-top: 1rem; color: var(--aged-caption); display: flex; justify-content: center; gap: 0.6rem; }
+.skills-page-links { text-align: center; margin-top: 1rem; color: var(--aged-caption); display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; }
 .skills-page-links--left { justify-content: flex-start; }
 .skills-page-links a { color: var(--sepia-brown); text-decoration: none; }
 .skills-page-links a:hover { text-decoration: underline; }
@@ -112,7 +112,6 @@ body {
   .columns .column:nth-child(3), .section-col:nth-child(3) { grid-column: 1; }
   .date-nav { flex-wrap: wrap; gap: 0.75rem; }
   .language-switcher { justify-content: center; }
-  .skills-page-links { flex-wrap: wrap; }
   .archive-table__head, .archive-table__row { grid-template-columns: 1fr; gap: 0.4rem; }
 }
 @media print {

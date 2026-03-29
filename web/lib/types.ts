@@ -23,6 +23,11 @@ export interface ScoredItem extends RawItem {
   retro_summary_zh?: string
 }
 
+export interface WeeklyItem extends ScoredItem {
+  weekly_count: number
+  weekly_dates: string[]
+}
+
 export interface Edition {
   schema_version: number
   date: string

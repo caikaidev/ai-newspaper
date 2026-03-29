@@ -110,7 +110,12 @@ export const messages = {
     topicHubNote: 'Use this page as the thematic doorway into the project\'s AI skills coverage.',
     relatedPaths: 'Related Paths',
     latestSkillsHub: 'Latest skills hub',
-    archiveAndTopicsNote: 'From here you can continue into the radar hub, the topic hub, or the full archive.'
+    archiveAndTopicsNote: 'From here you can continue into the radar hub, the topic hub, or the full archive.',
+    weeklyRoundup: 'Weekly Roundup',
+    weeklyIntro: 'A weekly digest of repeated winners from the daily paper, deduplicated so each story appears once while still showing how many times it surfaced across the week.',
+    appearedTimes: 'appeared this week',
+    weekIncludes: 'Week includes',
+    weeklyHighlights: 'Weekly Highlights'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -182,7 +187,12 @@ export const messages = {
     topicHubNote: '你可以把这里当作进入本项目 AI skills 内容的主题入口。',
     relatedPaths: '相关路径',
     latestSkillsHub: '最新技能主页',
-    archiveAndTopicsNote: '你可以从这里继续进入技能雷达主页、主题页，或完整归档。'
+    archiveAndTopicsNote: '你可以从这里继续进入技能雷达主页、主题页，或完整归档。',
+    weeklyRoundup: '周报聚合',
+    weeklyIntro: '这里汇总本周日报中反复上榜的内容：同一条内容只展示一次，但会保留它在本周出现了几次。',
+    appearedTimes: '次上榜',
+    weekIncludes: '本周包含',
+    weeklyHighlights: '本周精选'
   }
 } as const
 
