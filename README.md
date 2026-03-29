@@ -15,8 +15,8 @@ AI scoring via local OpenClaw           app/skills/page.tsx → latest skills ra
           ↓                             app/skills/[date]/page.tsx → dated skills radar
   data/editions/YYYY-MM-DD.json         app/api/og → OG image route
   data/editions/feed.xml                app/feed.xml → RSS route
-  data/editions/run.log.json
-          ↓
+  data/editions/run.log.json            app/robots.ts → robots.txt
+          ↓                             app/sitemap.ts → sitemap.xml
    git commit + push to GitHub
 ```
 
@@ -68,6 +68,22 @@ npm run typecheck --workspace=web
 npm run typecheck --workspace=skill
 npm test
 ```
+
+## SEO Foundation
+
+The app now includes a first SEO foundation layer:
+
+- `robots.txt` via `web/app/robots.ts`
+- `sitemap.xml` via `web/app/sitemap.ts`
+
+Current sitemap coverage includes:
+- `/`
+- `/skills`
+- `/{date}`
+- `/skills/{date}`
+
+Additional SEO follow-up work is tracked in:
+- `SEO-TODO.md`
 
 ## Source Configuration
 
@@ -281,6 +297,8 @@ Verified routes:
 - `/api/og?date=YYYY-MM-DD`
 - `/skills`
 - `/skills/YYYY-MM-DD`
+- `/robots.txt`
+- `/sitemap.xml`
 
 Recommended `NEWSPAPER_BASE_URL` value:
 - `https://ai-newspaper-web.vercel.app`
@@ -333,7 +351,7 @@ Use it only if you later add cloud-side AI credentials. If you rely on local Ope
 | Env var | Default | Description |
 |---------|---------|-------------|
 | `NEWSPAPER_DATA_DIR` | `./data/editions` for fetch, `../data/editions` for web | Where edition JSON files are stored |
-| `NEWSPAPER_BASE_URL` | `http://localhost:3000` | Canonical URL for RSS links and OG image links; set this to `https://ai-newspaper-web.vercel.app` in production |
+| `NEWSPAPER_BASE_URL` | `http://localhost:3000` | Canonical URL for RSS links, sitemap URLs, and OG image links; set this to `https://ai-newspaper-web.vercel.app` in production |
 | `ANTHROPIC_API_KEY` | — | API key for standalone mode |
 | `OPENCLAW_BIN` | `openclaw` | Override the OpenClaw CLI path used for gateway-backed AI fallback |
 | `OPENCLAW_AI_AGENT_ID` | `general_agent` | Which OpenClaw agent to invoke for CLI-backed AI scoring |
@@ -392,6 +410,8 @@ Then verify the deployed routes:
 - `https://ai-newspaper-web.vercel.app/feed.xml`
 - `https://ai-newspaper-web.vercel.app/api/og?date=YYYY-MM-DD`
 - `https://ai-newspaper-web.vercel.app/skills`
+- `https://ai-newspaper-web.vercel.app/robots.txt`
+- `https://ai-newspaper-web.vercel.app/sitemap.xml`
 
 ### RSS links show localhost
 
@@ -452,6 +472,7 @@ Each edition is stored as `YYYY-MM-DD.json` with `schema_version: 1`:
 - ⚙ Configurable source list via `newspaper.config.json`
 - 🧭 AI Skills Radar section powered by `skills.sh` + `claudeskills.club`
 - 📄 Dedicated `/skills` and `/skills/[date]` radar pages
+- 🤖 Basic SEO foundation with `robots.txt` and `sitemap.xml`
 - 🪝 OpenClaw gateway/CLI-backed AI fallback using your existing provider auth
 - 🧪 Deterministic fallback scoring when no live AI provider is configured anywhere
 - 📻 RSS feed (`/feed.xml`) with last 14 editions
