@@ -57,13 +57,24 @@ export default function SkillsEditionPage({ params }: PageProps) {
           </div>
         </section>
 
-        <div className="skills-page-links font-body">
-          <a href={`/${params.date}`}>{m.siteName}</a>
-          <span>·</span>
-          <a href="/skills">{labelForLang(skillsConfig.label, lang)}</a>
-          <span>·</span>
-          <a href="/archive">{m.archivePage}</a>
-        </div>
+        <section aria-label={m.relatedPaths}>
+          <h2 className="section-header">§ {m.relatedPaths}</h2>
+          <div className="skills-hub-grid">
+            <div className="skills-hub-panel">
+              <div className="column__header">{m.relatedPaths}</div>
+              <p className="font-body skills-hub-copy">{m.archiveAndTopicsNote}</p>
+              <div className="skills-page-links skills-page-links--left font-body">
+                <a href={`/${params.date}`}>{m.viewFullEdition}</a>
+                <span>·</span>
+                <a href="/skills">{m.latestSkillsHub}</a>
+                <span>·</span>
+                <a href="/topics/skills">{m.skillsTopicPage}</a>
+                <span>·</span>
+                <a href="/archive">{m.archivePage}</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )

@@ -34,11 +34,10 @@
   - Added topic-level metadata, recent picks, and links to radar/archive/full editions
   - Established a reusable pattern for later `/topics/ai` and `/topics/devtools`
 
-- [ ] Improve internal linking graph
-  - Edition ↔ skills
-  - Edition ↔ archive
-  - Topic ↔ edition
-  - Topic ↔ skills
+- [x] Improve internal linking graph
+  - Added clearer cross-links among edition, skills, archive, and topic pages
+  - Introduced visible “Related Paths” sections on key pages
+  - Strengthened topic ↔ edition and topic ↔ skills navigation
 
 - [ ] Add canonical / alternates strategy
   - Canonical URLs for dated pages

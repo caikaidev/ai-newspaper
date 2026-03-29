@@ -75,8 +75,8 @@ export default function TopicSkillsPage() {
           </div>
         </section>
 
-        <section aria-label={m.latestRadar}>
-          <h2 className="section-header">§ {m.latestRadar}</h2>
+        <section aria-label={m.relatedPaths}>
+          <h2 className="section-header">§ {m.relatedPaths}</h2>
           <div className="skills-hub-grid">
             <div className="skills-hub-panel">
               <div className="column__header">{m.latestRadar}</div>

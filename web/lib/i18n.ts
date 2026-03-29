@@ -107,7 +107,10 @@ export const messages = {
     recentSkillsPicks: 'Recent Skills Picks',
     exploreSkillRadar: 'Explore Skills Radar',
     browseSkillArchive: 'Browse skills archive',
-    topicHubNote: 'Use this page as the thematic doorway into the project\'s AI skills coverage.'
+    topicHubNote: 'Use this page as the thematic doorway into the project\'s AI skills coverage.',
+    relatedPaths: 'Related Paths',
+    latestSkillsHub: 'Latest skills hub',
+    archiveAndTopicsNote: 'From here you can continue into the radar hub, the topic hub, or the full archive.'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -176,7 +179,10 @@ export const messages = {
     recentSkillsPicks: '近期技能精选',
     exploreSkillRadar: '查看技能雷达',
     browseSkillArchive: '浏览技能归档',
-    topicHubNote: '你可以把这里当作进入本项目 AI skills 内容的主题入口。'
+    topicHubNote: '你可以把这里当作进入本项目 AI skills 内容的主题入口。',
+    relatedPaths: '相关路径',
+    latestSkillsHub: '最新技能主页',
+    archiveAndTopicsNote: '你可以从这里继续进入技能雷达主页、主题页，或完整归档。'
   }
 } as const
 

@@ -55,6 +55,23 @@ export default function ArchivePage() {
             </div>
           </div>
         </section>
+
+        <section aria-label={m.relatedPaths}>
+          <h2 className="section-header">§ {m.relatedPaths}</h2>
+          <div className="skills-hub-grid">
+            <div className="skills-hub-panel">
+              <div className="column__header">{m.relatedPaths}</div>
+              <p className="font-body skills-hub-copy">{m.archiveAndTopicsNote}</p>
+              <div className="skills-page-links skills-page-links--left font-body">
+                <Link href="/skills">{m.latestSkillsHub}</Link>
+                <span>·</span>
+                <Link href="/topics/skills">{m.skillsTopicPage}</Link>
+                <span>·</span>
+                <Link href={`/${editions[0]}`}>{m.browseLatestEdition}</Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
