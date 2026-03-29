@@ -7,6 +7,7 @@
 - [x] Add `robots.txt`
   - Implemented via `web/app/robots.ts`
   - Includes sitemap reference and host declaration
+  - Explicitly allows current public SEO routes, including `/archive` and `/topics/*`
 
 - [x] Add `sitemap.xml`
   - Implemented via `web/app/sitemap.ts`
@@ -42,7 +43,8 @@
 - [x] Add canonical / alternates strategy
   - Unified alternates generation in `web/lib/seo.ts`
   - Added canonical plus `en`, `zh-CN`, and `x-default` alternates for core routes
-  - Preserved current shared-route bilingual architecture without changing URL structure
+  - Current implementation is a shared-route bilingual strategy (same URL, cookie + `Accept-Language` switching), not path-separated hreflang URLs
+  - Preserved current bilingual architecture without changing URL structure
 
 ## P2 — Search-Friendly Aggregation
 
