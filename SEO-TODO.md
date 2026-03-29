@@ -53,14 +53,14 @@
   - Aggregates daily front-page winners into a deduplicated weekly view
   - Preserves repeat-signal by showing how many times an item appeared that week and on which dates
 
+- [x] Add structured data
+  - Added lightweight JSON-LD helpers in `web/lib/structured-data.ts`
+  - Applied `CollectionPage` + `BreadcrumbList` to daily, weekly, archive, and topic pages
+  - Included representative `Article` / `ItemList` style entities without overcomplicating route logic
+
 - [ ] Add skills archive / index page
   - Separate from latest `/skills` landing page
   - Browse historical radar entries
-
-- [ ] Add structured data
-  - `CollectionPage`
-  - `Article`
-  - `BreadcrumbList`
 
 - [ ] Introduce SEO-aware secondary headings
   - Keep editorial headlines

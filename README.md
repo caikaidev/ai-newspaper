@@ -102,6 +102,19 @@ Weekly pages:
 - preserve repeat-signal by showing how many times an item surfaced that week
 - link back to the daily editions where that item appeared
 
+### Structured data
+
+The app now emits lightweight JSON-LD for core search-facing routes via `web/lib/structured-data.ts`:
+- `CollectionPage`
+- `BreadcrumbList`
+- representative `Article` / `ItemList` style entities
+
+Currently applied to:
+- `/{date}`
+- `/archive`
+- `/topics/skills`
+- `/weekly/[week]`
+
 ### Canonical and alternates
 
 The app keeps the current shared-route bilingual architecture (no `/en/...` or `/zh/...` path split), while metadata now consistently emits:

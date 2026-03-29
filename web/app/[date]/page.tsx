@@ -10,6 +10,7 @@ import SectionColumn from '@/components/SectionColumn'
 import { getRequestLang, t } from '@/lib/i18n'
 import { labelForLang, loadConfig } from '@/lib/config'
 import { editionMetadata } from '@/lib/seo'
+import { editionJsonLd } from '@/lib/structured-data'
 
 export const revalidate = 3600
 
@@ -44,9 +45,11 @@ export default function EditionPage({ params }: PageProps) {
   const col1 = edition.front_page.slice(1, 3)
   const col2 = edition.front_page.slice(3, 5)
   const enabled = config.sources
+  const jsonLd = editionJsonLd(edition, lang)
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <a className="sr-only" href="#main-content">{m.skipToMain}</a>
       <main className="newspaper" id="main-content" aria-label={m.newspaperAria}>
         <Masthead date={edition.date} edition={edition.edition} lang={lang} redirectTo={`/${params.date}`} />

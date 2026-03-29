@@ -7,6 +7,7 @@ import WeeklyStory from '@/components/WeeklyStory'
 import { getRequestLang, t } from '@/lib/i18n'
 import { buildWeeklyEdition, listWeeks } from '@/lib/weekly'
 import { weeklyMetadata } from '@/lib/seo'
+import { breadcrumbJsonLd, collectionPageJsonLd } from '@/lib/structured-data'
 
 export const revalidate = 3600
 
@@ -31,8 +32,23 @@ export default function WeeklyPage({ params }: PageProps) {
   const weekly = buildWeeklyEdition(params.week)
   if (!weekly) notFound()
 
+  const jsonLd = [
+    collectionPageJsonLd({
+      path: `/weekly/${params.week}`,
+      name: `${params.week} ${m.weeklyRoundup}`,
+      description: m.weeklyIntro,
+      lang,
+      items: weekly.items,
+    }),
+    breadcrumbJsonLd([
+      { name: m.siteName, path: '/' },
+      { name: `${params.week} ${m.weeklyRoundup}`, path: `/weekly/${params.week}` },
+    ]),
+  ]
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <a className="sr-only" href="#main-content">{m.skipToMain}</a>
       <main className="newspaper" id="main-content" aria-label={m.weeklyRoundup}>
         <Masthead lang={lang} redirectTo={`/weekly/${params.week}`} />

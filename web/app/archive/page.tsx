@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { listEditions } from '@/lib/editions'
 import { getRequestLang, t } from '@/lib/i18n'
 import { archiveMetadata } from '@/lib/seo'
+import { breadcrumbJsonLd, collectionPageJsonLd } from '@/lib/structured-data'
 import Masthead from '@/components/Masthead'
 import OnboardingPage from '@/components/OnboardingPage'
 
@@ -22,8 +23,22 @@ export default function ArchivePage() {
     return <OnboardingPage lang={lang} />
   }
 
+  const jsonLd = [
+    collectionPageJsonLd({
+      path: '/archive',
+      name: m.archivePage,
+      description: m.archiveIntro,
+      lang,
+    }),
+    breadcrumbJsonLd([
+      { name: m.siteName, path: '/' },
+      { name: m.archivePage, path: '/archive' },
+    ]),
+  ]
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <a className="sr-only" href="#main-content">{m.skipToMain}</a>
       <main className="newspaper" id="main-content" aria-label={m.archivePage}>
         <Masthead lang={lang} redirectTo="/archive" />

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { listEditions, loadEdition } from '@/lib/editions'
 import { getRequestLang, localizedHeadline, localizedSummary, t } from '@/lib/i18n'
 import { topicSkillsMetadata } from '@/lib/seo'
+import { breadcrumbJsonLd, collectionPageJsonLd } from '@/lib/structured-data'
 import Masthead from '@/components/Masthead'
 import OnboardingPage from '@/components/OnboardingPage'
 
@@ -37,8 +38,23 @@ export default function TopicSkillsPage() {
     }))
     .filter((entry): entry is { date: string; item: NonNullable<(typeof latestEdition.sections.skills)[number]> } => Boolean(entry.item))
 
+  const jsonLd = [
+    collectionPageJsonLd({
+      path: '/topics/skills',
+      name: m.skillsTopicPage,
+      description: m.skillsTopicIntro,
+      lang,
+      items: picks.map(entry => entry.item),
+    }),
+    breadcrumbJsonLd([
+      { name: m.siteName, path: '/' },
+      { name: m.skillsTopicPage, path: '/topics/skills' },
+    ]),
+  ]
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <a className="sr-only" href="#main-content">{m.skipToMain}</a>
       <main className="newspaper" id="main-content" aria-label={m.skillsTopicPage}>
         <Masthead date={latestEdition.date} edition={latestEdition.edition} lang={lang} redirectTo="/topics/skills" />
