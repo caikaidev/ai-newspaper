@@ -9,6 +9,7 @@ import ColStory from '@/components/ColStory'
 import SectionColumn from '@/components/SectionColumn'
 import { getRequestLang, t } from '@/lib/i18n'
 import { labelForLang, loadConfig } from '@/lib/config'
+import { editionMetadata } from '@/lib/seo'
 
 export const revalidate = 3600
 
@@ -22,17 +23,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const m = t(lang)
   if (!edition) return { title: `${m.notFound} — ${m.siteName}` }
 
-  const heroHeadline = edition.front_page[0]?.retro_headline ?? m.siteName
-  const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'http://localhost:3000'
-
-  return {
-    title: `${heroHeadline} — ${m.siteName}`,
-    description: edition.front_page[0]?.retro_summary ?? m.siteDescription,
-    openGraph: {
-      title: `${m.siteName} — ${params.date}`,
-      images: [`${BASE_URL}/api/og?date=${params.date}`],
-    },
-  }
+  return editionMetadata(
+    params.date,
+    edition.front_page[0]?.retro_headline,
+    edition.front_page[0]?.retro_summary,
+    lang
+  )
 }
 
 export default function EditionPage({ params }: PageProps) {

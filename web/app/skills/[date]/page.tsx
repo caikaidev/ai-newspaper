@@ -6,6 +6,7 @@ import DateNav from '@/components/DateNav'
 import SectionColumn from '@/components/SectionColumn'
 import { getRequestLang, t } from '@/lib/i18n'
 import { labelForLang, loadConfig } from '@/lib/config'
+import { skillsEditionMetadata } from '@/lib/seo'
 
 export const revalidate = 3600
 
@@ -17,14 +18,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const edition = loadEdition(params.date)
   const lang = getRequestLang()
   const m = t(lang)
-  const config = loadConfig()
 
   if (!edition) return { title: `${m.notFound} — ${m.siteName}` }
-
-  return {
-    title: `${labelForLang(config.sources.skills.label, lang)} — ${params.date} — ${m.siteName}`,
-    description: `${labelForLang(config.sources.skills.label, lang)} for ${params.date}`,
-  }
+  return skillsEditionMetadata(params.date, lang)
 }
 
 export default function SkillsEditionPage({ params }: PageProps) {

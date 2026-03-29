@@ -12,9 +12,10 @@
   - Implemented via `web/app/sitemap.ts`
   - Includes `/`, `/skills`, `/{date}`, `/skills/{date}`
 
-- [ ] Unify metadata strategy across core routes
-  - Review title/description for `/`, `/{date}`, `/skills`, `/skills/{date}`
-  - Align search-facing copy with user-facing editorial style
+- [x] Unify metadata strategy across core routes
+  - Implemented common metadata helpers in `web/lib/seo.ts`
+  - Applied to `/`, `/{date}`, `/skills`, `/skills/{date}`
+  - Added canonical URLs for dated and skills pages
 
 - [ ] Strengthen `/skills` as a long-lived hub page
   - Add stronger intro copy
