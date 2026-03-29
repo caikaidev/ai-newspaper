@@ -61,7 +61,16 @@ body {
 .section-col:last-child { border-right: none; }
 .staleness-banner { font-family: 'IM Fell English', serif; font-size: 0.8rem; color: var(--sepia-brown); background: rgba(90, 58, 16, 0.06); border: 1px solid var(--sepia-light); text-align: center; padding: 0.4rem 1rem; margin-bottom: 1rem; }
 .skills-hero-note { text-align: center; color: var(--sepia-brown); margin: 0 0 1rem; font-size: 0.95rem; }
+.skills-hub-intro { max-width: 72ch; margin: 0 auto 1rem; text-align: center; font-size: 1rem; line-height: 1.7; color: var(--ink-black); }
+.skills-hub-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1rem; }
+.skills-hub-panel { border: 1px solid var(--sepia-light); background: rgba(90, 58, 16, 0.03); padding: 1rem 1.25rem; }
+.skills-hub-copy { font-size: 0.95rem; line-height: 1.6; color: var(--ink-black); }
+.skills-edition-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.skills-edition-list li { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; color: var(--aged-caption); }
+.skills-edition-list a { color: var(--sepia-brown); text-decoration: none; }
+.skills-edition-list a:hover { text-decoration: underline; }
 .skills-page-links { text-align: center; margin-top: 1rem; color: var(--aged-caption); display: flex; justify-content: center; gap: 0.6rem; }
+.skills-page-links--left { justify-content: flex-start; }
 .skills-page-links a { color: var(--sepia-brown); text-decoration: none; }
 .skills-page-links a:hover { text-decoration: underline; }
 .footer { text-align: center; border-top: 2px solid var(--ink-black); padding-top: 1rem; margin-top: 2rem; font-family: 'IM Fell English', serif; font-style: italic; font-size: 0.75rem; color: var(--aged-caption); }
@@ -77,6 +86,7 @@ body {
   .columns .column:nth-child(3) { grid-column: 1 / -1; border-right: none; border-top: 1px solid var(--sepia-light); }
   .section-columns { grid-template-columns: repeat(2, 1fr); }
   .section-col:nth-child(3) { grid-column: 1 / -1; border-right: none; border-top: 1px solid var(--sepia-light); }
+  .skills-hub-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .newspaper { padding: 1rem 0.75rem 2rem; }

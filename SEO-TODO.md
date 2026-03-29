@@ -17,10 +17,10 @@
   - Applied to `/`, `/{date}`, `/skills`, `/skills/{date}`
   - Added canonical URLs for dated and skills pages
 
-- [ ] Strengthen `/skills` as a long-lived hub page
-  - Add stronger intro copy
-  - Clarify latest radar vs archive navigation
-  - Improve hub-style internal linking
+- [x] Strengthen `/skills` as a long-lived hub page
+  - Replaced redirect-only behavior with an indexable hub experience
+  - Added intro copy, latest radar context, and recent skills-edition links
+  - Added stronger internal links from `/skills` to dated skills pages and matching full editions
 
 ## P1 — Information Architecture
 

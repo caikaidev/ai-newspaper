@@ -91,7 +91,12 @@ export const messages = {
     installs: 'installs',
     rank: 'rank',
     skillsPage: 'Skills',
-    notFound: 'Not Found'
+    notFound: 'Not Found',
+    skillsHubIntro: 'A standing desk for the paper\'s AI Skills Radar: each day\'s most notable skills, installation leaders, and editorial watchlist gathered in one place.',
+    latestRadar: 'Latest Radar',
+    recentSkillEditions: 'Recent Skill Editions',
+    viewFullEdition: 'View full edition',
+    latestSkillsArchiveNote: 'Browse recent radar editions or return to the matching full newspaper for the wider day in AI and tech.'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -144,7 +149,12 @@ export const messages = {
     installs: '安装量',
     rank: '排名',
     skillsPage: '技能页',
-    notFound: '未找到'
+    notFound: '未找到',
+    skillsHubIntro: '这里汇集本报 AI Skills Radar 的每日重点：安装量领先者、编辑观察名单，以及值得持续追踪的新技能。',
+    latestRadar: '最新雷达',
+    recentSkillEditions: '近期技能版',
+    viewFullEdition: '查看完整日报',
+    latestSkillsArchiveNote: '你可以浏览近期技能雷达，也可以回到对应日期的完整日报，查看当天更广泛的 AI 与科技动态。'
   }
 } as const
 
