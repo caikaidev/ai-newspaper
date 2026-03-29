@@ -35,6 +35,8 @@ export default function ArchivePage() {
             <Link href="/">{m.browseLatestEdition}</Link>
             <span>·</span>
             <Link href="/skills">{m.skillsPage}</Link>
+            <span>·</span>
+            <Link href="/topics/skills">{m.skillsTopicPage}</Link>
           </div>
           <div className="archive-table font-body">
             <div className="archive-table__head">

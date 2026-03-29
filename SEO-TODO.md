@@ -29,9 +29,10 @@
   - Linked archive from edition pages, skills pages, footer, and sitemap
   - Archive lists both main editions and matching skills radar editions by date
 
-- [ ] Add topic pages
-  - Start with `/topics/skills`
-  - Then `/topics/ai` and `/topics/devtools`
+- [x] Add topic pages
+  - Started with indexable `/topics/skills`
+  - Added topic-level metadata, recent picks, and links to radar/archive/full editions
+  - Established a reusable pattern for later `/topics/ai` and `/topics/devtools`
 
 - [ ] Improve internal linking graph
   - Edition ↔ skills

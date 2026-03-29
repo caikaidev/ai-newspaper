@@ -92,6 +92,7 @@ export const messages = {
     rank: 'rank',
     skillsPage: 'Skills',
     archivePage: 'Archive',
+    skillsTopicPage: 'Skills Topic Hub',
     notFound: 'Not Found',
     skillsHubIntro: 'A standing desk for the paper\'s AI Skills Radar: each day\'s most notable skills, installation leaders, and editorial watchlist gathered in one place.',
     latestRadar: 'Latest Radar',
@@ -101,7 +102,12 @@ export const messages = {
     archiveIntro: 'The archive gathers past editions of The Daily Byte, pairing each day\'s main newspaper with its matching AI Skills Radar for easier browsing and discovery.',
     mainEdition: 'Main Edition',
     skillRadarEdition: 'Skills Radar',
-    browseLatestEdition: 'Browse latest edition'
+    browseLatestEdition: 'Browse latest edition',
+    skillsTopicIntro: 'This topic hub gathers the most recent AI skills covered by The Daily Byte, pointing readers toward daily radar editions, historical archives, and the full newspaper context around each wave of tooling.',
+    recentSkillsPicks: 'Recent Skills Picks',
+    exploreSkillRadar: 'Explore Skills Radar',
+    browseSkillArchive: 'Browse skills archive',
+    topicHubNote: 'Use this page as the thematic doorway into the project\'s AI skills coverage.'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -155,6 +161,7 @@ export const messages = {
     rank: '排名',
     skillsPage: '技能页',
     archivePage: '归档',
+    skillsTopicPage: '技能主题页',
     notFound: '未找到',
     skillsHubIntro: '这里汇集本报 AI Skills Radar 的每日重点：安装量领先者、编辑观察名单，以及值得持续追踪的新技能。',
     latestRadar: '最新雷达',
@@ -164,7 +171,12 @@ export const messages = {
     archiveIntro: '这里收录《每日字节报》的往期内容，将每日主版与对应的 AI Skills Radar 并列，便于浏览与检索。',
     mainEdition: '主版日报',
     skillRadarEdition: '技能雷达',
-    browseLatestEdition: '查看最新一期'
+    browseLatestEdition: '查看最新一期',
+    skillsTopicIntro: '这个主题页汇总《每日字节报》近期覆盖的 AI skills 内容，引导读者进入每日雷达、历史归档，以及每波工具趋势背后的完整日报上下文。',
+    recentSkillsPicks: '近期技能精选',
+    exploreSkillRadar: '查看技能雷达',
+    browseSkillArchive: '浏览技能归档',
+    topicHubNote: '你可以把这里当作进入本项目 AI skills 内容的主题入口。'
   }
 } as const
 

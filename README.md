@@ -14,6 +14,7 @@ fetch HN + Reddit + GitHub + Skills     app/page.tsx → redirect
 AI scoring via local OpenClaw           app/skills/page.tsx → latest skills radar
           ↓                             app/skills/[date]/page.tsx → dated skills radar
           ↓                             app/archive/page.tsx → archive index
+          ↓                             app/topics/skills/page.tsx → skills topic hub
   data/editions/YYYY-MM-DD.json         app/api/og → OG image route
   data/editions/feed.xml                app/feed.xml → RSS route
   data/editions/run.log.json            app/robots.ts → robots.txt
@@ -81,6 +82,7 @@ Current sitemap coverage includes:
 - `/`
 - `/skills`
 - `/archive`
+- `/topics/skills`
 - `/{date}`
 - `/skills/{date}`
 
@@ -245,6 +247,7 @@ The app now includes a dedicated **AI Skills Radar** built from multiple skills 
   - `/skills` → latest skills radar hub
   - `/skills/YYYY-MM-DD` → dated skills radar
   - `/archive` → historical edition archive
+  - `/topics/skills` → skills topic hub
 - Radar display count is intentionally capped to avoid visual overload
 - Skills are deduplicated across sources
 - A light diversity rule prevents one source from fully dominating the radar
@@ -252,9 +255,10 @@ The app now includes a dedicated **AI Skills Radar** built from multiple skills 
 
 ### Navigation
 
-- Main edition pages link to `/skills` and `/archive`
-- Skills pages link back to the matching main edition date page and `/archive`
+- Main edition pages link to `/skills`, `/topics/skills`, and `/archive`
+- Skills pages link back to the matching main edition date page, `/topics/skills`, and `/archive`
 - `/archive` links each date to both the main edition and the matching skills radar page
+- `/topics/skills` acts as a thematic hub linking recent picks to radar pages and full editions
 - Skills pages use the same date navigation pattern as the main edition
 
 ## Localization
@@ -302,6 +306,7 @@ Verified routes:
 - `/skills`
 - `/skills/YYYY-MM-DD`
 - `/archive`
+- `/topics/skills`
 - `/robots.txt`
 - `/sitemap.xml`
 
@@ -416,6 +421,7 @@ Then verify the deployed routes:
 - `https://ai-newspaper-web.vercel.app/api/og?date=YYYY-MM-DD`
 - `https://ai-newspaper-web.vercel.app/skills`
 - `https://ai-newspaper-web.vercel.app/archive`
+- `https://ai-newspaper-web.vercel.app/topics/skills`
 - `https://ai-newspaper-web.vercel.app/robots.txt`
 - `https://ai-newspaper-web.vercel.app/sitemap.xml`
 

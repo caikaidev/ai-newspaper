@@ -68,3 +68,14 @@ export function archiveMetadata(lang: AppLang) {
     },
   }
 }
+
+export function topicSkillsMetadata(lang: AppLang) {
+  const m = t(lang)
+  return {
+    title: `${m.skillsTopicPage} — ${m.siteName}`,
+    description: `${m.skillsTopicPage}: a topic hub for recent AI skills picks, radar editions, and archive paths across The Daily Byte.`,
+    alternates: {
+      canonical: `${BASE_URL}/topics/skills`,
+    },
+  }
+}

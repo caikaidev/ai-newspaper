@@ -98,6 +98,8 @@ export default function EditionPage({ params }: PageProps) {
             <div className="skills-page-links font-body">
               <a href="/skills">{labelForLang(enabled.skills.label, lang)}</a>
               <span>·</span>
+              <a href="/topics/skills">{m.skillsTopicPage}</a>
+              <span>·</span>
               <a href="/archive">{m.archivePage}</a>
             </div>
           </section>
@@ -143,7 +145,7 @@ export default function EditionPage({ params }: PageProps) {
 
         <footer className="footer">
           <p>
-            {m.siteName} · {m.publishedDailyAt} · <a href="/feed.xml" aria-label={m.rssFeed}>{m.rssFeed}</a> · <a href="/skills">{m.skillsPage}</a> · <a href="/archive">{m.archivePage}</a> · <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">{m.openSource}</a>
+            {m.siteName} · {m.publishedDailyAt} · <a href="/feed.xml" aria-label={m.rssFeed}>{m.rssFeed}</a> · <a href="/skills">{m.skillsPage}</a> · <a href="/topics/skills">{m.skillsTopicPage}</a> · <a href="/archive">{m.archivePage}</a> · <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">{m.openSource}</a>
           </p>
           <p style={{ marginTop: '0.25rem' }}>{m.footerDisclaimer}</p>
         </footer>
