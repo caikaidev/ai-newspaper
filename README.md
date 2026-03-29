@@ -77,6 +77,7 @@ The app now includes a first SEO foundation layer:
 
 - `robots.txt` via `web/app/robots.ts`
 - `sitemap.xml` via `web/app/sitemap.ts`
+- unified canonical + alternates metadata via `web/lib/seo.ts`
 
 Current sitemap coverage includes:
 - `/`
@@ -88,6 +89,16 @@ Current sitemap coverage includes:
 
 Additional SEO follow-up work is tracked in:
 - `SEO-TODO.md`
+
+### Canonical and alternates
+
+The app keeps the current shared-route bilingual architecture (no `/en/...` or `/zh/...` path split), while metadata now consistently emits:
+- canonical URLs for core routes
+- `alternates.languages.en`
+- `alternates.languages.zh-CN`
+- `alternates.languages.x-default`
+
+All alternates currently point to the same route, which matches the cookie + `Accept-Language` based rendering model without changing URL structure.
 
 ## Source Configuration
 

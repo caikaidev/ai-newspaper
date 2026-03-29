@@ -8,11 +8,24 @@ export function getBaseUrl(): string {
   return BASE_URL
 }
 
+function buildAlternates(path: string) {
+  const url = `${BASE_URL}${path}`
+  return {
+    canonical: url,
+    languages: {
+      en: url,
+      'zh-CN': url,
+      'x-default': url,
+    },
+  }
+}
+
 export function homeMetadata(lang: AppLang) {
   const m = t(lang)
   return {
     title: `${m.siteName} — Daily AI-Curated Tech & Skills Radar`,
     description: m.siteDescription,
+    alternates: buildAlternates('/'),
   }
 }
 
@@ -26,9 +39,7 @@ export function editionMetadata(date: string, heroHeadline: string | undefined, 
       description: heroSummary ?? m.siteDescription,
       images: [`${BASE_URL}/api/og?date=${date}`],
     },
-    alternates: {
-      canonical: `${BASE_URL}/${date}`,
-    },
+    alternates: buildAlternates(`/${date}`),
   }
 }
 
@@ -39,9 +50,7 @@ export function skillsHubMetadata(lang: AppLang) {
   return {
     title: `${skillsLabel} — ${m.siteName}`,
     description: `${skillsLabel}: a curated daily radar of AI skills, ranked across multiple skill directories.`,
-    alternates: {
-      canonical: `${BASE_URL}/skills`,
-    },
+    alternates: buildAlternates('/skills'),
   }
 }
 
@@ -52,9 +61,7 @@ export function skillsEditionMetadata(date: string, lang: AppLang) {
   return {
     title: `${skillsLabel} for ${date} — ${m.siteName}`,
     description: `${skillsLabel} for ${date}: ranked AI skills, installation signals, and editorial summaries across tracked skills sources.`,
-    alternates: {
-      canonical: `${BASE_URL}/skills/${date}`,
-    },
+    alternates: buildAlternates(`/skills/${date}`),
   }
 }
 
@@ -63,9 +70,7 @@ export function archiveMetadata(lang: AppLang) {
   return {
     title: `${m.archivePage} — ${m.siteName}`,
     description: `${m.archivePage}: browse past daily editions and their matching AI Skills Radar pages in one place.`,
-    alternates: {
-      canonical: `${BASE_URL}/archive`,
-    },
+    alternates: buildAlternates('/archive'),
   }
 }
 
@@ -74,8 +79,6 @@ export function topicSkillsMetadata(lang: AppLang) {
   return {
     title: `${m.skillsTopicPage} — ${m.siteName}`,
     description: `${m.skillsTopicPage}: a topic hub for recent AI skills picks, radar editions, and archive paths across The Daily Byte.`,
-    alternates: {
-      canonical: `${BASE_URL}/topics/skills`,
-    },
+    alternates: buildAlternates('/topics/skills'),
   }
 }

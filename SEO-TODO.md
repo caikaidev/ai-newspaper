@@ -39,9 +39,10 @@
   - Introduced visible “Related Paths” sections on key pages
   - Strengthened topic ↔ edition and topic ↔ skills navigation
 
-- [ ] Add canonical / alternates strategy
-  - Canonical URLs for dated pages
-  - Consider hreflang strategy if bilingual pages remain shared-route
+- [x] Add canonical / alternates strategy
+  - Unified alternates generation in `web/lib/seo.ts`
+  - Added canonical plus `en`, `zh-CN`, and `x-default` alternates for core routes
+  - Preserved current shared-route bilingual architecture without changing URL structure
 
 ## P2 — Search-Friendly Aggregation
 
