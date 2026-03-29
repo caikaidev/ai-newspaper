@@ -55,6 +55,7 @@ export default function WeeklyPage({ params }: PageProps) {
 
         <section aria-label={m.weeklyRoundup}>
           <h2 className="section-header">§ {params.week} · {m.weeklyRoundup}</h2>
+          <p className="section-subhead font-body">{m.seoSecondaryWeekly}</p>
           <p className="archive-intro font-body">{m.weeklyIntro}</p>
           <div className="skills-page-links font-body">
             <Link href="/archive">{m.archivePage}</Link>
@@ -70,6 +71,7 @@ export default function WeeklyPage({ params }: PageProps) {
 
         <section aria-label={m.weeklyHighlights}>
           <h2 className="section-header">§ {m.weeklyHighlights}</h2>
+          <p className="section-subhead font-body">{m.weeklyIntro}</p>
           <div className="topic-picks-list">
             {weekly.items.map((item, index) => (
               <WeeklyStory key={item.url || item.id} item={item} rank={index + 1} lang={lang} />

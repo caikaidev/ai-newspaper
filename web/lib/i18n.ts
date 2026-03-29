@@ -117,7 +117,12 @@ export const messages = {
     weeklyIntro: 'A weekly digest of repeated winners from the daily paper, deduplicated so each story appears once while still showing how many times it surfaced across the week.',
     appearedTimes: 'appeared this week',
     weekIncludes: 'Week includes',
-    weeklyHighlights: 'Weekly Highlights'
+    weeklyHighlights: 'Weekly Highlights',
+    seoSecondarySkills: 'Browse current AI skills rankings, recurring radar themes, and links into the broader newspaper coverage.',
+    seoSecondarySkillsArchive: 'Use this archive to browse historical AI skills radar editions by date and jump back to each matching full edition.',
+    seoSecondaryTopic: 'This topic page highlights recent AI skills picks and connects them to dated radar pages, archives, and full daily editions.',
+    seoSecondaryWeekly: 'Weekly roundups surface repeated winners across the daily paper while removing duplicate story cards from the page.',
+    seoSecondaryArchive: 'The main archive links each date to both the full newspaper edition and its matching AI skills radar page.'
   },
   'zh-CN': {
     siteName: '每日字节报',
@@ -196,7 +201,12 @@ export const messages = {
     weeklyIntro: '这里汇总本周日报中反复上榜的内容：同一条内容只展示一次，但会保留它在本周出现了几次。',
     appearedTimes: '次上榜',
     weekIncludes: '本周包含',
-    weeklyHighlights: '本周精选'
+    weeklyHighlights: '本周精选',
+    seoSecondarySkills: '这里可以浏览当前 AI skills 排名、近期雷达主题，以及通往完整日报内容的入口。',
+    seoSecondarySkillsArchive: '这个归档页按日期汇总历史 AI Skills Radar 版本，并可跳回对应的完整日报。',
+    seoSecondaryTopic: '这个主题页汇总近期 AI skills 精选内容，并连接到按日雷达、历史归档和完整日报。',
+    seoSecondaryWeekly: '周聚合页会汇总日报里反复上榜的内容，同时移除页面中的重复故事卡片。',
+    seoSecondaryArchive: '总站归档页会把每个日期的完整日报与对应技能雷达并列展示，便于检索与回看。'
   }
 } as const
 

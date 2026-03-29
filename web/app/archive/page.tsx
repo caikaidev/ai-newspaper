@@ -45,6 +45,7 @@ export default function ArchivePage() {
 
         <section aria-label={m.archivePage}>
           <h2 className="section-header">§ {m.archivePage}</h2>
+          <p className="section-subhead font-body">{m.seoSecondaryArchive}</p>
           <p className="archive-intro font-body">{m.archiveIntro}</p>
           <div className="skills-page-links font-body">
             <Link href="/">{m.browseLatestEdition}</Link>

@@ -61,6 +61,7 @@ export default function TopicSkillsPage() {
 
         <section aria-label={m.skillsTopicPage}>
           <h2 className="section-header">§ {m.skillsTopicPage}</h2>
+          <p className="section-subhead font-body">{m.seoSecondaryTopic}</p>
           <p className="archive-intro font-body">{m.skillsTopicIntro}</p>
           <div className="skills-page-links font-body">
             <Link href="/skills">{m.exploreSkillRadar}</Link>
@@ -73,6 +74,7 @@ export default function TopicSkillsPage() {
 
         <section aria-label={m.recentSkillsPicks}>
           <h2 className="section-header">§ {m.recentSkillsPicks}</h2>
+          <p className="section-subhead font-body">{m.topicHubNote}</p>
           <div className="topic-picks-list">
             {picks.map(({ date, item }) => (
               <article key={`${date}-${item.id}`} className="topic-pick">

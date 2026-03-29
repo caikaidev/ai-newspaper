@@ -46,6 +46,7 @@ export default function SkillsArchivePage() {
 
         <section aria-label={m.skillsArchivePage}>
           <h2 className="section-header">§ {m.skillsArchivePage}</h2>
+          <p className="section-subhead font-body">{m.seoSecondarySkillsArchive}</p>
           <p className="archive-intro font-body">{m.skillsArchiveIntro}</p>
           <div className="skills-page-links font-body">
             <Link href="/skills">{m.latestSkillsHub}</Link>

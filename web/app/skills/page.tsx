@@ -41,6 +41,7 @@ export default function SkillsRootPage() {
 
         <section aria-label={labelForLang(skillsConfig.label, lang)}>
           <h2 className="section-header">§ {labelForLang(skillsConfig.label, lang)}</h2>
+          <p className="section-subhead font-body">{m.seoSecondarySkills}</p>
           <p className="skills-hub-intro font-body">{m.skillsHubIntro}</p>
           <div className="skills-hero-note font-body">
             {edition.sections.skills.length} {m.skillsTracked}. {m.aiScoredNote}
@@ -59,6 +60,7 @@ export default function SkillsRootPage() {
 
         <section aria-label={m.recentSkillEditions}>
           <h2 className="section-header">§ {m.recentSkillEditions}</h2>
+          <p className="section-subhead font-body">{m.latestSkillsArchiveNote}</p>
           <div className="skills-hub-grid">
             <div className="skills-hub-panel">
               <div className="column__header">{m.latestRadar}</div>

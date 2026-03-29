@@ -63,9 +63,10 @@
   - Separate from latest `/skills` landing page and general `/archive`
   - Provides a historical index of dated skills radar editions
 
-- [ ] Introduce SEO-aware secondary headings
-  - Keep editorial headlines
-  - Add clearer search-friendly supporting copy where helpful
+- [x] Introduce SEO-aware secondary headings
+  - Kept editorial-style primary section headers intact
+  - Added clearer explanatory secondary copy to skills, skills archive, weekly, topic, and archive pages
+  - Improved search-facing clarity without flattening the newspaper voice
 
 ## P3 — Longer-Term Growth
 

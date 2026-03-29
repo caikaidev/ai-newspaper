@@ -117,6 +117,17 @@ Currently applied to:
 - `/topics/skills`
 - `/weekly/[week]`
 
+### SEO-aware secondary headings
+
+The app now keeps the editorial-style primary newspaper headings, while adding clearer supporting secondary copy on key SEO-facing pages such as:
+- `/skills`
+- `/skills/archive`
+- `/topics/skills`
+- `/weekly/[week]`
+- `/archive`
+
+This keeps the retro tone intact while making each page's search-facing purpose more explicit.
+
 ### Canonical and alternates
 
 The app keeps the current shared-route bilingual architecture (no `/en/...` or `/zh/...` path split), while metadata now consistently emits:

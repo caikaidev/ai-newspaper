@@ -56,6 +56,7 @@ body {
 .col-story__summary { font-family: 'IM Fell English', serif; font-size: 0.8rem; line-height: 1.5; color: var(--ink-black); margin-bottom: 0.25rem; text-align: justify; hyphens: auto; }
 .col-story__meta { font-family: 'IM Fell English', serif; font-style: italic; font-size: 0.75rem; color: var(--sepia-brown); display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .section-header { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.08em; text-align: center; text-transform: uppercase; color: var(--ink-black); border-top: 3px solid var(--ink-black); border-bottom: 1px solid var(--ink-black); padding: 0.4rem 0; margin: 1.5rem 0 1rem; }
+.section-subhead { max-width: 70ch; margin: -0.2rem auto 0.9rem; text-align: center; font-size: 0.95rem; line-height: 1.6; color: var(--sepia-brown); }
 .section-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--sepia-light); }
 .section-col { padding: 1rem 1.25rem; border-right: 1px solid var(--sepia-light); }
 .section-col:last-child { border-right: none; }
