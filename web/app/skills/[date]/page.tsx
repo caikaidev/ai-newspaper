@@ -6,6 +6,7 @@ import DateNav from '@/components/DateNav'
 import SectionColumn from '@/components/SectionColumn'
 import { getRequestLang, t } from '@/lib/i18n'
 import { labelForLang, loadConfig } from '@/lib/config'
+import { skillsEditionMetadata } from '@/lib/seo'
 
 export const revalidate = 3600
 
@@ -17,14 +18,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const edition = loadEdition(params.date)
   const lang = getRequestLang()
   const m = t(lang)
-  const config = loadConfig()
 
   if (!edition) return { title: `${m.notFound} — ${m.siteName}` }
-
-  return {
-    title: `${labelForLang(config.sources.skills.label, lang)} — ${params.date} — ${m.siteName}`,
-    description: `${labelForLang(config.sources.skills.label, lang)} for ${params.date}`,
-  }
+  return skillsEditionMetadata(params.date, lang)
 }
 
 export default function SkillsEditionPage({ params }: PageProps) {
@@ -61,11 +57,26 @@ export default function SkillsEditionPage({ params }: PageProps) {
           </div>
         </section>
 
-        <div className="skills-page-links font-body">
-          <a href={`/${params.date}`}>{m.siteName}</a>
-          <span>·</span>
-          <a href="/skills">{labelForLang(skillsConfig.label, lang)}</a>
-        </div>
+        <section aria-label={m.relatedPaths}>
+          <h2 className="section-header">§ {m.relatedPaths}</h2>
+          <div className="skills-hub-grid">
+            <div className="skills-hub-panel">
+              <div className="column__header">{m.relatedPaths}</div>
+              <p className="font-body skills-hub-copy">{m.archiveAndTopicsNote}</p>
+              <div className="skills-page-links skills-page-links--left font-body">
+                <a href={`/${params.date}`}>{m.viewFullEdition}</a>
+                <span>·</span>
+                <a href="/skills">{m.latestSkillsHub}</a>
+                <span>·</span>
+                <a href="/skills/archive">{m.skillsArchivePage}</a>
+                <span>·</span>
+                <a href="/topics/skills">{m.skillsTopicPage}</a>
+                <span>·</span>
+                <a href="/archive">{m.archivePage}</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )

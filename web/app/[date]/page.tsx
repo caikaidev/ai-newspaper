@@ -9,6 +9,8 @@ import ColStory from '@/components/ColStory'
 import SectionColumn from '@/components/SectionColumn'
 import { getRequestLang, t } from '@/lib/i18n'
 import { labelForLang, loadConfig } from '@/lib/config'
+import { editionMetadata } from '@/lib/seo'
+import { editionJsonLd } from '@/lib/structured-data'
 
 export const revalidate = 3600
 
@@ -22,17 +24,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const m = t(lang)
   if (!edition) return { title: `${m.notFound} — ${m.siteName}` }
 
-  const heroHeadline = edition.front_page[0]?.retro_headline ?? m.siteName
-  const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'http://localhost:3000'
-
-  return {
-    title: `${heroHeadline} — ${m.siteName}`,
-    description: edition.front_page[0]?.retro_summary ?? m.siteDescription,
-    openGraph: {
-      title: `${m.siteName} — ${params.date}`,
-      images: [`${BASE_URL}/api/og?date=${params.date}`],
-    },
-  }
+  return editionMetadata(
+    params.date,
+    edition.front_page[0]?.retro_headline,
+    edition.front_page[0]?.retro_summary,
+    lang
+  )
 }
 
 export default function EditionPage({ params }: PageProps) {
@@ -48,9 +45,11 @@ export default function EditionPage({ params }: PageProps) {
   const col1 = edition.front_page.slice(1, 3)
   const col2 = edition.front_page.slice(3, 5)
   const enabled = config.sources
+  const jsonLd = editionJsonLd(edition, lang)
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <a className="sr-only" href="#main-content">{m.skipToMain}</a>
       <main className="newspaper" id="main-content" aria-label={m.newspaperAria}>
         <Masthead date={edition.date} edition={edition.edition} lang={lang} redirectTo={`/${params.date}`} />
@@ -101,6 +100,10 @@ export default function EditionPage({ params }: PageProps) {
             </div>
             <div className="skills-page-links font-body">
               <a href="/skills">{labelForLang(enabled.skills.label, lang)}</a>
+              <span>·</span>
+              <a href="/topics/skills">{m.skillsTopicPage}</a>
+              <span>·</span>
+              <a href="/archive">{m.archivePage}</a>
             </div>
           </section>
         )}
@@ -145,7 +148,7 @@ export default function EditionPage({ params }: PageProps) {
 
         <footer className="footer">
           <p>
-            {m.siteName} · {m.publishedDailyAt} · <a href="/feed.xml" aria-label={m.rssFeed}>{m.rssFeed}</a> · <a href="/skills">{m.skillsPage}</a> · <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">{m.openSource}</a>
+            {m.siteName} · {m.publishedDailyAt} · <a href="/feed.xml" aria-label={m.rssFeed}>{m.rssFeed}</a> · <a href="/skills">{m.skillsPage}</a> · <a href="/topics/skills">{m.skillsTopicPage}</a> · <a href="/archive">{m.archivePage}</a> · <a href="https://github.com/caikaidev/ai-newspaper" target="_blank" rel="noopener noreferrer">{m.openSource}</a>
           </p>
           <p style={{ marginTop: '0.25rem' }}>{m.footerDisclaimer}</p>
         </footer>
