@@ -4,19 +4,19 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Mon, 30 Mar 2026 02:24:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Mar 2026 07:13:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[AI Facial Recognition Is Blamed for the Wrongful Arrest of a Tennessee Woman]]></title>
+            <title><![CDATA[Voyager 1 Still Soldiers On with 69 Kilobytes and an 8-Track Recorder]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-03-30</link>
             <guid>https://ai-newspaper-web.vercel.app/2026-03-30</guid>
-            <pubDate>Mon, 30 Mar 2026 02:24:58 GMT</pubDate>
-            <description><![CDATA[<p><strong>AI Facial Recognition Is Blamed for the Wrongful Arrest of a Tennessee Woman</strong> — Police are said to have used artificial facial recognition in a manner that wrongly led to the arrest of a Tennessee woman for crimes in North Dakota. The case has stirred grave discussion, for machine certainty in the service of state power is feared most when it is false.</p>
-<p><strong>Voyager 1 Still Soldiers On with 69 Kilobytes and an 8-Track Recorder</strong> — A popular account reminds the public that Voyager 1 continues its storied mission with a mere 69 kilobytes of memory and an 8-track tape recorder. The contrast with modern excess has delighted readers, for old engineering thrift often appears nobler than new abundance.</p>
-<p><strong>LinkedIn Is Accused of Consuming 2.4 Gigabytes of Memory Across a Mere Two Tabs</strong> — A widely noted complaint alleges that LinkedIn devours 2.4 gigabytes of RAM while occupying only two browser tabs. The report has stirred Hacker News mightily, for bloated software is now treated not as a curiosity, but as a standing offense against common decency.</p>]]></description>
+            <pubDate>Mon, 30 Mar 2026 07:13:14 GMT</pubDate>
+            <description><![CDATA[<p><strong>Voyager 1 Still Soldiers On with 69 Kilobytes and an 8-Track Recorder</strong> — A popular account reminds the public that Voyager 1 continues its storied mission with a mere 69 kilobytes of memory and an 8-track tape recorder. The contrast with modern excess has delighted readers, for old engineering thrift often appears nobler than new abundance.</p>
+<p><strong>LinkedIn Is Accused of Consuming 2.4 Gigabytes of Memory Across a Mere Two Tabs</strong> — A widely noted complaint alleges that LinkedIn devours 2.4 gigabytes of RAM while occupying only two browser tabs. The report has stirred Hacker News mightily, for bloated software is now treated not as a curiosity, but as a standing offense against common decency.</p>
+<p><strong>ChatGPT Is Said to Withhold the Keyboard Until Cloudflare Inspects One’s React State</strong> — A sharp technical complaint alleges that ChatGPT will not even permit typing before Cloudflare has read the user's React state. The charge has roused considerable indignation, for the modern web increasingly demands inspection before it grants even the smallest liberty.</p>]]></description>
         </item>
         <item>
             <title><![CDATA[TeamPCP Strikes Again as Malicious Telnyx Packages Are Reported on the Python Exchange]]></title>
