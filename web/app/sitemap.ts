@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { listEditions } from '@/lib/editions'
 import { listWeeks } from '@/lib/weekly'
 
-const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'http://localhost:3000'
+const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'https://ai-newspaper-web.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const editions = listEditions()

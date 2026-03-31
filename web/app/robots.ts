@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'http://localhost:3000'
+const BASE_URL = process.env.NEWSPAPER_BASE_URL ?? 'https://ai-newspaper-web.vercel.app'
 
 export default function robots(): MetadataRoute.Robots {
   return {
