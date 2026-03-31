@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Mon, 30 Mar 2026 07:13:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 Mar 2026 07:17:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-03-31</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-03-31</guid>
+            <pubDate>Tue, 31 Mar 2026 07:17:31 GMT</pubDate>
+            <description><![CDATA[<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — Security watchers report that Axios on NPM has been compromised, with poisoned versions sowing remote-access trojans among the unwary. The breach has caused alarm because the Axios library is woven deeply into the fabric of modern web construction.</p>
+<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — A security report declares that Axios versions 1.14.1 and 0.30.4 on NPM have been compromised, introducing dependency injection through a stolen maintainer account. The breach has caused alarm because the Axios library is woven deeply into the fabric of modern web construction.</p>
+<p><strong>Axios Version 1.14.1 Is Declared Compromised Upon the NPM Registry</strong> — A security alert reports that axios version 1.14.1 has been compromised on the NPM repository. The news has caused alarm because this JavaScript library is woven deeply into the fabric of modern web construction.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Voyager 1 Still Soldiers On with 69 Kilobytes and an 8-Track Recorder]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-03-30</link>
