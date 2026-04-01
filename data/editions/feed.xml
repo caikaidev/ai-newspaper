@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Tue, 31 Mar 2026 07:17:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Apr 2026 07:09:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-04-01</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-04-01</guid>
+            <pubDate>Wed, 01 Apr 2026 07:09:31 GMT</pubDate>
+            <description><![CDATA[<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — A grave security breach has struck the Axios library on NPM, with compromised versions implanting remote-access trojans among the unwary. The incident has caused widespread alarm because this JavaScript tool is woven deeply into the fabric of modern web construction.</p>
+<p><strong>Claude Code Source Leak Reveals Sham Tools, Regexes of Frustration, and Covert Modes</strong> — A reported leak of Claude Code's internals has exposed simulated instruments, patterns of vexation, and hidden operational states within the popular coding assistant. The disclosure commands attention because even artificial helpers conceal curious machinery beneath their polished surfaces.</p>
+<p><strong>Axios Versions 1.14.1 and 0.30.4 Are Declared Compromised Upon NPM</strong> — A grave security alert reports that specific versions of Axios on NPM have been poisoned, introducing dependency injection through a stolen maintainer account. The breach has caused widespread concern because this library serves as a foundation stone for countless web applications.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-03-31</link>
