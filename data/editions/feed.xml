@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Thu, 09 Apr 2026 07:11:07 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Apr 2026 07:14:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Astonishing Data Density of 447 Terabytes Per Square Centimetre Is Achieved Upon Fluorographane]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-04-12</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-04-12</guid>
+            <pubDate>Sun, 12 Apr 2026 07:14:30 GMT</pubDate>
+            <description><![CDATA[<p><strong>Astonishing Data Density of 447 Terabytes Per Square Centimetre Is Achieved Upon Fluorographane</strong> — Scientists have demonstrated atomic-scale memory storage with unprecedented density and minimal energy requirements. The breakthrough suggests a future where vast libraries may reside upon a pinhead.</p>
+<p><strong>Compact Models Discovered to Uncover the Same Security Flaws as the Mighty Mythos</strong> — A report reveals that diminutive language models have successfully identified the same vulnerabilities detected by the larger Mythos system. The discovery challenges assumptions about the necessity of massive scale for effective security auditing.</p>
+<p><strong>NASA Reveals the Construction of Artemis II's Fault-Tolerant Computing System</strong> — The space agency discloses the architecture of the redundant computer system designed for the upcoming lunar mission. The design demonstrates the extreme measures required when failure is not an option.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[CI/CD Pipelines Are Discovered to Have Executed Malware Upon the Thirty-First of March]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-04-09</link>
