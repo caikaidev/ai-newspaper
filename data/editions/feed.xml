@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Sun, 12 Apr 2026 07:14:30 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Apr 2026 07:10:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[The Foremost Benchmarks for AI Agent Evaluation Are Shown to Be Vulnerable to Exploitation]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-04-13</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-04-13</guid>
+            <pubDate>Mon, 13 Apr 2026 07:10:39 GMT</pubDate>
+            <description><![CDATA[<p><strong>The Foremost Benchmarks for AI Agent Evaluation Are Shown to Be Vulnerable to Exploitation</strong> — Researchers demonstrate that the leading tests for measuring artificial agent capabilities can be systematically gamed. The revelation casts doubt upon the validity of current evaluation methodologies in the field.</p>
+<p><strong>One Million Token Context Window Is Achieved Upon Consumer Graphics Hardware</strong> — The KIV system demonstrates the ability to process contexts of one million tokens upon an RTX 4070 with merely twelve gigabytes of memory. The breakthrough enables expansive language model applications upon modest hardware previously thought inadequate.</p>
+<p><strong>Archon Emerges as the First Open-Source Harness for Deterministic AI Coding</strong> — A new system presents itself as a framework for making artificial intelligence coding both deterministic and repeatable. The innovation promises to bring engineering discipline to the often chaotic process of machine-assisted software creation.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Astonishing Data Density of 447 Terabytes Per Square Centimetre Is Achieved Upon Fluorographane]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-04-12</link>
