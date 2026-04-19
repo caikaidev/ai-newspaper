@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>The Daily Byte</title>
-        <link>https://ai-newspaper-web.vercel.app</link>
+        <link>http://localhost:3000</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Mon, 13 Apr 2026 07:10:39 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Apr 2026 07:17:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Dispatch: Migrating from DigitalOcean to Hetzner]]></title>
+            <link>http://localhost:3000/2026-04-19</link>
+            <guid>http://localhost:3000/2026-04-19</guid>
+            <pubDate>Sun, 19 Apr 2026 07:17:01 GMT</pubDate>
+            <description><![CDATA[<p><strong>Dispatch: Migrating from DigitalOcean to Hetzner</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
+<p><strong>Dispatch: Anonymous request-token comparisons from Opus 4.6 and Opus 4.7</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
+<p><strong>Dispatch: Why Japan has such good railways</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[The Foremost Benchmarks for AI Agent Evaluation Are Shown to Be Vulnerable to Exploitation]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-04-13</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-04-13</guid>
+            <link>http://localhost:3000/2026-04-13</link>
+            <guid>http://localhost:3000/2026-04-13</guid>
             <pubDate>Mon, 13 Apr 2026 07:10:39 GMT</pubDate>
             <description><![CDATA[<p><strong>The Foremost Benchmarks for AI Agent Evaluation Are Shown to Be Vulnerable to Exploitation</strong> — Researchers demonstrate that the leading tests for measuring artificial agent capabilities can be systematically gamed. The revelation casts doubt upon the validity of current evaluation methodologies in the field.</p>
 <p><strong>One Million Token Context Window Is Achieved Upon Consumer Graphics Hardware</strong> — The KIV system demonstrates the ability to process contexts of one million tokens upon an RTX 4070 with merely twelve gigabytes of memory. The breakthrough enables expansive language model applications upon modest hardware previously thought inadequate.</p>
@@ -20,8 +29,8 @@
         </item>
         <item>
             <title><![CDATA[Astonishing Data Density of 447 Terabytes Per Square Centimetre Is Achieved Upon Fluorographane]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-04-12</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-04-12</guid>
+            <link>http://localhost:3000/2026-04-12</link>
+            <guid>http://localhost:3000/2026-04-12</guid>
             <pubDate>Sun, 12 Apr 2026 07:14:30 GMT</pubDate>
             <description><![CDATA[<p><strong>Astonishing Data Density of 447 Terabytes Per Square Centimetre Is Achieved Upon Fluorographane</strong> — Scientists have demonstrated atomic-scale memory storage with unprecedented density and minimal energy requirements. The breakthrough suggests a future where vast libraries may reside upon a pinhead.</p>
 <p><strong>Compact Models Discovered to Uncover the Same Security Flaws as the Mighty Mythos</strong> — A report reveals that diminutive language models have successfully identified the same vulnerabilities detected by the larger Mythos system. The discovery challenges assumptions about the necessity of massive scale for effective security auditing.</p>
@@ -29,8 +38,8 @@
         </item>
         <item>
             <title><![CDATA[CI/CD Pipelines Are Discovered to Have Executed Malware Upon the Thirty-First of March]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-04-09</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-04-09</guid>
+            <link>http://localhost:3000/2026-04-09</link>
+            <guid>http://localhost:3000/2026-04-09</guid>
             <pubDate>Thu, 09 Apr 2026 07:11:07 GMT</pubDate>
             <description><![CDATA[<p><strong>CI/CD Pipelines Are Discovered to Have Executed Malware Upon the Thirty-First of March</strong> — A grave warning reveals that continuous integration systems likely ran malicious code during a specific three-hour window on the final day of March. The revelation demands immediate audit of automation infrastructure throughout the software industry.</p>
 <p><strong>Macintosh Operating System X Is Ported to the Unlikely Vessel of Nintendo's Wii Console</strong> — A technical virtuoso has succeeded in transplanting Apple's sophisticated operating system onto the modest hardware of a gaming machine. The achievement demonstrates that software may be liberated from its native iron to flourish upon foreign shores.</p>
@@ -38,8 +47,8 @@
         </item>
         <item>
             <title><![CDATA[Sam Altman Is Questioned Whether He May Be Trusted With Our Collective Future]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-04-07</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-04-07</guid>
+            <link>http://localhost:3000/2026-04-07</link>
+            <guid>http://localhost:3000/2026-04-07</guid>
             <pubDate>Tue, 07 Apr 2026 10:36:56 GMT</pubDate>
             <description><![CDATA[<p><strong>Sam Altman Is Questioned Whether He May Be Trusted With Our Collective Future</strong> — The head of OpenAI stands accused of wielding extraordinary influence over the destiny of the age. Such concentration of power in one man has stirred grave concern among the technical republic.</p>
 <p><strong>CI/CD Pipelines Are Warned to Have Run Malware During a Specific Nocturnal Window</strong> — A security alert advises that continuous integration pipelines likely executed malicious code between midnight and three o'clock on the thirty-first of March. The warning is grave because automation systems possess the keys to the kingdom and their compromise spreads poison at industrial scale.</p>
@@ -47,8 +56,8 @@
         </item>
         <item>
             <title><![CDATA[Artemis II Is Launched Into the Heavens as the World Watches and Waits]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-04-02</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-04-02</guid>
+            <link>http://localhost:3000/2026-04-02</link>
+            <guid>http://localhost:3000/2026-04-02</guid>
             <pubDate>Thu, 02 Apr 2026 07:10:40 GMT</pubDate>
             <description><![CDATA[<p><strong>Artemis II Is Launched Into the Heavens as the World Watches and Waits</strong> — Live updates track the progress of Artemis II as it embarks upon its historic lunar voyage. The event commands universal attention because humanity's return to the moon marks both scientific triumph and the renewal of a grand adventure.</p>
 <p><strong>Claude Code: An Agentic Coding Assistant Takes Up Residence in the Terminal</strong> — A new agentic coding instrument from Anthropic installs itself directly into the terminal, offering to execute routine tasks and explain complex code through natural language. Such tools represent the vanguard of a movement to make the machine a conversational partner in the craft of software.</p>
@@ -56,8 +65,8 @@
         </item>
         <item>
             <title><![CDATA[Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-04-01</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-04-01</guid>
+            <link>http://localhost:3000/2026-04-01</link>
+            <guid>http://localhost:3000/2026-04-01</guid>
             <pubDate>Wed, 01 Apr 2026 07:09:31 GMT</pubDate>
             <description><![CDATA[<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — A grave security breach has struck the Axios library on NPM, with compromised versions implanting remote-access trojans among the unwary. The incident has caused widespread alarm because this JavaScript tool is woven deeply into the fabric of modern web construction.</p>
 <p><strong>Claude Code Source Leak Reveals Sham Tools, Regexes of Frustration, and Covert Modes</strong> — A reported leak of Claude Code's internals has exposed simulated instruments, patterns of vexation, and hidden operational states within the popular coding assistant. The disclosure commands attention because even artificial helpers conceal curious machinery beneath their polished surfaces.</p>
@@ -65,8 +74,8 @@
         </item>
         <item>
             <title><![CDATA[Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-31</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-31</guid>
+            <link>http://localhost:3000/2026-03-31</link>
+            <guid>http://localhost:3000/2026-03-31</guid>
             <pubDate>Tue, 31 Mar 2026 07:17:31 GMT</pubDate>
             <description><![CDATA[<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — Security watchers report that Axios on NPM has been compromised, with poisoned versions sowing remote-access trojans among the unwary. The breach has caused alarm because the Axios library is woven deeply into the fabric of modern web construction.</p>
 <p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — A security report declares that Axios versions 1.14.1 and 0.30.4 on NPM have been compromised, introducing dependency injection through a stolen maintainer account. The breach has caused alarm because the Axios library is woven deeply into the fabric of modern web construction.</p>
@@ -74,8 +83,8 @@
         </item>
         <item>
             <title><![CDATA[Voyager 1 Still Soldiers On with 69 Kilobytes and an 8-Track Recorder]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-30</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-30</guid>
+            <link>http://localhost:3000/2026-03-30</link>
+            <guid>http://localhost:3000/2026-03-30</guid>
             <pubDate>Mon, 30 Mar 2026 07:13:14 GMT</pubDate>
             <description><![CDATA[<p><strong>Voyager 1 Still Soldiers On with 69 Kilobytes and an 8-Track Recorder</strong> — A popular account reminds the public that Voyager 1 continues its storied mission with a mere 69 kilobytes of memory and an 8-track tape recorder. The contrast with modern excess has delighted readers, for old engineering thrift often appears nobler than new abundance.</p>
 <p><strong>LinkedIn Is Accused of Consuming 2.4 Gigabytes of Memory Across a Mere Two Tabs</strong> — A widely noted complaint alleges that LinkedIn devours 2.4 gigabytes of RAM while occupying only two browser tabs. The report has stirred Hacker News mightily, for bloated software is now treated not as a curiosity, but as a standing offense against common decency.</p>
@@ -83,8 +92,8 @@
         </item>
         <item>
             <title><![CDATA[TeamPCP Strikes Again as Malicious Telnyx Packages Are Reported on the Python Exchange]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-28</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-28</guid>
+            <link>http://localhost:3000/2026-03-28</link>
+            <guid>http://localhost:3000/2026-03-28</guid>
             <pubDate>Sat, 28 Mar 2026 07:13:22 GMT</pubDate>
             <description><![CDATA[<p><strong>TeamPCP Strikes Again as Malicious Telnyx Packages Are Reported on the Python Exchange</strong> — A grave warning asserts that Telnyx versions 4.87.1 and 4.87.2 on PyPI are malicious, and links the affair to the now-notorious TeamPCP campaign. The report has naturally commanded sharp attention, for repeated contamination of trusted channels turns routine updating into a public hazard.</p>
 <p><strong>A Revolt Within Microsoft Is Said to Rise Against the Mandatory Account Regime</strong> — Reports from within Microsoft suggest that employees are actively contending against the compulsory use of Microsoft accounts. The dispute has stirred intense interest on Hacker News, for it touches the broader struggle between user convenience, corporate control, and digital autonomy.</p>
@@ -92,8 +101,8 @@
         </item>
         <item>
             <title><![CDATA[Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-27</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-27</guid>
+            <link>http://localhost:3000/2026-03-27</link>
+            <guid>http://localhost:3000/2026-03-27</guid>
             <pubDate>Fri, 27 Mar 2026 01:03:37 GMT</pubDate>
             <description><![CDATA[<p><strong>Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
 <p><strong>Dispatch: We haven't seen the worst of what gambling and prediction markets will do</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
@@ -101,8 +110,8 @@
         </item>
         <item>
             <title><![CDATA[Europe Is Warned That the Campaign to Inspect Private Messages Still Advances]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-26</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-26</guid>
+            <link>http://localhost:3000/2026-03-26</link>
+            <guid>http://localhost:3000/2026-03-26</guid>
             <pubDate>Thu, 26 Mar 2026 12:38:30 GMT</pubDate>
             <description><![CDATA[<p><strong>Europe Is Warned That the Campaign to Inspect Private Messages Still Advances</strong> — A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty.</p>
 <p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
@@ -110,8 +119,8 @@
         </item>
         <item>
             <title><![CDATA[Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-25</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-25</guid>
+            <link>http://localhost:3000/2026-03-25</link>
+            <guid>http://localhost:3000/2026-03-25</guid>
             <pubDate>Wed, 25 Mar 2026 15:48:59 GMT</pubDate>
             <description><![CDATA[<p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
 <p><strong>Grave Alarm Raised as LiteLLM Packages on PyPI Are Reported Compromised</strong> — An urgent warning declares that LiteLLM versions 1.82.7 and 1.82.8 on the Python exchange were tampered with and ought not be trusted. In an era of sprawling software dependence, such contamination threatens confidence far beyond a single package.</p>
