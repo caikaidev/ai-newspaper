@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Mon, 20 Apr 2026 07:09:58 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Apr 2026 07:10:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Apple Concern Names John Ternus as New Chief Executive Officer]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-04-21</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-04-21</guid>
+            <pubDate>Tue, 21 Apr 2026 07:10:11 GMT</pubDate>
+            <description><![CDATA[<p><strong>Apple Concern Names John Ternus as New Chief Executive Officer</strong> — The board of the computing giant has selected a new captain to steer the enterprise. The appointment marks a significant transition in the leadership of one of the era's most influential technology concerns.</p>
+<p><strong>European Union Mandates Replaceable Batteries in All Mobile Telephones From 2027</strong> — The continental authorities have decreed that portable communication devices must allow consumer battery replacement. The regulation promises to extend device longevity and reduce electronic waste across the member states.</p>
+<p><strong>Brussels Age Verification Application Breached Within Two Minutes of Launch</strong> — The municipal authorities' digital age-checking system was compromised by digital infiltrators moments after its public unveiling. The incident demonstrates the peril of deploying inadequately secured applications for sensitive civic functions.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Vercel Security Incident of April 2026 Sends Shockwaves Through the Deployment Realm]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-04-20</link>
@@ -124,15 +133,6 @@
             <pubDate>Thu, 26 Mar 2026 12:38:30 GMT</pubDate>
             <description><![CDATA[<p><strong>Europe Is Warned That the Campaign to Inspect Private Messages Still Advances</strong> — A troubling report states that authorities in the European sphere continue to press for the scanning of private messages and personal photographs. The matter has stirred grave debate, for it touches the ancient contest between public safety and private liberty.</p>
 <p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
-<p><strong>Urgent Warning Issued Over Compromised LiteLLM Packages in the Python Exchange</strong> — Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention.</p>]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-25</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-25</guid>
-            <pubDate>Wed, 25 Mar 2026 15:48:59 GMT</pubDate>
-            <description><![CDATA[<p><strong>Trusted Release Machinery Betrayed in TeamPCP Attack Upon the Software Supply Chain</strong> — A detailed account alleges that the TeamPCP attack exploited CI/CD pipelines and trusted releases to spread infected Trivy and LiteLLM packages. The affair has deeply alarmed engineers, for it suggests that the very channels of trust may be turned into instruments of deceit.</p>
-<p><strong>Grave Alarm Raised as LiteLLM Packages on PyPI Are Reported Compromised</strong> — An urgent warning declares that LiteLLM versions 1.82.7 and 1.82.8 on the Python exchange were tampered with and ought not be trusted. In an era of sprawling software dependence, such contamination threatens confidence far beyond a single package.</p>
 <p><strong>Urgent Warning Issued Over Compromised LiteLLM Packages in the Python Exchange</strong> — Readers are cautioned that LiteLLM versions 1.82.7 and 1.82.8 on PyPI are said to be compromised and unfit for update. Such news strikes at the confidence by which modern software is distributed and therefore commands immediate attention.</p>]]></description>
         </item>
     </channel>
