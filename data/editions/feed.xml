@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Wed, 22 Apr 2026 07:09:10 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Apr 2026 07:09:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Stable Firefox Identifier Discovered Linking Private Tor Identities]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-04-23</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-04-23</guid>
+            <pubDate>Thu, 23 Apr 2026 07:09:53 GMT</pubDate>
+            <description><![CDATA[<p><strong>Stable Firefox Identifier Discovered Linking Private Tor Identities</strong> — Researchers have uncovered a persistent tracking mechanism in the Mozilla browser that compromises the anonymity of Tor network users. The revelation raises grave concerns regarding privacy protections in ostensibly secure browsing environments.</p>
+<p><strong>Alberta Concern Offers Agricultural Machinery Without Modern Complexity at Reduced Cost</strong> — A Canadian enterprise has commenced selling tractors devoid of sophisticated electronic systems for half the price of conventional models. The offering appeals to those who would escape the tyranny of complex computing in agricultural labour.</p>
+<p><strong>Qwen 3.6 Twenty-Seven Billion Parameter Model Achieves Flagship Coding Proficiency</strong> — The Alibaba concern has released a dense language model with twenty-seven billion parameters demonstrating superior programming capabilities. The achievement suggests that efficient architecture may rival larger models in specific domains.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[SpaceX Concern Announces Sixty Billion Dollar Acquisition of Cursor]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-04-22</link>
@@ -125,15 +134,6 @@
             <description><![CDATA[<p><strong>TeamPCP Strikes Again as Malicious Telnyx Packages Are Reported on the Python Exchange</strong> — A grave warning asserts that Telnyx versions 4.87.1 and 4.87.2 on PyPI are malicious, and links the affair to the now-notorious TeamPCP campaign. The report has naturally commanded sharp attention, for repeated contamination of trusted channels turns routine updating into a public hazard.</p>
 <p><strong>A Revolt Within Microsoft Is Said to Rise Against the Mandatory Account Regime</strong> — Reports from within Microsoft suggest that employees are actively contending against the compulsory use of Microsoft accounts. The dispute has stirred intense interest on Hacker News, for it touches the broader struggle between user convenience, corporate control, and digital autonomy.</p>
 <p><strong>The AI Scientist Returns in a Second Form and Seeks Discovery by Agentic Tree Search</strong> — SakanaAI’s AI Scientist-v2 presents itself as a machine for workshop-level scientific discovery, guided by agentic tree search rather than a single line of blind trial. The claim has drawn notable interest, for nothing captures the age's imagination quite like the thought of automating the republic of science itself.</p>]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-27</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-27</guid>
-            <pubDate>Fri, 27 Mar 2026 01:03:37 GMT</pubDate>
-            <description><![CDATA[<p><strong>Dispatch: Running Tesla Model 3's computer on my desk using parts from crashed cars</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
-<p><strong>Dispatch: We haven't seen the worst of what gambling and prediction markets will do</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>
-<p><strong>Dispatch: Moving from GitHub to Codeberg, for lazy people</strong> — Editors marked this hackernews report as noteworthy based on current community activity. This fallback edition uses local scoring when no live AI provider is configured.</p>]]></description>
         </item>
     </channel>
 </rss>
