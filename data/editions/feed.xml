@@ -4,11 +4,20 @@
         <title>The Daily Byte</title>
         <link>https://ai-newspaper-web.vercel.app</link>
         <description>Daily AI-curated tech headlines in 1920s journalistic prose</description>
-        <lastBuildDate>Sat, 25 Apr 2026 07:09:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Apr 2026 07:09:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <atom:link href="https://ai-newspaper-web.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[An Amateur With ChatGPT Assistance Solves Erdős Mathematical Conjecture]]></title>
+            <link>https://ai-newspaper-web.vercel.app/2026-04-26</link>
+            <guid>https://ai-newspaper-web.vercel.app/2026-04-26</guid>
+            <pubDate>Sun, 26 Apr 2026 07:09:05 GMT</pubDate>
+            <description><![CDATA[<p><strong>An Amateur With ChatGPT Assistance Solves Erdős Mathematical Conjecture</strong> — A non-professional mathematician has resolved a problem posed by the legendary Paul Erdős using artificial intelligence assistance. The achievement suggests that automated reasoning tools may democratise mathematical discovery.</p>
+<p><strong>The Inevitable Advent of a Scientific Theory of Deep Learning Is Proclaimed</strong> — An essay argues that the current empirical approaches to artificial neural networks will eventually yield to formal theoretical frameworks. The prediction suggests a maturation of the field akin to other established sciences.</p>
+<p><strong>First Publicly Available Blood Detection Model Is Released to Open Source</strong> — A complete system including dataset, trained weights, and command-line interface is made available for automated blood detection in medical imagery. The release represents a significant contribution to open medical artificial intelligence.</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Google Concern Plans Forty Billion Dollar Investment in Anthropic]]></title>
             <link>https://ai-newspaper-web.vercel.app/2026-04-25</link>
@@ -125,15 +134,6 @@
             <description><![CDATA[<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — A grave security breach has struck the Axios library on NPM, with compromised versions implanting remote-access trojans among the unwary. The incident has caused widespread alarm because this JavaScript tool is woven deeply into the fabric of modern web construction.</p>
 <p><strong>Claude Code Source Leak Reveals Sham Tools, Regexes of Frustration, and Covert Modes</strong> — A reported leak of Claude Code's internals has exposed simulated instruments, patterns of vexation, and hidden operational states within the popular coding assistant. The disclosure commands attention because even artificial helpers conceal curious machinery beneath their polished surfaces.</p>
 <p><strong>Axios Versions 1.14.1 and 0.30.4 Are Declared Compromised Upon NPM</strong> — A grave security alert reports that specific versions of Axios on NPM have been poisoned, introducing dependency injection through a stolen maintainer account. The breach has caused widespread concern because this library serves as a foundation stone for countless web applications.</p>]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence]]></title>
-            <link>https://ai-newspaper-web.vercel.app/2026-03-31</link>
-            <guid>https://ai-newspaper-web.vercel.app/2026-03-31</guid>
-            <pubDate>Tue, 31 Mar 2026 07:17:31 GMT</pubDate>
-            <description><![CDATA[<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — Security watchers report that Axios on NPM has been compromised, with poisoned versions sowing remote-access trojans among the unwary. The breach has caused alarm because the Axios library is woven deeply into the fabric of modern web construction.</p>
-<p><strong>Axios Falls Upon the NPM Registry as Malicious Versions Sow Digital Pestilence</strong> — A security report declares that Axios versions 1.14.1 and 0.30.4 on NPM have been compromised, introducing dependency injection through a stolen maintainer account. The breach has caused alarm because the Axios library is woven deeply into the fabric of modern web construction.</p>
-<p><strong>Axios Version 1.14.1 Is Declared Compromised Upon the NPM Registry</strong> — A security alert reports that axios version 1.14.1 has been compromised on the NPM repository. The news has caused alarm because this JavaScript library is woven deeply into the fabric of modern web construction.</p>]]></description>
         </item>
     </channel>
 </rss>

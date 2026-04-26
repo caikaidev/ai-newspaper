@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-04-26",
+    "started_at": "2026-04-26T07:09:05.168Z",
+    "duration_ms": 61,
+    "hn_count": 20,
+    "reddit_count": 80,
+    "github_count": 13,
+    "skills_count": 15,
+    "total_before_dedup": 128,
+    "total_after_dedup": 128,
+    "status": "ok"
+  },
+  {
     "date": "2026-04-25",
     "started_at": "2026-04-25T07:09:42.258Z",
     "duration_ms": 49,
@@ -153,18 +165,6 @@
     "skills_count": 15,
     "total_before_dedup": 129,
     "total_after_dedup": 129,
-    "status": "ok"
-  },
-  {
-    "date": "2026-04-02",
-    "started_at": "2026-04-02T07:10:40.962Z",
-    "duration_ms": 38,
-    "hn_count": 20,
-    "reddit_count": 80,
-    "github_count": 7,
-    "skills_count": 15,
-    "total_before_dedup": 122,
-    "total_after_dedup": 122,
     "status": "ok"
   }
 ]
